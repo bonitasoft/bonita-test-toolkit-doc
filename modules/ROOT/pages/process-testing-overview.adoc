@@ -1,4 +1,4 @@
-= Processes automated tests
+= Bonita test toolkit
 
 :description: integration test bonita processes applications junit ci continuous integration
 
