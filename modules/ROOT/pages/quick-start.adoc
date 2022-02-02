@@ -35,7 +35,7 @@ The following Business Data Model is used:
 
 The following process is used: 
 
-image::images/quick-start-process.png[Quick start process example]
+image::quick-start-process.png[Quick start process example]
 
 The process contains a business data `dinosaur` of type `com.company.model.Dinosaur`. + 
 On the task `createDinosaur`, a contract is defined to instantiate this business data. +
