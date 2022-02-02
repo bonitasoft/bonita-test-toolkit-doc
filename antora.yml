@@ -9,6 +9,7 @@ asciidoc:
     page-editable: true
     page-out-of-support: false
     page-pagination: true # display links to previous/next pages at the bottom of the page
+    page-hide-search-bar: true
 
 nav:
   - modules/ROOT/nav.adoc
