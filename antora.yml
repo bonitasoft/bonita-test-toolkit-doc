@@ -2,6 +2,7 @@ name: bonita-test-toolkit
 title: Bonita test toolkit
 version: 1.0.0
 prerelease: beta
+start_page: ROOT:process-testing-overview.adoc
 asciidoc:
   attributes:
     # page attributes
