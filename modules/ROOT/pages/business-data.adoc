@@ -62,7 +62,8 @@ This eases the use of the business data since fields are retrieved using direct 
 
 [CAUTION] 
 ====
-The Java model has to contain getters for all the fields in the BDM. Those getter names must match the field names according correctly: `myField` -> `getMyField()`.
+The Java model has to contain getters for all the fields in the BDM. +
+Those getter names must match the field names correctly: `myField` -> `getMyField()`.
 ====
 
 [source, Java]
