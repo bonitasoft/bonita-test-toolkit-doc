@@ -25,6 +25,11 @@ It is a Java library and can be integrated with many existing test frameworks li
 
 [.card.card-index]
 --
+xref:installation.adoc[[.card-title]#Installation# [.card-body.card-content-overflow]#pass:q[Install the Bonita Test Toolkit in your development environment]#]
+--
+
+[.card.card-index]
+--
 xref:quick-start.adoc[[.card-title]#Quick start# [.card-body.card-content-overflow]#pass:q[Create a first integration test on a basic process]#]
 --
 

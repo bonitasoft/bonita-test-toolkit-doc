@@ -11,7 +11,7 @@ The Bonita Test Toolkit is only available for Enterprise, Performance, Efficienc
 
 == Create and configure the Bonita test extension
 
-The Bonita test extension is a JUnit 5 extension, it has to be registered using the annotation `org.junit.jupiter.api.extension.RegisterExtension`.
+The Bonita test extension is a JUnit 5 extension, it has to be registered using the annotation `@BonitaTests`.
 
 The following elements can be configured: 
 
