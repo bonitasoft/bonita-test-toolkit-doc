@@ -35,7 +35,7 @@ xref:quick-start.adoc[[.card-title]#Quick start# [.card-body.card-content-overfl
 
 [.card.card-index]
 --
-xref:bonita-test-extension.adoc[[.card-title]#Bonita test extension# [.card-body.card-content-overflow]#pass:q[Discover the Bonita Test Extension to parametrize integration tests]#]
+xref:bonita-test-extension.adoc[[.card-title]#JUnit 5 extension# [.card-body.card-content-overflow]#pass:q[Discover the Bonita Test JUnit 5 extension to parametrize integration tests]#]
 --
 
 [.card.card-index]
