@@ -46,7 +46,7 @@ If the field `hungry` is set to `true`, then the path to the task `goToHunt` is 
 
 Create a new Maven project with the following pom.xml: 
 
-[source,xml]
+[source, xml, subs="attributes+"]
 ----
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -66,7 +66,7 @@ Create a new Maven project with the following pom.xml:
         <maven-dependency-plugin.version>3.2.0</maven-dependency-plugin.version>
     
         <!-- Bonita -->
-        <bonita-test-toolkit.version>0.0.1-SNAPSHOT</bonita-test-toolkit.version>
+        <bonita-test-toolkit.version>{toolkitVersion}</bonita-test-toolkit.version>
     
         <!-- Test -->
         <junit.version>5.8.1</junit.version>
