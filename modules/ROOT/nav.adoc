@@ -1,4 +1,5 @@
 * xref:process-testing-overview.adoc[Overview]
+* xref:installation.adoc[Installation]
 * xref:quick-start.adoc[Quick start]
 * xref:bonita-test-extension.adoc[Bonita test extension]
 * xref:user.adoc[Users]
