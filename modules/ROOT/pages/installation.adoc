@@ -1,4 +1,5 @@
 = Installation
+:table-caption!:
 :description: Install the Bonita test toolkit in your development environment
 
 [NOTE]
