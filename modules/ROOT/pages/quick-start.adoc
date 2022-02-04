@@ -174,8 +174,8 @@ class CreateDinosaurIT {
     @Test
     void should_create_an_hungry_tyrannosaurus(BonitaTestToolkit toolkit) {  <2>
         var user = toolkit.getUser("walter.bates"); <3>
-        var processDef = toolkit.getProcessDefinition("Dinosaur"); <4>
-        final BusinessObjectDAO<BusinessData> businessObjectDAO = toolkit.getBusinessObjectDAO("com.company.model.Dinosaur"); <5>
+        var processDef = toolkit.getProcessDefinition("create-dinosaur"); <4>
+        final BusinessObjectDAO<BusinessData> businessObjectDAO = toolkit.getBusinessObjectDAO("com.company.bonitasoft.model.Dinosaur"); <5>
 
         assertThat(businessObjectDAO.find(0, 10)).isEmpty();
 
@@ -202,12 +202,15 @@ class CreateDinosaurIT {
         assertThat(processInstance.getFirstTask("goToHunt").isArchived()).isTrue();
 
         // Data assertions
-        final List<BusinessData> businessData = businessObjectDAO.query("findByName",
+        final List<BusinessData> result = businessObjectDAO.query("findByName",
                                                          List.of(QueryParameter.stringParameter("name", "Tyrannosaurus")), 0, 10);
-        assertThat(businessData).hasSize(1);
-        assertThat(businessData.get(0).getStringField("name")).isEqualTo("Tyrannosaurus");
-        assertThat(businessData.get(0).getStringField("color")).isEqualTo("Brown");
-        assertThat(businessData.get(0).getBooleanField("hungry")).isTrue();
+        assertThat(result)
+            .hasSize(1)
+            .allSatisfy(dino -> {
+                assertThat(dino.getStringField("name")).isEqualTo("Tyrannosaurus");
+                assertThat(dino.getStringField("color")).isEqualTo("Brown");
+                assertThat(dino.getBooleanField("hungry")).isTrue();
+            });
     }
 
 }
