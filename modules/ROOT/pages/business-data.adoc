@@ -135,12 +135,12 @@ class ProcessIT {
         BusinessObjectDAO<BusinessData> parentObjectDAO = toolkit.getBusinessObjectDAO("com.company.model.MyObject"); <1>
 
         List<BusinessData> findResult = parentObject.find(0, 100));<2>
-        BusinessData singleQueryResult = parentObject.querySingle("singleQueryName", List.of("parameterName=value"))); <3>
-        List<BusinessData> multipleQueryResult = parentObject.query("multipleQueryName", List.of("parameterName=value"), 0, 100)); <4>
+        BusinessData singleQueryResult = parentObject.querySingle("singleQueryName", List.of(QueryParameter.stringParameter("parameterName", "value"))); <3>
+        List<BusinessData> multipleQueryResult = parentObject.query("multipleQueryName", List.of(QueryParameter.stringParameter("parameterName", "value")), 0, 100)); <4>
 
-        Integer countForFind = parentObject.querySingle("countForFind", List.of(), Integer.class)); <5>
+        Integer countForFind = parentObject.querySingle("countForFind", Integer.class)); <5>
         
-        assertThatThrownBy(() -> parentObject.querySingle("countForFind", List.of())).isInstanceOf(BusinessDataQueryException.class); <6>
+        assertThatThrownBy(() -> parentObject.querySingle("countForFind")).isInstanceOf(BusinessDataQueryException.class); <6>
     }
 }
 ----
@@ -177,7 +177,7 @@ class ProcessIT {
         BusinessObjectDAO<MyObject> parentObjectDAO = toolkit.getBusinessObjectDAO("com.company.model.MyObject", MyObject.class); <2>
 
         List<MyObject> findResult = parentObject.find(0, 100));<3>
-        MyObject singleQueryResult = parentObject.querySingle("singleQueryName", List.of("parameterName=value"))); <4>
+        MyObject singleQueryResult = parentObject.querySingle("singleQueryName", List.of(QueryParameter.stringParameter("parameterName","value"))); <4>
         ...
     }
 }

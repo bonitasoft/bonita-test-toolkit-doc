@@ -164,6 +164,7 @@ import com.bonitasoft.test.toolkit.junit.extension.BonitaTests;
 import com.bonitasoft.test.toolkit.model.BusinessData;
 import com.bonitasoft.test.toolkit.model.BusinessObjectDAO;
 import com.bonitasoft.test.toolkit.model.Task;
+import com.bonitasoft.test.toolkit.model.QueryParameter;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.RegisterExtension;
 
@@ -201,7 +202,8 @@ class CreateDinosaurIT {
         assertThat(processInstance.getFirstTask("goToHunt").isArchived()).isTrue();
 
         // Data assertions
-        final List<BusinessData> businessData = businessObjectDAO.query("findByName", List.of("name=Tyrannosaurus"), 0, 10);
+        final List<BusinessData> businessData = businessObjectDAO.query("findByName",
+                                                         List.of(QueryParameter.stringParameter("name", "Tyrannosaurus")), 0, 10);
         assertThat(businessData).hasSize(1);
         assertThat(businessData.get(0).getStringField("name")).isEqualTo("Tyrannosaurus");
         assertThat(businessData.get(0).getStringField("color")).isEqualTo("Brown");
