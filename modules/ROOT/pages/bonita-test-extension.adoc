@@ -1,5 +1,5 @@
 = JUnit 5 extension
-:description: Discover the JUnit 5 Bonita extension, this extension let you inject and configure the Bonita test toolkit entrypoint used in integration tests.
+:description: Discover the JUnit 5 BonitaTests extension, this extension let you inject and configure the Bonita test toolkit entry point used in integration tests.
 
 The BonitaTests extension is the entry point to create Bonita integration tests. It allows to specify some behaviors, and to inject the `BonitaTestToolkit` into the test methods.
 
