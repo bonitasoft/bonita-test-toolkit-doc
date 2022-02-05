@@ -1,4 +1,5 @@
 = Business data in integration tests
+:table-caption!:
 :description: Learn to retrieve business data from cases in integration tests.
 
 Validate the values of business data during the execution of a process is one of the main purposes of integration tests. +
@@ -149,12 +150,12 @@ class ProcessIT {
 <3> Call the single query `singleQueryName` which return a single value. This query has one parameter.
 <4> Call the query `multipleQueryName` which return a list. This query has one parameter.
 <5> Call the single query `countForFind`. This query is a _count_, it counts the number of values that would be returned by the associated query. The return type (`Integer`) has to be passed to the generic DAO for count queries.
-<6> If the return type is not excplicitly set for a count query an error is thrown.
+<6> If the return type is not explicitly set for a count query an error is thrown.
 
 === Using a typed DAO
 
 A typed DAO works in the exact same way as a generic DAO, but the returned objects are typed correctly. +
-A typed DAO can be created at any time from the bonita test toolkit. It requires the type and the fully qualified name of the associated business object.
+A typed DAO can be created at any time using the Bonita Test Toolkit. It requires the type and the fully qualified name of the associated business object.
 
 [source, Java]
 ----
@@ -186,3 +187,70 @@ class ProcessIT {
 <2> A typed DAO is created using the fully qualified name of the business object and the type of the object in the test Java model.
 <3> The query find is called, a list of `MyObject` is returned.
 <4> The single query `singleQueryName` is called, an object `MyObject` is returned.
+
+=== Query parameters
+
+Use the factories methods from `com.bonitasoft.test.toolkit.model.QueryParameter` to instantiate typed query parameters.
+The supported parameter types are the same as the one that can be defined in a query from the BDM editor in the Studio.
+
+[source, Java]
+----
+var result = dao.query("myQuery", 
+					List.of(QueryParameter.stringParameter("stringParameterName","stringValue"), 
+							QueryParameter.integerParameter("intParameterName", 42),
+							QueryParameter.stringsParameter("stringsParameterName", List.of("A", "B", "C")))), 
+					0, 100);
+----
+
+.Supported parameter types
+[%header,cols="1,1"]
+|===
+|Parameter Type
+|Factory Method
+
+|`java.lang.String`
+|QueryParameter.stringParameter
+
+|`java.lang.Boolean`
+|QueryParameter.booleanParameter
+
+|`java.lang.Integer`
+|QueryParameter.integerParameter
+
+|`java.lang.Long`
+|QueryParameter.longParameter
+
+|`java.lang.Float`
+|QueryParameter.floatParameter
+
+|`java.lang.Double`
+|QueryParameter.doubleParameter
+
+|`java.util.Date`
+|QueryParameter.dateParameter
+
+|`java.time.LocalDate`
+|QueryParameter.localDateParameter
+
+|`java.time.LocalDateTime`
+|QueryParameter.localDateTimeParameter
+
+|`java.time.OffsetDateTime`
+|QueryParameter.offsetDateTimeParameter
+
+|`java.lang.String[]`
+|QueryParameter.stringsParameter
+
+|`java.lang.Integer[]`
+|QueryParameter.integersParameter
+
+|`java.lang.Float[]`
+|QueryParameter.floatsParameter
+
+|`java.lang.Double[]`
+|QueryParameter.doublesParameter
+
+|`java.lang.Long[]`
+|QueryParameter.longsParameter
+
+|===
