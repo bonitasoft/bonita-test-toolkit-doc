@@ -30,7 +30,7 @@ jobs:
     env:
       COMPONENT_NAME: test-toolkit
       # Except if you want to test in progress work that your content depends on, keep it set to master
-      DOC_SITE_BRANCH: 'feat/add_test_toolkit_component'
+      DOC_SITE_BRANCH: master
       PR_NUMBER: ${{ github.event.pull_request.number }}
     steps:
       - name: Get documentation site source code
