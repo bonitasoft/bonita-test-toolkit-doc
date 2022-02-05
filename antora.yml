@@ -5,6 +5,7 @@ prerelease: -beta
 start_page: ROOT:process-testing-overview.adoc
 asciidoc:
   attributes:
+    toolkitVersion: '1.0.0.beta-01'
     # page attributes
     page-editable: true
     page-out-of-support: false

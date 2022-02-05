@@ -46,7 +46,7 @@ If the field `hungry` is set to `true`, then the path to the task `goToHunt` is 
 
 Create a new Maven project with the following pom.xml: 
 
-[source,xml]
+[source, xml, subs="attributes+"]
 ----
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -66,7 +66,7 @@ Create a new Maven project with the following pom.xml:
         <maven-dependency-plugin.version>3.2.0</maven-dependency-plugin.version>
     
         <!-- Bonita -->
-        <bonita-test-toolkit.version>0.0.1-SNAPSHOT</bonita-test-toolkit.version>
+        <bonita-test-toolkit.version>{toolkitVersion}</bonita-test-toolkit.version>
     
         <!-- Test -->
         <junit.version>5.8.1</junit.version>
@@ -164,6 +164,7 @@ import com.bonitasoft.test.toolkit.junit.extension.BonitaTests;
 import com.bonitasoft.test.toolkit.model.BusinessData;
 import com.bonitasoft.test.toolkit.model.BusinessObjectDAO;
 import com.bonitasoft.test.toolkit.model.Task;
+import com.bonitasoft.test.toolkit.model.QueryParameter;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.RegisterExtension;
 
@@ -173,8 +174,8 @@ class CreateDinosaurIT {
     @Test
     void should_create_an_hungry_tyrannosaurus(BonitaTestToolkit toolkit) {  <2>
         var user = toolkit.getUser("walter.bates"); <3>
-        var processDef = toolkit.getProcessDefinition("Dinosaur"); <4>
-        final BusinessObjectDAO<BusinessData> businessObjectDAO = toolkit.getBusinessObjectDAO("com.company.model.Dinosaur"); <5>
+        var processDef = toolkit.getProcessDefinition("create-dinosaur"); <4>
+        final BusinessObjectDAO<BusinessData> businessObjectDAO = toolkit.getBusinessObjectDAO("com.company.bonitasoft.model.Dinosaur"); <5>
 
         assertThat(businessObjectDAO.find(0, 10)).isEmpty();
 
@@ -201,11 +202,15 @@ class CreateDinosaurIT {
         assertThat(processInstance.getFirstTask("goToHunt").isArchived()).isTrue();
 
         // Data assertions
-        final List<BusinessData> businessData = businessObjectDAO.query("findByName", List.of("name=Tyrannosaurus"), 0, 10);
-        assertThat(businessData).hasSize(1);
-        assertThat(businessData.get(0).getStringField("name")).isEqualTo("Tyrannosaurus");
-        assertThat(businessData.get(0).getStringField("color")).isEqualTo("Brown");
-        assertThat(businessData.get(0).getBooleanField("hungry")).isTrue();
+        final List<BusinessData> result = businessObjectDAO.query("findByName",
+                                                         List.of(QueryParameter.stringParameter("name", "Tyrannosaurus")), 0, 10);
+        assertThat(result)
+            .hasSize(1)
+            .allSatisfy(dino -> {
+                assertThat(dino.getStringField("name")).isEqualTo("Tyrannosaurus");
+                assertThat(dino.getStringField("color")).isEqualTo("Brown");
+                assertThat(dino.getBooleanField("hungry")).isTrue();
+            });
     }
 
 }
