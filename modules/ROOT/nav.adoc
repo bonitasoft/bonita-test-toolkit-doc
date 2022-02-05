@@ -10,4 +10,4 @@
 * xref:variable.adoc[Variables]
 * xref:document.adoc[Documents]
 * xref:connector.adoc[Connectors]
-* xref:timer.adoc[Timers]
+* xref:events.adoc[Trigger events]

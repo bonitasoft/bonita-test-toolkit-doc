@@ -27,7 +27,7 @@ class ProcessIT {
 }
 ----
 <1> A `BonitaTestToolkit` is injected by the `BonitaTestExtension`
-<2> The user Walter Bates is retrieved using its username (`walter.bates`).
+<2> The user Walter Bates is retrieved using its user name (`walter.bates`).
 
 [NOTE]
 ====
@@ -38,10 +38,10 @@ Because the Bonita Test Toolkit only authenticates with the technical user. It e
 
 == Configure the technical user
 
-As explained above, the test toolkit only uses the technical user. The credentials of the technical user are retrieved through the system properties `tech.user` and `tech.password`. +
+As explained above, the test toolkit only uses the technical user. The credentials of the technical user are retrieved through the system properties `bonita.tech.user` and `bonita.tech.password`. +
 The default values are [_username_: `install`, _password_:  `install`].
 
 Those properties can be set through Maven properties when running the tests: 
 
-`mvn clean verify -Dtech.user=<username> -Dtech.password=<password>`
+`mvn clean verify -Dbonita.tech.user=<username> -Dbonita.tech.password=<password>`
 

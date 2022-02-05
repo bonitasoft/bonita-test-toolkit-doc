@@ -1,0 +1,178 @@
+= Trigger Events
+
+== Timers
+
+When a process define an intermediate catch timer event, it is possible to validate the execution date of this timer and force its execution to continue the process instance.
+
+.Execute a timer event 
+[source, java]
+----
+@BonitaTests
+class ExecuteTimerEventIT {
+
+    @Test
+    void should_execute_a_timer_event(BonitaTestToolkit toolkit) {
+       var myProcess = toolkit.getProcessDefinition("MyProcess");
+       var startedInstance = myProcess.startProcessFor(toolkit.getUser("walter.bates"));
+      
+       // Advance the process instance until the catch timer event
+      
+       var timerEventTrigger = startedInstance.getTimerEventTrigger("timerEventName");
+        
+       var now = OffsetDateTime.now();
+       // Assertion example to validate expected trigger time
+       assertThat(timerEventTrigger.getExecutionDate())
+       		.isBetween(now.plusDays(7).minusHours(1).toInstant(),now.plusDays(7).plusHours(1).toInstant());
+       
+       timerEventTrigger.execute();
+                
+       // Wait and retrieve the next task
+       await()
+        .atMost(Duration.ofSeconds(35)) <1>
+       	.until(startedInstance, containsPendingUserTasks("Next task"));
+        
+       //Continue...
+    }
+
+}
+----
+<1> If targeted runtime version is below 2022.1, we must increase the timeout due to server lag when updating timer execution date
+
+[WARNING]
+--
+When making assertions on timer execution date be careful of the target runtime server timezone which may differ from the machine timezone where the tests are executed. 
+--
+
+== Messages
+
+If the process under test is waiting for a BPMN message to continue, you may use the following method to send a message:
+
+.Start process instance with a MessageEvent
+[source, java]
+----
+@BonitaTests
+class StartProcessWithMessageIT {
+
+    @Test
+    void should_start_my_process_with_message(BonitaTestToolkit toolkit) {
+       var myProcess = toolkit.getProcessDefinition("MyProcess");
+      
+       // Check that no instances has been started yet
+       assertThat(myProcess.getProcessInstances(0, 10)).isEmpty();
+      
+       toolkit.send(MessageEvent.create("messageName")
+                .targetProcess("MyProcess")
+                .targetFlowNode("MyStartEvent")
+                .addStringContent("someStringData", "value")
+                .build());
+                
+       // Wait and retrieve the started instance
+       var startedInstance = await().until(() -> myProcess.getProcessInstances(0, 10)
+                .stream()
+                .findFirst(), Optional::isPresent)
+                .get();
+    }
+
+}
+----
+
+.Continue a process instance with a MessageEvent
+[source, java]
+----
+@BonitaTests
+class SendMessageEventIT {
+
+    @Test
+    void should_send_message_event(BonitaTestToolkit toolkit) {
+       var myProcess = toolkit.getProcessDefinition("MyProcess");
+       var startedInstance = myProcess.startProcessFor(toolkit.getUser("walter.bates"));
+      
+       // Advance the process instance until the catch message event
+      
+       toolkit.send(MessageEvent.create("messageName")
+                .targetProcess("MyProcess")
+                .targetFlowNode("Wait message")
+                .addStringContent("someStringData", "value") <1>
+                .addStringCorrelation("correlationKey", "stringValue") <2>
+                .build());
+                
+       // Wait and retrieve the next task
+       await().until(startedInstance, containsPendingUserTasks("Next task"));
+        
+       //Continue...
+    }
+
+}
+----
+<1> Optional, you may add typed data to the message event
+<2> Optional, you may add correlation key/value pairs to the message event
+
+[WARNING]
+--
+When sending a MessageEvent, this one is stored until consumed by a process instance. 
+It is not possible to clear the message queue before starting a test so be careful that the sent messages are properly caught to avoid inconsistencies. 
+--
+
+== Signals
+
+[NOTE]
+--
+Supported since 2022.1 Runtime version
+--
+
+Like for messages, it is possible to start or continue a running process waiting for a specific signal event:
+
+.Start process instance with a SignalEvent
+[source, java]
+----
+@BonitaTests
+class StartProcessWithSignalIT {
+
+    @Test
+    void should_start_my_process_with_signal(BonitaTestToolkit toolkit) {
+       var myProcess = toolkit.getProcessDefinition("MyProcess");
+      
+       // Check that no instances has been started yet
+       assertThat(myProcess.getProcessInstances(0, 10)).isEmpty();
+      
+       toolkit.send(SignalEvent.create("signalName"));
+                
+       // Wait and retrieve the started instance
+       var startedInstance = await().until(() -> myProcess.getProcessInstances(0, 10)
+                .stream()
+                .findFirst(), Optional::isPresent)
+                .get();
+    }
+
+}
+----
+
+.Continue a process instance with a SignalEvent
+[source, java]
+----
+@BonitaTests
+class SendSignalEventIT {
+
+    @Test
+    void should_send_signal_event(BonitaTestToolkit toolkit) {
+       var myProcess = toolkit.getProcessDefinition("MyProcess");
+       var startedInstance = myProcess.startProcessFor(toolkit.getUser("walter.bates"));
+      
+       // Advance the process instance until the catch signal event
+      
+       toolkit.send(SignalEvent.create("signalName"));
+                
+       // Wait and retrieve the next task
+       await().until(startedInstance, containsPendingUserTasks("Next task"));
+        
+       //Continue...
+    }
+
+}
+----
+
+[CAUTION]
+====
+Unlike messages, signals are broadcasted to the whole running process instances.
+All waiting catch signal events will catch the sent signal.
+====
