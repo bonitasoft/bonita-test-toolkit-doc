@@ -14,7 +14,7 @@ The Bonita Test Toolkit is only available for Enterprise, Performance, Efficienc
 
 == Retrieve the value of a business data from a process instance
 
-A business data is defined at process level, it represents a business object from the xref:data:define-and-deploy-the-bdm.adoc[Business Data Model]. +
+A business data is defined at the process level, it represents a business object from the xref:data:define-and-deploy-the-bdm.adoc[Business Data Model]. +
 It can be retrieved at any time during a test from the corresponding xref:process.adoc[process instance], archived or not.
 
 There are two ways to retrieve the value of a business data: 
@@ -23,7 +23,7 @@ There are two ways to retrieve the value of a business data:
 - As a typed Object `T` representing your business object
 
 The first method is the default one, it doesn't require any additional development to be used and it is fully functional. +
-The second one is a bit more expensive since it requires a Java model matching the Business Data Model, but then it eases the use of the business data by providing a direct access to the fields.
+The second one is a bit more expensive since it requires a Java model matching the Business Data Model, but then it eases the use of the business data by providing direct access to the fields.
 
 === As a generic Object
 
