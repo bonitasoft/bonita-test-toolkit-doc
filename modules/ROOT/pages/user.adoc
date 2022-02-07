@@ -10,13 +10,13 @@ Integrations tests are built upon the Bonita Test Toolkit, based on the open-sou
 The Bonita Test Toolkit is only available for Enterprise, Performance, Efficiency, and Teamwork editions. 
 ====
 
-== Retrieve a User
+== Retrieve a User by user name
 
-Users are mainly used to start processes and execute tasks. Any user in the organization can be retrieved using its username and the Bonita Test Toolkit: 
+Any user present in the target runtime organization can be retrieved using their user name like this: 
 
 [source, Java]
 ----
-@BonitaTests(clearBDM = true, deleteProcessInstances = true)
+@BonitaTests
 class ProcessIT {
 
     @Test
@@ -35,6 +35,65 @@ The user password is not required to retrieve the user, why?
 
 Because the Bonita Test Toolkit only authenticates with the technical user. It executes processes and tasks for a given user, but it is always the technical user that is logged in (it uses the _execute as_ feature).
 ====
+
+== Retrieve Users by group
+
+It is possible to retrieves all the users belonging to a given organization group:
+
+[source, Java]
+----
+@BonitaTests
+class ProcessIT {
+
+    @Test
+    void should_find_users_by_group(BonitaTestToolkit toolkit) {
+        List<User> users = toolkit.findUsersInGroup("/acme/sales/north_america", 0, 100); <1>
+        ...
+    }
+}
+----
+<1> A group is identified using its path in the organization.
+
+[WARNING]
+====
+Users belonging to sub groups of the given group will not be resolved.
+====
+
+== Retrieve Users by role
+
+It is possible to retrieves all the users with a given organization role:
+
+[source, Java]
+----
+@BonitaTests
+class ProcessIT {
+
+    @Test
+    void should_find_users_by_role(BonitaTestToolkit toolkit) {
+        List<User> users = toolkit.findUsersWithRole("admin", 0, 100);
+        ...
+    }
+}
+----
+
+== Retrieve Users by membership
+
+It is possible to retrieves all the users with a given organization membership.
+A membership is a couple role/group. _e.g._: `manager` of `/acme/production/rd`
+
+[source, Java]
+----
+@BonitaTests
+class ProcessIT {
+
+    @Test
+    void should_find_users_by_membership(BonitaTestToolkit toolkit) {
+        List<User> users = toolkit.findUsersWithMembership("/acme/production/rd", "manager", 0, 100);
+        ...
+    }
+}
+----
+
 
 == Configure the technical user
 
