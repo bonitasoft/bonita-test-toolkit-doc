@@ -3,8 +3,10 @@
 :description: Learn to retrieve business data from cases in integration tests.
 
 Validating the values of business data during the execution of a process is one of the main purposes of integration tests. +
-Business data can be retrieved from a process instance at any time during a test, so their values can be validated as much as necessary to ensure that the process behaves correctly. +
-The Bonita test toolkit also offers the possibility to retrieve any existing business data in the BDM database. It is different because these business data are not retrieved according to a specific case, but using existing _queries_ (default or custom).
+
+The Bonita Test Toolkit offers two possibilities to retrieve Business data:
+* From a process instance at any time during a test, so their values can be validated as much as necessary to ensure that the process behaves correctly. +
+* From any existing business data in the BDM database. It is different because these business data are not retrieved according to a specific case, but using existing _queries_ (default or custom).
 
 [NOTE]
 ====
