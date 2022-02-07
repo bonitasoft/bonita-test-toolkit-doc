@@ -1,4 +1,4 @@
-= Bonita test toookit documentation
+= Bonita test toolkit documentation
 
 This repository contains the sources of the https://documentation.bonitasoft.com/bonita-test-toolkit[Bonita test toolkit documentation site]. It uses https://docs.asciidoctor.org/asciidoc/latest/[Asciidoc] format for
 the documentation content.
