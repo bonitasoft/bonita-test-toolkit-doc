@@ -6,9 +6,6 @@ Create and execute a first integration test on a basic Bonita process.
 This quick start tutorial assumes that a Bonita platform is running at http://localhost:8080/bonita (Bonita Studio default for example). On this platform, a small BDM and basic process using this BDM are installed. +
 No matter where is your platform running and what kind of process is installed on it, you should be able to follow this quick start tutorial and adapt it to your use case.
 
-// Those two source folders are not distributed through a Git repository because it contains code for subscription users. The day the test toolkit becomes a community value this can be changed.
-The complete solution can be downloaded link:{attachmentsdir}/test-framework-quick-start.zip[here], and the Bonita project used in the solution link:{attachmentsdir}/bonita-test-framework-quick-start.bos[here].
-
 [NOTE]
 ====
 Integrations tests are built upon the Bonita Test Toolkit, based on the open-source https://github.com/bonitasoft/bonita-java-client[Bonita Java Client]. +
