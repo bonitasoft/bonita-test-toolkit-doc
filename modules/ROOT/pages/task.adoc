@@ -5,8 +5,8 @@ Learn to execute tasks and to validate their states in integration tests using t
 
 [NOTE]
 ====
-Integrations tests are built upon the Bonita Test Toolkit, based on the open source https://github.com/bonitasoft/bonita-java-client[Bonita Java Client]. +
-The Bonita Test Toolkit is only available for Enterprise, Performance, Efficiency and Teamwork. editions. 
+Integrations tests are built upon the Bonita Test Toolkit, based on the open-source https://github.com/bonitasoft/bonita-java-client[Bonita Java Client]. +
+The Bonita Test Toolkit is only available for Enterprise, Performance, Efficiency, and Teamwork. editions. 
 ====
 
 == Retrieve tasks
@@ -63,13 +63,13 @@ class ProcessIT {
 <3> Retrieve the candidates of the task (i.e the users that can be assigned to the task), and ensure that walter is the only candidate (the predicate `hasCandidates(User... candidates)` can be used to check the candidates in case there is an actor filter that takes time).
 <4> Assign the task to a user.
 <5> Execute the task with or without a contract. The task must have been already assigned.
-<6> Assign and execute the task with or without a contract. If the task is already assigned to an other user, it will be reassigned to the new user before to be executed.
-<7> Wait until the task is completed before to continue. Mor details about task predicates in the dedicated section xref:_task_predicates[bellow].
+<6> Assign and execute the task with or without a contract. If the task is already assigned to another user, it will be reassigned to the new user before to be executed.
+<7> Wait until the task is completed before continuing. Mor details about task predicates in the dedicated section xref:_task_predicates[bellow].
 
 == Task predicates
 
-In order to make asynchronous assertions on processes (using for example http://www.awaitility.org/[Awaitility]), some convenient predicates come with the Bonita test tookit. It allows to ensure in a scenario that the system is in the expected state before to continue. +
-For example, it is possible to use the predicate `taskCompleted()` on a user task to ensure that a task has been correctly executed before to continue. Awaitility (or any other asynchronous library) will check this predicate at a given frequency, and will throw an error if the timeout is reached (i.e the case has not been started in time).
+In order to make asynchronous assertions on processes (using for example http://www.awaitility.org/[Awaitility]), some convenient predicates come with the Bonita test toolkit. It allows ensuring in a scenario that the system is in the expected state before continuing. +
+For example, it is possible to use the predicate `taskCompleted()` on a user task to ensure that a task has been correctly executed before continuing. Awaitility (or any other asynchronous library) will check this predicate at a given frequency and will throw an error if the timeout is reached (i.e the case has not been started in time).
 
 [source, Java]
 ----

@@ -2,7 +2,7 @@
 
 == Timers
 
-When a process define an intermediate catch timer event, it is possible to validate the execution date of this timer and force its execution to continue the process instance.
+When a process defines an intermediate catch timer event, it is possible to validate the execution date of this timer and force its execution to continue the process instance.
 
 .Execute a timer event 
 [source, java]
@@ -36,7 +36,7 @@ class ExecuteTimerEventIT {
 
 }
 ----
-<1> If targeted runtime version is below 2022.1, we must increase the timeout due to server lag when updating timer execution date
+<1> If the targeted runtime version is below 2022.1, we must increase the timeout due to server lag when updating the timer execution date
 
 [WARNING]
 --

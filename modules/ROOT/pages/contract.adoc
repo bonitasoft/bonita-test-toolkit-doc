@@ -2,19 +2,19 @@
 :description: Learn to create contracts to start processes or execute tasks in integration tests using the Bonita test toolkit.
 
 {description} +
-There are two ways to create contracts: using the Java builder or from a JSon file in the classpath. The Java builder is handy for small contracts but can become tedious for large and complex contracts. In an other hand, it allows to use dynamic values for contract inputs.
+There are two ways to create contracts: using the Java builder or from a JSon file in the classpath. The Java builder is handy for small contracts but can become tedious for large and complex contracts. On the other hand, it allows using dynamic values for contract inputs.
 
 [NOTE]
 ====
 Integrations tests are built upon the Bonita Test Toolkit, based on the open source https://github.com/bonitasoft/bonita-java-client[Bonita Java Client]. +
-The Bonita Test Toolkit is only available for Enterprise, Performance, Efficiency and Teamwork. editions. 
+The Bonita Test Toolkit is only available for Enterprise, Performance, Efficiency, and Teamwork. editions. 
 ====
 
 == Create contracts using the Java builder
 
-The Java builder allows to create contracts by specifying contract inputs one by one. +
-It is a pretty handy way to create small contracts, and it gives the possibility to use dynamic values for contract inputs (the persistence ID of a business object crated during the test for example). +
-For large and static contracts it is recommended to store theme in dedicated JSon files and to retrieve them xref:_retrieve_contracts_from_files[from the classpath].
+The Java builder allows you to create contracts by specifying contract inputs one by one. +
+It is a pretty handy way to create small contracts, and it gives the possibility to use dynamic values for contract inputs (the persistence ID of a business object created during the test for example). +
+For large and static contracts it is recommended to store them in dedicated JSon files and to retrieve them xref:_retrieve_contracts_from_files[from the classpath].
 
 === Simple contract inputs
 
@@ -48,12 +48,12 @@ var contractWithMultipleInputs = ContractBuilder.newContract()
     .multipleFileInput("multipleFileContractInput", List.of("classpathURL1", "classpathURL2"))
     .build();
 ----
-<1> For file contract inputs, the file to use must be added to the classpath, and the corresponding path has to be used in the contratc builder. For example, put your files in `src/test/resources/documents` and retrieve the resource URL like this: `MyTest.class.getResource("/documents/<FILE NAME>")`.
+<1> For file contract inputs, the file to use must be added to the classpath, and the corresponding path has to be used in the contract builder. For example, put your files in `src/test/resources/documents` and retrieve the resource URL like this: `MyTest.class.getResource("/documents/<FILE NAME>")`.
 
 === Complex contract inputs
 
 A complex contract input has for value a list of contract inputs (simple or complex), It can be seen as a tree. +
-It is built like a simple contract input, but with a dedicated builder for the value : 
+It is built like a simple contract input, but with a dedicated builder for the value: 
 
 [source, Java]
 ----
@@ -83,9 +83,9 @@ If a contract contains several levels of complex contract inputs with a lot of f
 
 == Retrieve contracts from files in the classpath
 
-Contracts can be stored in JSon files, and then retrieve at runtime from the classpath resources. This allows to extract the contract definition and the values in a dedicated file, which is easier to read and to maintain, especially for large and complex contracts. 
+Contracts can be stored in JSon files, and then retrieve at runtime from the classpath resources. This allows you to extract the contract definition and the values in a dedicated file, which is easier to read and maintain, especially for large and complex contracts. 
 
-A contract JSon file works as a key-value model, the key is the name of the contract input and the value the value of the contract input:
+A contract JSon file works as a key-value model, the key is the name of the contract input and the value of the contract input:
 
 [source, JSon]
 ----
@@ -118,8 +118,8 @@ var contract = ContractBuilder.newContract().fromClasspathResource("/contracts/<
 A contract is made of contract inputs and constraints. Constraints are used to ensure the integrity of contracts inputs. +
 It is possible to validate in an integration test that for a given set of input a constraint fails:
 
-In the following example, we have a contract for a business object `Person`, with two contract inputs: a name and a birthdate. We also have a constraint on the birthdate: it cannot be in the futur. +
-The test validates that if the _birthdate_ contract input is a date in the futur, then the instanciation of the process fails.
+In the following example, we have a contract for a business object `Person`, with two contract inputs: a name and a birthdate. We also have a constraint on the birthdate: it cannot be in the future. +
+The test validates that if the _birthdate_ contract input is a date in the future, then the instantiation of the process fails.
 
 [source, Java]
 ----
