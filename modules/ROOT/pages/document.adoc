@@ -1,3 +1,44 @@
-= Document
+= Documents in integration tests
+:description: Learn to retrieve documents from cases in integration tests
 
-_Coming soon_
+Ensuring that the value of a document is correct during the exection of a case can be an important requirement to validate a process. +
+The Bonita Test Toolkit offers the possibility to retrieve a document attached to a case at any time during a test.
+
+[NOTE]
+====
+Integrations tests are built upon the Bonita Test Toolkit, based on the open-source https://github.com/bonitasoft/bonita-java-client[Bonita Java Client]. +
+The Bonita Test Toolkit is only available for Enterprise, Performance, Efficiency, and Teamwork. editions. 
+====
+
+== Retrieve a document from a case
+
+A document is retrieved from it's case, no matter if it is archived or not. +
+Besides its content, several meta information like the file name, the author or the version are accessible from the object `Document`. The _version_ correspond to the revision of a document: Each time a document is updated, its version is incremented.
+
+[source, Java]
+----
+@BonitaTests
+class ProcessIT {
+
+    @Test
+    void retrieve_documents(BonitaTestToolkit toolkit) {
+        User walter = toolkit.getUser("walter.bates");
+        ProcessDefinition processDef = toolkit.getProcessDefinition("myProcess");
+        ProcessInstance processInstance = processDef.startProcessFor(user);
+
+        Document singleDocument = startedCase.getDocument("singleDocument"); <1>
+        assertThat(singleDocument.isArchived()).isFalse();
+        assertThat(singleDocument.getSubmittedBy()).isEqualTo(walter);
+        assertThat(new String(singleDocument.getContent())).isEqualTo("Hello from doc A!"); <2>
+        
+        List<Document> multipleDocument = startedCase.getMultipleDocument("multipleDocument"); <3>
+        assertThat(multipleDocument).extracting(Document::getFileName).containsExactly("docB.txt", "docC.txt");
+        assertThat(multipleDocument).extracting(Document::isArchived).allSatisfy(archived -> assertThat(archived).isFalse());
+        assertThat(multipleDocument).extracting(Document::getContent).map(String::new).containsExactly("Hello from doc B!", "Hello from doc C!"); <4>
+    }
+}
+----
+<1> A single document named _singleDocument_ is retrieved from the case. An object `Document` is returned.
+<2> Since the content of the document is a text, a `String` can be created from the `byte[]` returned by the method `getContent()`. The content of the document can be compared to the expected String.
+<3> A multiple document named _multipleDocument_ is retrieved from the case. A `List` of `Document` is returned.
+<4> Once again, each document in the multipleDocument contains text, all the contents can be converted to String and compared to the expected value.
