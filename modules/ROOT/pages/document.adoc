@@ -1,7 +1,7 @@
 = Documents in integration tests
 :description: Learn to retrieve documents from cases in integration tests
 
-Ensuring that the value of a document is correct during the exection of a case can be an important requirement to validate a process. +
+Ensuring that the content of a document is correct during the exection of a case can be an important requirement to validate a process. +
 The Bonita Test Toolkit offers the possibility to retrieve a document attached to a case at any time during a test.
 
 [NOTE]
@@ -12,7 +12,7 @@ The Bonita Test Toolkit is only available for Enterprise, Performance, Efficienc
 
 == Retrieve a document from a case
 
-A document is retrieved from it's case, no matter if it is archived or not. +
+A document is retrieved from its case, no matter if it is archived or not. +
 Besides its content, several meta information like the file name, the author or the version are accessible from the object `Document`. The _version_ correspond to the revision of a document: Each time a document is updated, its version is incremented.
 
 [source, Java]
