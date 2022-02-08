@@ -1,3 +1,80 @@
-= Connector
+= Connectors in integration tests
+:description: Learn to retrieve connectors from cases to validate their execution state
 
-_Coming soon_
+Connectors can be retrieved from cases and tasks during the execution of a process. Some meta information like the name, the state or the connector ID and version can be retrieved from the object `Connector`. +
+The most interesting thing to do with connectors in integration tests is to evaluate their execution state using the provided predicate. It allows for instance to ensure that a connector completed correctly before to continue, or to ensure that because of the provided parameters the connector execution failed.
+
+[NOTE]
+====
+Integrations tests are built upon the Bonita Test Toolkit, based on the open source https://github.com/bonitasoft/bonita-java-client[Bonita Java Client]. +
+The Bonita Test Toolkit is only available for Enterprise, Performance, Efficiency, and Teamwork. editions. 
+====
+
+== Retrieve and validate connector execution states
+
+In a Bonita process, a connector can be attached to a pool or to a task. It can be executed before or after the element it is attached to (a _connector in_ or a _connector out_). +
+A connector on a task is accessible when the task is ready, not before. If it is a _connector out_ then it will be in state _to be executed_ until the task is done.
+
+.Validate that a connector fails because of an input parameter
+[source, Java]
+----
+import static com.bonitasoft.test.toolkit.predicate.ConnectorPredicates.connectorHasFailed;
+
+@BonitaTests
+class ProcessIT {
+
+    @Test
+    void connector_should_fail(BonitaTestToolkit toolkit) {
+        User user = toolkit.getUser("walter.bates");
+        ProcessDefinition processDef = toolkit.getProcessDefinition("myProcess");
+
+        var contract = ContractBuilder.newContract()
+            .booleanInput("connectorShouldFail", true)
+            .build(); <1>
+
+        ProcessInstance processInstance = processDef.startProcessFor(user, contract);
+        await().until(failingInstance, processInstanceHasError()); <2>
+        await().until(failingInstance.getConnector("instantiationConnector"), connectorHasFailed()); <3>
+    }
+}
+----
+<1> An instantiation contract is created. A parameter `connectorShouldFail` is set to `true``
+<2> Validate that the process instance is in error, something went wrong during the instantiation
+<3> Validate that the connector `instantiationConnector` has failed as expected
+
+.Validate that all connectors of a process are executed correctly at the right time.
+[source, Java]
+----
+import static com.bonitasoft.test.toolkit.predicate.ConnectorPredicates.connectorIsDone;
+import static com.bonitasoft.test.toolkit.predicate.ConnectorPredicates.connectorIsToBeExecuted;
+
+@BonitaTests
+class ProcessIT {
+    @Test
+    void connector_should_execute(BonitaTestToolkit toolkit) {
+        User user = toolkit.getUser("walter.bates");
+        ProcessDefinition processDef = toolkit.getProcessDefinition("myProcess");
+
+        var contract = ContractBuilder.newContract()
+            .booleanInput("connectorShouldFail", false)
+            .build(); <1> 
+
+        ProcessInstance processInstance = processDef.startProcessFor(user, contract);
+
+        await().until(processInstance, containsPendingUserTasks("Step1"));
+        await().until(processInstance.getConnector("instantiationConnector"), connectorIsDone()); <2>
+
+        var step1 = processInstance.getFirstPendingUserTask("Step1");
+        await().until(step1.getConnector("connectorIn"), connectorIsDone()); <3>
+        await().until(step1.getConnector("connectorOut"), connectorIsToBeExecuted()); <4>
+
+        step1.execute(user);
+        await().until(step1.getConnector("connectorOut"), connectorIsDone()); <5>
+    }
+}
+----
+<1> An instantiation contract is created. A parameter `connectorShouldFail` is set to `false`
+<2> Validate that the connector `instantiationConnector` completed correctly as expected 
+<3> On the task _Step1_, validate the connector in `connectorIn` completed correctly, before the execution of the task
+<4> On the task _Step1_, validate the connector out `connectorOut` is still to be executed, before the execution of the task
+<5> On the task _Step1_, validate the connector out `connectorOut` completed correctly, after the execution of the task
