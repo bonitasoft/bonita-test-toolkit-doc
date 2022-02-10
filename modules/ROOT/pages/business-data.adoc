@@ -5,6 +5,7 @@
 Validating the values of business data during the execution of a process is one of the main purposes of integration tests. +
 
 The Bonita Test Toolkit offers two possibilities to retrieve Business data:
+
 * From a process instance at any time during a test, so their values can be validated as much as necessary to ensure that the process behaves correctly. +
 * Directly from the BDM database. It is different because these business data are not retrieved according to a specific case, but using existing _queries_ (default or custom).
 
