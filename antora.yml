@@ -10,7 +10,7 @@ asciidoc:
     page-editable: true
     page-out-of-support: false
     page-pagination: true # display links to previous/next pages at the bottom of the page
-    page-hide-search-bar: true
+    page-hide-search-bar: false
     page-custom-message: "This content is dedicated to the incoming Bonita test toolkit, which will be delivered with the 2022.1 Bonita release (for subscription editions)."
 
 nav:
