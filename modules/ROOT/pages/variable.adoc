@@ -1,3 +1,51 @@
-= Process variables
+= Variables in integration tests
+:description: Learn to retrieve process and task variables from cases in integration tests.
 
-_comming soon_
+Process and task variables can be retrieved from process instances and tasks, archived or not. This allows to validate the values of those variables at any time during a test, to validate that the process behave correctly.
+
+[NOTE]
+====
+Integrations tests are built upon the Bonita Test Toolkit, based on the open-source https://github.com/bonitasoft/bonita-java-client[Bonita Java Client]. +
+The Bonita Test Toolkit is only available for Enterprise, Performance, Efficiency, and Teamwork. editions. 
+====
+
+== Retrieve the value of a variable
+
+A variable can be retrieved from a xref:process.adoc[process instance] or from a xref:task.adoc[task]. +
+The object `Variable` gives access to the name, the description, the type and the value (as a `String`) of the variable.
+
+[source, Java]
+----
+@BonitaTests
+class ProcessIT {
+
+    @Test
+    void retrieve_variable(BonitaTestToolkit toolkit) {
+        User user = toolkit.getUser("walter.bates");
+        ProcessDefinition processDef = toolkit.getProcessDefinition("myProcess");
+        ProcessInstance processInstance = processDef.startProcessFor(user);
+
+        Variable stringProcessVariable = processInstance.getVariable("stringProcessVariable"); <1>
+        assertThat(stringProcessVariable.getType()).isEqualTo("java.lang.String"); <2>
+        assertThat(stringProcessVariable.getValue()).isEqualTo("Hello!"); <3>
+
+        Variable integerProcessVariable = processInstance.getVariable("integerProcessVariable"); <4>
+        assertThat(integerProcessVariable.getType()).isEqualTo("java.lang.Integer"); <5>
+        assertThat(integerProcessVariable.getValue()).isEqualTo("0"); <6>
+
+        Task userTask = processInstance.getFirstPendingUserTask("aTask");
+        Variable multipleTaskVariable = userTask.getVariable("multipleTaskVariable"); <7>
+        assertThat(multipleTaskVariable.getType()).isEqualTo("java.util.List"); <8>
+        assertThat(multipleTaskVariable.getValue()).isEqualTo("[a, b]"); <9>
+    }
+}
+----
+<1> A process variable named _stringProcessVariable_ is retrieved from the process instance
+<2> The type of this process variable should be `java.lang.String`
+<3> The content of this process variable should be `"Hello!"`
+<4> A process variable named _integerProcessVariable_ is retrieved from the process instance
+<5> The type of this process variable should be `java.lang.Integer`
+<6> The content of this process variable should be `"0"` (the String value for the integer 0)
+<7> A task variable named multipleTaskVariable is retrieved from the user task _aTask_
+<8> The type of this task variable should be `java.util.List`
+<9> The content of this task variable should be `"[a, b]"` (the String value for a list containing the values `"a"` and `"b"`)
