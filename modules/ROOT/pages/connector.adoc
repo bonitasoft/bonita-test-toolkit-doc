@@ -2,18 +2,18 @@
 :description: Learn to retrieve connectors from cases to validate their execution state
 
 Connectors can be retrieved from cases and tasks during the execution of a process. Some meta information like the name, the state or the connector ID and version can be retrieved from the object `Connector`. +
-The most interesting thing to do with connectors in integration tests is to evaluate their execution state using the provided predicate. It allows for instance to ensure that a connector completed correctly before to continue, or to ensure that because of the provided parameters the connector execution failed.
+The most interesting thing to do with connectors in integration tests is to evaluate their execution state using the provided predicate. It allows, for instance, to ensure that a connector is completed correctly before continuing, or to ensure that because of the provided parameters the connector execution failed.
 
 [NOTE]
 ====
-Integrations tests are built upon the Bonita Test Toolkit, based on the open source https://github.com/bonitasoft/bonita-java-client[Bonita Java Client]. +
+Integrations tests are built with the Bonita Test Toolkit, based on the open-source https://github.com/bonitasoft/bonita-java-client[Bonita Java Client]. +
 The Bonita Test Toolkit is only available for Enterprise, Performance, Efficiency, and Teamwork. editions. 
 ====
 
 == Retrieve and validate connector execution states
 
 In a Bonita process, a connector can be attached to a pool or to a task. It can be executed before or after the element it is attached to (a _connector in_ or a _connector out_). +
-A connector on a task is accessible when the task is ready, not before. If it is a _connector out_ then it will be in state _to be executed_ until the task is done.
+A connector on a task is accessible when the task is ready, not before. If it is a _connector out_ then it will be in the _to be executed_ state until the task is done.
 
 .Validate that a connector fails because of an input parameter
 [source, Java]
