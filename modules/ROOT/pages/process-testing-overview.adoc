@@ -20,6 +20,12 @@ This applies to Bonita processes. For each process, an integration test should b
 The Bonita Test Toolkit offers the possibility to write such tests. It performs HTTP calls on the targeted Bonita platform to start and execute cases, and make assertions at any time on the state of the platform, the content of the data... +
 It is a Java library and can be integrated with many existing test frameworks like JUnit 5, Spock, Cucumber...etc. 
 
+
+[WARNING]
+====
+We strongly recommend to use the Bonita Test Toolkit only on non-production environments 
+====
+
 == Prerequisites
 
 * The library requires **Java 11**
