@@ -23,7 +23,7 @@ It is a Java library and can be integrated with many existing test frameworks li
 
 [WARNING]
 ====
-We strongly recommend to use the Bonita Test Toolkit only on non-production environments 
+The Bonita Test Toolkit should only target **non-production** runtime.
 ====
 
 == Prerequisites
