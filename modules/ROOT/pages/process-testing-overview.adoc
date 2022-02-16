@@ -44,6 +44,9 @@ Only the **enterprise runtime** versions are supported
 * Reading archived tasks or processes variables is not supported
 * Timer execution can take more than 30 seconds
 
+== Project Structure
+
+Your Bonita test project can either a stand-alone project or included in your Bonita project. Keep in mind that the test project is not integrated with Studio. It has its own lifecycle that you will have to manage.
 
 [.card-section]
 == Sections
