@@ -156,7 +156,7 @@ Many elements of a case can be retrieved through the process instance:
 - xref:business-data.adoc[Business data] and xref:variable.adoc[Process variables]
 - xref:connector.adoc[Connectors]
 - xref:document.adoc[Documents]
-- xref:timer.adoc[Timers]
+- xref:events.adoc[Timers]
 
 == Process predicates
 
