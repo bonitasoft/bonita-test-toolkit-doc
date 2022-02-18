@@ -52,7 +52,8 @@ Only the **enterprise runtime** versions are supported
 
 == Project Structure
 
-Your Bonita test project can either a stand-alone project or included in your Bonita project. Keep in mind that the test project is not integrated with Studio. It has its own lifecycle that you will have to manage.
+Your Bonita test project can either be a stand-alone project or included in your Bonita project. Our recommendation is to include your tests within your Bonita project
+
 
 [.card-section]
 == Sections
