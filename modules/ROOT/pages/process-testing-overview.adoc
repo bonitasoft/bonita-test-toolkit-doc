@@ -33,7 +33,9 @@ The Bonita Test Toolkit should only target **non-production** runtime.
 
 === Supported runtime version
 
-Only the **enterprise runtime** versions are supported
+Only the **enterprise runtime** versions are supported.
+
+Multi-tenancy is not supported.
 
 [%header,cols="1,1"]
 |===
