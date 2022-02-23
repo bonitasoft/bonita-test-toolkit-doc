@@ -1,10 +1,10 @@
 = Quick start
 :description: This pages describes how to write process integration tests using the Bonita Test Toolkit.
 
-Create and execute a first integration test on a basic Bonita process.
+Create and execute your first integration test on a Bonita process.
 
-This quick start tutorial assumes that a Bonita platform is running at http://localhost:8080/bonita (Bonita Studio default for example). On this platform, a small BDM and basic process using this BDM are installed. +
-No matter where is your platform running and what kind of process is installed on it, you should be able to follow this quick start tutorial and adapt it to your use case.
+This quick start tutorial assumes that a Bonita platform is running at http://localhost:8080/bonita (Bonita Studio default for example). On this platform, a BDM and a process using this BDM are installed. +
+No matter where is running your platform and what kind of process is installed on it, you should be able to follow this tutorial and adapt it to your use case.
 
 [NOTE]
 ====
@@ -15,8 +15,9 @@ The Bonita Test Toolkit is only available for Enterprise, Performance, Efficienc
 [#project-example]
 == Test environment setup
 
-We will briefly describe in this section the process used in the test xref:quick-start-test[below]. It is not mandatory to reproduce this process to write the first test, any basic process can be used. +
-In this process, we are going to create a dinosaur with a name, a color, and decide if he's hungry or not. Depending on his hungry state, he will go hunting or to sleep.
+We will briefly describe in this section the process used in the test xref:quick-start-test[below].
+
+In this process, we are going to create a dinosaur with a name, a color, and decide if he's hungry or not. Depending on his hunger state, he will go hunting or sleeping.
 
 The following Business Data Model is used: 
 
@@ -212,15 +213,15 @@ class CreateDinosaurIT {
 
 }
 ----
-<1> `BonitaTests` is an annotation that register a JUnit 5 extension. It's a convenient way to set up a Bonita test class. This extension allows injecting a `BonitaTestToolkit` correctly instantiated in test methods.
+<1> `BonitaTests` is an annotation that registers a JUnit 5 extension. It's a convenient way to set up a Bonita test class. This extension allows injecting a `BonitaTestToolkit` correctly instantiated in test methods.
 <2> The `BonitaTestToolkit`, injected by the `BonitaTestExtension`, is the main entry point to interact with the targeted Bonita platform.
-<3> The toolkit offers the possibility to retrieve an existing user on the targeted Bonta platform. These users are used to execute processes during the test scenario.
-<4> A process definition represents a deployed process on the targeted Bonita platform. It is used to start cases of a given process.
+<3> The toolkit offers the possibility to retrieve an existing user on the targeted Bonita platform. Such users are used to execute processes and tasks during test scenarios.
+<4> A process definition represents a deployed process on the targeted Bonita platform. It is used to start cases.
 <5> Using the toolkit, you can create a `BusinessObjectDAO`. It has to match an existing BusinessObject defined in the installed Business Data Model, and is used to retrieve instances of this business object.
 <6> The process under test is started using its process definition.
-<7> Using the `awaitility` library and the `TaskPredicates` factory offers the possibility to express assertions on asynchronous Bonita concepts (task executions, process instantiation...).
-<8> Contracts can be built using a `ContractBuilder` and a `ComplexInputBuilder` if required. It creates a key-value model representing the contract required to execute the task.
-<9> Pending user tasks can be retrieved from the `ProcessInstance`. Different actions and assertions can be performed on user tasks.
+<7> The `awaitility` library and the `TaskPredicates` factory allow you to express assertions on asynchronous Bonita concepts (task executions, process instantiation...).
+<8> Contracts can be built using a `ContractBuilder` and a `ComplexInputBuilder`. It creates a key-value model representing the contract required to execute the task.
+<9> Pending user tasks can be retrieved from the `ProcessInstance`. Several actions and assertions can be performed on user tasks.
 
 === Run the tests
 
@@ -230,16 +231,19 @@ Using Maven command line
 ----
 # Parameters 'bonita.url', 'bonita.tech.user' and 'bonita.tech.password' are optionals. 
 # Use them if your runtime runs on an other URL than localhost:8080/bonita, 
-# or with technical user credentials different than install / install. 
+# or with technical user credentials different from install / install. 
 
 mvn verify [-Dbonita.url=<TARGET_RUNTIME_URL> -Dbonita.tech.user=<TECHNICAL_USER_USERNAME> -Dbonita.tech.password=<TECHNICAL_USER_PASSWORD>]
 ----
 
 ==== Advanced usage
 
-The test toolkit communicate with the target Bonita Runtime using HTTP. 
+The test toolkit communicates with the target Bonita Runtime using HTTP. 
 It is possible to fine tune some HTTP specific options using the following arguments:
 
 * `-Dbonita.client.disable.certificate.check=true|false` Default is `false`. Disable SSL certificate check when connecting to remote runtime using HTTPS.
 * `-Dbonita.client.http.connection.timeout=10` Default is `10`. Timeout in seconds used for the HTTP connection timeout.
 
+=== To Go further
+
+Now that you have successfully implemented your first Integration test, you can adapt this example to test your own process! 
