@@ -90,7 +90,7 @@ Parameter values are always retrieved and passed as String.
 
 [source, Java]
 ----
-@BonitaTests(clearBDM = true, deleteProcessInstances = true)
+@BonitaTests
 class ProcessIT {
 
     private static final String BOOLEAN_PARAMETER_NAME = "debugMode";
@@ -112,6 +112,26 @@ class ProcessIT {
 
 A process instance represents an existing case of a process, active or archived. +
 From a process instance, you can get some general information on the case, retrieve and execute tasks, and finally access all the elements of the case.
+
+[#delete-process-instances]
+
+=== Delete existing instances
+
+In order to have reproducible tests you may want to delete the process instances on the target runtime before running a test.
+
+[source, Java]
+----
+@BonitaTests
+class ProcessIT {
+
+    @BeforeEach
+    void deleteProcessInstances(BonitaTestToolkit toolkit){
+        toolkit.deleteProcessInstances(); <1>
+    }
+
+}
+----
+<1> This will delete active and archived process instances on the target runtime. Be careful to never execute your tests on a production environment !
 
 === Tasks
 
@@ -197,7 +217,7 @@ Here are the available predicates for process instances:
 ----
 import static com.bonitasoft.test.toolkit.predicate.ProcessDefinitionPredicates.*;
 
-@BonitaTests(clearBDM = true, deleteProcessInstances = true)
+@BonitaTests
 class ProcessIT {
 
     @Test

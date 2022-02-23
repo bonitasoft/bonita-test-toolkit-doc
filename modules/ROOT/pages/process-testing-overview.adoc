@@ -33,7 +33,7 @@ The Bonita Test Toolkit should only target **non-production** runtime.
 
 === Supported runtime version
 
-Only the **enterprise runtime** versions are supported.
+Only the **subscription runtime** versions are supported.
 
 Multi-tenancy is not supported.
 
@@ -54,8 +54,13 @@ Multi-tenancy is not supported.
 
 == Project Structure
 
-Your Bonita test project can either be a stand-alone project or included in your Bonita project. Our recommendation is to include your tests within your Bonita project
+A Bonita test project is a stand-alone project than 
+can either:
 
+* Be included in a Bonita project (__e.g.__: in a `tests` subfolder) and use the same git repository and versionning for your processes and their tests. 
+* Developed in a dedicated project and git repository.
+
+We recommend the first option but you're free to choose what is best for you.
 
 [.card-section]
 == Sections
@@ -72,50 +77,5 @@ xref:quick-start.adoc[[.card-title]#Quick start# [.card-body.card-content-overfl
 
 [.card.card-index]
 --
-xref:bonita-test-extension.adoc[[.card-title]#JUnit 5 extension# [.card-body.card-content-overflow]#pass:q[Discover the Bonita Test JUnit 5 extension to parametrize integration tests]#]
---
-
-[.card.card-index]
---
-xref:user.adoc[[.card-title]#Users# [.card-body.card-content-overflow]#pass:q[Manage users in integration tests]#]
---
-
-[.card.card-index]
---
-xref:process.adoc[[.card-title]#Processes# [.card-body.card-content-overflow]#pass:q[Manipulate process definitions and instances in integration tests]#]
---
-
-[.card.card-index]
---
-xref:task.adoc[[.card-title]#Tasks# [.card-body.card-content-overflow]#pass:q[Execute tasks in integration tests]#]
---
-
-[.card.card-index]
---
-xref:contract.adoc[[.card-title]#Contracts# [.card-body.card-content-overflow]#pass:q[Create contracts to start processes or execute tasks]#]
---
-
-[.card.card-index]
---
-xref:business-data.adoc[[.card-title]#Business data# [.card-body.card-content-overflow]#pass:q[Retrieve business data from cases or the BDM database.]#]
---
-
-[.card.card-index]
---
-xref:variable.adoc[[.card-title]#Variables# [.card-body.card-content-overflow]#pass:q[Retrieve the process variables of a given case]#]
---
-
-[.card.card-index]
---
-xref:document.adoc[[.card-title]#Documents# [.card-body.card-content-overflow]#pass:q[Retrieve the documents of a given case]#]
---
-
-[.card.card-index]
---
-xref:connector.adoc[[.card-title]#Connectors# [.card-body.card-content-overflow]#pass:q[Get connectors meta information or execution information]#]
---
-
-[.card.card-index]
---
-xref:events.adoc[[.card-title]#Events# [.card-body.card-content-overflow]#pass:q[Trigger BPMN events]#]
+xref:changelog.adoc[[.card-title]#Changelog# [.card-body.card-content-overflow]#pass:q[New values, fixes and miscellaneous changes of the version]#]
 --

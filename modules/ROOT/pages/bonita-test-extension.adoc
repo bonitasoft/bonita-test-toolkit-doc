@@ -9,51 +9,109 @@ Integrations tests are built upon the Bonita Test Toolkit, based on the open-sou
 The Bonita Test Toolkit is only available for Enterprise, Performance, Efficiency, and Teamwork editions. 
 ====
 
-== Create and configure the Bonita test extension
+== Create the Bonita test extension
 
 The Bonita test extension is a JUnit 5 extension, it can be registered using the annotation `@BonitaTests`.
-
-The following elements can be configured: 
-
-**- Target runtime URL**: The targeted Bonita runtime URL. It is used to perform HTTP requests to interact with this runtime.
-
-**- Delete process instances**: Whether all existing process instances (including archived instances and their documents) should be deleted before tests execution.
-
-**- Clear BDM**: Whether the BDM database of the targeted Bonita should be cleared before tests execution. All existing business data will be removed.
 
 The extension can be registered through the annotation `BonitaTests` or manually.
 
 === Register the extension using the annotation BonitaTests
 
-This annotation has to be added on the test class. It provides default values for the parameters: 
-
-- _clearBDM_ default value: `false`
-- _deleteProcessInstances_ default value: `false`
-- _targetRuntimeURL_ default value: `http://localhost:8080/bonita`
+This annotation has to be added on the test class.
 
 [source, Java]
 ----
-@BonitaTests(clearBDM = true, deleteProcessInstances = true, targetRuntimeURL = "<RUNTIME-URL>")
-class processIT {
+@BonitaTests
+class ProcessIT {
     ...
 }
 ----
 
 === Register the extension manually
 
-The extension can be registered manually, using the JUnit 5 annotation `RegisterExtension`.  The `targetRuntimeURL` attribute has to be specified.
+The extension can be registered manually, using the JUnit 5 annotation `RegisterExtension`.
 
 [source, Java]
 ----
 class ProcessIT {
 
     @RegisterExtension
-    static BonitaTestExtension bonitaExtension = new BonitaTestExtension(Configuration.builder()
-            .targetRuntimeURL("http://localhost:8080/bonita")
-            .deleteProcessInstances()
-            .clearBDM()
-            .build());
+    static BonitaTestExtension bonitaExtension = new BonitaTestExtension();
 
     ...
 }
+----
+
+== Inject BonitaTestToolkit
+
+Once the extension registered, you can inject a `BonitaTestToolkit` instance as a test method parameter.
+
+[source, Java]
+----
+@BonitaTests
+class ProcessIT {
+
+    @BeforeAll
+    static void beforeAllTests(BonitaTestToolkit toolkit){ 
+        toolkit.deleteBDMContent();
+    }
+
+    @BeforeEach
+    void beforeEachTests(BonitaTestToolkit toolkit){ 
+        toolkit.deleteProcessInstances();
+    }
+
+    @Test
+    void testMyProcess(BonitaTestToolkit toolkit){
+        var myProcess = toolkit.getProcessDefinition("MyProcess");
+        ...
+    }
+
+}
+----
+
+== Configure a logger
+
+The Bonita test toolkit rely on SLF4J logger API. You may plug the SLF4J implementation of your choice in your project.
+
+=== Logback example
+
+.Add the `logback-classic` dependency in your pom.xml
+[source,xml]
+----
+<dependencies>
+    ...
+    <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>1.2.10</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+----
+
+.Add a `logback.xml` file in the src/test/resources folder
+[source,xml]
+----
+<configuration>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <!-- encoders are assigned the type
+         ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <root level="warn">
+    <appender-ref ref="STDOUT" />
+  </root>
+  
+  <logger name="org.bonitasoft.web.client" level="warn" />
+  <logger name="com.bonitasoft.test.toolkit" level="info" />
+
+  <!-- Replace with the package containing your tests-->
+  <logger name="com.company.project.test" level="info" />
+  
+</configuration>
 ----

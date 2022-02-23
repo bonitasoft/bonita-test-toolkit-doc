@@ -1,0 +1,17 @@
+= Changelog
+:description: Bonita Test Toolkit changelog release note
+
+== 1.0.0
+
+=== Breaking changes
+
+* Remove `@BonitaTests` properties:
+** `clearBDM` : Replaced with xref:business-data.adoc#delete-bdm-content[BonitaTestToolkit#deleteBDMContent()], can be invoked in `@BeforeAll`, `@BeforeEach` methods...etc
+** `deleteProcessInstances`: Replaced with xref:process.adoc#delete-process-instances[BonitaTestToolkit#deleteProcessInstances()], can be invoked in `@BeforeAll`, `@BeforeEach` methods...etc
+** `targetRuntimeURL`: Target runtime URL must be specified using the `bonita.url` system property. Default value is still _http://localhost:8080/bonita_
+* Split `TaskPredicates` into `UserTaskPredicates` and `TaskPredicates`
+* New `ConnectorState` and `ConnectorActivationEvent` enumerations in replacement of the `String` return type for `Connector#getState()` and `Connector#getActivationEvent()`.
+
+=== Bugfixes
+
+* Fix an issue where deleting the BDM content was not waiting for the tenant to be resumed
