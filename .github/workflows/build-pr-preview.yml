@@ -30,7 +30,7 @@ jobs:
     env:
       COMPONENT_NAME: test-toolkit
       # Except if you want to test in progress work that your content depends on, keep it set to master
-      DOC_SITE_BRANCH: master
+      DOC_SITE_BRANCH: feat/configure_failure_level
       BONITA_BRANCH: '2022.1'
       PR_NUMBER: ${{ github.event.pull_request.number }}
     steps:
