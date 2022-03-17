@@ -178,6 +178,60 @@ Many elements of a case can be retrieved through the process instance:
 - xref:document.adoc[Documents]
 - xref:events.adoc[Timers]
 
+=== Subprocess instances
+
+When your process uses `Call Activity` or `Event Subprocess`, you may want to retrieve the ProcessInstance started by those.
+
+.Retrieve subprocess instances
+[source, Java]
+----
+@Test
+void getSubprocessInstances(BonitaTestToolkit toolkit){
+
+    var mainProcess = toolkit.getProcessDefinition("Main Process");
+    var childProcess = toolkit.getProcessDefinition("Child Process");
+
+    var mainInstance = mainProcess.startProcessFor(toolkit.getUser("jane"));
+
+    // A Call activity has been executed and an instance of Child Process started
+    await().until(mainInstance, ProcessInstancePredicates.hasSubprocessInstances(childProcess));
+
+    List<ProcessInstance> subprocessInstances = mainInstance.getSubprocessInstances(0, 10); <1>
+    List<ProcessInstance> childProcessInstances = mainInstance.getSubprocessInstances(childProcess, 0, 10); <2>
+    ProcessInstance childInstance = mainInstance.getFirstStartedSubprocessInstance(childProcess); <3>
+    ...
+
+}
+----
+<1> Returns the first 10 non archived ProcessInstance started by the `mainInstance`. Includes event subprocess instances and instances started by a call activity.
+<2> Returns the first 10 non archived ProcessInstance started by the `mainInstance` with `Child Process` definition. Only includes instances started by a call activity.
+<3> Returns the first non archived ProcessInstance started by the `mainInstance` with `Child Process` definition. Only includes instances started by a call activity.
+
+.Retrieve archived subprocess instances
+[source, Java]
+----
+@Test
+void getArchivedSubprocessInstances(BonitaTestToolkit toolkit){
+
+    var mainProcess = toolkit.getProcessDefinition("Main Process");
+    var childProcess = toolkit.getProcessDefinition("Child Process");
+
+    var mainInstance = mainProcess.startProcessFor(toolkit.getUser("jane"));
+
+    // A Call activity has been executed and an instance of Child Process started and this instance is terminated and archvied
+
+    List<ProcessInstance> archivedSubprocessInstances = mainInstance.getArchivedSubprocessInstances(0, 10); <1>
+    List<ProcessInstance> archivedChildProcessInstances = mainInstance.getArchivedSubprocessInstances(childProcess, 0, 10); <2>
+    List<ProcessInstance> allArchivedChildProcessInstances = childProcess.getArchivedProcessInstances(0, 10); <3>
+    ...
+  
+}
+----
+<1> Returns the first 10 archived ProcessInstance started by the `mainInstance`. Includes event subprocess instances and instances started by a call activity.
+<2> Returns the first 10 archived ProcessInstance started by the `mainInstance` with `Child Process` definition. Only includes instances started by a call activity.
+<3> Returns the first 10 archived ProcessInstance with `Child Process` definition. Either started by a call acticity or not.
+
+
 == Process predicates
 
 In order to make asynchronous assertions on processes (using for example http://www.awaitility.org/[Awaitility]), some convenient predicates come with the Bonita test toolkit. It allows ensuring in a scenario that the system is in the expected state before to continuing. +

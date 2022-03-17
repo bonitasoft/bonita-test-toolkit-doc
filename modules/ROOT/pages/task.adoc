@@ -66,6 +66,42 @@ class ProcessIT {
 <6> Assign and execute the task with or without a contract. If the task is already assigned to another user, it will be reassigned to the new user before to be executed.
 <7> Wait until the task is completed before continuing. Mor details about task predicates in the dedicated section xref:_task_predicates[bellow].
 
+== Multi-instantiated UsertTask iterator
+
+Retrieve the variable defined as `iterator` for a multi-instantiated UserTask.
+
+.When the iterator is a process variable
+[source, Java]
+----
+@Test
+void validateUserTaskIterator(BonitaTestToolkit toolkit){
+    ...
+    var tasks = processInstance.searchPendingUserTasks("A multi-instantiated task");
+    assertThat(tasks).hasSize(numberOfExpectedInstances);
+
+    UserTask firstTask = tasks.get(0);
+    Variable myIterator = firstTask.getVariable("myIterator");
+}
+----
+
+.When the iterator is a Business object
+[source, Java]
+----
+@Test
+void validateUserTaskIterator(BonitaTestToolkit toolkit){
+    ...
+    var tasks = processInstance.searchPendingUserTasks("A multi-instantiated task");
+    assertThat(tasks).hasSize(numberOfExpectedInstances);
+
+    UserTask firstTask = tasks.get(0);
+    // Using a generic BusinessData
+    BusinessData myGenericIterator = firstTask.getIteratorBusinessVariable("myIterator");
+    // Using a typed BusinessData
+    MyObjectType myTypedIterator = firstTask.getIteratorBusinessVariable("myIterator", MyObjectType.class);
+    ...
+}
+----
+
 == Task and UserTask predicates
 
 In order to make asynchronous assertions on processes (using for example http://www.awaitility.org/[Awaitility]), some convenient predicates come with the Bonita test toolkit. It allows ensuring in a scenario that the system is in the expected state before continuing. +
