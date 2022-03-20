@@ -37,7 +37,7 @@ class ProcessIT {
 
 == Retrieve the value of a business data from a process instance
 
-A business data is defined at the process level, it represents a business object from the xref:data:define-and-deploy-the-bdm.adoc[Business Data Model]. +
+A business data is defined at the process level, it represents a business object from the xref:2021.2@bonita::data:define-and-deploy-the-bdm.adoc[Business Data Model]. +
 It can be retrieved at any time during a test from the corresponding xref:process.adoc[process instance], archived or not.
 
 There are two ways to retrieve the value of a business data: 
