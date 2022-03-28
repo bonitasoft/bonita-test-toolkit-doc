@@ -48,7 +48,7 @@ var contractWithMultipleInputs = ContractBuilder.newContract()
     .multipleFileInput("multipleFileContractInput", List.of("classpathURL1", "classpathURL2"))
     .build();
 ----
-<1> For file contract inputs, the file to use must be added to the classpath, and the corresponding path has to be used in the contract builder. For example, put your files in `src/test/resources/documents` and retrieve the resource URL like this: `MyTest.class.getResource("/documents/<FILE NAME>")`.
+<1> For file contract inputs, the file to use must be added to the classpath, and the corresponding path has to be used in the contract builder. For example, put your files in `src/test/resources/documents` then `classpathResourceURL` should be set to `/documents/myFile`.
 
 === Complex contract inputs
 

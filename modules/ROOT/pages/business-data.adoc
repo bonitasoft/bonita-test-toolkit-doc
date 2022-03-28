@@ -37,7 +37,8 @@ class ProcessIT {
 
 == Retrieve the value of a business data from a process instance
 
-A business data is defined at the process level, it represents a business object from the xref:data:define-and-deploy-the-bdm.adoc[Business Data Model]. +
+A business data is defined at the process level, it represents a business object from the xref:bonita:data:define-and-deploy-the-bdm.adoc[Business Data Model]. +
+
 It can be retrieved at any time during a test from the corresponding xref:process.adoc[process instance], archived or not.
 
 There are two ways to retrieve the value of a business data: 
@@ -158,13 +159,13 @@ class ProcessIT {
     void retrieve_business_data_through_dao(BonitaTestToolkit toolkit) {
         BusinessObjectDAO<BusinessData> parentObjectDAO = toolkit.getBusinessObjectDAO("com.company.model.MyObject"); <1>
 
-        List<BusinessData> findResult = parentObject.find(0, 100));<2>
-        BusinessData singleQueryResult = parentObject.querySingle("singleQueryName", List.of(QueryParameter.stringParameter("parameterName", "value"))); <3>
-        List<BusinessData> multipleQueryResult = parentObject.query("multipleQueryName", List.of(QueryParameter.stringParameter("parameterName", "value")), 0, 100)); <4>
+        List<BusinessData> findResult = parentObjectDAO.find(0, 100);<2>
+        BusinessData singleQueryResult = parentObjectDAO.querySingle("singleQueryName", List.of(QueryParameter.stringParameter("parameterName", "value"))); <3>
+        List<BusinessData> multipleQueryResult = parentObjectDAO.query("multipleQueryName", List.of(QueryParameter.stringParameter("parameterName", "value")), 0, 100); <4>
 
-        Integer countForFind = parentObject.querySingle("countForFind", Integer.class)); <5>
+        Integer countForFind = parentObjectDAO.querySingle("countForFind", Integer.class); <5>
         
-        assertThatThrownBy(() -> parentObject.querySingle("countForFind")).isInstanceOf(BusinessDataQueryException.class); <6>
+        assertThatThrownBy(() -> parentObjectDAO.querySingle("countForFind")).isInstanceOf(BusinessDataQueryException.class); <6>
     }
 }
 ----
@@ -200,8 +201,8 @@ class ProcessIT {
     void retrieve_business_data_through_dao(BonitaTestToolkit toolkit) {
         BusinessObjectDAO<MyObject> parentObjectDAO = toolkit.getBusinessObjectDAO("com.company.model.MyObject", MyObject.class); <2>
 
-        List<MyObject> findResult = parentObject.find(0, 100));<3>
-        MyObject singleQueryResult = parentObject.querySingle("singleQueryName", List.of(QueryParameter.stringParameter("parameterName","value"))); <4>
+        List<MyObject> findResult = parentObjectDAO.find(0, 100);<3>
+        MyObject singleQueryResult = parentObjectDAO.querySingle("singleQueryName", List.of(QueryParameter.stringParameter("parameterName","value"))); <4>
         ...
     }
 }
