@@ -251,7 +251,7 @@ The test toolkit communicates with the target Bonita Runtime using HTTP.
 It is possible to fine tune some HTTP specific options using the following arguments:
 
 * `-Dbonita.client.disable.certificate.check=true|false` Default is `false`. Disable SSL certificate check when connecting to remote runtime using HTTPS.
-* `-Dbonita.client.http.connection.timeout=10` Default is `10`. Timeout in seconds used for the HTTP connection timeout.
+* `-Dbonita.client.http.connection.timeout=30` Default is `30`. Timeout in seconds used for the HTTP connection timeout.
 
 === To Go further
 
