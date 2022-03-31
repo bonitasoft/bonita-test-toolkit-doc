@@ -27,6 +27,9 @@ For BCD, the `bonita-test-toolkit` dependency is already added to the bcd-depend
 |===
 |`bcd-dependencies:7.14.0.beta-01`
 |`com.bonitasoft:bonita-test-toolkit:1.0.0.beta-01`
+|`bcd-dependencies:7.14.0`
+|`com.bonitasoft:bonita-test-toolkit:1.0.0.beta-01`  +
+`com.bonitasoft:bonita-test-toolkit:1.0.0`
 |===
 
 

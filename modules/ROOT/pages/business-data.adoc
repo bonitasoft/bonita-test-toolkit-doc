@@ -15,9 +15,30 @@ Integrations tests are built upon the Bonita Test Toolkit, based on the open-sou
 The Bonita Test Toolkit is only available for Enterprise, Performance, Efficiency, and Teamwork. editions. 
 ====
 
+[#delete-bdm-content]
+
+== Delete BDM content
+
+In order to have reproducible tests you may want to delete the content of the BDM on the target runtime before running a test.
+
+[source, Java]
+----
+@BonitaTests
+class ProcessIT {
+
+    @BeforeEach
+    void deleteBDMContent(BonitaTestToolkit toolkit){
+        toolkit.deleteBDMContent(); <1>
+    }
+
+}
+----
+<1> This will delete the content of the BDM on the target runtime. Be careful to never execute your tests on a production environment !
+
 == Retrieve the value of a business data from a process instance
 
 A business data is defined at the process level, it represents a business object from the xref:bonita:data:define-and-deploy-the-bdm.adoc[Business Data Model]. +
+
 It can be retrieved at any time during a test from the corresponding xref:process.adoc[process instance], archived or not.
 
 There are two ways to retrieve the value of a business data: 
