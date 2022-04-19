@@ -66,7 +66,7 @@ class ProcessIT {
 <6> Assign and execute the task with or without a contract. If the task is already assigned to another user, it will be reassigned to the new user before to be executed.
 <7> Wait until the task is completed before continuing. Mor details about task predicates in the dedicated section xref:_task_predicates[bellow].
 
-== Multi-instantiated UsertTask iterator
+== Multi-instantiated UserTask iterator
 
 Retrieve the variable defined as `iterator` for a multi-instantiated UserTask.
 
