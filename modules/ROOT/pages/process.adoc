@@ -32,7 +32,7 @@ class ProcessIT {
 }
 ----
 <1> The process is retrieved without specifying the version -> the latest deployed version is retrieved.
-<2> The process is retrieved is a given version.
+<2> The process is retrieved from a given version.
 
 === Retrieve process initiators
 
