@@ -17,7 +17,7 @@ The Bonita Test Toolkit is only available for Enterprise, Performance, Efficienc
 
 We will briefly describe in this section the process used in the test xref:quick-start-test[below].
 
-In this process, we are going to create a dinosaur with a name, a color, and decide if he's hungry or not. Depending on his hunger state, he will go hunting or sleeping.
+In this process named "Create-Dinosaur", we are going to create a dinosaur with a name, a color, and decide if he's hungry or not. Depending on his hunger state, he will go hunting or sleeping.
 
 The following Business Data Model is used: 
 
@@ -35,7 +35,7 @@ The following process is used:
 
 image::quick-start-process.png[Quick start process example]
 
-The process contains a business data `dinosaur` of type `com.company.model.Dinosaur`. + 
+The process contains a business data `dinosaur` of type `com.company.bonitasoft.model.Dinosaur`. + 
 On the task `createDinosaur`, a contract is defined to instantiate this business data. +
 If the field `hungry` is set to `true`, then the path to the task `goToHunt` is selected, else it is the path to the task `goToSleep`.
 
