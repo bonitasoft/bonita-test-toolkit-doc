@@ -1,0 +1,181 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ContractBuilderImpl.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* link:#field.summary[Field] | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.contract]
+
+=== Class ContractBuilderImpl
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** link:InputBuilderImpl.html[com.bonitasoft.test.toolkit.internal.contract.InputBuilderImpl]<link:../../contract/ContractBuilder.html[ContractBuilder]>
+** *** com.bonitasoft.test.toolkit.internal.contract.ContractBuilderImpl
+
+* All Implemented Interfaces:::
+  `ContractBuilder`, `InputBuilder<ContractBuilder>`
++
+
+'''''
++
+....
+public class ContractBuilderImpl
+extends InputBuilderImpl<ContractBuilder>
+implements ContractBuilder
+....
+
+* ** [#field.summary]##
++
+==== Field Summary
+*** [#fields.inherited.from.class.com.bonitasoft.test.toolkit.internal.contract.InputBuilderImpl]##
++
+==== Fields inherited from class com.bonitasoft.test.toolkit.internal.contract.link:InputBuilderImpl.html[InputBuilderImpl]
++
+`contract`
++
+** [#constructor.summary]##
++
+==== Constructor Summary
++
+.Constructors[.tabEnd]# #
+[cols=",",options="header",]
+|==========================
+|Constructor |Description
+|`ContractBuilderImpl()` | 
+|==========================
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|=================================================================
+|Modifier and Type |Method |Description
+|`Contract` |`build()` | 
+|`Contract` |`fromClasspathResource​(String classpathResource)` | 
+|=================================================================
+*** [#methods.inherited.from.class.com.bonitasoft.test.toolkit.internal.contract.InputBuilderImpl]##
++
+==== Methods inherited from class com.bonitasoft.test.toolkit.internal.contract.link:InputBuilderImpl.html[InputBuilderImpl]
++
+`booleanInput, complexInput, dateInput, decimalInput, fileInput, integerInput, localDateInput, localDateTimeInput, longInput, multipleBooleanInput, multipleComplexInput, multipleDateInput, multipleDecimalInput, multipleFileInput, multipleIntegerInput, multipleLocalDateInput, multipleLocalDateTimeInput, multipleLongInput, multipleOffsetDateTimeInput, multipleTextInput, offsetDateTimeInput, textInput`
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+*** [#methods.inherited.from.class.com.bonitasoft.test.toolkit.contract.InputBuilder]##
++
+==== Methods inherited from interface com.bonitasoft.test.toolkit.contract.link:../../contract/InputBuilder.html[InputBuilder]
++
+`booleanInput, complexInput, dateInput, decimalInput, fileInput, integerInput, localDateInput, localDateTimeInput, longInput, multipleBooleanInput, multipleComplexInput, multipleDateInput, multipleDecimalInput, multipleFileInput, multipleIntegerInput, multipleLocalDateInput, multipleLocalDateTimeInput, multipleLongInput, multipleOffsetDateTimeInput, multipleTextInput, offsetDateTimeInput, textInput`
+
+* ** [#constructor.detail]##
++
+==== Constructor Detail
++
+[#<init>()]##
+*** ===== ContractBuilderImpl
++
+....
+public ContractBuilderImpl()
+....
++
+** [#method.detail]##
++
+==== Method Detail
++
+[#fromClasspathResource(java.lang.String)]##
+*** ===== fromClasspathResource
++
+[source,methodSignature]
+----
+public Contract fromClasspathResource​(String classpathResource)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `fromClasspathResource` in interface `ContractBuilder`
+[.paramLabel]#Parameters:#::
+  `classpathResource` - A json source file representing the contract, present in the class-path.
+[.returnLabel]#Returns:#::
+  A link:../../model/Contract.html[`Contract`]
++
+[#build()]##
+*** ===== build
++
+[source,methodSignature]
+----
+public Contract build()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `build` in interface `ContractBuilder`
+[.returnLabel]#Returns:#::
+  A link:../../model/Contract.html[`Contract`]
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ContractBuilderImpl.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* link:#field.summary[Field] | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

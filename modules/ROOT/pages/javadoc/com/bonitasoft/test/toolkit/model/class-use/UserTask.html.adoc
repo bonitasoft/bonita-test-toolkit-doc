@@ -1,0 +1,145 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../UserTask.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Interface +
+com.bonitasoft.test.toolkit.model.UserTask
+
+* .Packages that use link:../UserTask.html[UserTask][.tabEnd]# #
+[cols=",",options="header",]
+|===============================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit.internal.proxy[com.bonitasoft.test.toolkit.internal.proxy] | 
+|link:#com.bonitasoft.test.toolkit.model[com.bonitasoft.test.toolkit.model] | 
+|link:#com.bonitasoft.test.toolkit.predicate[com.bonitasoft.test.toolkit.predicate] | 
+|===============================================================================================
+* ** [#com.bonitasoft.test.toolkit.internal.proxy]##
+
+==== Uses of link:../UserTask.html[UserTask] in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+.Classes in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that implement link:../UserTask.html[UserTask][.tabEnd]# #
+[cols=",,",options="header",]
+|=====================================
+|Modifier and Type |Class |Description
+|`class ` |`UserTaskProxy` | 
+|=====================================
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that return link:../UserTask.html[UserTask][.tabEnd]# #
+[cols=",,",options="header",]
+|=========================================================================================================
+|Modifier and Type |Method |Description
+|`UserTask` |[.typeNameLabel]#UserTaskProxy.#`call()` | 
+|`UserTask` |[.typeNameLabel]#ProxyFactory.#`createUserTask​(String taskId,               String name)` | 
+|`UserTask` |[.typeNameLabel]#UserTaskProxy.#`execute​(User assignee)` | 
+|`UserTask` |[.typeNameLabel]#ProcessInstanceProxy.#`getFirstPendingUserTask​(String name)` | 
+|=========================================================================================================
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that return types with arguments of type link:../UserTask.html[UserTask][.tabEnd]# #
+[cols=",,",options="header",]
+|==================================================================================================
+|Modifier and Type |Method |Description
+|`List<UserTask>` |[.typeNameLabel]#ProcessInstanceProxy.#`searchPendingUserTasks()` | 
+|`List<UserTask>` |[.typeNameLabel]#ProcessInstanceProxy.#`searchPendingUserTasks​(String name)` | 
+|`List<UserTask>` |[.typeNameLabel]#ProcessInstanceProxy.#`searchUserTasks()` | 
+|`List<UserTask>` |[.typeNameLabel]#ProcessInstanceProxy.#`searchUserTasks​(String name)` | 
+|==================================================================================================
+** [#com.bonitasoft.test.toolkit.model]##
+
+==== Uses of link:../UserTask.html[UserTask] in link:../package-summary.html[com.bonitasoft.test.toolkit.model]
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.model] that return link:../UserTask.html[UserTask][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|=============================================================================================
+|Modifier and Type |Method |Description
+|`UserTask` |[.typeNameLabel]#UserTask.#`assignTo​(User user)` | 
+|`UserTask` |[.typeNameLabel]#UserTask.#`execute()` a|
+Execute this task.
+
+|`UserTask` |[.typeNameLabel]#UserTask.#`execute​(Contract contract)` a|
+Execute this task with a contract
+
+|`UserTask` |[.typeNameLabel]#UserTask.#`execute​(User user)` a|
+Assign and execute this task.
+
+|`UserTask` |[.typeNameLabel]#UserTask.#`execute​(User assignee,        Contract contract)` a|
+Assign and execute this task with a contract
+
+|`UserTask` |[.typeNameLabel]#ProcessInstance.#`getFirstPendingUserTask​(String name)` | 
+|=============================================================================================
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.model] that return types with arguments of type link:../UserTask.html[UserTask][.tabEnd]# #
+[cols=",,",options="header",]
+|=============================================================================================
+|Modifier and Type |Method |Description
+|`List<UserTask>` |[.typeNameLabel]#ProcessInstance.#`searchPendingUserTasks()` | 
+|`List<UserTask>` |[.typeNameLabel]#ProcessInstance.#`searchPendingUserTasks​(String name)` | 
+|`List<UserTask>` |[.typeNameLabel]#ProcessInstance.#`searchUserTasks()` | 
+|`List<UserTask>` |[.typeNameLabel]#ProcessInstance.#`searchUserTasks​(String name)` | 
+|=============================================================================================
+** [#com.bonitasoft.test.toolkit.predicate]##
+
+==== Uses of link:../UserTask.html[UserTask] in link:../../predicate/package-summary.html[com.bonitasoft.test.toolkit.predicate]
+
+.Methods in link:../../predicate/package-summary.html[com.bonitasoft.test.toolkit.predicate] that return types with arguments of type link:../UserTask.html[UserTask][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|===============================================================================================================
+|Modifier and Type |Method |Description
+|`static Predicate<UserTask>` |[.typeNameLabel]#UserTaskPredicates.#`hasBeenExecutedBy​(User user)` a|
+Verify if a link:../UserTask.html[`UserTask`] has been executed by the given link:../User.html[`User`].
+
+|`static Predicate<UserTask>` |[.typeNameLabel]#UserTaskPredicates.#`hasCandidates​(User... candidates)` a|
+Verify if a link:../UserTask.html[`UserTask`] can be executed by the given link:../User.html[`User`] candidates.
+
+|`static Predicate<UserTask>` |[.typeNameLabel]#UserTaskPredicates.#`isAssignedTo​(User user)` a|
+Verify if a link:../UserTask.html[`UserTask`] is assigned to a given link:../User.html[`User`].
+
+|`static Predicate<UserTask>` |[.typeNameLabel]#UserTaskPredicates.#`isNotAssigned()` a|
+Verify that a link:../UserTask.html[`UserTask`] has no assignee.
+
+|===============================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../UserTask.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

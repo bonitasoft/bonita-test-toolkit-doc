@@ -1,0 +1,76 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* Use
+* Tree
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageHierarchyLabel]#Package Hierarchies:#
+
+* link:../../../../../../overview-tree.html[All Packages]
+
+=== Class Hierarchy
+
+* java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[[.typeNameLink]#Object#]
+** com.bonitasoft.test.toolkit.internal.proxy.link:BusinessDataProxy.html[[.typeNameLink]#BusinessDataProxy#] (implements com.bonitasoft.test.toolkit.model.link:../../model/BusinessData.html[BusinessData])
+** com.bonitasoft.test.toolkit.internal.proxy.link:BusinessObjectDAOProxy.html[[.typeNameLink]#BusinessObjectDAOProxy#]<T> (implements com.bonitasoft.test.toolkit.model.link:../../model/BusinessObjectDAO.html[BusinessObjectDAO]<T>)
+** com.bonitasoft.test.toolkit.internal.proxy.link:ConnectorProxy.html[[.typeNameLink]#ConnectorProxy#] (implements com.bonitasoft.test.toolkit.model.link:../../model/Connector.html[Connector])
+** com.bonitasoft.test.toolkit.internal.proxy.link:DocumentProxy.html[[.typeNameLink]#DocumentProxy#] (implements com.bonitasoft.test.toolkit.model.link:../../model/Document.html[Document])
+*** com.bonitasoft.test.toolkit.internal.proxy.link:ArchivedDocumentProxy.html[[.typeNameLink]#ArchivedDocumentProxy#]
+** com.bonitasoft.test.toolkit.internal.proxy.link:GenericBusinessObjectDAOProxy.html[[.typeNameLink]#GenericBusinessObjectDAOProxy#] (implements com.bonitasoft.test.toolkit.model.link:../../model/BusinessObjectDAO.html[BusinessObjectDAO]<T>)
+** com.bonitasoft.test.toolkit.internal.proxy.link:InternalConnectorInstanceImpl.html[[.typeNameLink]#InternalConnectorInstanceImpl#]
+** com.bonitasoft.test.toolkit.internal.proxy.link:InternalDocumentImpl.html[[.typeNameLink]#InternalDocumentImpl#]
+** com.bonitasoft.test.toolkit.internal.proxy.link:ProcessDefinitionProxy.html[[.typeNameLink]#ProcessDefinitionProxy#] (implements com.bonitasoft.test.toolkit.model.link:../../model/ProcessDefinition.html[ProcessDefinition])
+** com.bonitasoft.test.toolkit.internal.proxy.link:ProcessInstanceProxy.html[[.typeNameLink]#ProcessInstanceProxy#] (implements com.bonitasoft.test.toolkit.model.link:../../model/ProcessInstance.html[ProcessInstance])
+** com.bonitasoft.test.toolkit.internal.proxy.link:ProcessVariableProxy.html[[.typeNameLink]#ProcessVariableProxy#] (implements com.bonitasoft.test.toolkit.model.link:../../model/Variable.html[Variable])
+** com.bonitasoft.test.toolkit.internal.proxy.link:ProxyFactory.html[[.typeNameLink]#ProxyFactory#]
+** com.bonitasoft.test.toolkit.internal.proxy.link:QueryParameterImpl.html[[.typeNameLink]#QueryParameterImpl#]<T> (implements com.bonitasoft.test.toolkit.model.link:../../model/QueryParameter.html[QueryParameter]<T>)
+** com.bonitasoft.test.toolkit.internal.proxy.link:TaskProxy.html[[.typeNameLink]#TaskProxy#] (implements com.bonitasoft.test.toolkit.model.link:../../model/Task.html[Task])
+** com.bonitasoft.test.toolkit.internal.proxy.link:TaskVariableProxy.html[[.typeNameLink]#TaskVariableProxy#] (implements com.bonitasoft.test.toolkit.model.link:../../model/Variable.html[Variable])
+** com.bonitasoft.test.toolkit.internal.proxy.link:TaskVariableResolver.html[[.typeNameLink]#TaskVariableResolver#]
+** com.bonitasoft.test.toolkit.internal.proxy.link:TimerEventTriggerProxy.html[[.typeNameLink]#TimerEventTriggerProxy#] (implements com.bonitasoft.test.toolkit.model.link:../../model/TimerEventTrigger.html[TimerEventTrigger])
+** com.bonitasoft.test.toolkit.internal.proxy.link:UserProxy.html[[.typeNameLink]#UserProxy#] (implements com.bonitasoft.test.toolkit.model.link:../../model/User.html[User])
+** com.bonitasoft.test.toolkit.internal.proxy.link:UserTaskProxy.html[[.typeNameLink]#UserTaskProxy#] (implements com.bonitasoft.test.toolkit.model.link:../../model/UserTask.html[UserTask])
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* Use
+* Tree
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

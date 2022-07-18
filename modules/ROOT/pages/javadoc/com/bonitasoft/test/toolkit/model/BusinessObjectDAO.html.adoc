@@ -1,0 +1,316 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/BusinessObjectDAO.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Interface BusinessObjectDAO<T>
+
+* All Known Implementing Classes:::
+  `BusinessObjectDAOProxy`, `GenericBusinessObjectDAOProxy`
++
+
+'''''
++
+....
+public interface BusinessObjectDAO<T>
+....
++
+A DAO matching a Business Object defined in the Business Data Model. +
+This DAO is read-only and can be used to query BDM entities created by processes. +
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t3 .tableTab]#javascript:show(4);[Abstract Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|====================================================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`List<T>` |`find​(int pageIndex,     int count)` a|
+Find instances of this Business Object using classic pagination parameters: +
+If the database contains 100 instances of this entity, calling this method with _pageIndex = 2_ and _count = 10_ will return the instances [21, 22, ..., 30].
+
+|`T` |`findByPersistenceId​(String persistenceId)` a|
+Retrieve a given instance of this Business Object using its unique identifier.
+
+|`List<T>` |`query​(String name,      int pageIndex,      int count)` a|
+Execute a specific query defined in the Business Data Model for this Business Object using classic pagination parameters: +
+If the database contains 100 instances of this entity that match the query and its parameters, calling this method with _pageIndex = 2_ and _count = 10_ will return the instances [21, 22, ..., 30].
+
+|`List<T>` |`query​(String name,      List<QueryParameter<?>> parameters,      int pageIndex,      int count)` a|
+Execute a specific query defined in the Business Data Model for this Business Object using classic pagination parameters: +
+If the database contains 100 instances of this entity that match the query and its parameters, calling this method with _pageIndex = 2_ and _count = 10_ will return the instances [21, 22, ..., 30].
+
+|`T` |`querySingle​(String name)` a|
+Execute a specific query defined in the Business Data Model for this Business Object that returns a single entity.
+
+|`<R> R` |`querySingle​(String name,            Class<R> resultType)` a|
+Execute a specific query defined in the Business Data Model for this Business Object that returns a different type +
+than this Business Object (e.g.: a count or sum query)
+
+|`T` |`querySingle​(String name,            List<QueryParameter<?>> parameters)` a|
+Execute a specific query defined in the Business Data Model for this Business Object that returns a single entity.
+
+|`<R> R` |`querySingle​(String name,            List<QueryParameter<?>> parameters,            Class<R> resultType)` a|
+Execute a specific query defined in the Business Data Model for this Business Object that returns a different type +
+than this Business Object (e.g.: a count or sum query)
+
+|====================================================================================================================================================================================================
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#findByPersistenceId(java.lang.String)]##
+*** ===== findByPersistenceId
++
+[source,methodSignature]
+----
+T findByPersistenceId​(String persistenceId)
+----
++
+Retrieve a given instance of this Business Object using its unique identifier.
++
+[.paramLabel]#Parameters:#::
+  `persistenceId` - The unique identifier of an entity in the BDM database.
+[.returnLabel]#Returns:#::
+  The entity with this persistenceId.
+[.throwsLabel]#Throws:#::
+  `org.bonitasoft.web.client.exception.NotFoundException` - - If no entity with this persistenceId exists in the database.
++
+[#find(int,int)]##
+*** ===== find
++
+[source,methodSignature]
+----
+List<T> find​(int pageIndex,
+             int count)
+----
++
+Find instances of this Business Object using classic pagination parameters: +
+If the database contains 100 instances of this entity, calling this method with _pageIndex = 2_ and _count = 10_ will return the instances [21, 22, ..., 30].
++
+[.paramLabel]#Parameters:#::
+  `pageIndex` - The page of the instances.
+  +
+  `count` - The maximum number of instances per page.
+[.returnLabel]#Returns:#::
+  The list of entities found.
++
+[#query(java.lang.String,java.util.List,int,int)]##
+*** ===== query
++
+[source,methodSignature]
+----
+List<T> query​(String name,
+              List<QueryParameter<?>> parameters,
+              int pageIndex,
+              int count)
+       throws BusinessDataQueryException
+----
++
+Execute a specific query defined in the Business Data Model for this Business Object using classic pagination parameters: +
+If the database contains 100 instances of this entity that match the query and its parameters, calling this method with _pageIndex = 2_ and _count = 10_ will return the instances [21, 22, ..., 30].
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the query
+  +
+  `parameters` - The list of query parameters expected by this query.
+  +
+  `pageIndex` - The page of the instances.
+  +
+  `count` - The maximum number of instances per page.
+[.returnLabel]#Returns:#::
+  the query result list
+[.throwsLabel]#Throws:#::
+  `BusinessDataQueryException`
++
+[#query(java.lang.String,int,int)]##
+*** ===== query
++
+[source,methodSignature]
+----
+List<T> query​(String name,
+              int pageIndex,
+              int count)
+       throws BusinessDataQueryException
+----
++
+Execute a specific query defined in the Business Data Model for this Business Object using classic pagination parameters: +
+If the database contains 100 instances of this entity that match the query and its parameters, calling this method with _pageIndex = 2_ and _count = 10_ will return the instances [21, 22, ..., 30].
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the query
+  +
+  `pageIndex` - The page of the instances.
+  +
+  `count` - The maximum number of instances per page.
+[.returnLabel]#Returns:#::
+  the query result list
+[.throwsLabel]#Throws:#::
+  `BusinessDataQueryException`
+[.seeLabel]#See Also:#::
+  link:#query(java.lang.String,java.util.List,int,int)[`query(String, List, int, int)`]
++
+[#querySingle(java.lang.String,java.util.List)]##
+*** ===== querySingle
++
+[source,methodSignature]
+----
+T querySingle​(String name,
+              List<QueryParameter<?>> parameters)
+       throws BusinessDataQueryException
+----
++
+Execute a specific query defined in the Business Data Model for this Business Object that returns a single entity.
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the query
+  +
+  `parameters` - The values of the query parameters.
+[.returnLabel]#Returns:#::
+  an entity or null if no result is found
+[.throwsLabel]#Throws:#::
+  `BusinessDataQueryException`
++
+[#querySingle(java.lang.String)]##
+*** ===== querySingle
++
+[source,methodSignature]
+----
+T querySingle​(String name)
+       throws BusinessDataQueryException
+----
++
+Execute a specific query defined in the Business Data Model for this Business Object that returns a single entity.
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the query
+[.returnLabel]#Returns:#::
+  an entity or null if no result is found
+[.throwsLabel]#Throws:#::
+  `BusinessDataQueryException`
+[.seeLabel]#See Also:#::
+  link:#querySingle(java.lang.String,java.util.List)[`querySingle(String, List)`]
++
+[#querySingle(java.lang.String,java.lang.Class)]##
+*** ===== querySingle
++
+[source,methodSignature]
+----
+<R> R querySingle​(String name,
+                  Class<R> resultType)
+           throws BusinessDataQueryException
+----
++
+Execute a specific query defined in the Business Data Model for this Business Object that returns a different type +
+than this Business Object (e.g.: a count or sum query)
++
+[.paramLabel]#Type Parameters:#::
+  `R` - The expected result type (https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html?is-external=true[`Integer`], https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true[`Double`], https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html?is-external=true[`Float`] or https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html?is-external=true[`Long`])
+[.paramLabel]#Parameters:#::
+  `name` - The name of the query
+  +
+  `resultType` - The expected result type (https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html?is-external=true[`Integer`], https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true[`Double`], https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html?is-external=true[`Float`] or https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html?is-external=true[`Long`])
+[.returnLabel]#Returns:#::
+  the query result or null if no result is found
+[.throwsLabel]#Throws:#::
+  `BusinessDataQueryException`
+[.seeLabel]#See Also:#::
+  link:#querySingle(java.lang.String,java.util.List,java.lang.Class)[`querySingle(String, List, Class)`]
++
+[#querySingle(java.lang.String,java.util.List,java.lang.Class)]##
+*** ===== querySingle
++
+[source,methodSignature]
+----
+<R> R querySingle​(String name,
+                  List<QueryParameter<?>> parameters,
+                  Class<R> resultType)
+           throws BusinessDataQueryException
+----
++
+Execute a specific query defined in the Business Data Model for this Business Object that returns a different type +
+than this Business Object (e.g.: a count or sum query)
++
+[.paramLabel]#Type Parameters:#::
+  `R` - The expected result type (https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html?is-external=true[`Integer`], https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true[`Double`], https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html?is-external=true[`Float`] or https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html?is-external=true[`Long`])
+[.paramLabel]#Parameters:#::
+  `name` - The name of the query
+  +
+  `parameters` - The list of query parameters expected by this query.
+  +
+  `resultType` - The expected result type (https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html?is-external=true[`Integer`], https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true[`Double`], https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html?is-external=true[`Float`] or https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html?is-external=true[`Long`])
+[.returnLabel]#Returns:#::
+  the query result or null if no result is found
+[.throwsLabel]#Throws:#::
+  `BusinessDataQueryException`
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/BusinessObjectDAO.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

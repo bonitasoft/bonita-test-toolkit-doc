@@ -1,0 +1,201 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../ProcessInstance.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Interface +
+com.bonitasoft.test.toolkit.model.ProcessInstance
+
+* .Packages that use link:../ProcessInstance.html[ProcessInstance][.tabEnd]# #
+[cols=",",options="header",]
+|===============================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit.internal.proxy[com.bonitasoft.test.toolkit.internal.proxy] | 
+|link:#com.bonitasoft.test.toolkit.model[com.bonitasoft.test.toolkit.model] | 
+|link:#com.bonitasoft.test.toolkit.predicate[com.bonitasoft.test.toolkit.predicate] | 
+|===============================================================================================
+* ** [#com.bonitasoft.test.toolkit.internal.proxy]##
+
+==== Uses of link:../ProcessInstance.html[ProcessInstance] in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+.Classes in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that implement link:../ProcessInstance.html[ProcessInstance][.tabEnd]# #
+[cols=",,",options="header",]
+|=====================================
+|Modifier and Type |Class |Description
+|`class ` |`ProcessInstanceProxy` | 
+|=====================================
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that return link:../ProcessInstance.html[ProcessInstance][.tabEnd]# #
+[cols=",,",options="header",]
+|===============================================================================================================================
+|Modifier and Type |Method |Description
+|`ProcessInstance` |[.typeNameLabel]#ProcessInstanceProxy.#`call()` | 
+|`ProcessInstance` |[.typeNameLabel]#ProxyFactory.#`createProcessInstance​(String caseId)` | 
+|`ProcessInstance` |[.typeNameLabel]#ProcessInstanceProxy.#`getFirstStartedSubprocessInstance​(ProcessDefinition definition)` | 
+|`ProcessInstance` |[.typeNameLabel]#TaskProxy.#`getParentProcessInstance()` | 
+|`ProcessInstance` |[.typeNameLabel]#UserTaskProxy.#`getParentProcessInstance()` | 
+|`ProcessInstance` |[.typeNameLabel]#TaskProxy.#`getRootProcessInstance()` | 
+|`ProcessInstance` |[.typeNameLabel]#UserTaskProxy.#`getRootProcessInstance()` | 
+|`ProcessInstance` |[.typeNameLabel]#ProcessDefinitionProxy.#`startProcessFor​(User user)` | 
+|`ProcessInstance` |[.typeNameLabel]#ProcessDefinitionProxy.#`startProcessFor​(User user,                Contract contract)` | 
+|===============================================================================================================================
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that return types with arguments of type link:../ProcessInstance.html[ProcessInstance][.tabEnd]# #
+[cols=",,",options="header",]
+|========================================================================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`List<ProcessInstance>` |[.typeNameLabel]#ProcessDefinitionProxy.#`getArchivedProcessInstances​(int pageIndex,                            int count)` | 
+|`List<ProcessInstance>` |[.typeNameLabel]#ProcessInstanceProxy.#`getArchivedSubprocessInstances​(int pageIndex,                               int count)` | 
+|`List<ProcessInstance>` |[.typeNameLabel]#ProcessInstanceProxy.#`getArchivedSubprocessInstances​(ProcessDefinition definition,                               int pageIndex,                               int count)` | 
+|`List<ProcessInstance>` |[.typeNameLabel]#ProcessDefinitionProxy.#`getProcessInstances​(int pageIndex,                    int count)` | 
+|`List<ProcessInstance>` |[.typeNameLabel]#ProcessInstanceProxy.#`getSubprocessInstances​(int pageIndex,                       int count)` | 
+|`List<ProcessInstance>` |[.typeNameLabel]#ProcessInstanceProxy.#`getSubprocessInstances​(ProcessDefinition definition,                       int pageIndex,                       int count)` | 
+|========================================================================================================================================================================================================================
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] with parameters of type link:../ProcessInstance.html[ProcessInstance][.tabEnd]# #
+[cols=",,",options="header",]
+|=================================================================================================================================================
+|Modifier and Type |Method |Description
+|`Connector` |[.typeNameLabel]#ProxyFactory.#`createConnector​(String name,                ProcessInstance processInstance)` | 
+|`Document` |[.typeNameLabel]#ProxyFactory.#`createDocument​(String name,               ProcessInstance processInstance)` | 
+|`List<Document>` |[.typeNameLabel]#ProxyFactory.#`createMultipleDocument​(String name,                       ProcessInstance processInstance)` | 
+|=================================================================================================================================================
+** [#com.bonitasoft.test.toolkit.model]##
+
+==== Uses of link:../ProcessInstance.html[ProcessInstance] in link:../package-summary.html[com.bonitasoft.test.toolkit.model]
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.model] that return link:../ProcessInstance.html[ProcessInstance][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|==================================================================================================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`ProcessInstance` |[.typeNameLabel]#ProcessInstance.#`getFirstStartedSubprocessInstance​(ProcessDefinition processDefinition)` a|
+Returns the first process instance that has been instantiated by this instance and matches the given link:../ProcessDefinition.html[`ProcessDefinition`] and is in link:../ProcessInstanceState.html#STARTED[`ProcessInstanceState.STARTED`] state.
+
+|`ProcessInstance` |[.typeNameLabel]#AbstractTask.#`getParentProcessInstance()` | 
+|`ProcessInstance` |[.typeNameLabel]#AbstractTask.#`getRootProcessInstance()` a|
+In case of an event sub process,the `rootCaseId` will be the one from the caller process instance.
+
+|`ProcessInstance` |[.typeNameLabel]#ProcessDefinition.#`startProcessFor​(User user)` a|
+Starts an instance of this process for a given user, without contract.
+
+|`ProcessInstance` |[.typeNameLabel]#ProcessDefinition.#`startProcessFor​(User user,                Contract contract)` a|
+Starts an instance of this process for a given user, with a contract.
+
+|==================================================================================================================================================================================================================================================
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.model] that return types with arguments of type link:../ProcessInstance.html[ProcessInstance][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|==========================================================================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`List<ProcessInstance>` |[.typeNameLabel]#ProcessDefinition.#`getArchivedProcessInstances​(int pageIndex,                            int count)` a|
+Retrieves the list of archived link:../ProcessInstance.html[`ProcessInstance`] for this link:../ProcessDefinition.html[`ProcessDefinition`].
+
+|`List<ProcessInstance>` |[.typeNameLabel]#ProcessInstance.#`getArchivedSubprocessInstances​(int pageIndex,                               int count)` a|
+Returns archived process instances that have been instantiated by this instance.
+
+|`List<ProcessInstance>` |[.typeNameLabel]#ProcessInstance.#`getArchivedSubprocessInstances​(ProcessDefinition processDefinition,                               int pageIndex,                               int count)` a|
+Returns archived process instances that have been instantiated by this instance and matches the given link:../ProcessDefinition.html[`ProcessDefinition`].
+
+|`List<ProcessInstance>` |[.typeNameLabel]#ProcessDefinition.#`getProcessInstances​(int pageIndex,                    int count)` a|
+Retrieves the list of link:../ProcessInstance.html[`ProcessInstance`] for this link:../ProcessDefinition.html[`ProcessDefinition`].
+
+|`List<ProcessInstance>` |[.typeNameLabel]#ProcessInstance.#`getSubprocessInstances​(int pageIndex,                       int count)` a|
+Returns process instances that have been instantiated by this instance.
+
+|`List<ProcessInstance>` |[.typeNameLabel]#ProcessInstance.#`getSubprocessInstances​(ProcessDefinition processDefinition,                       int pageIndex,                       int count)` a|
+Returns process instances that have been instantiated by this instance and matches the given link:../ProcessDefinition.html[`ProcessDefinition`].
+
+|==========================================================================================================================================================================================================================
+** [#com.bonitasoft.test.toolkit.predicate]##
+
+==== Uses of link:../ProcessInstance.html[ProcessInstance] in link:../../predicate/package-summary.html[com.bonitasoft.test.toolkit.predicate]
+
+.Methods in link:../../predicate/package-summary.html[com.bonitasoft.test.toolkit.predicate] that return types with arguments of type link:../ProcessInstance.html[ProcessInstance][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|==============================================================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`static Predicate<ProcessInstance>` |[.typeNameLabel]#ProcessInstancePredicates.#`containsPendingUserTasks​(String... taskNames)` a|
+Verify if a link:../ProcessInstance.html[`ProcessInstance`] contains the given user tasks names in a pending state.
+
+|`static Predicate<ProcessInstance>` |[.typeNameLabel]#ProcessInstancePredicates.#`hasActiveFlowNodes​(int nbOfActiveFlowNode)` a|
+Verify the number of active flow nodes of a link:../ProcessInstance.html[`ProcessInstance`] +
+
+|`static Predicate<ProcessInstance>` |[.typeNameLabel]#ProcessInstancePredicates.#`hasBeenStartedBy​(User user)` a|
+Verify if a link:../ProcessInstance.html[`ProcessInstance`] has been started by the given user.
+
+|`static Predicate<ProcessInstance>` |[.typeNameLabel]#ProcessInstancePredicates.#`hasFailedFlowNodes​(int nbOfFailedFlowNode)` a|
+Verify the number of failed flow nodes of a link:../ProcessInstance.html[`ProcessInstance`]
+
+|`static Predicate<ProcessInstance>` |[.typeNameLabel]#ProcessInstancePredicates.#`hasSubprocessInstances​(ProcessDefinition processDefinition)` a|
+Verify if a link:../ProcessInstance.html[`ProcessInstance`] has instantiated one or more subprocess link:../ProcessInstance.html[`instances`] of the given link:../ProcessDefinition.html[`ProcessDefinition`].
+
+|`static Predicate<ProcessInstance>` |[.typeNameLabel]#ProcessInstancePredicates.#`hasTimerEventTrigger​(String name)` a|
+Verify if a link:../ProcessInstance.html[`ProcessInstance`] has an active timer event trigger with the given name.
+
+|`static Predicate<ProcessInstance>` |[.typeNameLabel]#ProcessInstancePredicates.#`processInstanceAborted()` a|
+Verify if a link:../ProcessInstance.html[`ProcessInstance`] is in aborted state.
+
+|`static Predicate<ProcessInstance>` |[.typeNameLabel]#ProcessInstancePredicates.#`processInstanceArchived()` a|
+Verify if a link:../ProcessInstance.html[`ProcessInstance`] is archived.
+
+|`static Predicate<ProcessInstance>` |[.typeNameLabel]#ProcessInstancePredicates.#`processInstanceCancelled()` a|
+Verify if a link:../ProcessInstance.html[`ProcessInstance`] is in cancelled state.
+
+|`static Predicate<ProcessInstance>` |[.typeNameLabel]#ProcessInstancePredicates.#`processInstanceCompleted()` a|
+Verify if a link:../ProcessInstance.html[`ProcessInstance`] is in completed state.
+
+|`static Predicate<ProcessInstance>` |[.typeNameLabel]#ProcessInstancePredicates.#`processInstanceHasError()` a|
+Verify if a link:../ProcessInstance.html[`ProcessInstance`] is in error state.
+
+|`static Predicate<ProcessInstance>` |[.typeNameLabel]#ProcessInstancePredicates.#`processInstanceStarted()` a|
+Verify if a link:../ProcessInstance.html[`ProcessInstance`] is in started state.
+
+|`static Predicate<ProcessInstance>` |[.typeNameLabel]#ProcessInstancePredicates.#`processInstanceSuspended()` a|
+Verify if a link:../ProcessInstance.html[`ProcessInstance`] is in suspended state.
+
+|==============================================================================================================================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../ProcessInstance.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

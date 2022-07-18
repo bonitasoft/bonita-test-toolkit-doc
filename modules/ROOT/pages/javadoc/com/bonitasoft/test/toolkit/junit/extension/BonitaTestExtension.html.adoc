@@ -1,0 +1,208 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/BonitaTestExtension.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.junit.extension]
+
+=== Class BonitaTestExtension
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.junit.extension.BonitaTestExtension
+
+* All Implemented Interfaces:::
+  `org.junit.jupiter.api.extension.AfterAllCallback`, `org.junit.jupiter.api.extension.BeforeAllCallback`, `org.junit.jupiter.api.extension.Extension`, `org.junit.jupiter.api.extension.ParameterResolver`
++
+
+'''''
++
+....
+public class BonitaTestExtension
+extends Object
+implements org.junit.jupiter.api.extension.BeforeAllCallback, org.junit.jupiter.api.extension.AfterAllCallback, org.junit.jupiter.api.extension.ParameterResolver
+....
++
+A JUnit 5 extension to ease the setup of Bonita tests. +
+It offers the possibility to inject a link:../../BonitaTestToolkit.html[`BonitaTestToolkit`] in test methods. +
+It can be registered as a JUnit extension using the `RegisterExtension` annotation in a test class:
+
+....
+ @RegisterExtension
+ static BonitaTestExtension bonitaExtension = new BonitaTestExtension();
+         
+ @Test
+ void test_my_process(BonitaTestToolkit toolkit) {...}
+ 
+....
+
+or using the link:BonitaTests.html[`BonitaTests`] annotation on the test class.
+
+* ** [#constructor.summary]##
++
+==== Constructor Summary
++
+.Constructors[.tabEnd]# #
+[cols=",",options="header",]
+|==========================
+|Constructor |Description
+|`BonitaTestExtension()` | 
+|==========================
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|=========================================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`void` |`afterAll​(org.junit.jupiter.api.extension.ExtensionContext context)` | 
+|`void` |`beforeAll​(org.junit.jupiter.api.extension.ExtensionContext context)` | 
+|`Object` |`resolveParameter​(org.junit.jupiter.api.extension.ParameterContext parameterContext,                 org.junit.jupiter.api.extension.ExtensionContext extensionContext)` | 
+|`boolean` |`supportsParameter​(org.junit.jupiter.api.extension.ParameterContext parameterContext,                  org.junit.jupiter.api.extension.ExtensionContext extensionContext)` | 
+|=========================================================================================================================================================================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+
+* ** [#constructor.detail]##
++
+==== Constructor Detail
++
+[#<init>()]##
+*** ===== BonitaTestExtension
++
+....
+public BonitaTestExtension()
+....
++
+** [#method.detail]##
++
+==== Method Detail
++
+[#supportsParameter(org.junit.jupiter.api.extension.ParameterContext,org.junit.jupiter.api.extension.ExtensionContext)]##
+*** ===== supportsParameter
++
+[source,methodSignature]
+----
+public boolean supportsParameter​(org.junit.jupiter.api.extension.ParameterContext parameterContext,
+                                 org.junit.jupiter.api.extension.ExtensionContext extensionContext)
+                          throws org.junit.jupiter.api.extension.ParameterResolutionException
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `supportsParameter` in interface `org.junit.jupiter.api.extension.ParameterResolver`
+[.throwsLabel]#Throws:#::
+  `org.junit.jupiter.api.extension.ParameterResolutionException`
++
+[#resolveParameter(org.junit.jupiter.api.extension.ParameterContext,org.junit.jupiter.api.extension.ExtensionContext)]##
+*** ===== resolveParameter
++
+[source,methodSignature]
+----
+public Object resolveParameter​(org.junit.jupiter.api.extension.ParameterContext parameterContext,
+                               org.junit.jupiter.api.extension.ExtensionContext extensionContext)
+                        throws org.junit.jupiter.api.extension.ParameterResolutionException
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `resolveParameter` in interface `org.junit.jupiter.api.extension.ParameterResolver`
+[.throwsLabel]#Throws:#::
+  `org.junit.jupiter.api.extension.ParameterResolutionException`
++
+[#afterAll(org.junit.jupiter.api.extension.ExtensionContext)]##
+*** ===== afterAll
++
+[source,methodSignature]
+----
+public void afterAll​(org.junit.jupiter.api.extension.ExtensionContext context)
+              throws Exception
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `afterAll` in interface `org.junit.jupiter.api.extension.AfterAllCallback`
+[.throwsLabel]#Throws:#::
+  `Exception`
++
+[#beforeAll(org.junit.jupiter.api.extension.ExtensionContext)]##
+*** ===== beforeAll
++
+[source,methodSignature]
+----
+public void beforeAll​(org.junit.jupiter.api.extension.ExtensionContext context)
+               throws Exception
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `beforeAll` in interface `org.junit.jupiter.api.extension.BeforeAllCallback`
+[.throwsLabel]#Throws:#::
+  `Exception`
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/BonitaTestExtension.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

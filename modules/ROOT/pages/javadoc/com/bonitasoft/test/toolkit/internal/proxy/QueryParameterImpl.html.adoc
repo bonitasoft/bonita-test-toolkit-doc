@@ -1,0 +1,196 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/QueryParameterImpl.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+=== Class QueryParameterImpl<T>
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.internal.proxy.QueryParameterImpl<T>
+
+* All Implemented Interfaces:::
+  `QueryParameter<T>`
++
+
+'''''
++
+....
+public class QueryParameterImpl<T>
+extends Object
+implements QueryParameter<T>
+....
+
+* ** [#constructor.summary]##
++
+==== Constructor Summary
++
+.Constructors[.tabEnd]# #
+[cols=",",options="header",]
+|================================================================
+|Constructor |Description
+|`QueryParameterImpl​(String name,                   T value)` | 
+|================================================================
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|======================================
+|Modifier and Type |Method |Description
+|`boolean` |`equals​(Object obj)` | 
+|`String` |`getName()` | 
+|`T` |`getValue()` | 
+|`int` |`hashCode()` | 
+|`String` |`toString()` | 
+|======================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, finalize, getClass, notify, notifyAll, wait, wait, wait`
+
+* ** [#constructor.detail]##
++
+==== Constructor Detail
++
+[#<init>(java.lang.String,java.lang.Object)]## [#<init>(java.lang.String,T)]##
+*** ===== QueryParameterImpl
++
+....
+public QueryParameterImpl​(String name,
+                          T value)
+....
++
+** [#method.detail]##
++
+==== Method Detail
++
+[#getName()]##
+*** ===== getName
++
+[source,methodSignature]
+----
+public String getName()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getName` in interface `QueryParameter<T>`
+[.returnLabel]#Returns:#::
+  the parameter name
++
+[#getValue()]##
+*** ===== getValue
++
+[source,methodSignature]
+----
+public T getValue()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getValue` in interface `QueryParameter<T>`
+[.returnLabel]#Returns:#::
+  the parameter value
++
+[#hashCode()]##
+*** ===== hashCode
++
+[source,methodSignature]
+----
+public int hashCode()
+----
++
+[.overrideSpecifyLabel]#Overrides:#::
+  `hashCode` in class `Object`
++
+[#equals(java.lang.Object)]##
+*** ===== equals
++
+[source,methodSignature]
+----
+public boolean equals​(Object obj)
+----
++
+[.overrideSpecifyLabel]#Overrides:#::
+  `equals` in class `Object`
++
+[#toString()]##
+*** ===== toString
++
+[source,methodSignature]
+----
+public String toString()
+----
++
+[.overrideSpecifyLabel]#Overrides:#::
+  `toString` in class `Object`
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/QueryParameterImpl.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

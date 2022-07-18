@@ -1,0 +1,293 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* Use
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+* .Packages that use link:package-summary.html[com.bonitasoft.test.toolkit.model][.tabEnd]# #
+[cols=",",options="header",]
+|=====================================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit[com.bonitasoft.test.toolkit] | 
+|link:#com.bonitasoft.test.toolkit.contract[com.bonitasoft.test.toolkit.contract] | 
+|link:#com.bonitasoft.test.toolkit.internal[com.bonitasoft.test.toolkit.internal] | 
+|link:#com.bonitasoft.test.toolkit.internal.contract[com.bonitasoft.test.toolkit.internal.contract] | 
+|link:#com.bonitasoft.test.toolkit.internal.proxy[com.bonitasoft.test.toolkit.internal.proxy] | 
+|link:#com.bonitasoft.test.toolkit.model[com.bonitasoft.test.toolkit.model] | 
+|link:#com.bonitasoft.test.toolkit.predicate[com.bonitasoft.test.toolkit.predicate] | 
+|=====================================================================================================
+* [#com.bonitasoft.test.toolkit]##
++
+.Classes in link:package-summary.html[com.bonitasoft.test.toolkit.model] used by link:../package-summary.html[com.bonitasoft.test.toolkit][.tabEnd]# #
+[width="100%",cols="50%,50%",options="header",]
+|=======================================================================================
+|Class |Description
+|link:class-use/BusinessData.html#com.bonitasoft.test.toolkit[BusinessData] a|
+A Business data stored in the Business Data Model database. +
+Generic methods are available to retrieve the fields of the business data by name.
+
+|link:class-use/BusinessObjectDAO.html#com.bonitasoft.test.toolkit[BusinessObjectDAO] a|
+A DAO matching a Business Object defined in the Business Data Model.
+
+|link:class-use/MessageEvent.html#com.bonitasoft.test.toolkit[MessageEvent] a|
+A message event used to trigger any catch message event
+
+|link:class-use/ProcessDefinition.html#com.bonitasoft.test.toolkit[ProcessDefinition] a|
+Represent a Bonita process definition.
+
+|link:class-use/SignalEvent.html#com.bonitasoft.test.toolkit[SignalEvent] a|
+A signal event used to trigger any catch signal event
+
+|link:class-use/User.html#com.bonitasoft.test.toolkit[User] a|
+A User of the organization.
+
+|=======================================================================================
+* [#com.bonitasoft.test.toolkit.contract]##
++
+.Classes in link:package-summary.html[com.bonitasoft.test.toolkit.model] used by link:../contract/package-summary.html[com.bonitasoft.test.toolkit.contract][.tabEnd]# #
+[width="100%",cols="50%,50%",options="header",]
+|==============================================================================
+|Class |Description
+|link:class-use/Contract.html#com.bonitasoft.test.toolkit.contract[Contract] a|
+A contract, used to instantiate a process or execute a user task.
+
+|==============================================================================
+* [#com.bonitasoft.test.toolkit.internal]##
++
+.Classes in link:package-summary.html[com.bonitasoft.test.toolkit.model] used by link:../internal/package-summary.html[com.bonitasoft.test.toolkit.internal][.tabEnd]# #
+[width="100%",cols="50%,50%",options="header",]
+|================================================================================================
+|Class |Description
+|link:class-use/BusinessData.html#com.bonitasoft.test.toolkit.internal[BusinessData] a|
+A Business data stored in the Business Data Model database. +
+Generic methods are available to retrieve the fields of the business data by name.
+
+|link:class-use/BusinessObjectDAO.html#com.bonitasoft.test.toolkit.internal[BusinessObjectDAO] a|
+A DAO matching a Business Object defined in the Business Data Model.
+
+|link:class-use/MessageEvent.html#com.bonitasoft.test.toolkit.internal[MessageEvent] a|
+A message event used to trigger any catch message event
+
+|link:class-use/ProcessDefinition.html#com.bonitasoft.test.toolkit.internal[ProcessDefinition] a|
+Represent a Bonita process definition.
+
+|link:class-use/SignalEvent.html#com.bonitasoft.test.toolkit.internal[SignalEvent] a|
+A signal event used to trigger any catch signal event
+
+|link:class-use/User.html#com.bonitasoft.test.toolkit.internal[User] a|
+A User of the organization.
+
+|================================================================================================
+* [#com.bonitasoft.test.toolkit.internal.contract]##
++
+.Classes in link:package-summary.html[com.bonitasoft.test.toolkit.model] used by link:../internal/contract/package-summary.html[com.bonitasoft.test.toolkit.internal.contract][.tabEnd]# #
+[width="100%",cols="50%,50%",options="header",]
+|=======================================================================================
+|Class |Description
+|link:class-use/Contract.html#com.bonitasoft.test.toolkit.internal.contract[Contract] a|
+A contract, used to instantiate a process or execute a user task.
+
+|=======================================================================================
+* [#com.bonitasoft.test.toolkit.internal.proxy]##
++
+.Classes in link:package-summary.html[com.bonitasoft.test.toolkit.model] used by link:../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy][.tabEnd]# #
+[width="100%",cols="50%,50%",options="header",]
+|===============================================================================================================================================================================================================================================================
+|Class |Description
+|link:class-use/AbstractTask.html#com.bonitasoft.test.toolkit.internal.proxy[AbstractTask] a|
+Abstract representation of a Task, used to retrieve meta information or properties on a task.
+
+|link:class-use/BusinessData.html#com.bonitasoft.test.toolkit.internal.proxy[BusinessData] a|
+A Business data stored in the Business Data Model database. +
+Generic methods are available to retrieve the fields of the business data by name.
+
+|link:class-use/BusinessObjectDAO.html#com.bonitasoft.test.toolkit.internal.proxy[BusinessObjectDAO] a|
+A DAO matching a Business Object defined in the Business Data Model.
+
+|link:class-use/Connector.html#com.bonitasoft.test.toolkit.internal.proxy[Connector] a|
+Representation of a Connector, used to retrieve meta information or execution information.
+
+|link:class-use/ConnectorActivationEvent.html#com.bonitasoft.test.toolkit.internal.proxy[ConnectorActivationEvent] a|
+Representation of the activation event of a given connector: - ON_ENTER - ON_FINISH
+
+|link:class-use/ConnectorState.html#com.bonitasoft.test.toolkit.internal.proxy[ConnectorState] a|
+Representation of the state of a given connector: - DONE - FAILED - TO_BE_EXECUTED - EXECUTING - TO_RE_EXECUTE - SKIPPED
+
+|link:class-use/ContactData.html#com.bonitasoft.test.toolkit.internal.proxy[ContactData] | 
+|link:class-use/Contract.html#com.bonitasoft.test.toolkit.internal.proxy[Contract] a|
+A contract, used to instantiate a process or execute a user task.
+
+|link:class-use/Document.html#com.bonitasoft.test.toolkit.internal.proxy[Document] a|
+A Bonita document is defined as a process data on the process definition, and can be set and updated during the execution of the process.
+
+|link:class-use/ProcessDefinition.html#com.bonitasoft.test.toolkit.internal.proxy[ProcessDefinition] a|
+Represent a Bonita process definition.
+
+|link:class-use/ProcessInstance.html#com.bonitasoft.test.toolkit.internal.proxy[ProcessInstance] a|
+Representation of an instance of a process (i.e a case).
+
+|link:class-use/ProcessInstanceState.html#com.bonitasoft.test.toolkit.internal.proxy[ProcessInstanceState] a|
+Representation of the state of a given process instance: - initializing - started - suspended - cancelled - aborting - aborted - completing - completed - error
+
+|link:class-use/QueryParameter.html#com.bonitasoft.test.toolkit.internal.proxy[QueryParameter] a|
+A QueryParameter is a typed key/value couple used in a Business Object query.
+
+|link:class-use/Task.html#com.bonitasoft.test.toolkit.internal.proxy[Task] | 
+|link:class-use/TaskState.html#com.bonitasoft.test.toolkit.internal.proxy[TaskState] a|
+Representation of the state of a given task instance: - ready - failed - completed - initializing - executing - completing - waiting - skipped - cancelled - aborted - cancelling subtasks - aborting activity with boundary - completing activity with boundary
+
+|link:class-use/TaskType.html#com.bonitasoft.test.toolkit.internal.proxy[TaskType] a|
+All the existing task types: - AUTOMATIC_TASK - HUMAN_TASK - USER_TASK - MANUAL_TASK - LOOP_ACTIVITY - MULTI_INSTANCE_ACTIVITY - CALL_ACTIVITY
+
+|link:class-use/TimerEventTrigger.html#com.bonitasoft.test.toolkit.internal.proxy[TimerEventTrigger] a|
+Representation of a timer.
+
+|link:class-use/User.html#com.bonitasoft.test.toolkit.internal.proxy[User] a|
+A User of the organization.
+
+|link:class-use/UserTask.html#com.bonitasoft.test.toolkit.internal.proxy[UserTask] a|
+A user task of a process.
+
+|link:class-use/Variable.html#com.bonitasoft.test.toolkit.internal.proxy[Variable] a|
+A process or task variable In addition to opened process instances and tasks, variables can be retrieved from archived process instance or archived task (since Bonita Runtime 7.14.0)
+
+|===============================================================================================================================================================================================================================================================
+* [#com.bonitasoft.test.toolkit.model]##
++
+.Classes in link:package-summary.html[com.bonitasoft.test.toolkit.model] used by link:package-summary.html[com.bonitasoft.test.toolkit.model][.tabEnd]# #
+[width="100%",cols="50%,50%",options="header",]
+|===============================================================================================================================================================================================================================================================
+|Class |Description
+|link:class-use/AbstractTask.html#com.bonitasoft.test.toolkit.model[AbstractTask] a|
+Abstract representation of a Task, used to retrieve meta information or properties on a task.
+
+|link:class-use/BusinessData.html#com.bonitasoft.test.toolkit.model[BusinessData] a|
+A Business data stored in the Business Data Model database. +
+Generic methods are available to retrieve the fields of the business data by name.
+
+|link:class-use/Connector.html#com.bonitasoft.test.toolkit.model[Connector] a|
+Representation of a Connector, used to retrieve meta information or execution information.
+
+|link:class-use/ConnectorActivationEvent.html#com.bonitasoft.test.toolkit.model[ConnectorActivationEvent] a|
+Representation of the activation event of a given connector: - ON_ENTER - ON_FINISH
+
+|link:class-use/ConnectorState.html#com.bonitasoft.test.toolkit.model[ConnectorState] a|
+Representation of the state of a given connector: - DONE - FAILED - TO_BE_EXECUTED - EXECUTING - TO_RE_EXECUTE - SKIPPED
+
+|link:class-use/ContactData.html#com.bonitasoft.test.toolkit.model[ContactData] | 
+|link:class-use/Contract.html#com.bonitasoft.test.toolkit.model[Contract] a|
+A contract, used to instantiate a process or execute a user task.
+
+|link:class-use/Document.html#com.bonitasoft.test.toolkit.model[Document] a|
+A Bonita document is defined as a process data on the process definition, and can be set and updated during the execution of the process.
+
+|link:class-use/MessageEvent.html#com.bonitasoft.test.toolkit.model[MessageEvent] a|
+A message event used to trigger any catch message event
+
+|link:class-use/MessageEvent.MessageEventBuiler.html#com.bonitasoft.test.toolkit.model[MessageEvent.MessageEventBuiler] a|
+A pratical builder to create a link:MessageEvent.html[`MessageEvent`]
+
+|link:class-use/ProcessDefinition.html#com.bonitasoft.test.toolkit.model[ProcessDefinition] a|
+Represent a Bonita process definition.
+
+|link:class-use/ProcessInstance.html#com.bonitasoft.test.toolkit.model[ProcessInstance] a|
+Representation of an instance of a process (i.e a case).
+
+|link:class-use/ProcessInstanceState.html#com.bonitasoft.test.toolkit.model[ProcessInstanceState] a|
+Representation of the state of a given process instance: - initializing - started - suspended - cancelled - aborting - aborted - completing - completed - error
+
+|link:class-use/QueryParameter.html#com.bonitasoft.test.toolkit.model[QueryParameter] a|
+A QueryParameter is a typed key/value couple used in a Business Object query.
+
+|link:class-use/SignalEvent.html#com.bonitasoft.test.toolkit.model[SignalEvent] a|
+A signal event used to trigger any catch signal event
+
+|link:class-use/Task.html#com.bonitasoft.test.toolkit.model[Task] | 
+|link:class-use/TaskState.html#com.bonitasoft.test.toolkit.model[TaskState] a|
+Representation of the state of a given task instance: - ready - failed - completed - initializing - executing - completing - waiting - skipped - cancelled - aborted - cancelling subtasks - aborting activity with boundary - completing activity with boundary
+
+|link:class-use/TaskType.html#com.bonitasoft.test.toolkit.model[TaskType] a|
+All the existing task types: - AUTOMATIC_TASK - HUMAN_TASK - USER_TASK - MANUAL_TASK - LOOP_ACTIVITY - MULTI_INSTANCE_ACTIVITY - CALL_ACTIVITY
+
+|link:class-use/TimerEventTrigger.html#com.bonitasoft.test.toolkit.model[TimerEventTrigger] a|
+Representation of a timer.
+
+|link:class-use/User.html#com.bonitasoft.test.toolkit.model[User] a|
+A User of the organization.
+
+|link:class-use/UserTask.html#com.bonitasoft.test.toolkit.model[UserTask] a|
+A user task of a process.
+
+|link:class-use/Variable.html#com.bonitasoft.test.toolkit.model[Variable] a|
+A process or task variable In addition to opened process instances and tasks, variables can be retrieved from archived process instance or archived task (since Bonita Runtime 7.14.0)
+
+|===============================================================================================================================================================================================================================================================
+* [#com.bonitasoft.test.toolkit.predicate]##
++
+.Classes in link:package-summary.html[com.bonitasoft.test.toolkit.model] used by link:../predicate/package-summary.html[com.bonitasoft.test.toolkit.predicate][.tabEnd]# #
+[width="100%",cols="50%,50%",options="header",]
+|=================================================================================================
+|Class |Description
+|link:class-use/AbstractTask.html#com.bonitasoft.test.toolkit.predicate[AbstractTask] a|
+Abstract representation of a Task, used to retrieve meta information or properties on a task.
+
+|link:class-use/Connector.html#com.bonitasoft.test.toolkit.predicate[Connector] a|
+Representation of a Connector, used to retrieve meta information or execution information.
+
+|link:class-use/ProcessDefinition.html#com.bonitasoft.test.toolkit.predicate[ProcessDefinition] a|
+Represent a Bonita process definition.
+
+|link:class-use/ProcessInstance.html#com.bonitasoft.test.toolkit.predicate[ProcessInstance] a|
+Representation of an instance of a process (i.e a case).
+
+|link:class-use/User.html#com.bonitasoft.test.toolkit.predicate[User] a|
+A User of the organization.
+
+|link:class-use/UserTask.html#com.bonitasoft.test.toolkit.predicate[UserTask] a|
+A user task of a process.
+
+|=================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* Use
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

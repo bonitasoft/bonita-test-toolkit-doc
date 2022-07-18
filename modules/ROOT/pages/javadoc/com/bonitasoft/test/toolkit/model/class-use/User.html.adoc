@@ -1,0 +1,221 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../User.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Interface +
+com.bonitasoft.test.toolkit.model.User
+
+* .Packages that use link:../User.html[User][.tabEnd]# #
+[cols=",",options="header",]
+|===============================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit[com.bonitasoft.test.toolkit] | 
+|link:#com.bonitasoft.test.toolkit.internal[com.bonitasoft.test.toolkit.internal] | 
+|link:#com.bonitasoft.test.toolkit.internal.proxy[com.bonitasoft.test.toolkit.internal.proxy] | 
+|link:#com.bonitasoft.test.toolkit.model[com.bonitasoft.test.toolkit.model] | 
+|link:#com.bonitasoft.test.toolkit.predicate[com.bonitasoft.test.toolkit.predicate] | 
+|===============================================================================================
+* ** [#com.bonitasoft.test.toolkit]##
+
+==== Uses of link:../User.html[User] in link:../../package-summary.html[com.bonitasoft.test.toolkit]
+
+.Methods in link:../../package-summary.html[com.bonitasoft.test.toolkit] that return link:../User.html[User][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|==========================================================================
+|Modifier and Type |Method |Description
+|`User` |[.typeNameLabel]#BonitaTestToolkit.#`getUser​(String userName)` a|
+Retrieves a Bonita user using its user name.
+
+|==========================================================================
+
+.Methods in link:../../package-summary.html[com.bonitasoft.test.toolkit] that return types with arguments of type link:../User.html[User][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|=============================================================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`List<User>` |[.typeNameLabel]#BonitaTestToolkit.#`findUsersInGroup​(String groupPath,                 int pageIndex,                 int count)` a|
+Search for all Bonita users belonging to a specific group.
+
+|`List<User>` |[.typeNameLabel]#BonitaTestToolkit.#`findUsersWithMembership​(String groupPath,                        String role,                        int pageIndex,                        int count)` a|
+Search for all Bonita users with a specific membership.
+
+|`List<User>` |[.typeNameLabel]#BonitaTestToolkit.#`findUsersWithRole​(String role,                  int pageIndex,                  int count)` a|
+Search for all Bonita users with a specific role.
+
+|=============================================================================================================================================================================================================
+** [#com.bonitasoft.test.toolkit.internal]##
+
+==== Uses of link:../User.html[User] in link:../../internal/package-summary.html[com.bonitasoft.test.toolkit.internal]
+
+.Methods in link:../../internal/package-summary.html[com.bonitasoft.test.toolkit.internal] that return link:../User.html[User][.tabEnd]# #
+[cols=",,",options="header",]
+|==============================================================================
+|Modifier and Type |Method |Description
+|`User` |[.typeNameLabel]#BonitaTestToolkitImpl.#`getUser​(String userName)` | 
+|==============================================================================
+
+.Methods in link:../../internal/package-summary.html[com.bonitasoft.test.toolkit.internal] that return types with arguments of type link:../User.html[User][.tabEnd]# #
+[cols=",,",options="header",]
+|=====================================================================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`List<User>` |[.typeNameLabel]#BonitaTestToolkitImpl.#`findUsersInGroup​(String groupPath,                 int pageIndex,                 int count)` | 
+|`List<User>` |[.typeNameLabel]#BonitaTestToolkitImpl.#`findUsersWithMembership​(String groupPath,                        String roleName,                        int pageIndex,                        int count)` | 
+|`List<User>` |[.typeNameLabel]#BonitaTestToolkitImpl.#`findUsersWithRole​(String roleName,                  int pageIndex,                  int count)` | 
+|=====================================================================================================================================================================================================================
+** [#com.bonitasoft.test.toolkit.internal.proxy]##
+
+==== Uses of link:../User.html[User] in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+.Classes in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that implement link:../User.html[User][.tabEnd]# #
+[cols=",,",options="header",]
+|=====================================
+|Modifier and Type |Class |Description
+|`class ` |`UserProxy` | 
+|=====================================
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that return link:../User.html[User][.tabEnd]# #
+[cols=",,",options="header",]
+|==================================================================================
+|Modifier and Type |Method |Description
+|`User` |[.typeNameLabel]#UserProxy.#`call()` | 
+|`User` |[.typeNameLabel]#ProxyFactory.#`createUser​(String userId)` | 
+|`User` |[.typeNameLabel]#ProxyFactory.#`createUserByUsername​(String userName)` | 
+|`User` |[.typeNameLabel]#UserTaskProxy.#`getAssignee()` | 
+|`User` |[.typeNameLabel]#UserTaskProxy.#`getExecutedBy()` | 
+|`User` |[.typeNameLabel]#UserProxy.#`getManager()` | 
+|`User` |[.typeNameLabel]#ProcessInstanceProxy.#`getStartedBy()` | 
+|`User` |[.typeNameLabel]#ProcessInstanceProxy.#`getStartedBySubstitute()` | 
+|`User` |[.typeNameLabel]#DocumentProxy.#`getSubmittedBy()` | 
+|==================================================================================
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that return types with arguments of type link:../User.html[User][.tabEnd]# #
+[cols=",,",options="header",]
+|==========================================================================
+|Modifier and Type |Method |Description
+|`Set<User>` |[.typeNameLabel]#UserTaskProxy.#`getCandidates()` | 
+|`Set<User>` |[.typeNameLabel]#ProcessDefinitionProxy.#`getInitiators()` | 
+|==========================================================================
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] with parameters of type link:../User.html[User][.tabEnd]# #
+[cols=",,",options="header",]
+|==============================================================================================================================
+|Modifier and Type |Method |Description
+|`UserTaskProxy` |[.typeNameLabel]#UserTaskProxy.#`assignTo​(User user)` | 
+|`UserTask` |[.typeNameLabel]#UserTaskProxy.#`execute​(User assignee)` | 
+|`UserTaskProxy` |[.typeNameLabel]#UserTaskProxy.#`execute​(User assignee,        Contract contract)` | 
+|`ProcessInstance` |[.typeNameLabel]#ProcessDefinitionProxy.#`startProcessFor​(User user)` | 
+|`ProcessInstance` |[.typeNameLabel]#ProcessDefinitionProxy.#`startProcessFor​(User user,                Contract contract)` | 
+|==============================================================================================================================
+** [#com.bonitasoft.test.toolkit.model]##
+
+==== Uses of link:../User.html[User] in link:../package-summary.html[com.bonitasoft.test.toolkit.model]
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.model] that return link:../User.html[User][.tabEnd]# #
+[cols=",,",options="header",]
+|=======================================================================
+|Modifier and Type |Method |Description
+|`User` |[.typeNameLabel]#UserTask.#`getAssignee()` | 
+|`User` |[.typeNameLabel]#UserTask.#`getExecutedBy()` | 
+|`User` |[.typeNameLabel]#User.#`getManager()` | 
+|`User` |[.typeNameLabel]#ProcessInstance.#`getStartedBy()` | 
+|`User` |[.typeNameLabel]#ProcessInstance.#`getStartedBySubstitute()` | 
+|`User` |[.typeNameLabel]#Document.#`getSubmittedBy()` | 
+|=======================================================================
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.model] that return types with arguments of type link:../User.html[User][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|=====================================================================================================
+|Modifier and Type |Method |Description
+|`Set<User>` |[.typeNameLabel]#UserTask.#`getCandidates()` | 
+|`Set<User>` |[.typeNameLabel]#ProcessDefinition.#`getInitiators()` a|
+An _initiator_ of a process is a link:../User.html[`User`] that can start an instance of this process.
+
+|=====================================================================================================
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.model] with parameters of type link:../User.html[User][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|=========================================================================================================================
+|Modifier and Type |Method |Description
+|`UserTask` |[.typeNameLabel]#UserTask.#`assignTo​(User user)` | 
+|`UserTask` |[.typeNameLabel]#UserTask.#`execute​(User user)` a|
+Assign and execute this task.
+
+|`UserTask` |[.typeNameLabel]#UserTask.#`execute​(User assignee,        Contract contract)` a|
+Assign and execute this task with a contract
+
+|`ProcessInstance` |[.typeNameLabel]#ProcessDefinition.#`startProcessFor​(User user)` a|
+Starts an instance of this process for a given user, without contract.
+
+|`ProcessInstance` |[.typeNameLabel]#ProcessDefinition.#`startProcessFor​(User user,                Contract contract)` a|
+Starts an instance of this process for a given user, with a contract.
+
+|=========================================================================================================================
+** [#com.bonitasoft.test.toolkit.predicate]##
+
+==== Uses of link:../User.html[User] in link:../../predicate/package-summary.html[com.bonitasoft.test.toolkit.predicate]
+
+.Methods in link:../../predicate/package-summary.html[com.bonitasoft.test.toolkit.predicate] with parameters of type link:../User.html[User][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|====================================================================================================================
+|Modifier and Type |Method |Description
+|`static Predicate<ProcessDefinition>` |[.typeNameLabel]#ProcessDefinitionPredicates.#`canBeStartedBy​(User user)` a|
+Verify if a link:../ProcessDefinition.html[`ProcessDefinition`] can be started by the given user.
+
+|`static Predicate<UserTask>` |[.typeNameLabel]#UserTaskPredicates.#`hasBeenExecutedBy​(User user)` a|
+Verify if a link:../UserTask.html[`UserTask`] has been executed by the given link:../User.html[`User`].
+
+|`static Predicate<ProcessInstance>` |[.typeNameLabel]#ProcessInstancePredicates.#`hasBeenStartedBy​(User user)` a|
+Verify if a link:../ProcessInstance.html[`ProcessInstance`] has been started by the given user.
+
+|`static Predicate<UserTask>` |[.typeNameLabel]#UserTaskPredicates.#`hasCandidates​(User... candidates)` a|
+Verify if a link:../UserTask.html[`UserTask`] can be executed by the given link:../User.html[`User`] candidates.
+
+|`static Predicate<UserTask>` |[.typeNameLabel]#UserTaskPredicates.#`isAssignedTo​(User user)` a|
+Verify if a link:../UserTask.html[`UserTask`] is assigned to a given link:../User.html[`User`].
+
+|====================================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../User.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

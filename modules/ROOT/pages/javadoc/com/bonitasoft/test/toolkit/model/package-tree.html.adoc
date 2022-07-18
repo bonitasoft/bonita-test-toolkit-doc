@@ -1,0 +1,91 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* Use
+* Tree
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageHierarchyLabel]#Package Hierarchies:#
+
+* link:../../../../../overview-tree.html[All Packages]
+
+=== Class Hierarchy
+
+* java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[[.typeNameLink]#Object#]
+** com.bonitasoft.test.toolkit.model.link:MessageEvent.MessageEventBuiler.html[[.typeNameLink]#MessageEvent.MessageEventBuiler#]
+** com.bonitasoft.test.toolkit.model.link:MessageEvent.MessageEventImpl.html[[.typeNameLink]#MessageEvent.MessageEventImpl#] (implements com.bonitasoft.test.toolkit.model.link:MessageEvent.html[MessageEvent])
+** com.bonitasoft.test.toolkit.model.link:SignalEvent.SignalEventImpl.html[[.typeNameLink]#SignalEvent.SignalEventImpl#] (implements com.bonitasoft.test.toolkit.model.link:SignalEvent.html[SignalEvent])
+
+=== Interface Hierarchy
+
+* com.bonitasoft.test.toolkit.model.link:BusinessData.html[[.typeNameLink]#BusinessData#]
+* com.bonitasoft.test.toolkit.model.link:BusinessObjectDAO.html[[.typeNameLink]#BusinessObjectDAO#]<T>
+* java.util.concurrent.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html?is-external=true[[.typeNameLink]#Callable#]<V>
+** com.bonitasoft.test.toolkit.model.link:AbstractTask.html[[.typeNameLink]#AbstractTask#]<SELF>
+*** com.bonitasoft.test.toolkit.model.link:Task.html[[.typeNameLink]#Task#]
+*** com.bonitasoft.test.toolkit.model.link:UserTask.html[[.typeNameLink]#UserTask#]
+** com.bonitasoft.test.toolkit.model.link:Connector.html[[.typeNameLink]#Connector#]
+** com.bonitasoft.test.toolkit.model.link:ProcessDefinition.html[[.typeNameLink]#ProcessDefinition#]
+** com.bonitasoft.test.toolkit.model.link:ProcessInstance.html[[.typeNameLink]#ProcessInstance#]
+** com.bonitasoft.test.toolkit.model.link:User.html[[.typeNameLink]#User#]
+* com.bonitasoft.test.toolkit.model.link:ContactData.html[[.typeNameLink]#ContactData#]
+* com.bonitasoft.test.toolkit.model.link:Contract.html[[.typeNameLink]#Contract#]
+* com.bonitasoft.test.toolkit.model.link:Document.html[[.typeNameLink]#Document#]
+* com.bonitasoft.test.toolkit.model.link:MessageEvent.html[[.typeNameLink]#MessageEvent#]
+* com.bonitasoft.test.toolkit.model.link:QueryParameter.html[[.typeNameLink]#QueryParameter#]<T>
+* com.bonitasoft.test.toolkit.model.link:SignalEvent.html[[.typeNameLink]#SignalEvent#]
+* com.bonitasoft.test.toolkit.model.link:TimerEventTrigger.html[[.typeNameLink]#TimerEventTrigger#]
+* com.bonitasoft.test.toolkit.model.link:Variable.html[[.typeNameLink]#Variable#]
+
+=== Enum Hierarchy
+
+* java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[[.typeNameLink]#Object#]
+** java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html?is-external=true[[.typeNameLink]#Enum#]<E> (implements java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html?is-external=true[Comparable]<T>, java.io.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Serializable.html?is-external=true[Serializable])
+*** com.bonitasoft.test.toolkit.model.link:ConnectorActivationEvent.html[[.typeNameLink]#ConnectorActivationEvent#]
+*** com.bonitasoft.test.toolkit.model.link:ConnectorState.html[[.typeNameLink]#ConnectorState#]
+*** com.bonitasoft.test.toolkit.model.link:ProcessInstanceState.html[[.typeNameLink]#ProcessInstanceState#]
+*** com.bonitasoft.test.toolkit.model.link:TaskState.html[[.typeNameLink]#TaskState#]
+*** com.bonitasoft.test.toolkit.model.link:TaskType.html[[.typeNameLink]#TaskType#]
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* Use
+* Tree
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

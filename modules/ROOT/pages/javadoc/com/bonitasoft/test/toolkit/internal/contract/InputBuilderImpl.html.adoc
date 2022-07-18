@@ -1,0 +1,710 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/InputBuilderImpl.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* link:#field.summary[Field] | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* link:#field.detail[Field] | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.contract]
+
+=== Class InputBuilderImpl<T extends link:../../contract/InputBuilder.html[InputBuilder]<T>>
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.internal.contract.InputBuilderImpl<T>
+
+* All Implemented Interfaces:::
+  `InputBuilder<T>`
++
+Direct Known Subclasses:::
+  `ComplexInputBuilderImpl`, `ContractBuilderImpl`
++
+
+'''''
++
+....
+public abstract class InputBuilderImpl<T extends InputBuilder<T>>
+extends Object
+implements InputBuilder<T>
+....
+
+* ** [#field.summary]##
++
+==== Field Summary
++
+.Fields[.tabEnd]# #
+[cols=",,",options="header",]
+|================================================================================================
+|Modifier and Type |Field |Description
+|`protected Map<String,​Function<org.bonitasoft.web.client.BonitaClient,​Object>>` |`contract` | 
+|================================================================================================
++
+** [#constructor.summary]##
++
+==== Constructor Summary
++
+.Constructors[.tabEnd]# #
+[cols=",",options="header",]
+|========================
+|Constructor |Description
+|`InputBuilderImpl()` | 
+|========================
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|===========================================================================================================
+|Modifier and Type |Method |Description
+|`T` |`booleanInput​(String name,             Boolean value)` a|
+Add a boolean input to the contract
+
+|`T` |`complexInput​(String name,             ComplexInputBuilder inputBuilder)` a|
+Add a complex input to the contract
+
+|`T` |`dateInput​(String name,          Date value)` a|
+Add a date input to the contract
+
+|`T` |`decimalInput​(String name,             Double value)` a|
+Add a decimal input to the contract
+
+|`T` |`fileInput​(String name,          String classpathURL)` a|
+Add a file input to the contract
+
+|`T` |`integerInput​(String name,             Integer value)` a|
+Add an integer input to the contract
+
+|`T` |`localDateInput​(String name,               LocalDate value)` a|
+Add a local date input to the contract
+
+|`T` |`localDateTimeInput​(String name,                   LocalDateTime value)` a|
+Add a local date time input to the contract
+
+|`T` |`longInput​(String name,          Long value)` a|
+Add a long input to the contract
+
+|`T` |`multipleBooleanInput​(String name,                     List<Boolean> values)` a|
+Add a multiple boolean input to the contract
+
+|`T` |`multipleComplexInput​(String name,                     List<ComplexInputBuilder> inputBuilders)` a|
+Add a multiple complex input to the contract
+
+|`T` |`multipleDateInput​(String name,                  List<Date> values)` a|
+Add a multiple date input to the contract
+
+|`T` |`multipleDecimalInput​(String name,                     List<Double> values)` a|
+Add a multiple decimal input to the contract
+
+|`T` |`multipleFileInput​(String name,                  List<String> classpathURLs)` a|
+Add a multiple file input to the contract
+
+|`T` |`multipleIntegerInput​(String name,                     List<Integer> values)` a|
+Add a multiple integer input to the contract
+
+|`T` |`multipleLocalDateInput​(String name,                       List<LocalDate> values)` a|
+Add a multiple local date input to the contract
+
+|`T` |`multipleLocalDateTimeInput​(String name,                           List<LocalDateTime> values)` a|
+Add a multiple local date time input to the contract
+
+|`T` |`multipleLongInput​(String name,                  List<Long> values)` a|
+Add a multiple long input to the contract
+
+|`T` |`multipleOffsetDateTimeInput​(String name,                            List<OffsetDateTime> values)` a|
+Add a multiple offset date time input to the contract
+
+|`T` |`multipleTextInput​(String name,                  List<String> values)` a|
+Add a multiple text input to the contract
+
+|`T` |`offsetDateTimeInput​(String name,                    OffsetDateTime value)` a|
+Add an offset date time input to the contract
+
+|`T` |`textInput​(String name,          String value)` a|
+Add a text input to the contract
+
+|===========================================================================================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+
+* ** [#field.detail]##
++
+==== Field Detail
++
+[#contract]##
+*** ===== contract
++
+....
+protected Map<String,​Function<org.bonitasoft.web.client.BonitaClient,​Object>> contract
+....
++
+** [#constructor.detail]##
++
+==== Constructor Detail
++
+[#<init>()]##
+*** ===== InputBuilderImpl
++
+....
+public InputBuilderImpl()
+....
++
+** [#method.detail]##
++
+==== Method Detail
++
+[#textInput(java.lang.String,java.lang.String)]##
+*** ===== textInput
++
+[source,methodSignature]
+----
+public T textInput​(String name,
+                   String value)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a text input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `textInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the text contract input.
+  +
+  `value` - The value for the text contract input, of type https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true[`String`].
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#multipleTextInput(java.lang.String,java.util.List)]##
+*** ===== multipleTextInput
++
+[source,methodSignature]
+----
+public T multipleTextInput​(String name,
+                           List<String> values)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a multiple text input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `multipleTextInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple text contract input.
+  +
+  `values` - The text values for the multiple contract input, of type https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List<String>`].
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#booleanInput(java.lang.String,java.lang.Boolean)]##
+*** ===== booleanInput
++
+[source,methodSignature]
+----
+public T booleanInput​(String name,
+                      Boolean value)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a boolean input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `booleanInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the boolean contract input.
+  +
+  `value` - The value for the boolean contract input, of type https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true[`Boolean`].
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#multipleBooleanInput(java.lang.String,java.util.List)]##
+*** ===== multipleBooleanInput
++
+[source,methodSignature]
+----
+public T multipleBooleanInput​(String name,
+                              List<Boolean> values)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a multiple boolean input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `multipleBooleanInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple boolean contract input.
+  +
+  `values` - The boolean values for the multiple contract input, of type https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List<Boolean>`].
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#integerInput(java.lang.String,java.lang.Integer)]##
+*** ===== integerInput
++
+[source,methodSignature]
+----
+public T integerInput​(String name,
+                      Integer value)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add an integer input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `integerInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the integer contract input.
+  +
+  `value` - The value for the integer contract input, of type https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html?is-external=true[`Integer`].
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#multipleIntegerInput(java.lang.String,java.util.List)]##
+*** ===== multipleIntegerInput
++
+[source,methodSignature]
+----
+public T multipleIntegerInput​(String name,
+                              List<Integer> values)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a multiple integer input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `multipleIntegerInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple integer contract input.
+  +
+  `values` - The integer values for the multiple contract input, of type https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List<Integer>`].
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#decimalInput(java.lang.String,java.lang.Double)]##
+*** ===== decimalInput
++
+[source,methodSignature]
+----
+public T decimalInput​(String name,
+                      Double value)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a decimal input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `decimalInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the decimal contract input.
+  +
+  `value` - The value for the decimal contract input, of type https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true[`Double`].
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#multipleDecimalInput(java.lang.String,java.util.List)]##
+*** ===== multipleDecimalInput
++
+[source,methodSignature]
+----
+public T multipleDecimalInput​(String name,
+                              List<Double> values)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a multiple decimal input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `multipleDecimalInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple decimal contract input.
+  +
+  `values` - The decimal values for the multiple contract input, of type https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List<Double>`].
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#longInput(java.lang.String,java.lang.Long)]##
+*** ===== longInput
++
+[source,methodSignature]
+----
+public T longInput​(String name,
+                   Long value)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a long input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `longInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the long contract input.
+  +
+  `value` - The value for the long contract input, of type https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html?is-external=true[`Long`].
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#multipleLongInput(java.lang.String,java.util.List)]##
+*** ===== multipleLongInput
++
+[source,methodSignature]
+----
+public T multipleLongInput​(String name,
+                           List<Long> values)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a multiple long input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `multipleLongInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple long contract input.
+  +
+  `values` - The long values for the multiple contract input, of type https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List<Long>`].
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#fileInput(java.lang.String,java.lang.String)]##
+*** ===== fileInput
++
+[source,methodSignature]
+----
+public T fileInput​(String name,
+                   String classpathURL)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a file input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `fileInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the file contract input.
+  +
+  `classpathURL` - The URL of the file, presents in the classpath.
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#multipleFileInput(java.lang.String,java.util.List)]##
+*** ===== multipleFileInput
++
+[source,methodSignature]
+----
+public T multipleFileInput​(String name,
+                           List<String> classpathURLs)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a multiple file input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `multipleFileInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple file contract input.
+  +
+  `classpathURLs` - The URL's of the files, present in the class-path.
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#dateInput(java.lang.String,java.util.Date)]##
+*** ===== dateInput
++
+[source,methodSignature]
+----
+public T dateInput​(String name,
+                   Date value)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a date input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `dateInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the date contract input.
+  +
+  `value` - The value for the date contract input, of type https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html?is-external=true[`Date`].
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#multipleDateInput(java.lang.String,java.util.List)]##
+*** ===== multipleDateInput
++
+[source,methodSignature]
+----
+public T multipleDateInput​(String name,
+                           List<Date> values)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a multiple date input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `multipleDateInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple date contract input.
+  +
+  `values` - The date values for the multiple contract input, of type https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List<Date>`].
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#localDateInput(java.lang.String,java.time.LocalDate)]##
+*** ===== localDateInput
++
+[source,methodSignature]
+----
+public T localDateInput​(String name,
+                        LocalDate value)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a local date input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `localDateInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the local date contract input.
+  +
+  `value` - The value for the local date contract input, of type https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html?is-external=true[`LocalDate`].
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#multipleLocalDateInput(java.lang.String,java.util.List)]##
+*** ===== multipleLocalDateInput
++
+[source,methodSignature]
+----
+public T multipleLocalDateInput​(String name,
+                                List<LocalDate> values)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a multiple local date input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `multipleLocalDateInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple local date contract input.
+  +
+  `values` - The local date values for the multiple contract input, of type https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List<LocalDate>`].
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#localDateTimeInput(java.lang.String,java.time.LocalDateTime)]##
+*** ===== localDateTimeInput
++
+[source,methodSignature]
+----
+public T localDateTimeInput​(String name,
+                            LocalDateTime value)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a local date time input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `localDateTimeInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the local date time contract input.
+  +
+  `value` - The value for the local date time contract input, of type https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html?is-external=true[`LocalDateTime`].
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#multipleLocalDateTimeInput(java.lang.String,java.util.List)]##
+*** ===== multipleLocalDateTimeInput
++
+[source,methodSignature]
+----
+public T multipleLocalDateTimeInput​(String name,
+                                    List<LocalDateTime> values)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a multiple local date time input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `multipleLocalDateTimeInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple local date time contract input.
+  +
+  `values` - The local date time values for the multiple contract input, of type https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List<LocalDateTime>`].
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#offsetDateTimeInput(java.lang.String,java.time.OffsetDateTime)]##
+*** ===== offsetDateTimeInput
++
+[source,methodSignature]
+----
+public T offsetDateTimeInput​(String name,
+                             OffsetDateTime value)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add an offset date time input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `offsetDateTimeInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the offset date time contract input.
+  +
+  `value` - The value for the offset date time contract input, of type https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html?is-external=true[`OffsetDateTime`].
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#multipleOffsetDateTimeInput(java.lang.String,java.util.List)]##
+*** ===== multipleOffsetDateTimeInput
++
+[source,methodSignature]
+----
+public T multipleOffsetDateTimeInput​(String name,
+                                     List<OffsetDateTime> values)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a multiple offset date time input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `multipleOffsetDateTimeInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple offset date time contract input.
+  +
+  `values` - The local offset time values for the multiple contract input, of type https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List<OffsetDateTime>`].
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
++
+[#complexInput(java.lang.String,com.bonitasoft.test.toolkit.contract.ComplexInputBuilder)]##
+*** ===== complexInput
++
+[source,methodSignature]
+----
+public T complexInput​(String name,
+                      ComplexInputBuilder inputBuilder)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a complex input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `complexInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the complex contract input.
+  +
+  `inputBuilder` - The link:../../contract/ComplexInputBuilder.html[`ComplexInputBuilder`] representing the value of the complex input.
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
+[.seeLabel]#See Also:#::
+  link:../../contract/ComplexInputBuilder.html#complexInput()[`ComplexInputBuilder.complexInput()`]
++
+[#multipleComplexInput(java.lang.String,java.util.List)]##
+*** ===== multipleComplexInput
++
+[source,methodSignature]
+----
+public T multipleComplexInput​(String name,
+                              List<ComplexInputBuilder> inputBuilders)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `InputBuilder`#
++
+Add a multiple complex input to the contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `multipleComplexInput` in interface `InputBuilder<T extends InputBuilder<T>>`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple complex contract input.
+  +
+  `inputBuilders` - The link:../../contract/ComplexInputBuilder.html[`inputBuilders`] representing the values of the multiple complex input.
+[.returnLabel]#Returns:#::
+  this link:../../contract/InputBuilder.html[`InputBuilder`]
+[.seeLabel]#See Also:#::
+  link:../../contract/ComplexInputBuilder.html#complexInput()[`ComplexInputBuilder.complexInput()`]
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/InputBuilderImpl.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* link:#field.summary[Field] | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* link:#field.detail[Field] | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

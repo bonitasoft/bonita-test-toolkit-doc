@@ -1,0 +1,138 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ContractResourceLoader.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.contract]
+
+=== Class ContractResourceLoader
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.internal.contract.ContractResourceLoader
+
+* 
+
+'''''
++
+....
+public class ContractResourceLoader
+extends Object
+....
+
+* ** [#constructor.summary]##
++
+==== Constructor Summary
++
+.Constructors[.tabEnd]# #
+[cols=",",options="header",]
+|===========================================================================
+|Constructor |Description
+|`ContractResourceLoader​(org.bonitasoft.web.client.BonitaClient client)` | 
+|===========================================================================
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|===========================================================================================================================================
+|Modifier and Type |Method |Description
+|`Map<String,​Object>` |`loadContract​(String contractResource,             org.bonitasoft.web.client.model.Contract contractDefinition)` | 
+|===========================================================================================================================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+
+* ** [#constructor.detail]##
++
+==== Constructor Detail
++
+[#<init>(org.bonitasoft.web.client.BonitaClient)]##
+*** ===== ContractResourceLoader
++
+....
+public ContractResourceLoader​(org.bonitasoft.web.client.BonitaClient client)
+....
++
+** [#method.detail]##
++
+==== Method Detail
++
+[#loadContract(java.lang.String,org.bonitasoft.web.client.model.Contract)]##
+*** ===== loadContract
++
+[source,methodSignature]
+----
+public Map<String,​Object> loadContract​(String contractResource,
+                                             org.bonitasoft.web.client.model.Contract contractDefinition)
+----
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ContractResourceLoader.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

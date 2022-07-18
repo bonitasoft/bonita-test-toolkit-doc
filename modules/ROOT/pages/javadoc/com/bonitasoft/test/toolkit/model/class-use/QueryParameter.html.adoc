@@ -1,0 +1,153 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../QueryParameter.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Interface +
+com.bonitasoft.test.toolkit.model.QueryParameter
+
+* .Packages that use link:../QueryParameter.html[QueryParameter][.tabEnd]# #
+[cols=",",options="header",]
+|===============================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit.internal.proxy[com.bonitasoft.test.toolkit.internal.proxy] | 
+|link:#com.bonitasoft.test.toolkit.model[com.bonitasoft.test.toolkit.model] | 
+|===============================================================================================
+* ** [#com.bonitasoft.test.toolkit.internal.proxy]##
+
+==== Uses of link:../QueryParameter.html[QueryParameter] in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+.Classes in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that implement link:../QueryParameter.html[QueryParameter][.tabEnd]# #
+[cols=",,",options="header",]
+|=====================================
+|Modifier and Type |Class |Description
+|`class ` |`QueryParameterImpl<T>` | 
+|=====================================
+
+.Method parameters in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] with type arguments of type link:../QueryParameter.html[QueryParameter][.tabEnd]# #
+[cols=",,",options="header",]
+|===========================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`List<T>` |[.typeNameLabel]#BusinessObjectDAOProxy.#`query​(String name,      List<QueryParameter<?>> parameters,      int pageIndex,      int count)` | 
+|`List<BusinessData>` |[.typeNameLabel]#GenericBusinessObjectDAOProxy.#`query​(String name,      List<QueryParameter<?>> parameters,      int pageIndex,      int count)` | 
+|`T` |[.typeNameLabel]#BusinessObjectDAOProxy.#`querySingle​(String name,            List<QueryParameter<?>> parameters)` | 
+|`<R> R` |[.typeNameLabel]#BusinessObjectDAOProxy.#`querySingle​(String name,            List<QueryParameter<?>> parameters,            Class<R> resulType)` | 
+|`BusinessData` |[.typeNameLabel]#GenericBusinessObjectDAOProxy.#`querySingle​(String name,            List<QueryParameter<?>> parameters)` | 
+|`<R> R` |[.typeNameLabel]#GenericBusinessObjectDAOProxy.#`querySingle​(String name,            List<QueryParameter<?>> parameters,            Class<R> resultType)` | 
+|===========================================================================================================================================================================
+** [#com.bonitasoft.test.toolkit.model]##
+
+==== Uses of link:../QueryParameter.html[QueryParameter] in link:../package-summary.html[com.bonitasoft.test.toolkit.model]
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.model] that return link:../QueryParameter.html[QueryParameter][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|=================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`static QueryParameter<Boolean>` |[.typeNameLabel]#QueryParameter.#`booleanParameter​(String name,                 boolean value)` a|
+Create a query parameter with a `Boolean` value type.
+
+|`static QueryParameter<Date>` |[.typeNameLabel]#QueryParameter.#`dateParameter​(String name,              Date value)` a|
+Create a query parameter with a `Date` value type.
+
+|`static QueryParameter<Double>` |[.typeNameLabel]#QueryParameter.#`doubleParameter​(String name,                double value)` a|
+Create a query parameter with a `Double` value type.
+
+|`static QueryParameter<List<Double>>` |[.typeNameLabel]#QueryParameter.#`doublesParameter​(String name,                 List<Double> value)` a|
+Create a query parameter with a `List<Double>` value type.
+
+|`static QueryParameter<Float>` |[.typeNameLabel]#QueryParameter.#`floatParameter​(String name,               float value)` a|
+Create a query parameter with a `Float` value type.
+
+|`static QueryParameter<List<Float>>` |[.typeNameLabel]#QueryParameter.#`floatsParameter​(String name,                List<Float> value)` a|
+Create a query parameter with a `List<Float>` value type.
+
+|`static QueryParameter<Integer>` |[.typeNameLabel]#QueryParameter.#`integerParameter​(String name,                 int value)` a|
+Create a query parameter with an Integer value type.
+
+|`static QueryParameter<List<Integer>>` |[.typeNameLabel]#QueryParameter.#`integersParameter​(String name,                  List<Integer> value)` a|
+Create a query parameter with a `List<Integer>` value type.
+
+|`static QueryParameter<LocalDate>` |[.typeNameLabel]#QueryParameter.#`localDateParameter​(String name,                   LocalDate value)` a|
+Create a query parameter with a `LocalDate` value type.
+
+|`static QueryParameter<LocalDateTime>` |[.typeNameLabel]#QueryParameter.#`localDateTimeParameter​(String name,                       LocalDateTime value)` a|
+Create a query parameter with a `LocalDateTime` value type.
+
+|`static QueryParameter<Long>` |[.typeNameLabel]#QueryParameter.#`longParameter​(String name,              long value)` a|
+Create a query parameter with a `Long` value type.
+
+|`static QueryParameter<List<Long>>` |[.typeNameLabel]#QueryParameter.#`longsParameter​(String name,               List<Long> value)` a|
+Create a query parameter with a `List<Long>` value type.
+
+|`static QueryParameter<OffsetDateTime>` |[.typeNameLabel]#QueryParameter.#`offsetDateTimeParameter​(String name,                        OffsetDateTime value)` a|
+Create a query parameter with a `OffsetDateTime` value type.
+
+|`static QueryParameter<String>` |[.typeNameLabel]#QueryParameter.#`stringParameter​(String name,                String value)` a|
+Create a query parameter with a `String` value type.
+
+|`static QueryParameter<List<String>>` |[.typeNameLabel]#QueryParameter.#`stringsParameter​(String name,                 List<String> value)` a|
+Create a query parameter with a `List<String>` value type.
+
+|=================================================================================================================================================================
+
+.Method parameters in link:../package-summary.html[com.bonitasoft.test.toolkit.model] with type arguments of type link:../QueryParameter.html[QueryParameter][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|====================================================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`List<T>` |[.typeNameLabel]#BusinessObjectDAO.#`query​(String name,      List<QueryParameter<?>> parameters,      int pageIndex,      int count)` a|
+Execute a specific query defined in the Business Data Model for this Business Object using classic pagination parameters: +
+If the database contains 100 instances of this entity that match the query and its parameters, calling this method with _pageIndex = 2_ and _count = 10_ will return the instances [21, 22, ..., 30].
+
+|`T` |[.typeNameLabel]#BusinessObjectDAO.#`querySingle​(String name,            List<QueryParameter<?>> parameters)` a|
+Execute a specific query defined in the Business Data Model for this Business Object that returns a single entity.
+
+|`<R> R` |[.typeNameLabel]#BusinessObjectDAO.#`querySingle​(String name,            List<QueryParameter<?>> parameters,            Class<R> resultType)` a|
+Execute a specific query defined in the Business Data Model for this Business Object that returns a different type +
+than this Business Object (e.g.: a count or sum query)
+
+|====================================================================================================================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../QueryParameter.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

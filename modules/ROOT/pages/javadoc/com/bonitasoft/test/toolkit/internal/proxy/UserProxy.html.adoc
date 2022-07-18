@@ -1,0 +1,286 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/UserProxy.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+=== Class UserProxy
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.internal.proxy.UserProxy
+
+* All Implemented Interfaces:::
+  `User`, `Callable<User>`
++
+
+'''''
++
+....
+public class UserProxy
+extends Object
+implements User
+....
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|================================================
+|Modifier and Type |Method |Description
+|`User` |`call()` | 
+|`boolean` |`equals​(Object obj)` | 
+|`String` |`getFirstName()` | 
+|`String` |`getId()` | 
+|`String` |`getJobTitle()` | 
+|`String` |`getLastName()` | 
+|`User` |`getManager()` | 
+|`ContactData` |`getPersonalContactData()` | 
+|`ContactData` |`getProfessionalContactData()` | 
+|`String` |`getUserName()` | 
+|`int` |`hashCode()` | 
+|`boolean` |`isEnabled()` | 
+|`String` |`toString()` | 
+|================================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, finalize, getClass, notify, notifyAll, wait, wait, wait`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#call()]##
+*** ===== call
++
+[source,methodSignature]
+----
+public User call()
+          throws Exception
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `call` in interface `Callable<User>`
+[.throwsLabel]#Throws:#::
+  `Exception`
++
+[#getId()]##
+*** ===== getId
++
+[source,methodSignature]
+----
+public String getId()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getId` in interface `User`
+[.returnLabel]#Returns:#::
+  the user ID
++
+[#getUserName()]##
+*** ===== getUserName
++
+[source,methodSignature]
+----
+public String getUserName()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getUserName` in interface `User`
+[.returnLabel]#Returns:#::
+  the username
++
+[#isEnabled()]##
+*** ===== isEnabled
++
+[source,methodSignature]
+----
+public boolean isEnabled()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `isEnabled` in interface `User`
+[.returnLabel]#Returns:#::
+  true if the user is enabled
++
+[#getFirstName()]##
+*** ===== getFirstName
++
+[source,methodSignature]
+----
+public String getFirstName()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getFirstName` in interface `User`
+[.returnLabel]#Returns:#::
+  the first name of the user
++
+[#getLastName()]##
+*** ===== getLastName
++
+[source,methodSignature]
+----
+public String getLastName()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getLastName` in interface `User`
+[.returnLabel]#Returns:#::
+  the last name of the user
++
+[#getManager()]##
+*** ===== getManager
++
+[source,methodSignature]
+----
+public User getManager()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getManager` in interface `User`
+[.returnLabel]#Returns:#::
+  the manager of the user
++
+[#getJobTitle()]##
+*** ===== getJobTitle
++
+[source,methodSignature]
+----
+public String getJobTitle()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getJobTitle` in interface `User`
+[.returnLabel]#Returns:#::
+  the job title of the user
++
+[#getPersonalContactData()]##
+*** ===== getPersonalContactData
++
+[source,methodSignature]
+----
+public ContactData getPersonalContactData()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getPersonalContactData` in interface `User`
+[.returnLabel]#Returns:#::
+  the personal contact data of the user, as a link:../../model/ContactData.html[`ContactData`]
++
+[#getProfessionalContactData()]##
+*** ===== getProfessionalContactData
++
+[source,methodSignature]
+----
+public ContactData getProfessionalContactData()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getProfessionalContactData` in interface `User`
+[.returnLabel]#Returns:#::
+  the professional contact data of the user, as a link:../../model/ContactData.html[`ContactData`]
++
+[#toString()]##
+*** ===== toString
++
+[source,methodSignature]
+----
+public String toString()
+----
++
+[.overrideSpecifyLabel]#Overrides:#::
+  `toString` in class `Object`
++
+[#hashCode()]##
+*** ===== hashCode
++
+[source,methodSignature]
+----
+public int hashCode()
+----
++
+[.overrideSpecifyLabel]#Overrides:#::
+  `hashCode` in class `Object`
++
+[#equals(java.lang.Object)]##
+*** ===== equals
++
+[source,methodSignature]
+----
+public boolean equals​(Object obj)
+----
++
+[.overrideSpecifyLabel]#Overrides:#::
+  `equals` in class `Object`
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/UserProxy.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

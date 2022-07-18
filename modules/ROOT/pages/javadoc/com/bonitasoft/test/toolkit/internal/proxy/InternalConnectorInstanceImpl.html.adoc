@@ -1,0 +1,199 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/InternalConnectorInstanceImpl.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+=== Class InternalConnectorInstanceImpl
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.internal.proxy.InternalConnectorInstanceImpl
+
+* 
+
+'''''
++
+....
+public class InternalConnectorInstanceImpl
+extends Object
+....
+
+* ** [#constructor.summary]##
++
+==== Constructor Summary
++
+.Constructors[.tabEnd]# #
+[cols=",",options="header",]
+|=======================================================================================================
+|Constructor |Description
+|`InternalConnectorInstanceImpl​(org.bonitasoft.web.client.model.ArchivedConnectorInstance instance)` | 
+|`InternalConnectorInstanceImpl​(org.bonitasoft.web.client.model.ConnectorInstance instance)` | 
+|=======================================================================================================
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|======================================
+|Modifier and Type |Method |Description
+|`String` |`getActivationEvent()` | 
+|`String` |`getConnectorId()` | 
+|`String` |`getContainerId()` | 
+|`long` |`getId()` | 
+|`String` |`getName()` | 
+|`String` |`getState()` | 
+|`String` |`getVersion()` | 
+|======================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+
+* ** [#constructor.detail]##
++
+==== Constructor Detail
++
+[#<init>(org.bonitasoft.web.client.model.ConnectorInstance)]##
+*** ===== InternalConnectorInstanceImpl
++
+....
+public InternalConnectorInstanceImpl​(org.bonitasoft.web.client.model.ConnectorInstance instance)
+....
++
+[#<init>(org.bonitasoft.web.client.model.ArchivedConnectorInstance)]##
+*** ===== InternalConnectorInstanceImpl
++
+....
+public InternalConnectorInstanceImpl​(org.bonitasoft.web.client.model.ArchivedConnectorInstance instance)
+....
++
+** [#method.detail]##
++
+==== Method Detail
++
+[#getId()]##
+*** ===== getId
++
+[source,methodSignature]
+----
+public long getId()
+----
++
+[#getName()]##
+*** ===== getName
++
+[source,methodSignature]
+----
+public String getName()
+----
++
+[#getState()]##
+*** ===== getState
++
+[source,methodSignature]
+----
+public String getState()
+----
++
+[#getActivationEvent()]##
+*** ===== getActivationEvent
++
+[source,methodSignature]
+----
+public String getActivationEvent()
+----
++
+[#getConnectorId()]##
+*** ===== getConnectorId
++
+[source,methodSignature]
+----
+public String getConnectorId()
+----
++
+[#getContainerId()]##
+*** ===== getContainerId
++
+[source,methodSignature]
+----
+public String getContainerId()
+----
++
+[#getVersion()]##
+*** ===== getVersion
++
+[source,methodSignature]
+----
+public String getVersion()
+----
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/InternalConnectorInstanceImpl.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

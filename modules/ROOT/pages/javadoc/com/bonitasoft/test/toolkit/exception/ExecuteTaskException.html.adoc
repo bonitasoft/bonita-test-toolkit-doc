@@ -1,0 +1,131 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ExecuteTaskException.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* Method
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.exception]
+
+=== Class ExecuteTaskException
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true[java.lang.Throwable]
+** *** https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html?is-external=true[java.lang.Exception]
+*** **** https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/RuntimeException.html?is-external=true[java.lang.RuntimeException]
+**** ***** com.bonitasoft.test.toolkit.exception.ExecuteTaskException
+
+* All Implemented Interfaces:::
+  `Serializable`
++
+
+'''''
++
+....
+public class ExecuteTaskException
+extends RuntimeException
+....
++
+[.seeLabel]#See Also:#::
+  link:../../../../../serialized-form.html#com.bonitasoft.test.toolkit.exception.ExecuteTaskException[Serialized Form]
+
+* ** [#constructor.summary]##
++
+==== Constructor Summary
++
+.Constructors[.tabEnd]# #
+[cols=",",options="header",]
+|==========================================
+|Constructor |Description
+|`ExecuteTaskException​(String message)` | 
+|==========================================
++
+** [#method.summary]##
++
+==== Method Summary
+*** [#methods.inherited.from.class.java.lang.Throwable]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true[Throwable]
++
+`addSuppressed, fillInStackTrace, getCause, getLocalizedMessage, getMessage, getStackTrace, getSuppressed, initCause, printStackTrace, printStackTrace, printStackTrace, setStackTrace, toString`
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait`
+
+* ** [#constructor.detail]##
++
+==== Constructor Detail
++
+[#<init>(java.lang.String)]##
+*** ===== ExecuteTaskException
++
+....
+public ExecuteTaskException​(String message)
+....
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ExecuteTaskException.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* Method
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

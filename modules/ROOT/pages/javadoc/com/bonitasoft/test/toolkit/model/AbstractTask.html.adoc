@@ -1,0 +1,268 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/AbstractTask.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Interface AbstractTask<SELF>
+
+* All Superinterfaces:::
+  `Callable<SELF>`
++
+All Known Subinterfaces:::
+  `Task`, `UserTask`
++
+All Known Implementing Classes:::
+  `TaskProxy`, `UserTaskProxy`
++
+
+'''''
++
+....
+public interface AbstractTask<SELF>
+extends Callable<SELF>
+....
++
+Abstract representation of a Task, used to retrieve meta information or properties on a task.
++
+[.seeLabel]#See Also:#::
+  link:Task.html[`Task`], link:UserTask.html[`UserTask`]
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t3 .tableTab]#javascript:show(4);[Abstract Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|=================================================================================================
+|Modifier and Type |Method |Description
+|`Connector` |`getConnector​(String name)` | 
+|`String` |`getDescription()` | 
+|`String` |`getDisplayDescription()` | 
+|`String` |`getDisplayName()` | 
+|`String` |`getId()` | 
+|`String` |`getName()` | 
+|`ProcessInstance` |`getParentProcessInstance()` | 
+|`ProcessInstance` |`getRootProcessInstance()` a|
+In case of an event sub process,the `rootCaseId` will be the one from the caller process instance.
+
+|`TaskState` |`getState()` | 
+|`TaskType` |`getType()` | 
+|`Variable` |`getVariable​(String name)` | 
+|`boolean` |`isArchived()` | 
+|=================================================================================================
+*** [#methods.inherited.from.class.java.util.concurrent.Callable]##
++
+==== Methods inherited from interface java.util.concurrent.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html?is-external=true[Callable]
++
+`call`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#getId()]##
+*** ===== getId
++
+[source,methodSignature]
+----
+String getId()
+----
++
+[.returnLabel]#Returns:#::
+  the ID of this task
++
+[#getName()]##
+*** ===== getName
++
+[source,methodSignature]
+----
+String getName()
+----
++
+[.returnLabel]#Returns:#::
+  the name of this task
++
+[#getDescription()]##
+*** ===== getDescription
++
+[source,methodSignature]
+----
+String getDescription()
+----
++
+[.returnLabel]#Returns:#::
+  the description of this task
++
+[#getDisplayName()]##
+*** ===== getDisplayName
++
+[source,methodSignature]
+----
+String getDisplayName()
+----
++
+[.returnLabel]#Returns:#::
+  the display name of this task
++
+[#getDisplayDescription()]##
+*** ===== getDisplayDescription
++
+[source,methodSignature]
+----
+String getDisplayDescription()
+----
++
+[.returnLabel]#Returns:#::
+  the display description of this task
++
+[#getState()]##
+*** ===== getState
++
+[source,methodSignature]
+----
+TaskState getState()
+----
++
+[.returnLabel]#Returns:#::
+  the link:TaskState.html[`state`] of this task
++
+[#isArchived()]##
+*** ===== isArchived
++
+[source,methodSignature]
+----
+boolean isArchived()
+----
++
+[.returnLabel]#Returns:#::
+  true if this task is archived
++
+[#getType()]##
+*** ===== getType
++
+[source,methodSignature]
+----
+TaskType getType()
+----
++
+[.returnLabel]#Returns:#::
+  the link:TaskType.html[`type`] of this task
++
+[#getVariable(java.lang.String)]##
+*** ===== getVariable
++
+[source,methodSignature]
+----
+Variable getVariable​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of the task variable to retrieve
+[.returnLabel]#Returns:#::
+  the corresponding link:Variable.html[`Variable`]
++
+[#getRootProcessInstance()]##
+*** ===== getRootProcessInstance
++
+[source,methodSignature]
+----
+ProcessInstance getRootProcessInstance()
+----
++
+In case of an event sub process,the `rootCaseId` will be the one from the caller process instance.
++
+[.returnLabel]#Returns:#::
+  the link:ProcessInstance.html[`root process instance`]
++
+[#getParentProcessInstance()]##
+*** ===== getParentProcessInstance
++
+[source,methodSignature]
+----
+ProcessInstance getParentProcessInstance()
+----
++
+[.returnLabel]#Returns:#::
+  the link:ProcessInstance.html[`parent process instance`]
++
+[#getConnector(java.lang.String)]##
+*** ===== getConnector
++
+[source,methodSignature]
+----
+Connector getConnector​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of the connector to retrieve on this task
+[.returnLabel]#Returns:#::
+  the corresponding link:Connector.html[`Connector`]
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/AbstractTask.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

@@ -1,0 +1,241 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ContactData.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Interface ContactData
+
+* 
+
+'''''
++
+....
+public interface ContactData
+....
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t3 .tableTab]#javascript:show(4);[Abstract Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|======================================
+|Modifier and Type |Method |Description
+|`String` |`getAddress()` | 
+|`String` |`getBuilding()` | 
+|`String` |`getCity()` | 
+|`String` |`getCountry()` | 
+|`String` |`getEmail()` | 
+|`String` |`getFaxNumber()` | 
+|`String` |`getMobileNumber()` | 
+|`String` |`getPhoneNumber()` | 
+|`String` |`getRoom()` | 
+|`String` |`getState()` | 
+|`String` |`getWebsite()` | 
+|`String` |`getZipCode()` | 
+|======================================
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#getFaxNumber()]##
+*** ===== getFaxNumber
++
+[source,methodSignature]
+----
+String getFaxNumber()
+----
++
+[.returnLabel]#Returns:#::
+  the fax number
++
+[#getBuilding()]##
+*** ===== getBuilding
++
+[source,methodSignature]
+----
+String getBuilding()
+----
++
+[.returnLabel]#Returns:#::
+  the building
++
+[#getPhoneNumber()]##
+*** ===== getPhoneNumber
++
+[source,methodSignature]
+----
+String getPhoneNumber()
+----
++
+[.returnLabel]#Returns:#::
+  the phone number
++
+[#getWebsite()]##
+*** ===== getWebsite
++
+[source,methodSignature]
+----
+String getWebsite()
+----
++
+[.returnLabel]#Returns:#::
+  the website
++
+[#getZipCode()]##
+*** ===== getZipCode
++
+[source,methodSignature]
+----
+String getZipCode()
+----
++
+[.returnLabel]#Returns:#::
+  the zipcode
++
+[#getState()]##
+*** ===== getState
++
+[source,methodSignature]
+----
+String getState()
+----
++
+[.returnLabel]#Returns:#::
+  the state
++
+[#getCity()]##
+*** ===== getCity
++
+[source,methodSignature]
+----
+String getCity()
+----
++
+[.returnLabel]#Returns:#::
+  the city
++
+[#getCountry()]##
+*** ===== getCountry
++
+[source,methodSignature]
+----
+String getCountry()
+----
++
+[.returnLabel]#Returns:#::
+  the country
++
+[#getMobileNumber()]##
+*** ===== getMobileNumber
++
+[source,methodSignature]
+----
+String getMobileNumber()
+----
++
+[.returnLabel]#Returns:#::
+  the mobile number
++
+[#getAddress()]##
+*** ===== getAddress
++
+[source,methodSignature]
+----
+String getAddress()
+----
++
+[.returnLabel]#Returns:#::
+  the address
++
+[#getRoom()]##
+*** ===== getRoom
++
+[source,methodSignature]
+----
+String getRoom()
+----
++
+[.returnLabel]#Returns:#::
+  the room
++
+[#getEmail()]##
+*** ===== getEmail
++
+[source,methodSignature]
+----
+String getEmail()
+----
++
+[.returnLabel]#Returns:#::
+  the email
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ContactData.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

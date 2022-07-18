@@ -1,0 +1,99 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../InputBuilder.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Interface +
+com.bonitasoft.test.toolkit.contract.InputBuilder
+
+* .Packages that use link:../InputBuilder.html[InputBuilder][.tabEnd]# #
+[cols=",",options="header",]
+|=====================================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit.contract[com.bonitasoft.test.toolkit.contract] | 
+|link:#com.bonitasoft.test.toolkit.internal.contract[com.bonitasoft.test.toolkit.internal.contract] | 
+|=====================================================================================================
+* ** [#com.bonitasoft.test.toolkit.contract]##
+
+==== Uses of link:../InputBuilder.html[InputBuilder] in link:../package-summary.html[com.bonitasoft.test.toolkit.contract]
+
+.Classes in link:../package-summary.html[com.bonitasoft.test.toolkit.contract] with type parameters of type link:../InputBuilder.html[InputBuilder][.tabEnd]# #
+[cols=",,",options="header",]
+|==========================================================
+|Modifier and Type |Interface |Description
+|`interface ` |`InputBuilder<T extends InputBuilder<T>>` | 
+|==========================================================
+
+.Subinterfaces of link:../InputBuilder.html[InputBuilder] in link:../package-summary.html[com.bonitasoft.test.toolkit.contract][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|==================================================================================================================
+|Modifier and Type |Interface |Description
+|`interface ` |`ComplexInputBuilder` | 
+|`interface ` |`ContractBuilder` a|
+A builder to create manually a link:../../model/Contract.html[`Contract`] by specifying contract inputs one by one.
+
+|==================================================================================================================
+** [#com.bonitasoft.test.toolkit.internal.contract]##
+
+==== Uses of link:../InputBuilder.html[InputBuilder] in link:../../internal/contract/package-summary.html[com.bonitasoft.test.toolkit.internal.contract]
+
+.Classes in link:../../internal/contract/package-summary.html[com.bonitasoft.test.toolkit.internal.contract] with type parameters of type link:../InputBuilder.html[InputBuilder][.tabEnd]# #
+[cols=",,",options="header",]
+|==========================================================
+|Modifier and Type |Class |Description
+|`class ` |`InputBuilderImpl<T extends InputBuilder<T>>` | 
+|==========================================================
+
+.Classes in link:../../internal/contract/package-summary.html[com.bonitasoft.test.toolkit.internal.contract] that implement link:../InputBuilder.html[InputBuilder][.tabEnd]# #
+[cols=",,",options="header",]
+|==========================================================
+|Modifier and Type |Class |Description
+|`class ` |`ComplexInputBuilderImpl` | 
+|`class ` |`ContractBuilderImpl` | 
+|`class ` |`InputBuilderImpl<T extends InputBuilder<T>>` | 
+|==========================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../InputBuilder.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

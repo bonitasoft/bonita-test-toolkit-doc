@@ -1,0 +1,81 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* Use
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+* .Packages that use link:package-summary.html[com.bonitasoft.test.toolkit.contract][.tabEnd]# #
+[cols=",",options="header",]
+|=====================================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit.contract[com.bonitasoft.test.toolkit.contract] | 
+|link:#com.bonitasoft.test.toolkit.internal.contract[com.bonitasoft.test.toolkit.internal.contract] | 
+|=====================================================================================================
+* [#com.bonitasoft.test.toolkit.contract]##
++
+.Classes in link:package-summary.html[com.bonitasoft.test.toolkit.contract] used by link:package-summary.html[com.bonitasoft.test.toolkit.contract][.tabEnd]# #
+[width="100%",cols="50%,50%",options="header",]
+|===============================================================================================================
+|Class |Description
+|link:class-use/ComplexInputBuilder.html#com.bonitasoft.test.toolkit.contract[ComplexInputBuilder] | 
+|link:class-use/ContractBuilder.html#com.bonitasoft.test.toolkit.contract[ContractBuilder] a|
+A builder to create manually a link:../model/Contract.html[`Contract`] by specifying contract inputs one by one.
+
+|link:class-use/InputBuilder.html#com.bonitasoft.test.toolkit.contract[InputBuilder] | 
+|===============================================================================================================
+* [#com.bonitasoft.test.toolkit.internal.contract]##
++
+.Classes in link:package-summary.html[com.bonitasoft.test.toolkit.contract] used by link:../internal/contract/package-summary.html[com.bonitasoft.test.toolkit.internal.contract][.tabEnd]# #
+[width="100%",cols="50%,50%",options="header",]
+|===============================================================================================================
+|Class |Description
+|link:class-use/ComplexInputBuilder.html#com.bonitasoft.test.toolkit.internal.contract[ComplexInputBuilder] | 
+|link:class-use/ContractBuilder.html#com.bonitasoft.test.toolkit.internal.contract[ContractBuilder] a|
+A builder to create manually a link:../model/Contract.html[`Contract`] by specifying contract inputs one by one.
+
+|link:class-use/InputBuilder.html#com.bonitasoft.test.toolkit.internal.contract[InputBuilder] | 
+|===============================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* Use
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

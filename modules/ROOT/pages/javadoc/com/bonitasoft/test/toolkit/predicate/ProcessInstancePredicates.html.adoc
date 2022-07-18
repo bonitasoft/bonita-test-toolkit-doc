@@ -1,0 +1,338 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ProcessInstancePredicates.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.predicate]
+
+=== Class ProcessInstancePredicates
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.predicate.ProcessInstancePredicates
+
+* 
+
+'''''
++
+....
+public class ProcessInstancePredicates
+extends Object
+....
++
+Collection of link:../model/ProcessInstance.html[`ProcessInstance`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`].
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t1 .tableTab]#javascript:show(1);[Static Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|================================================================================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`static Predicate<ProcessInstance>` |`containsPendingUserTasks​(String... taskNames)` a|
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] contains the given user tasks names in a pending state.
+
+|`static Predicate<ProcessInstance>` |`hasActiveFlowNodes​(int nbOfActiveFlowNode)` a|
+Verify the number of active flow nodes of a link:../model/ProcessInstance.html[`ProcessInstance`] +
+
+|`static Predicate<ProcessInstance>` |`hasBeenStartedBy​(User user)` a|
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] has been started by the given user.
+
+|`static Predicate<ProcessInstance>` |`hasFailedFlowNodes​(int nbOfFailedFlowNode)` a|
+Verify the number of failed flow nodes of a link:../model/ProcessInstance.html[`ProcessInstance`]
+
+|`static Predicate<ProcessInstance>` |`hasSubprocessInstances​(ProcessDefinition processDefinition)` a|
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] has instantiated one or more subprocess link:../model/ProcessInstance.html[`instances`] of the given link:../model/ProcessDefinition.html[`ProcessDefinition`].
+
+|`static Predicate<ProcessInstance>` |`hasTimerEventTrigger​(String name)` a|
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] has an active timer event trigger with the given name.
+
+|`static Predicate<ProcessInstance>` |`processInstanceAborted()` a|
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] is in aborted state.
+
+|`static Predicate<ProcessInstance>` |`processInstanceArchived()` a|
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] is archived.
+
+|`static Predicate<ProcessInstance>` |`processInstanceCancelled()` a|
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] is in cancelled state.
+
+|`static Predicate<ProcessInstance>` |`processInstanceCompleted()` a|
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] is in completed state.
+
+|`static Predicate<ProcessInstance>` |`processInstanceHasError()` a|
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] is in error state.
+
+|`static Predicate<ProcessInstance>` |`processInstanceStarted()` a|
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] is in started state.
+
+|`static Predicate<ProcessInstance>` |`processInstanceSuspended()` a|
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] is in suspended state.
+
+|================================================================================================================================================================================================================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#hasBeenStartedBy(com.bonitasoft.test.toolkit.model.User)]##
+*** ===== hasBeenStartedBy
++
+[source,methodSignature]
+----
+public static Predicate<ProcessInstance> hasBeenStartedBy​(User user)
+----
++
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] has been started by the given user. +
++
+[.paramLabel]#Parameters:#::
+  `user` - the link:../model/User.html[`User`] expected to have started this link:../model/ProcessInstance.html[`ProcessInstance`]
+[.returnLabel]#Returns:#::
+  a link:../model/ProcessInstance.html[`ProcessInstance`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
++
+[#processInstanceCompleted()]##
+*** ===== processInstanceCompleted
++
+[source,methodSignature]
+----
+public static Predicate<ProcessInstance> processInstanceCompleted()
+----
++
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] is in completed state. +
++
+[.returnLabel]#Returns:#::
+  a link:../model/ProcessInstance.html[`ProcessInstance`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
++
+[#processInstanceStarted()]##
+*** ===== processInstanceStarted
++
+[source,methodSignature]
+----
+public static Predicate<ProcessInstance> processInstanceStarted()
+----
++
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] is in started state. +
++
+[.returnLabel]#Returns:#::
+  a link:../model/ProcessInstance.html[`ProcessInstance`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
+[.seeLabel]#See Also:#::
+  link:../model/ProcessInstanceState.html#STARTED[`ProcessInstanceState.STARTED`]
++
+[#processInstanceAborted()]##
+*** ===== processInstanceAborted
++
+[source,methodSignature]
+----
+public static Predicate<ProcessInstance> processInstanceAborted()
+----
++
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] is in aborted state. +
++
+[.returnLabel]#Returns:#::
+  a link:../model/ProcessInstance.html[`ProcessInstance`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
+[.seeLabel]#See Also:#::
+  link:../model/ProcessInstanceState.html#ABORTED[`ProcessInstanceState.ABORTED`]
++
+[#processInstanceCancelled()]##
+*** ===== processInstanceCancelled
++
+[source,methodSignature]
+----
+public static Predicate<ProcessInstance> processInstanceCancelled()
+----
++
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] is in cancelled state. +
++
+[.returnLabel]#Returns:#::
+  a link:../model/ProcessInstance.html[`ProcessInstance`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
+[.seeLabel]#See Also:#::
+  link:../model/ProcessInstanceState.html#CANCELLED[`ProcessInstanceState.CANCELLED`]
++
+[#processInstanceSuspended()]##
+*** ===== processInstanceSuspended
++
+[source,methodSignature]
+----
+public static Predicate<ProcessInstance> processInstanceSuspended()
+----
++
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] is in suspended state. +
++
+[.returnLabel]#Returns:#::
+  a link:../model/ProcessInstance.html[`ProcessInstance`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
+[.seeLabel]#See Also:#::
+  link:../model/ProcessInstanceState.html#SUSPENDED[`ProcessInstanceState.SUSPENDED`]
++
+[#processInstanceHasError()]##
+*** ===== processInstanceHasError
++
+[source,methodSignature]
+----
+public static Predicate<ProcessInstance> processInstanceHasError()
+----
++
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] is in error state. +
++
+[.returnLabel]#Returns:#::
+  a link:../model/ProcessInstance.html[`ProcessInstance`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
+[.seeLabel]#See Also:#::
+  link:../model/ProcessInstanceState.html#ERROR[`ProcessInstanceState.ERROR`]
++
+[#containsPendingUserTasks(java.lang.String...)]##
+*** ===== containsPendingUserTasks
++
+[source,methodSignature]
+----
+public static Predicate<ProcessInstance> containsPendingUserTasks​(String... taskNames)
+----
++
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] contains the given user tasks names in a pending state. +
++
+[.paramLabel]#Parameters:#::
+  `taskNames` - Pending user task names
+[.returnLabel]#Returns:#::
+  a link:../model/ProcessInstance.html[`ProcessInstance`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
++
+[#processInstanceArchived()]##
+*** ===== processInstanceArchived
++
+[source,methodSignature]
+----
+public static Predicate<ProcessInstance> processInstanceArchived()
+----
++
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] is archived.
++
+[.returnLabel]#Returns:#::
+  a link:../model/ProcessInstance.html[`ProcessInstance`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
++
+[#hasActiveFlowNodes(int)]##
+*** ===== hasActiveFlowNodes
++
+[source,methodSignature]
+----
+public static Predicate<ProcessInstance> hasActiveFlowNodes​(int nbOfActiveFlowNode)
+----
++
+Verify the number of active flow nodes of a link:../model/ProcessInstance.html[`ProcessInstance`] +
++
+[.paramLabel]#Parameters:#::
+  `nbOfActiveFlowNode` - The expected number of active flow nodes
+[.returnLabel]#Returns:#::
+  a link:../model/ProcessInstance.html[`ProcessInstance`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
++
+[#hasFailedFlowNodes(int)]##
+*** ===== hasFailedFlowNodes
++
+[source,methodSignature]
+----
+public static Predicate<ProcessInstance> hasFailedFlowNodes​(int nbOfFailedFlowNode)
+----
++
+Verify the number of failed flow nodes of a link:../model/ProcessInstance.html[`ProcessInstance`]
++
+[.paramLabel]#Parameters:#::
+  `nbOfFailedFlowNode` - The expected number of failed flow nodes
+[.returnLabel]#Returns:#::
+  a link:../model/ProcessInstance.html[`ProcessInstance`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
++
+[#hasTimerEventTrigger(java.lang.String)]##
+*** ===== hasTimerEventTrigger
++
+[source,methodSignature]
+----
+public static Predicate<ProcessInstance> hasTimerEventTrigger​(String name)
+----
++
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] has an active timer event trigger with the given name.
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the active timer event trigger
+[.returnLabel]#Returns:#::
+  a link:../model/ProcessInstance.html[`ProcessInstance`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
++
+[#hasSubprocessInstances(com.bonitasoft.test.toolkit.model.ProcessDefinition)]##
+*** ===== hasSubprocessInstances
++
+[source,methodSignature]
+----
+public static Predicate<ProcessInstance> hasSubprocessInstances​(ProcessDefinition processDefinition)
+----
++
+Verify if a link:../model/ProcessInstance.html[`ProcessInstance`] has instantiated one or more subprocess link:../model/ProcessInstance.html[`instances`] of the given link:../model/ProcessDefinition.html[`ProcessDefinition`].
++
+[.paramLabel]#Parameters:#::
+  `processDefinition` - The expected process definition that has been instantiated.
+[.returnLabel]#Returns:#::
+  a link:../model/ProcessInstance.html[`ProcessInstance`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ProcessInstancePredicates.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

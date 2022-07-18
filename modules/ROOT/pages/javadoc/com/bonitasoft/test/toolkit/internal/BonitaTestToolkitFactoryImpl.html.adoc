@@ -1,0 +1,156 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/BonitaTestToolkitFactoryImpl.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* link:#field.summary[Field] | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal]
+
+=== Class BonitaTestToolkitFactoryImpl
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.internal.BonitaTestToolkitFactoryImpl
+
+* All Implemented Interfaces:::
+  `BonitaTestToolkitFactory`
++
+
+'''''
++
+....
+public class BonitaTestToolkitFactoryImpl
+extends Object
+implements BonitaTestToolkitFactory
+....
+
+* ** [#field.summary]##
++
+==== Field Summary
+*** [#fields.inherited.from.class.com.bonitasoft.test.toolkit.BonitaTestToolkitFactory]##
++
+==== Fields inherited from interface com.bonitasoft.test.toolkit.link:../BonitaTestToolkitFactory.html[BonitaTestToolkitFactory]
++
+`INSTANCE`
++
+** [#constructor.summary]##
++
+==== Constructor Summary
++
+.Constructors[.tabEnd]# #
+[cols=",",options="header",]
+|===================================
+|Constructor |Description
+|`BonitaTestToolkitFactoryImpl()` | 
+|===================================
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|==================================================
+|Modifier and Type |Method |Description
+|`BonitaTestToolkit` |`get​(Class<?> testClazz)` | 
+|==================================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+
+* ** [#constructor.detail]##
++
+==== Constructor Detail
++
+[#<init>()]##
+*** ===== BonitaTestToolkitFactoryImpl
++
+....
+public BonitaTestToolkitFactoryImpl()
+....
++
+** [#method.detail]##
++
+==== Method Detail
++
+[#get(java.lang.Class)]##
+*** ===== get
++
+[source,methodSignature]
+----
+public BonitaTestToolkit get​(Class<?> testClazz)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `get` in interface `BonitaTestToolkitFactory`
+[.paramLabel]#Parameters:#::
+  `testClazz` - The test class using the toolkit
+[.returnLabel]#Returns:#::
+  a link:../BonitaTestToolkit.html[`BonitaTestToolkit`] instance
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/BonitaTestToolkitFactoryImpl.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* link:#field.summary[Field] | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

@@ -1,0 +1,184 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/UserTaskPredicates.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.predicate]
+
+=== Class UserTaskPredicates
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** link:TaskPredicates.html[com.bonitasoft.test.toolkit.predicate.TaskPredicates]
+** *** com.bonitasoft.test.toolkit.predicate.UserTaskPredicates
+
+* 
+
+'''''
++
+....
+public class UserTaskPredicates
+extends TaskPredicates
+....
++
+Collection of link:../model/UserTask.html[`UserTask`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`].
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t1 .tableTab]#javascript:show(1);[Static Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|===========================================================================================================================
+|Modifier and Type |Method |Description
+|`static Predicate<UserTask>` |`hasBeenExecutedBy​(User user)` a|
+Verify if a link:../model/UserTask.html[`UserTask`] has been executed by the given link:../model/User.html[`User`].
+
+|`static Predicate<UserTask>` |`hasCandidates​(User... candidates)` a|
+Verify if a link:../model/UserTask.html[`UserTask`] can be executed by the given link:../model/User.html[`User`] candidates.
+
+|`static Predicate<UserTask>` |`isAssignedTo​(User user)` a|
+Verify if a link:../model/UserTask.html[`UserTask`] is assigned to a given link:../model/User.html[`User`].
+
+|`static Predicate<UserTask>` |`isNotAssigned()` a|
+Verify that a link:../model/UserTask.html[`UserTask`] has no assignee.
+
+|===========================================================================================================================
+*** [#methods.inherited.from.class.com.bonitasoft.test.toolkit.predicate.TaskPredicates]##
++
+==== Methods inherited from class com.bonitasoft.test.toolkit.predicate.link:TaskPredicates.html[TaskPredicates]
++
+`taskArchived, taskCompleted, taskFailed, taskReady`
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#isAssignedTo(com.bonitasoft.test.toolkit.model.User)]##
+*** ===== isAssignedTo
++
+[source,methodSignature]
+----
+public static Predicate<UserTask> isAssignedTo​(User user)
+----
++
+Verify if a link:../model/UserTask.html[`UserTask`] is assigned to a given link:../model/User.html[`User`].
++
+[.paramLabel]#Parameters:#::
+  `user` - The link:../model/User.html[`User`] that the link:../model/UserTask.html[`UserTask`] should be assigned to.
+[.returnLabel]#Returns:#::
+  a link:../model/UserTask.html[`UserTask`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
++
+[#hasCandidates(com.bonitasoft.test.toolkit.model.User...)]##
+*** ===== hasCandidates
++
+[source,methodSignature]
+----
+public static Predicate<UserTask> hasCandidates​(User... candidates)
+----
++
+Verify if a link:../model/UserTask.html[`UserTask`] can be executed by the given link:../model/User.html[`User`] candidates.
++
+[.paramLabel]#Parameters:#::
+  `candidates` - A list of link:../model/User.html[`User`] that can execute this link:../model/UserTask.html[`UserTask`].
+[.returnLabel]#Returns:#::
+  a link:../model/UserTask.html[`UserTask`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
++
+[#isNotAssigned()]##
+*** ===== isNotAssigned
++
+[source,methodSignature]
+----
+public static Predicate<UserTask> isNotAssigned()
+----
++
+Verify that a link:../model/UserTask.html[`UserTask`] has no assignee.
++
+[.returnLabel]#Returns:#::
+  a link:../model/UserTask.html[`UserTask`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
++
+[#hasBeenExecutedBy(com.bonitasoft.test.toolkit.model.User)]##
+*** ===== hasBeenExecutedBy
++
+[source,methodSignature]
+----
+public static Predicate<UserTask> hasBeenExecutedBy​(User user)
+----
++
+Verify if a link:../model/UserTask.html[`UserTask`] has been executed by the given link:../model/User.html[`User`].
++
+[.paramLabel]#Parameters:#::
+  `user` - The link:../model/User.html[`User`] that has executed this link:../model/UserTask.html[`UserTask`]
+[.returnLabel]#Returns:#::
+  a link:../model/UserTask.html[`UserTask`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/UserTaskPredicates.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

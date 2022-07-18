@@ -1,0 +1,441 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/BusinessData.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Interface BusinessData
+
+* All Known Implementing Classes:::
+  `BusinessDataProxy`
++
+
+'''''
++
+....
+public interface BusinessData
+....
++
+A Business data stored in the Business Data Model database. +
+Generic methods are available to retrieve the fields of the business data by name. +
+For example, if your BDM contains a Business Object _com.company.Person_ with a field _name (String)_ and a field _age (Integer)_, you can access the value of these fields using the following generic methods:
+
+....
+ 
+ @Test
+ void test_my_process(BonitaTestToolkit toolkit) {
+     var businessDataList = toolkit.getBusinessObjectDAO("com.company.Person").find(0, 10);
+     if (!businessdataList.isEmpty()) {
+         BusinessData businessData = businessDataList.get(0);
+         String name = businessData.getStringField("name");
+         Integer age = businessData.getIntegerField("age");
+         ...
+     }
+ }
+ 
+....
++
+[.seeLabel]#See Also:#::
+  link:BusinessObjectDAO.html[`BusinessObjectDAO`]
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t3 .tableTab]#javascript:show(4);[Abstract Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|=========================================================================
+|Modifier and Type |Method |Description
+|`Boolean` |`getBooleanField​(String name)` | 
+|`Date` |`getDateField​(String name)` | 
+|`Double` |`getDoubleField​(String name)` | 
+|`Float` |`getFloatField​(String name)` | 
+|`Integer` |`getIntegerField​(String name)` | 
+|`LocalDate` |`getLocalDateField​(String name)` | 
+|`LocalDateTime` |`getLocalDateTimeField​(String name)` | 
+|`Long` |`getLongField​(String name)` | 
+|`List<Date>` |`getMulitpleDateField​(String name)` | 
+|`List<LocalDate>` |`getMulitpleLocalDateField​(String name)` | 
+|`List<Boolean>` |`getMultipleBooleanField​(String name)` | 
+|`List<Double>` |`getMultipleDoubleField​(String name)` | 
+|`List<Float>` |`getMultipleFloatField​(String name)` | 
+|`List<Integer>` |`getMultipleIntegerField​(String name)` | 
+|`List<LocalDateTime>` |`getMultipleLocalDateTimeField​(String name)` | 
+|`List<Long>` |`getMultipleLongField​(String name)` | 
+|`List<OffsetDateTime>` |`getMultipleOffsetDateTimeField​(String name)` | 
+|`List<BusinessData>` |`getMultipleReference​(String name)` | 
+|`List<String>` |`getMultipleStringField​(String name)` | 
+|`OffsetDateTime` |`getOffsetDateTimeField​(String name)` | 
+|`String` |`getPersistenceId()` | 
+|`BusinessData` |`getReference​(String name)` | 
+|`String` |`getStringField​(String name)` | 
+|=========================================================================
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#getStringField(java.lang.String)]##
+*** ===== getStringField
++
+[source,methodSignature]
+----
+String getStringField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the String field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true[`String`] value of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getMultipleStringField(java.lang.String)]##
+*** ===== getMultipleStringField
++
+[source,methodSignature]
+----
+List<String> getMultipleStringField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple String field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true[`String`] values of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getIntegerField(java.lang.String)]##
+*** ===== getIntegerField
++
+[source,methodSignature]
+----
+Integer getIntegerField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the Integer field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html?is-external=true[`Integer`] value of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getMultipleIntegerField(java.lang.String)]##
+*** ===== getMultipleIntegerField
++
+[source,methodSignature]
+----
+List<Integer> getMultipleIntegerField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple Integer field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html?is-external=true[`Integer`] values of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getLongField(java.lang.String)]##
+*** ===== getLongField
++
+[source,methodSignature]
+----
+Long getLongField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the Long field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html?is-external=true[`Long`] value of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getMultipleLongField(java.lang.String)]##
+*** ===== getMultipleLongField
++
+[source,methodSignature]
+----
+List<Long> getMultipleLongField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple Long field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html?is-external=true[`Long`] values of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getDoubleField(java.lang.String)]##
+*** ===== getDoubleField
++
+[source,methodSignature]
+----
+Double getDoubleField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the Double field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true[`Double`] value of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getMultipleDoubleField(java.lang.String)]##
+*** ===== getMultipleDoubleField
++
+[source,methodSignature]
+----
+List<Double> getMultipleDoubleField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple Double field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true[`Double`] values of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getBooleanField(java.lang.String)]##
+*** ===== getBooleanField
++
+[source,methodSignature]
+----
+Boolean getBooleanField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the Boolean field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true[`Boolean`] value of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getMultipleBooleanField(java.lang.String)]##
+*** ===== getMultipleBooleanField
++
+[source,methodSignature]
+----
+List<Boolean> getMultipleBooleanField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple Boolean field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true[`Boolean`] values of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getFloatField(java.lang.String)]##
+*** ===== getFloatField
++
+[source,methodSignature]
+----
+Float getFloatField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the Float field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html?is-external=true[`Float`] value of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getMultipleFloatField(java.lang.String)]##
+*** ===== getMultipleFloatField
++
+[source,methodSignature]
+----
+List<Float> getMultipleFloatField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple Float field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html?is-external=true[`Float`] values of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getLocalDateField(java.lang.String)]##
+*** ===== getLocalDateField
++
+[source,methodSignature]
+----
+LocalDate getLocalDateField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the LocalDate field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html?is-external=true[`LocalDate`] value of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getMulitpleLocalDateField(java.lang.String)]##
+*** ===== getMulitpleLocalDateField
++
+[source,methodSignature]
+----
+List<LocalDate> getMulitpleLocalDateField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple LocalDate field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html?is-external=true[`LocalDate`] values of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getLocalDateTimeField(java.lang.String)]##
+*** ===== getLocalDateTimeField
++
+[source,methodSignature]
+----
+LocalDateTime getLocalDateTimeField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the LocalDateTime field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html?is-external=true[`LocalDateTime`] value of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getMultipleLocalDateTimeField(java.lang.String)]##
+*** ===== getMultipleLocalDateTimeField
++
+[source,methodSignature]
+----
+List<LocalDateTime> getMultipleLocalDateTimeField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple LocalDateTime field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html?is-external=true[`LocalDateTime`] values of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getOffsetDateTimeField(java.lang.String)]##
+*** ===== getOffsetDateTimeField
++
+[source,methodSignature]
+----
+OffsetDateTime getOffsetDateTimeField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the OffsetDateTime field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html?is-external=true[`OffsetDateTime`] value of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getMultipleOffsetDateTimeField(java.lang.String)]##
+*** ===== getMultipleOffsetDateTimeField
++
+[source,methodSignature]
+----
+List<OffsetDateTime> getMultipleOffsetDateTimeField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple OffsetDateTime field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html?is-external=true[`OffsetDateTime`] values of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getDateField(java.lang.String)]##
+*** ===== getDateField
++
+[source,methodSignature]
+----
+Date getDateField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the Date field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html?is-external=true[`Date`] value of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getMulitpleDateField(java.lang.String)]##
+*** ===== getMulitpleDateField
++
+[source,methodSignature]
+----
+List<Date> getMulitpleDateField​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple Date field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html?is-external=true[`Date`] values of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getPersistenceId()]##
+*** ===== getPersistenceId
++
+[source,methodSignature]
+----
+String getPersistenceId()
+----
++
+[.returnLabel]#Returns:#::
+  the persistenceId of this link:BusinessData.html[`BusinessData`].
++
+[#getReference(java.lang.String)]##
+*** ===== getReference
++
+[source,methodSignature]
+----
+BusinessData getReference​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the complex field.
+[.returnLabel]#Returns:#::
+  the link:BusinessData.html[`BusinessData`] value of the field <name value> of this link:BusinessData.html[`BusinessData`].
++
+[#getMultipleReference(java.lang.String)]##
+*** ===== getMultipleReference
++
+[source,methodSignature]
+----
+List<BusinessData> getMultipleReference​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple complex field.
+[.returnLabel]#Returns:#::
+  the link:BusinessData.html[`BusinessData`] values of the field <name value> of this link:BusinessData.html[`BusinessData`].
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/BusinessData.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

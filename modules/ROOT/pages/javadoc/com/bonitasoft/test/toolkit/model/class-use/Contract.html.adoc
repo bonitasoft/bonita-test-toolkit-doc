@@ -1,0 +1,122 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../Contract.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Interface +
+com.bonitasoft.test.toolkit.model.Contract
+
+* .Packages that use link:../Contract.html[Contract][.tabEnd]# #
+[cols=",",options="header",]
+|=====================================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit.contract[com.bonitasoft.test.toolkit.contract] | 
+|link:#com.bonitasoft.test.toolkit.internal.contract[com.bonitasoft.test.toolkit.internal.contract] | 
+|link:#com.bonitasoft.test.toolkit.internal.proxy[com.bonitasoft.test.toolkit.internal.proxy] | 
+|link:#com.bonitasoft.test.toolkit.model[com.bonitasoft.test.toolkit.model] | 
+|=====================================================================================================
+* ** [#com.bonitasoft.test.toolkit.contract]##
+
+==== Uses of link:../Contract.html[Contract] in link:../../contract/package-summary.html[com.bonitasoft.test.toolkit.contract]
+
+.Methods in link:../../contract/package-summary.html[com.bonitasoft.test.toolkit.contract] that return link:../Contract.html[Contract][.tabEnd]# #
+[cols=",,",options="header",]
+|===================================================================================================
+|Modifier and Type |Method |Description
+|`Contract` |[.typeNameLabel]#ContractBuilder.#`build()` | 
+|`Contract` |[.typeNameLabel]#ContractBuilder.#`fromClasspathResource​(String classpathResource)` | 
+|===================================================================================================
+** [#com.bonitasoft.test.toolkit.internal.contract]##
+
+==== Uses of link:../Contract.html[Contract] in link:../../internal/contract/package-summary.html[com.bonitasoft.test.toolkit.internal.contract]
+
+.Classes in link:../../internal/contract/package-summary.html[com.bonitasoft.test.toolkit.internal.contract] that implement link:../Contract.html[Contract][.tabEnd]# #
+[cols=",,",options="header",]
+|=====================================
+|Modifier and Type |Class |Description
+|`class ` |`ContractImpl` | 
+|`class ` |`ResourceContractImpl` | 
+|=====================================
+
+.Methods in link:../../internal/contract/package-summary.html[com.bonitasoft.test.toolkit.internal.contract] that return link:../Contract.html[Contract][.tabEnd]# #
+[cols=",,",options="header",]
+|=======================================================================================================
+|Modifier and Type |Method |Description
+|`Contract` |[.typeNameLabel]#ContractBuilderImpl.#`build()` | 
+|`Contract` |[.typeNameLabel]#ContractBuilderImpl.#`fromClasspathResource​(String classpathResource)` | 
+|=======================================================================================================
+** [#com.bonitasoft.test.toolkit.internal.proxy]##
+
+==== Uses of link:../Contract.html[Contract] in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] with parameters of type link:../Contract.html[Contract][.tabEnd]# #
+[cols=",,",options="header",]
+|==============================================================================================================================
+|Modifier and Type |Method |Description
+|`UserTaskProxy` |[.typeNameLabel]#UserTaskProxy.#`execute​(Contract contract)` | 
+|`UserTaskProxy` |[.typeNameLabel]#UserTaskProxy.#`execute​(User assignee,        Contract contract)` | 
+|`ProcessInstance` |[.typeNameLabel]#ProcessDefinitionProxy.#`startProcessFor​(User user,                Contract contract)` | 
+|==============================================================================================================================
+** [#com.bonitasoft.test.toolkit.model]##
+
+==== Uses of link:../Contract.html[Contract] in link:../package-summary.html[com.bonitasoft.test.toolkit.model]
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.model] with parameters of type link:../Contract.html[Contract][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|=========================================================================================================================
+|Modifier and Type |Method |Description
+|`UserTask` |[.typeNameLabel]#UserTask.#`execute​(Contract contract)` a|
+Execute this task with a contract
+
+|`UserTask` |[.typeNameLabel]#UserTask.#`execute​(User assignee,        Contract contract)` a|
+Assign and execute this task with a contract
+
+|`ProcessInstance` |[.typeNameLabel]#ProcessDefinition.#`startProcessFor​(User user,                Contract contract)` a|
+Starts an instance of this process for a given user, with a contract.
+
+|=========================================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../Contract.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

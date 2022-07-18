@@ -1,0 +1,106 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../BusinessObjectDAO.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Interface +
+com.bonitasoft.test.toolkit.model.BusinessObjectDAO
+
+* .Packages that use link:../BusinessObjectDAO.html[BusinessObjectDAO][.tabEnd]# #
+[cols=",",options="header",]
+|===============================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit[com.bonitasoft.test.toolkit] | 
+|link:#com.bonitasoft.test.toolkit.internal[com.bonitasoft.test.toolkit.internal] | 
+|link:#com.bonitasoft.test.toolkit.internal.proxy[com.bonitasoft.test.toolkit.internal.proxy] | 
+|===============================================================================================
+* ** [#com.bonitasoft.test.toolkit]##
+
+==== Uses of link:../BusinessObjectDAO.html[BusinessObjectDAO] in link:../../package-summary.html[com.bonitasoft.test.toolkit]
+
+.Methods in link:../../package-summary.html[com.bonitasoft.test.toolkit] that return link:../BusinessObjectDAO.html[BusinessObjectDAO][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|==========================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`BusinessObjectDAO<BusinessData>` |[.typeNameLabel]#BonitaTestToolkit.#`getBusinessObjectDAO​(String businessObjectType)` a|
+Creates a generic link:../BusinessObjectDAO.html[`BusinessObjectDAO`] according to a Business Object type.
+
+|`<T> BusinessObjectDAO<T>` |[.typeNameLabel]#BonitaTestToolkit.#`getBusinessObjectDAO​(String businessObjectTypeName,                     Class<T> businessObjectType)` a|
+Creates an link:../BusinessObjectDAO.html[`BusinessObjectDAO`] according to a Business Object type.
+
+|==========================================================================================================================================================================
+** [#com.bonitasoft.test.toolkit.internal]##
+
+==== Uses of link:../BusinessObjectDAO.html[BusinessObjectDAO] in link:../../internal/package-summary.html[com.bonitasoft.test.toolkit.internal]
+
+.Methods in link:../../internal/package-summary.html[com.bonitasoft.test.toolkit.internal] that return link:../BusinessObjectDAO.html[BusinessObjectDAO][.tabEnd]# #
+[cols=",,",options="header",]
+|==============================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`BusinessObjectDAO<BusinessData>` |[.typeNameLabel]#BonitaTestToolkitImpl.#`getBusinessObjectDAO​(String businessObjectType)` | 
+|`<T> BusinessObjectDAO<T>` |[.typeNameLabel]#BonitaTestToolkitImpl.#`getBusinessObjectDAO​(String businessObjectTypeName,                     Class<T> businessObjectType)` | 
+|==============================================================================================================================================================================
+** [#com.bonitasoft.test.toolkit.internal.proxy]##
+
+==== Uses of link:../BusinessObjectDAO.html[BusinessObjectDAO] in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+.Classes in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that implement link:../BusinessObjectDAO.html[BusinessObjectDAO][.tabEnd]# #
+[cols=",,",options="header",]
+|============================================
+|Modifier and Type |Class |Description
+|`class ` |`BusinessObjectDAOProxy<T>` | 
+|`class ` |`GenericBusinessObjectDAOProxy` | 
+|============================================
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that return link:../BusinessObjectDAO.html[BusinessObjectDAO][.tabEnd]# #
+[cols=",,",options="header",]
+|===================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`BusinessObjectDAO<BusinessData>` |[.typeNameLabel]#ProxyFactory.#`createGenericBusinessObjectDAO​(String type)` | 
+|`<T> BusinessObjectDAO<T>` |[.typeNameLabel]#ProxyFactory.#`createTypedBusinessObjectDAO​(String type,                             Class<T> businessObjectType)` | 
+|===================================================================================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../BusinessObjectDAO.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

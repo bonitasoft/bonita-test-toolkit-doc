@@ -1,0 +1,72 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../UserTaskProxy.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../../index-all.html[Index]
+* link:../../../../../../../help-doc.html[Help]
+
+* link:../../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Class +
+com.bonitasoft.test.toolkit.internal.proxy.UserTaskProxy
+
+* .Packages that use link:../UserTaskProxy.html[UserTaskProxy][.tabEnd]# #
+[cols=",",options="header",]
+|===============================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit.internal.proxy[com.bonitasoft.test.toolkit.internal.proxy] | 
+|===============================================================================================
+* ** [#com.bonitasoft.test.toolkit.internal.proxy]##
+
+==== Uses of link:../UserTaskProxy.html[UserTaskProxy] in link:../package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that return link:../UserTaskProxy.html[UserTaskProxy][.tabEnd]# #
+[cols=",,",options="header",]
+|=======================================================================================================
+|Modifier and Type |Method |Description
+|`UserTaskProxy` |[.typeNameLabel]#UserTaskProxy.#`assignTo​(User user)` | 
+|`UserTaskProxy` |[.typeNameLabel]#UserTaskProxy.#`execute()` | 
+|`UserTaskProxy` |[.typeNameLabel]#UserTaskProxy.#`execute​(Contract contract)` | 
+|`UserTaskProxy` |[.typeNameLabel]#UserTaskProxy.#`execute​(User assignee,        Contract contract)` | 
+|=======================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../UserTaskProxy.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../../index-all.html[Index]
+* link:../../../../../../../help-doc.html[Help]
+
+* link:../../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

@@ -1,0 +1,103 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/Task.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* Method
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Interface Task
+
+* All Superinterfaces:::
+  `AbstractTask<Task>`, `Callable<Task>`
++
+All Known Implementing Classes:::
+  `TaskProxy`
++
+
+'''''
++
+....
+public interface Task
+extends AbstractTask<Task>
+....
+
+* ** [#method.summary]##
++
+==== Method Summary
+*** [#methods.inherited.from.class.com.bonitasoft.test.toolkit.model.AbstractTask]##
++
+==== Methods inherited from interface com.bonitasoft.test.toolkit.model.link:AbstractTask.html[AbstractTask]
++
+`getConnector, getDescription, getDisplayDescription, getDisplayName, getId, getName, getParentProcessInstance, getRootProcessInstance, getState, getType, getVariable, isArchived`
+*** [#methods.inherited.from.class.java.util.concurrent.Callable]##
++
+==== Methods inherited from interface java.util.concurrent.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html?is-external=true[Callable]
++
+`call`
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/Task.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* Method
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

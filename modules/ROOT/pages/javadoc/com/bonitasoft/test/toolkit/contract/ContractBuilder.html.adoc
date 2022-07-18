@@ -1,0 +1,181 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ContractBuilder.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.contract]
+
+=== Interface ContractBuilder
+
+* All Superinterfaces:::
+  `InputBuilder<ContractBuilder>`
++
+All Known Implementing Classes:::
+  `ContractBuilderImpl`
++
+
+'''''
++
+....
+public interface ContractBuilder
+extends InputBuilder<ContractBuilder>
+....
++
+A builder to create manually a link:../model/Contract.html[`Contract`] by specifying contract inputs one by one. +
+Complex contract inputs require to use additional link:InputBuilder.html[`InputBuilder`]: +
+ +
+_Contract example, in json:_
+
+....
+ {
+      "complexInput" : {
+          "field1" : "value1",
+          "field2" : "value2"
+      }
+ }
+ 
+....
+
+_Corresponding implementation using link:ContractBuilder.html[`ContractBuilder`]:_
+
+....
+ @Test
+ void test_my_process(BonitaTestToolkit toolkit) {
+     var complexInputBuilder = ComplexInputBuilder.complexInput()
+          .textInput("field1", "value1")
+          .textInput("field2", "value2");
+     var contractBuilder = ContractBuilder.newContract()
+          .complexInput("complexInput", complexInputBuilder);
+     var contract = contractBuilder.build();
+     ...
+ }
+ 
+....
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t1 .tableTab]#javascript:show(1);[Static Methods][.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t3 .tableTab]#javascript:show(4);[Abstract Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|=================================================================
+|Modifier and Type |Method |Description
+|`Contract` |`build()` | 
+|`Contract` |`fromClasspathResource​(String classpathResource)` | 
+|`static ContractBuilder` |`newContract()` a|
+Create a new link:ContractBuilder.html[`ContractBuilder`]
+
+|=================================================================
+*** [#methods.inherited.from.class.com.bonitasoft.test.toolkit.contract.InputBuilder]##
++
+==== Methods inherited from interface com.bonitasoft.test.toolkit.contract.link:InputBuilder.html[InputBuilder]
++
+`booleanInput, complexInput, dateInput, decimalInput, fileInput, integerInput, localDateInput, localDateTimeInput, longInput, multipleBooleanInput, multipleComplexInput, multipleDateInput, multipleDecimalInput, multipleFileInput, multipleIntegerInput, multipleLocalDateInput, multipleLocalDateTimeInput, multipleLongInput, multipleOffsetDateTimeInput, multipleTextInput, offsetDateTimeInput, textInput`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#fromClasspathResource(java.lang.String)]##
+*** ===== fromClasspathResource
++
+[source,methodSignature]
+----
+Contract fromClasspathResource​(String classpathResource)
+----
++
+[.paramLabel]#Parameters:#::
+  `classpathResource` - A json source file representing the contract, present in the class-path.
+[.returnLabel]#Returns:#::
+  A link:../model/Contract.html[`Contract`]
++
+[#build()]##
+*** ===== build
++
+[source,methodSignature]
+----
+Contract build()
+----
++
+[.returnLabel]#Returns:#::
+  A link:../model/Contract.html[`Contract`]
++
+[#newContract()]##
+*** ===== newContract
++
+[source,methodSignature]
+----
+static ContractBuilder newContract()
+----
++
+Create a new link:ContractBuilder.html[`ContractBuilder`]
++
+[.returnLabel]#Returns:#::
+  a new link:ContractBuilder.html[`ContractBuilder`]
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ContractBuilder.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

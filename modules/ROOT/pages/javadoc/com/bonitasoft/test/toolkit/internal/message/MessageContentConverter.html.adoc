@@ -1,0 +1,148 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/MessageContentConverter.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.message]
+
+=== Class MessageContentConverter
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.internal.message.MessageContentConverter
+
+* All Implemented Interfaces:::
+  `Function<Map<String,​Object>,​Map<String,​org.bonitasoft.web.client.model.MessageMessageContentValue>>`
++
+
+'''''
++
+....
+public class MessageContentConverter
+extends Object
+implements Function<Map<String,​Object>,​Map<String,​org.bonitasoft.web.client.model.MessageMessageContentValue>>
+....
+
+* ** [#constructor.summary]##
++
+==== Constructor Summary
++
+.Constructors[.tabEnd]# #
+[cols=",",options="header",]
+|==============================
+|Constructor |Description
+|`MessageContentConverter()` | 
+|==============================
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|==================================================================================================================
+|Modifier and Type |Method |Description
+|`Map<String,​org.bonitasoft.web.client.model.MessageMessageContentValue>` |`apply​(Map<String,​Object> source)` | 
+|==================================================================================================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+*** [#methods.inherited.from.class.java.util.function.Function]##
++
+==== Methods inherited from interface java.util.function.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html?is-external=true[Function]
++
+`andThen, compose`
+
+* ** [#constructor.detail]##
++
+==== Constructor Detail
++
+[#<init>()]##
+*** ===== MessageContentConverter
++
+....
+public MessageContentConverter()
+....
++
+** [#method.detail]##
++
+==== Method Detail
++
+[#apply(java.util.Map)]##
+*** ===== apply
++
+[source,methodSignature]
+----
+public Map<String,​org.bonitasoft.web.client.model.MessageMessageContentValue> apply​(Map<String,​Object> source)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `apply` in interface `Function<Map<String,​Object>,​Map<String,​org.bonitasoft.web.client.model.MessageMessageContentValue>>`
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/MessageContentConverter.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

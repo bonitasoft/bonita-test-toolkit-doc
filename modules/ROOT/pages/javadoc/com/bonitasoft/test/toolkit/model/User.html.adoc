@@ -1,0 +1,218 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/User.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Interface User
+
+* All Superinterfaces:::
+  `Callable<User>`
++
+All Known Implementing Classes:::
+  `UserProxy`
++
+
+'''''
++
+....
+public interface User
+extends Callable<User>
+....
++
+A User of the organization. It gives access to all the information on the user.
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t3 .tableTab]#javascript:show(4);[Abstract Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|================================================
+|Modifier and Type |Method |Description
+|`String` |`getFirstName()` | 
+|`String` |`getId()` | 
+|`String` |`getJobTitle()` | 
+|`String` |`getLastName()` | 
+|`User` |`getManager()` | 
+|`ContactData` |`getPersonalContactData()` | 
+|`ContactData` |`getProfessionalContactData()` | 
+|`String` |`getUserName()` | 
+|`boolean` |`isEnabled()` | 
+|================================================
+*** [#methods.inherited.from.class.java.util.concurrent.Callable]##
++
+==== Methods inherited from interface java.util.concurrent.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html?is-external=true[Callable]
++
+`call`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#getId()]##
+*** ===== getId
++
+[source,methodSignature]
+----
+String getId()
+----
++
+[.returnLabel]#Returns:#::
+  the user ID
++
+[#getUserName()]##
+*** ===== getUserName
++
+[source,methodSignature]
+----
+String getUserName()
+----
++
+[.returnLabel]#Returns:#::
+  the username
++
+[#isEnabled()]##
+*** ===== isEnabled
++
+[source,methodSignature]
+----
+boolean isEnabled()
+----
++
+[.returnLabel]#Returns:#::
+  true if the user is enabled
++
+[#getFirstName()]##
+*** ===== getFirstName
++
+[source,methodSignature]
+----
+String getFirstName()
+----
++
+[.returnLabel]#Returns:#::
+  the first name of the user
++
+[#getLastName()]##
+*** ===== getLastName
++
+[source,methodSignature]
+----
+String getLastName()
+----
++
+[.returnLabel]#Returns:#::
+  the last name of the user
++
+[#getManager()]##
+*** ===== getManager
++
+[source,methodSignature]
+----
+User getManager()
+----
++
+[.returnLabel]#Returns:#::
+  the manager of the user
++
+[#getJobTitle()]##
+*** ===== getJobTitle
++
+[source,methodSignature]
+----
+String getJobTitle()
+----
++
+[.returnLabel]#Returns:#::
+  the job title of the user
++
+[#getPersonalContactData()]##
+*** ===== getPersonalContactData
++
+[source,methodSignature]
+----
+ContactData getPersonalContactData()
+----
++
+[.returnLabel]#Returns:#::
+  the personal contact data of the user, as a link:ContactData.html[`ContactData`]
++
+[#getProfessionalContactData()]##
+*** ===== getProfessionalContactData
++
+[source,methodSignature]
+----
+ContactData getProfessionalContactData()
+----
++
+[.returnLabel]#Returns:#::
+  the professional contact data of the user, as a link:ContactData.html[`ContactData`]
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/User.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

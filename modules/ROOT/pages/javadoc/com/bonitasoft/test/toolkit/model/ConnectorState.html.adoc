@@ -1,0 +1,254 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ConnectorState.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* link:#enum.constant.summary[Enum Constants] | 
+* Field | 
+* link:#method.summary[Method]
+
+* Detail: 
+* link:#enum.constant.detail[Enum Constants] | 
+* Field | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Enum ConnectorState
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html?is-external=true[java.lang.Enum]<link:ConnectorState.html[ConnectorState]>
+** *** com.bonitasoft.test.toolkit.model.ConnectorState
+
+* All Implemented Interfaces:::
+  `Serializable`, `Comparable<ConnectorState>`
++
+
+'''''
++
+....
+public enum ConnectorState
+extends Enum<ConnectorState>
+....
++
+Representation of the state of a given connector: - DONE - FAILED - TO_BE_EXECUTED - EXECUTING - TO_RE_EXECUTE - SKIPPED
+
+* ** [#enum.constant.summary]##
++
+==== Enum Constant Summary
++
+.Enum Constants[.tabEnd]# #
+[cols=",",options="header",]
+|==========================
+|Enum Constant |Description
+|`DONE` | 
+|`EXECUTING` | 
+|`FAILED` | 
+|`SKIPPED` | 
+|`TO_BE_EXECUTED` | 
+|`TO_RE_EXECUTE` | 
+|==========================
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t1 .tableTab]#javascript:show(1);[Static Methods][.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|===========================================================================================
+|Modifier and Type |Method |Description
+|`static ConnectorState` |`fromValue​(String value)` | 
+|`String` |`getValue()` | 
+|`String` |`toString()` | 
+|`static ConnectorState` |`valueOf​(String name)` a|
+Returns the enum constant of this type with the specified name.
+
+|`static ConnectorState[]` |`values()` a|
+Returns an array containing the constants of this enum type, in the order they are declared.
+
+|===========================================================================================
+*** [#methods.inherited.from.class.java.lang.Enum]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html?is-external=true[Enum]
++
+`clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, valueOf`
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`getClass, notify, notifyAll, wait, wait, wait`
+
+* ** [#enum.constant.detail]##
++
+==== Enum Constant Detail
++
+[#DONE]##
+*** ===== DONE
++
+....
+public static final ConnectorState DONE
+....
++
+[#FAILED]##
+*** ===== FAILED
++
+....
+public static final ConnectorState FAILED
+....
++
+[#TO_BE_EXECUTED]##
+*** ===== TO_BE_EXECUTED
++
+....
+public static final ConnectorState TO_BE_EXECUTED
+....
++
+[#EXECUTING]##
+*** ===== EXECUTING
++
+....
+public static final ConnectorState EXECUTING
+....
++
+[#TO_RE_EXECUTE]##
+*** ===== TO_RE_EXECUTE
++
+....
+public static final ConnectorState TO_RE_EXECUTE
+....
++
+[#SKIPPED]##
+*** ===== SKIPPED
++
+....
+public static final ConnectorState SKIPPED
+....
++
+** [#method.detail]##
++
+==== Method Detail
++
+[#values()]##
+*** ===== values
++
+[source,methodSignature]
+----
+public static ConnectorState[] values()
+----
++
+Returns an array containing the constants of this enum type, in the order they are declared. This method may be used to iterate over the constants as follows:
+
+....
+for (ConnectorState c : ConnectorState.values())
+    System.out.println(c);
+....
++
+[.returnLabel]#Returns:#::
+  an array containing the constants of this enum type, in the order they are declared
++
+[#valueOf(java.lang.String)]##
+*** ===== valueOf
++
+[source,methodSignature]
+----
+public static ConnectorState valueOf​(String name)
+----
++
+Returns the enum constant of this type with the specified name. The string must match _exactly_ an identifier used to declare an enum constant in this type. (Extraneous whitespace characters are not permitted.)
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of the enum constant to be returned.
+[.returnLabel]#Returns:#::
+  the enum constant with the specified name
+[.throwsLabel]#Throws:#::
+  `IllegalArgumentException` - if this enum type has no constant with the specified name
+  +
+  `NullPointerException` - if the argument is null
++
+[#getValue()]##
+*** ===== getValue
++
+[source,methodSignature]
+----
+public String getValue()
+----
++
+[.returnLabel]#Returns:#::
+  the state of the connector
++
+[#toString()]##
+*** ===== toString
++
+[source,methodSignature]
+----
+public String toString()
+----
++
+[.overrideSpecifyLabel]#Overrides:#::
+  `toString` in class `Enum<ConnectorState>`
++
+[#fromValue(java.lang.String)]##
+*** ===== fromValue
++
+[source,methodSignature]
+----
+public static ConnectorState fromValue​(String value)
+----
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ConnectorState.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* link:#enum.constant.summary[Enum Constants] | 
+* Field | 
+* link:#method.summary[Method]
+
+* Detail: 
+* link:#enum.constant.detail[Enum Constants] | 
+* Field | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

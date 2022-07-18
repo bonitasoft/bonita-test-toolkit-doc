@@ -1,0 +1,70 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* Package
+* Class
+* link:package-use.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+* .Class Summary[.tabEnd]# #
+[width="100%",cols="50%,50%",options="header",]
+|====================================================================================================================================================================================================
+|Class |Description
+|link:ConnectorPredicates.html[ConnectorPredicates] a|
+Collection of link:../model/Connector.html[`Connector`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`].
+
+|link:ProcessDefinitionPredicates.html[ProcessDefinitionPredicates] a|
+Collection of link:../model/ProcessDefinition.html[`ProcessDefinition`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`].
+
+|link:ProcessInstancePredicates.html[ProcessInstancePredicates] a|
+Collection of link:../model/ProcessInstance.html[`ProcessInstance`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`].
+
+|link:TaskPredicates.html[TaskPredicates] a|
+Collection of link:../model/Task.html[`Task`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`].
+
+|link:UserTaskPredicates.html[UserTaskPredicates] a|
+Collection of link:../model/UserTask.html[`UserTask`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`].
+
+|====================================================================================================================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* Package
+* Class
+* link:package-use.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

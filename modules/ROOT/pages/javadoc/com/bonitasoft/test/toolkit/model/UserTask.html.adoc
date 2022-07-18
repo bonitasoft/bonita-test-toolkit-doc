@@ -1,0 +1,308 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/UserTask.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Interface UserTask
+
+* All Superinterfaces:::
+  `AbstractTask<UserTask>`, `Callable<UserTask>`
++
+All Known Implementing Classes:::
+  `UserTaskProxy`
++
+
+'''''
++
+....
+public interface UserTask
+extends AbstractTask<UserTask>
+....
++
+A user task of a process. It gives access to some information like the due date, the assignee and offers the possibility to assign and/or execute it.
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t3 .tableTab]#javascript:show(4);[Abstract Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|=============================================================================================================
+|Modifier and Type |Method |Description
+|`UserTask` |`assignTo​(User user)` | 
+|`UserTask` |`execute()` a|
+Execute this task.
+
+|`UserTask` |`execute​(Contract contract)` a|
+Execute this task with a contract
+
+|`UserTask` |`execute​(User user)` a|
+Assign and execute this task.
+
+|`UserTask` |`execute​(User assignee,        Contract contract)` a|
+Assign and execute this task with a contract
+
+|`User` |`getAssignee()` | 
+|`Set<User>` |`getCandidates()` | 
+|`Instant` |`getDueDate()` | 
+|`User` |`getExecutedBy()` | 
+|`BusinessData` |`getIteratorBusinessVariable​(String name)` a|
+Returns the business data used as iterator for a multi-instantiated link:UserTask.html[`UserTask`].
+
+|`<T> T` |`getIteratorBusinessVariable​(String name,                            Class<T> businessDataType)` a|
+Returns the business data used as iterator for a multi-instantiated link:UserTask.html[`UserTask`].
+
+|=============================================================================================================
+*** [#methods.inherited.from.class.com.bonitasoft.test.toolkit.model.AbstractTask]##
++
+==== Methods inherited from interface com.bonitasoft.test.toolkit.model.link:AbstractTask.html[AbstractTask]
++
+`getConnector, getDescription, getDisplayDescription, getDisplayName, getId, getName, getParentProcessInstance, getRootProcessInstance, getState, getType, getVariable, isArchived`
+*** [#methods.inherited.from.class.java.util.concurrent.Callable]##
++
+==== Methods inherited from interface java.util.concurrent.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html?is-external=true[Callable]
++
+`call`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#getDueDate()]##
+*** ===== getDueDate
++
+[source,methodSignature]
+----
+Instant getDueDate()
+----
++
+[.returnLabel]#Returns:#::
+  the due date as an https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html?is-external=true[`Instant`]
++
+[#getExecutedBy()]##
+*** ===== getExecutedBy
++
+[source,methodSignature]
+----
+User getExecutedBy()
+----
++
+[.returnLabel]#Returns:#::
+  the link:User.html[`User`] who executed this task
++
+[#getCandidates()]##
+*** ===== getCandidates
++
+[source,methodSignature]
+----
+Set<User> getCandidates()
+----
++
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html?is-external=true[`Set`] of link:User.html[`User`] that can be assigned to this task (the candidates).
++
+[#getAssignee()]##
+*** ===== getAssignee
++
+[source,methodSignature]
+----
+User getAssignee()
+----
++
+[.returnLabel]#Returns:#::
+  the link:User.html[`User`] assigned to this task
++
+[#execute()]##
+*** ===== execute
++
+[source,methodSignature]
+----
+UserTask execute()
+          throws ExecuteTaskException
+----
++
+Execute this task.
++
+[.returnLabel]#Returns:#::
+  this link:UserTask.html[`UserTask`]
+[.throwsLabel]#Throws:#::
+  `ExecuteTaskException`
++
+[#execute(com.bonitasoft.test.toolkit.model.User)]##
+*** ===== execute
++
+[source,methodSignature]
+----
+UserTask execute​(User user)
+          throws ExecuteTaskException
+----
++
+Assign and execute this task.
++
+[.paramLabel]#Parameters:#::
+  `user` - the link:User.html[`User`] that will be assigned to this task.
+[.returnLabel]#Returns:#::
+  this link:UserTask.html[`UserTask`]
+[.throwsLabel]#Throws:#::
+  `ExecuteTaskException`
++
+[#execute(com.bonitasoft.test.toolkit.model.Contract)]##
+*** ===== execute
++
+[source,methodSignature]
+----
+UserTask execute​(Contract contract)
+          throws ExecuteTaskException
+----
++
+Execute this task with a contract
++
+[.paramLabel]#Parameters:#::
+  `contract` - the link:Contract.html[`Contract`] the contract of this task
+[.returnLabel]#Returns:#::
+  this link:UserTask.html[`UserTask`]
+[.throwsLabel]#Throws:#::
+  `ExecuteTaskException`
++
+[#execute(com.bonitasoft.test.toolkit.model.User,com.bonitasoft.test.toolkit.model.Contract)]##
+*** ===== execute
++
+[source,methodSignature]
+----
+UserTask execute​(User assignee,
+                 Contract contract)
+          throws ExecuteTaskException
+----
++
+Assign and execute this task with a contract
++
+[.paramLabel]#Parameters:#::
+  `assignee` - the link:User.html[`User`] that will be assigned to this task.
+  +
+  `contract` - the link:Contract.html[`Contract`] the contract of this task
+[.returnLabel]#Returns:#::
+  this link:UserTask.html[`UserTask`]
+[.throwsLabel]#Throws:#::
+  `ExecuteTaskException`
++
+[#assignTo(com.bonitasoft.test.toolkit.model.User)]##
+*** ===== assignTo
++
+[source,methodSignature]
+----
+UserTask assignTo​(User user)
+----
++
+[.paramLabel]#Parameters:#::
+  `user` - the link:User.html[`User`] that will be assigned to this task.
+[.returnLabel]#Returns:#::
+  this link:UserTask.html[`UserTask`]
++
+[#getIteratorBusinessVariable(java.lang.String)]##
+*** ===== getIteratorBusinessVariable
++
+[source,methodSignature]
+----
+BusinessData getIteratorBusinessVariable​(String name)
+----
++
+Returns the business data used as iterator for a multi-instantiated link:UserTask.html[`UserTask`]. +
+*NOTE:* if the iterator is not a Business Object, the iterator variable must be retrieved with link:AbstractTask.html#getVariable(java.lang.String)[`AbstractTask.getVariable(String)`].
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of the multi-instance iterator
+[.returnLabel]#Returns:#::
+  an object representing your businessData
++
+[#getIteratorBusinessVariable(java.lang.String,java.lang.Class)]##
+*** ===== getIteratorBusinessVariable
++
+[source,methodSignature]
+----
+<T> T getIteratorBusinessVariable​(String name,
+                                  Class<T> businessDataType)
+----
++
+Returns the business data used as iterator for a multi-instantiated link:UserTask.html[`UserTask`]. +
+ +
+Use this method if you have access to a model representing your business data model. Thus, you'll be able to access directly to your businessData properties using the corresponding Java methods. +
+ +
+*NOTE:* if the iterator is not a Business Object, the iterator variable must be retrieved with link:AbstractTask.html#getVariable(java.lang.String)[`AbstractTask.getVariable(String)`].
++
+[.paramLabel]#Type Parameters:#::
+  `T` - the type of the businessData
+[.paramLabel]#Parameters:#::
+  `name` - the name of the multi-instance iterator
+  +
+  `businessDataType` - the type of your businessData
+[.returnLabel]#Returns:#::
+  an object representing your businessData, of type `businessDataType`
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/UserTask.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

@@ -1,0 +1,131 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../MessageEvent.MessageEventBuiler.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Class +
+com.bonitasoft.test.toolkit.model.MessageEvent.MessageEventBuiler
+
+* .Packages that use link:../MessageEvent.MessageEventBuiler.html[MessageEvent.MessageEventBuiler][.tabEnd]# #
+[cols=",",options="header",]
+|=============================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit.model[com.bonitasoft.test.toolkit.model] | 
+|=============================================================================
+* ** [#com.bonitasoft.test.toolkit.model]##
+
+==== Uses of link:../MessageEvent.MessageEventBuiler.html[MessageEvent.MessageEventBuiler] in link:../package-summary.html[com.bonitasoft.test.toolkit.model]
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.model] that return link:../MessageEvent.MessageEventBuiler.html[MessageEvent.MessageEventBuiler][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|=====================================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addBooleanContent​(String key,                  Boolean value)` a|
+Add a Boolean content to this message content
+
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addBooleanCorrelation​(String key,                      Boolean value)` a|
+Add a Boolean correlation to this message correlation
+
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addDateContent​(String key,               Date value)` a|
+Add a Date content to this message content
+
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addDateCorrelation​(String key,                   Date value)` a|
+Add a Date correlation to this message correlation
+
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addDoubleContent​(String key,                 Double value)` a|
+Add a Double content to this message content
+
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addDoubleCorrelation​(String key,                     Double value)` a|
+Add a Double correlation to this message correlation
+
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addFloatContent​(String key,                Float value)` a|
+Add a Float content to this message content
+
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addFloatCorrelation​(String key,                    Float value)` a|
+Add a Float correlation to this message correlation
+
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addIntegerContent​(String key,                  Integer value)` a|
+Add an Integer content to this message content
+
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addIntegerCorrelation​(String key,                      Integer value)` a|
+Add an Integer correlation to this message correlation
+
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addLocalDateContent​(String key,                    LocalDate value)` a|
+Add a LocalDate content to this message content
+
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addLocalDateCorrelation​(String key,                        LocalDate value)` a|
+Add a LocalDate correlation to this message correlation
+
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addLocalDateTimeContent​(String key,                        LocalDateTime value)` a|
+Add a LocalDateTime content to this message content
+
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addLocalDateTimeCorrelation​(String key,                            LocalDateTime value)` a|
+Add a LocalDateTime correlation to this message correlation
+
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addLongContent​(String key,               Long value)` a|
+Add a Long content to this message content
+
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addLongCorrelation​(String key,                   Long value)` a|
+Add a Long correlation to this message correlation
+
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addOffsetDateTimeContent​(String key,                         OffsetDateTime value)` a|
+Add an OffsetDateTime content to this message content
+
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addOffsetDateTimeCorrelation​(String key,                             OffsetDateTime value)` a|
+Add a OffsetDateTime correlation to this message correlation
+
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addStringContent​(String key,                 String value)` a|
+Add a String content to this message content
+
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`addStringCorrelation​(String key,                     String value)` a|
+Add a String correlation to this message correlation
+
+|`static MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.#`create​(String messageName)` | 
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`targetFlowNode​(String targetFlowNodeName)` | 
+|`MessageEvent.MessageEventBuiler` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`targetProcess​(String targetProcessName)` | 
+|=====================================================================================================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../MessageEvent.MessageEventBuiler.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

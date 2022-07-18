@@ -1,0 +1,194 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/Connector.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Interface Connector
+
+* All Superinterfaces:::
+  `Callable<Connector>`
++
+All Known Implementing Classes:::
+  `ConnectorProxy`
++
+
+'''''
++
+....
+public interface Connector
+extends Callable<Connector>
+....
++
+Representation of a Connector, used to retrieve meta information or execution information.
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t3 .tableTab]#javascript:show(4);[Abstract Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|=====================================================
+|Modifier and Type |Method |Description
+|`ConnectorActivationEvent` |`getActivationEvent()` | 
+|`String` |`getConnectorId()` | 
+|`String` |`getContainerId()` | 
+|`long` |`getId()` | 
+|`String` |`getName()` | 
+|`ConnectorState` |`getState()` | 
+|`String` |`getVersion()` | 
+|=====================================================
+*** [#methods.inherited.from.class.java.util.concurrent.Callable]##
++
+==== Methods inherited from interface java.util.concurrent.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html?is-external=true[Callable]
++
+`call`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#getId()]##
+*** ===== getId
++
+[source,methodSignature]
+----
+long getId()
+----
++
+[.returnLabel]#Returns:#::
+  the ID of the connector instance
++
+[#getName()]##
+*** ===== getName
++
+[source,methodSignature]
+----
+String getName()
+----
++
+[.returnLabel]#Returns:#::
+  the name of the connector
++
+[#getState()]##
+*** ===== getState
++
+[source,methodSignature]
+----
+ConnectorState getState()
+----
++
+[.returnLabel]#Returns:#::
+  the state of the connector
++
+[#getActivationEvent()]##
+*** ===== getActivationEvent
++
+[source,methodSignature]
+----
+ConnectorActivationEvent getActivationEvent()
+----
++
+[.returnLabel]#Returns:#::
+  the activation event of the connector (ON_ENTER, ON_FINISH).
++
+[#getConnectorId()]##
+*** ===== getConnectorId
++
+[source,methodSignature]
+----
+String getConnectorId()
+----
++
+[.returnLabel]#Returns:#::
+  the connector definition ID
++
+[#getContainerId()]##
+*** ===== getContainerId
++
+[source,methodSignature]
+----
+String getContainerId()
+----
++
+[.returnLabel]#Returns:#::
+  the container ID of the connector (i.e the ID of the task / the pool containing this connector)
++
+[#getVersion()]##
+*** ===== getVersion
++
+[source,methodSignature]
+----
+String getVersion()
+----
++
+[.returnLabel]#Returns:#::
+  the version of the connector definition
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/Connector.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

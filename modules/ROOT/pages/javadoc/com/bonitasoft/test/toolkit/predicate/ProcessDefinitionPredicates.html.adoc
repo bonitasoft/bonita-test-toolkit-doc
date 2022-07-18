@@ -1,0 +1,162 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ProcessDefinitionPredicates.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.predicate]
+
+=== Class ProcessDefinitionPredicates
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.predicate.ProcessDefinitionPredicates
+
+* 
+
+'''''
++
+....
+public class ProcessDefinitionPredicates
+extends Object
+....
++
+Collection of link:../model/ProcessDefinition.html[`ProcessDefinition`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`].
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t1 .tableTab]#javascript:show(1);[Static Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|==============================================================================================================
+|Modifier and Type |Method |Description
+|`static Predicate<ProcessDefinition>` |`canBeStartedBy​(User user)` a|
+Verify if a link:../model/ProcessDefinition.html[`ProcessDefinition`] can be started by the given user.
+
+|`static Predicate<ProcessDefinition>` |`hasArchivedProcessInstances​(int numberOfArchivedProcessInstances)` a|
+Verify the number of archived process instance of a link:../model/ProcessDefinition.html[`ProcessDefinition`].
+
+|`static Predicate<ProcessDefinition>` |`hasProcessInstances​(int numberOfProcessInstances)` a|
+Verify the number of active process instance of a link:../model/ProcessDefinition.html[`ProcessDefinition`].
+
+|==============================================================================================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#canBeStartedBy(com.bonitasoft.test.toolkit.model.User)]##
+*** ===== canBeStartedBy
++
+[source,methodSignature]
+----
+public static Predicate<ProcessDefinition> canBeStartedBy​(User user)
+----
++
+Verify if a link:../model/ProcessDefinition.html[`ProcessDefinition`] can be started by the given user. +
++
+[.paramLabel]#Parameters:#::
+  `user` - The link:../model/User.html[`User`] that should be able to start.
+[.returnLabel]#Returns:#::
+  a link:../model/ProcessDefinition.html[`ProcessDefinition`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
++
+[#hasProcessInstances(int)]##
+*** ===== hasProcessInstances
++
+[source,methodSignature]
+----
+public static Predicate<ProcessDefinition> hasProcessInstances​(int numberOfProcessInstances)
+----
++
+Verify the number of active process instance of a link:../model/ProcessDefinition.html[`ProcessDefinition`]. +
++
+[.paramLabel]#Parameters:#::
+  `numberOfProcessInstances` - The expected number of active process instances
+[.returnLabel]#Returns:#::
+  a link:../model/ProcessDefinition.html[`ProcessDefinition`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
++
+[#hasArchivedProcessInstances(int)]##
+*** ===== hasArchivedProcessInstances
++
+[source,methodSignature]
+----
+public static Predicate<ProcessDefinition> hasArchivedProcessInstances​(int numberOfArchivedProcessInstances)
+----
++
+Verify the number of archived process instance of a link:../model/ProcessDefinition.html[`ProcessDefinition`]. +
++
+[.paramLabel]#Parameters:#::
+  `numberOfArchivedProcessInstances` - The expected number of archived process instances
+[.returnLabel]#Returns:#::
+  a link:../model/ProcessDefinition.html[`ProcessDefinition`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ProcessDefinitionPredicates.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

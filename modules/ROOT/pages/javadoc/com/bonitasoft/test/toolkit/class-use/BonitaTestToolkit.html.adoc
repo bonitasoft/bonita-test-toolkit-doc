@@ -1,0 +1,87 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../BonitaTestToolkit.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Interface +
+com.bonitasoft.test.toolkit.BonitaTestToolkit
+
+* .Packages that use link:../BonitaTestToolkit.html[BonitaTestToolkit][.tabEnd]# #
+[cols=",",options="header",]
+|===================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit[com.bonitasoft.test.toolkit] | 
+|link:#com.bonitasoft.test.toolkit.internal[com.bonitasoft.test.toolkit.internal] | 
+|===================================================================================
+* ** [#com.bonitasoft.test.toolkit]##
+
+==== Uses of link:../BonitaTestToolkit.html[BonitaTestToolkit] in link:../package-summary.html[com.bonitasoft.test.toolkit]
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit] that return link:../BonitaTestToolkit.html[BonitaTestToolkit][.tabEnd]# #
+[cols=",,",options="header",]
+|=============================================================================================
+|Modifier and Type |Method |Description
+|`BonitaTestToolkit` |[.typeNameLabel]#BonitaTestToolkitFactory.#`get​(Class<?> testClazz)` | 
+|=============================================================================================
+** [#com.bonitasoft.test.toolkit.internal]##
+
+==== Uses of link:../BonitaTestToolkit.html[BonitaTestToolkit] in link:../internal/package-summary.html[com.bonitasoft.test.toolkit.internal]
+
+.Classes in link:../internal/package-summary.html[com.bonitasoft.test.toolkit.internal] that implement link:../BonitaTestToolkit.html[BonitaTestToolkit][.tabEnd]# #
+[cols=",,",options="header",]
+|=====================================
+|Modifier and Type |Class |Description
+|`class ` |`BonitaTestToolkitImpl` | 
+|=====================================
+
+.Methods in link:../internal/package-summary.html[com.bonitasoft.test.toolkit.internal] that return link:../BonitaTestToolkit.html[BonitaTestToolkit][.tabEnd]# #
+[cols=",,",options="header",]
+|=================================================================================================
+|Modifier and Type |Method |Description
+|`BonitaTestToolkit` |[.typeNameLabel]#BonitaTestToolkitFactoryImpl.#`get​(Class<?> testClazz)` | 
+|=================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../BonitaTestToolkit.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

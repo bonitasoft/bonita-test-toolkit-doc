@@ -1,0 +1,704 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ProcessInstanceProxy.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+=== Class ProcessInstanceProxy
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.internal.proxy.ProcessInstanceProxy
+
+* All Implemented Interfaces:::
+  `ProcessInstance`, `Callable<ProcessInstance>`
++
+
+'''''
++
+....
+public class ProcessInstanceProxy
+extends Object
+implements ProcessInstance
+....
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|====================================================================================================================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`ProcessInstance` |`call()` | 
+|`boolean` |`equals​(Object obj)` | 
+|`String` |`getArchivedId()` | 
+|`List<ProcessInstance>` |`getArchivedSubprocessInstances​(int pageIndex,                               int count)` a|
+Returns archived process instances that have been instantiated by this instance.
+
+|`List<ProcessInstance>` |`getArchivedSubprocessInstances​(ProcessDefinition definition,                               int pageIndex,                               int count)` a|
+Returns archived process instances that have been instantiated by this instance and matches the given link:../../model/ProcessDefinition.html[`ProcessDefinition`].
+
+|`BusinessData` |`getBusinessData​(String name)` | 
+|`<T> T` |`getBusinessData​(String name,                Class<T> businessDataType)` a|
+Use this method if you have access to a model representing your business data model.
+
+|`Connector` |`getConnector​(String name)` | 
+|`Document` |`getDocument​(String name)` | 
+|`UserTask` |`getFirstPendingUserTask​(String name)` | 
+|`ProcessInstance` |`getFirstStartedSubprocessInstance​(ProcessDefinition definition)` a|
+Returns the first process instance that has been instantiated by this instance and matches the given link:../../model/ProcessDefinition.html[`ProcessDefinition`] and is in link:../../model/ProcessInstanceState.html#STARTED[`ProcessInstanceState.STARTED`] state.
+
+|`Task` |`getFirstTask​(String name)` | 
+|`String` |`getId()` | 
+|`List<BusinessData>` |`getMultipleBusinessData​(String name)` | 
+|`<T> List<T>` |`getMultipleBusinessData​(String name,                        Class<T> businessDataType)` a|
+Use this method if you have access to a model representing your business data model.
+
+|`List<Document>` |`getMultipleDocument​(String name)` | 
+|`int` |`getNumberOfActiveFlowNodes()` | 
+|`int` |`getNumberOfFailedFlowNodes()` | 
+|`String` |`getSearchKey​(String name)` | 
+|`User` |`getStartedBy()` | 
+|`User` |`getStartedBySubstitute()` | 
+|`ProcessInstanceState` |`getState()` | 
+|`List<ProcessInstance>` |`getSubprocessInstances​(int pageIndex,                       int count)` a|
+Returns process instances that have been instantiated by this instance.
+
+|`List<ProcessInstance>` |`getSubprocessInstances​(ProcessDefinition definition,                       int pageIndex,                       int count)` a|
+Returns process instances that have been instantiated by this instance and matches the given link:../../model/ProcessDefinition.html[`ProcessDefinition`].
+
+|`TimerEventTrigger` |`getTimerEventTrigger​(String timerEventName)` | 
+|`Variable` |`getVariable​(String name)` | 
+|`int` |`hashCode()` | 
+|`boolean` |`isArchived()` | 
+|`List<UserTask>` |`searchPendingUserTasks()` | 
+|`List<UserTask>` |`searchPendingUserTasks​(String name)` | 
+|`List<Task>` |`searchTasks()` | 
+|`List<Task>` |`searchTasks​(String name)` | 
+|`List<UserTask>` |`searchUserTasks()` | 
+|`List<UserTask>` |`searchUserTasks​(String name)` | 
+|`String` |`toString()` | 
+|====================================================================================================================================================================================================================================================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, finalize, getClass, notify, notifyAll, wait, wait, wait`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#getId()]##
+*** ===== getId
++
+[source,methodSignature]
+----
+public String getId()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getId` in interface `ProcessInstance`
+[.returnLabel]#Returns:#::
+  the process instance ID.
++
+[#getSearchKey(java.lang.String)]##
+*** ===== getSearchKey
++
+[source,methodSignature]
+----
+public String getSearchKey​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getSearchKey` in interface `ProcessInstance`
+[.paramLabel]#Parameters:#::
+  `name` - the name of the search key
+[.returnLabel]#Returns:#::
+  the value contained by the search key
++
+[#getBusinessData(java.lang.String)]##
+*** ===== getBusinessData
++
+[source,methodSignature]
+----
+public BusinessData getBusinessData​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getBusinessData` in interface `ProcessInstance`
+[.paramLabel]#Parameters:#::
+  `name` - the name of the businessData
+[.returnLabel]#Returns:#::
+  a link:../../model/BusinessData.html[`BusinessData`]
++
+[#getBusinessData(java.lang.String,java.lang.Class)]##
+*** ===== getBusinessData
++
+[source,methodSignature]
+----
+public <T> T getBusinessData​(String name,
+                             Class<T> businessDataType)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `ProcessInstance`#
++
+Use this method if you have access to a model representing your business data model. Thus, you'll be able to access directly to your businessData properties using the corresponding Java methods.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getBusinessData` in interface `ProcessInstance`
+[.paramLabel]#Type Parameters:#::
+  `T` - the type of the businessData
+[.paramLabel]#Parameters:#::
+  `name` - the name of the business data
+  +
+  `businessDataType` - the type of your businessData
+[.returnLabel]#Returns:#::
+  an object representing your businessData, of type `businessDataType`
++
+[#getMultipleBusinessData(java.lang.String)]##
+*** ===== getMultipleBusinessData
++
+[source,methodSignature]
+----
+public List<BusinessData> getMultipleBusinessData​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getMultipleBusinessData` in interface `ProcessInstance`
+[.paramLabel]#Parameters:#::
+  `name` - the name of the multiple business data
+[.returnLabel]#Returns:#::
+  a https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List`] of link:../../model/BusinessData.html[`BusinessData`] representing the multiple businessData
++
+[#getMultipleBusinessData(java.lang.String,java.lang.Class)]##
+*** ===== getMultipleBusinessData
++
+[source,methodSignature]
+----
+public <T> List<T> getMultipleBusinessData​(String name,
+                                           Class<T> businessDataType)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `ProcessInstance`#
++
+Use this method if you have access to a model representing your business data model. Thus, you'll be able to access directly to your businessData properties using the corresponding Java methods.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getMultipleBusinessData` in interface `ProcessInstance`
+[.paramLabel]#Type Parameters:#::
+  `T` - the type of the businessData
+[.paramLabel]#Parameters:#::
+  `name` - the name of the multiple business data
+  +
+  `businessDataType` - the type of your businessData
+[.returnLabel]#Returns:#::
+  a https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List`] representing your multiple businessData, of type `businessDataType`
++
+[#getDocument(java.lang.String)]##
+*** ===== getDocument
++
+[source,methodSignature]
+----
+public Document getDocument​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getDocument` in interface `ProcessInstance`
+[.paramLabel]#Parameters:#::
+  `name` - the name of the document
+[.returnLabel]#Returns:#::
+  a link:../../model/Document.html[`Document`]
++
+[#getMultipleDocument(java.lang.String)]##
+*** ===== getMultipleDocument
++
+[source,methodSignature]
+----
+public List<Document> getMultipleDocument​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getMultipleDocument` in interface `ProcessInstance`
+[.paramLabel]#Parameters:#::
+  `name` - the name of the multiple document
+[.returnLabel]#Returns:#::
+  a @https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List`] of link:../../model/Document.html[`Document`]
++
+[#getArchivedId()]##
+*** ===== getArchivedId
++
+[source,methodSignature]
+----
+public String getArchivedId()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getArchivedId` in interface `ProcessInstance`
+[.returnLabel]#Returns:#::
+  the archivedId of the process instance, or null if the process instance is not archived.
++
+[#getFirstPendingUserTask(java.lang.String)]##
+*** ===== getFirstPendingUserTask
++
+[source,methodSignature]
+----
+public UserTask getFirstPendingUserTask​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getFirstPendingUserTask` in interface `ProcessInstance`
+[.paramLabel]#Parameters:#::
+  `name` - the name of a pending user task
+[.returnLabel]#Returns:#::
+  the first pending link:../../model/UserTask.html[`UserTask`] with this name found.
++
+[#getFirstTask(java.lang.String)]##
+*** ===== getFirstTask
++
+[source,methodSignature]
+----
+public Task getFirstTask​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getFirstTask` in interface `ProcessInstance`
+[.paramLabel]#Parameters:#::
+  `name` - the name of a task
+[.returnLabel]#Returns:#::
+  the first link:../../model/Task.html[`Task`] with this name
++
+[#searchPendingUserTasks()]##
+*** ===== searchPendingUserTasks
++
+[source,methodSignature]
+----
+public List<UserTask> searchPendingUserTasks()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `searchPendingUserTasks` in interface `ProcessInstance`
+[.returnLabel]#Returns:#::
+  all the pending user tasks as a https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List`] of link:../../model/UserTask.html[`UserTask`]
++
+[#searchPendingUserTasks(java.lang.String)]##
+*** ===== searchPendingUserTasks
++
+[source,methodSignature]
+----
+public List<UserTask> searchPendingUserTasks​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `searchPendingUserTasks` in interface `ProcessInstance`
+[.paramLabel]#Parameters:#::
+  `name` - the name of the pending user tasks to find
+[.returnLabel]#Returns:#::
+  all the pending user tasks with this name as a https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List`] of link:../../model/UserTask.html[`UserTask`]
++
+[#searchTasks(java.lang.String)]##
+*** ===== searchTasks
++
+[source,methodSignature]
+----
+public List<Task> searchTasks​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `searchTasks` in interface `ProcessInstance`
+[.paramLabel]#Parameters:#::
+  `name` - the name of the tasks to find
+[.returnLabel]#Returns:#::
+  all the tasks with this name as a @https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List`] of link:../../model/Task.html[`Task`]
++
+[#searchTasks()]##
+*** ===== searchTasks
++
+[source,methodSignature]
+----
+public List<Task> searchTasks()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `searchTasks` in interface `ProcessInstance`
+[.returnLabel]#Returns:#::
+  all the tasks as a @https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List`] of link:../../model/Task.html[`Task`]
++
+[#searchUserTasks()]##
+*** ===== searchUserTasks
++
+[source,methodSignature]
+----
+public List<UserTask> searchUserTasks()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `searchUserTasks` in interface `ProcessInstance`
+[.returnLabel]#Returns:#::
+  all the user tasks as a https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List`] of link:../../model/UserTask.html[`UserTask`]
++
+[#searchUserTasks(java.lang.String)]##
+*** ===== searchUserTasks
++
+[source,methodSignature]
+----
+public List<UserTask> searchUserTasks​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `searchUserTasks` in interface `ProcessInstance`
+[.paramLabel]#Parameters:#::
+  `name` - the name of the user tasks to find
+[.returnLabel]#Returns:#::
+  all the user tasks with this name as a https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List`] of link:../../model/UserTask.html[`UserTask`]
++
+[#getNumberOfFailedFlowNodes()]##
+*** ===== getNumberOfFailedFlowNodes
++
+[source,methodSignature]
+----
+public int getNumberOfFailedFlowNodes()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getNumberOfFailedFlowNodes` in interface `ProcessInstance`
+[.returnLabel]#Returns:#::
+  the number of failed flow nodes
++
+[#getNumberOfActiveFlowNodes()]##
+*** ===== getNumberOfActiveFlowNodes
++
+[source,methodSignature]
+----
+public int getNumberOfActiveFlowNodes()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getNumberOfActiveFlowNodes` in interface `ProcessInstance`
+[.returnLabel]#Returns:#::
+  the number of active flow nodes
++
+[#getStartedBy()]##
+*** ===== getStartedBy
++
+[source,methodSignature]
+----
+public User getStartedBy()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getStartedBy` in interface `ProcessInstance`
+[.returnLabel]#Returns:#::
+  the link:../../model/User.html[`User`] that started this process instance
++
+[#getStartedBySubstitute()]##
+*** ===== getStartedBySubstitute
++
+[source,methodSignature]
+----
+public User getStartedBySubstitute()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getStartedBySubstitute` in interface `ProcessInstance`
+[.returnLabel]#Returns:#::
+  the link:../../model/User.html[`User`] of the substitute user (as Process manager or Administrator) who started the process.
++
+[#getState()]##
+*** ===== getState
++
+[source,methodSignature]
+----
+public ProcessInstanceState getState()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getState` in interface `ProcessInstance`
+[.returnLabel]#Returns:#::
+  the link:../../model/ProcessInstanceState.html[`ProcessInstanceState`] of this process instance
++
+[#isArchived()]##
+*** ===== isArchived
++
+[source,methodSignature]
+----
+public boolean isArchived()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `isArchived` in interface `ProcessInstance`
+[.returnLabel]#Returns:#::
+  true if this process instance is archived.
++
+[#getVariable(java.lang.String)]##
+*** ===== getVariable
++
+[source,methodSignature]
+----
+public Variable getVariable​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getVariable` in interface `ProcessInstance`
+[.paramLabel]#Parameters:#::
+  `name` - the name of the variable
+[.returnLabel]#Returns:#::
+  the corresponding link:../../model/Variable.html[`Variable`]
++
+[#getSubprocessInstances(int,int)]##
+*** ===== getSubprocessInstances
++
+[source,methodSignature]
+----
+public List<ProcessInstance> getSubprocessInstances​(int pageIndex,
+                                                    int count)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `ProcessInstance`#
++
+Returns process instances that have been instantiated by this instance. It includes call activities and event subprocesses.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getSubprocessInstances` in interface `ProcessInstance`
+[.paramLabel]#Parameters:#::
+  `pageIndex` - the page index, starts at 0.
+  +
+  `count` - the maximum number of instances to return
+[.returnLabel]#Returns:#::
+  A list of link:../../model/ProcessInstance.html[`process instances`] instantiated by this instance
++
+[#getArchivedSubprocessInstances(int,int)]##
+*** ===== getArchivedSubprocessInstances
++
+[source,methodSignature]
+----
+public List<ProcessInstance> getArchivedSubprocessInstances​(int pageIndex,
+                                                            int count)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `ProcessInstance`#
++
+Returns archived process instances that have been instantiated by this instance. It includes call activities and event subprocesses.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getArchivedSubprocessInstances` in interface `ProcessInstance`
+[.paramLabel]#Parameters:#::
+  `pageIndex` - the page index, starts at 0.
+  +
+  `count` - the maximum number of instances to return
+[.returnLabel]#Returns:#::
+  A list of archived link:../../model/ProcessInstance.html[`process instances`] instantiated by this instance
++
+[#getSubprocessInstances(com.bonitasoft.test.toolkit.model.ProcessDefinition,int,int)]##
+*** ===== getSubprocessInstances
++
+[source,methodSignature]
+----
+public List<ProcessInstance> getSubprocessInstances​(ProcessDefinition definition,
+                                                    int pageIndex,
+                                                    int count)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `ProcessInstance`#
++
+Returns process instances that have been instantiated by this instance and matches the given link:../../model/ProcessDefinition.html[`ProcessDefinition`].
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getSubprocessInstances` in interface `ProcessInstance`
+[.paramLabel]#Parameters:#::
+  `definition` - the process definition
+  +
+  `pageIndex` - the page index, starts at 0.
+  +
+  `count` - the maximum number of instances to return
+[.returnLabel]#Returns:#::
+  A list of link:../../model/ProcessInstance.html[`process instances`] instantiated by this instance with the given process definition
++
+[#getArchivedSubprocessInstances(com.bonitasoft.test.toolkit.model.ProcessDefinition,int,int)]##
+*** ===== getArchivedSubprocessInstances
++
+[source,methodSignature]
+----
+public List<ProcessInstance> getArchivedSubprocessInstances​(ProcessDefinition definition,
+                                                            int pageIndex,
+                                                            int count)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `ProcessInstance`#
++
+Returns archived process instances that have been instantiated by this instance and matches the given link:../../model/ProcessDefinition.html[`ProcessDefinition`].
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getArchivedSubprocessInstances` in interface `ProcessInstance`
+[.paramLabel]#Parameters:#::
+  `definition` - the process definition
+  +
+  `pageIndex` - the page index, starts at 0.
+  +
+  `count` - the maximum number of instances to return
+[.returnLabel]#Returns:#::
+  A list of archived link:../../model/ProcessInstance.html[`process instances`] instantiated by this instance with the given process definition
++
+[#getFirstStartedSubprocessInstance(com.bonitasoft.test.toolkit.model.ProcessDefinition)]##
+*** ===== getFirstStartedSubprocessInstance
++
+[source,methodSignature]
+----
+public ProcessInstance getFirstStartedSubprocessInstance​(ProcessDefinition definition)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `ProcessInstance`#
++
+Returns the first process instance that has been instantiated by this instance and matches the given link:../../model/ProcessDefinition.html[`ProcessDefinition`] and is in link:../../model/ProcessInstanceState.html#STARTED[`ProcessInstanceState.STARTED`] state.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getFirstStartedSubprocessInstance` in interface `ProcessInstance`
+[.paramLabel]#Parameters:#::
+  `definition` - the process definition
+[.returnLabel]#Returns:#::
+  A link:../../model/ProcessInstance.html[`process instance`] instantiated by this instance with the given process definition
++
+[#getTimerEventTrigger(java.lang.String)]##
+*** ===== getTimerEventTrigger
++
+[source,methodSignature]
+----
+public TimerEventTrigger getTimerEventTrigger​(String timerEventName)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getTimerEventTrigger` in interface `ProcessInstance`
+[.paramLabel]#Parameters:#::
+  `timerEventName` - the name of the timer
+[.returnLabel]#Returns:#::
+  a link:../../model/TimerEventTrigger.html[`TimerEventTrigger`]
++
+[#hashCode()]##
+*** ===== hashCode
++
+[source,methodSignature]
+----
+public int hashCode()
+----
++
+[.overrideSpecifyLabel]#Overrides:#::
+  `hashCode` in class `Object`
++
+[#equals(java.lang.Object)]##
+*** ===== equals
++
+[source,methodSignature]
+----
+public boolean equals​(Object obj)
+----
++
+[.overrideSpecifyLabel]#Overrides:#::
+  `equals` in class `Object`
++
+[#call()]##
+*** ===== call
++
+[source,methodSignature]
+----
+public ProcessInstance call()
+                     throws Exception
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `call` in interface `Callable<ProcessInstance>`
+[.throwsLabel]#Throws:#::
+  `Exception`
++
+[#toString()]##
+*** ===== toString
++
+[source,methodSignature]
+----
+public String toString()
+----
++
+[.overrideSpecifyLabel]#Overrides:#::
+  `toString` in class `Object`
++
+[#getConnector(java.lang.String)]##
+*** ===== getConnector
++
+[source,methodSignature]
+----
+public Connector getConnector​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getConnector` in interface `ProcessInstance`
+[.paramLabel]#Parameters:#::
+  `name` - the name of the connector
+[.returnLabel]#Returns:#::
+  a link:../../model/Connector.html[`Connector`]
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ProcessInstanceProxy.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

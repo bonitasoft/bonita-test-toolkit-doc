@@ -1,0 +1,464 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/BonitaTestToolkitImpl.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal]
+
+=== Class BonitaTestToolkitImpl
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.internal.BonitaTestToolkitImpl
+
+* All Implemented Interfaces:::
+  `BonitaTestToolkit`, `AutoCloseable`
++
+
+'''''
++
+....
+public class BonitaTestToolkitImpl
+extends Object
+implements BonitaTestToolkit
+....
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|=============================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`void` |`activate​(Class<?> testClass)` | 
+|`void` |`close()` | 
+|`void` |`deleteBDMContent()` a|
+Delete the content of the BDM database of the targeted Bonita runtime.
+
+|`void` |`deleteProcessInstances()` a|
+Delete all existing process instances (including archived instances and their documents).
+
+|`List<User>` |`findUsersInGroup​(String groupPath,                 int pageIndex,                 int count)` a|
+Search for all Bonita users belonging to a specific group.
+
+|`List<User>` |`findUsersWithMembership​(String groupPath,                        String roleName,                        int pageIndex,                        int count)` a|
+Search for all Bonita users with a specific membership.
+
+|`List<User>` |`findUsersWithRole​(String roleName,                  int pageIndex,                  int count)` a|
+Search for all Bonita users with a specific role.
+
+|`BusinessObjectDAO<BusinessData>` |`getBusinessObjectDAO​(String businessObjectType)` a|
+Creates a generic link:../model/BusinessObjectDAO.html[`BusinessObjectDAO`] according to a Business Object type.
+
+|`<T> BusinessObjectDAO<T>` |`getBusinessObjectDAO​(String businessObjectTypeName,                     Class<T> businessObjectType)` a|
+Creates an link:../model/BusinessObjectDAO.html[`BusinessObjectDAO`] according to a Business Object type.
+
+|`ProcessDefinition` |`getProcessDefinition​(String name)` a|
+Retrieves the latest deployed version of the link:../model/ProcessDefinition.html[`ProcessDefinition`] with the given name.
+
+|`ProcessDefinition` |`getProcessDefinition​(String name,                     String version)` a|
+Retrieves the link:../model/ProcessDefinition.html[`ProcessDefinition`] with the given name and version.
+
+|`User` |`getUser​(String userName)` a|
+Retrieves a Bonita user using its user name.
+
+|`void` |`send​(MessageEvent message)` a|
+Sends a BPMN message event
+
+|`void` |`send​(SignalEvent signal)` a|
+Sends a BPMN signal event
+
+|=============================================================================================================================================================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#activate(java.lang.Class)]##
+*** ===== activate
++
+[source,methodSignature]
+----
+public void activate​(Class<?> testClass)
+----
++
+[#close()]##
+*** ===== close
++
+[source,methodSignature]
+----
+public void close()
+           throws Exception
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `close` in interface `AutoCloseable`
+[.throwsLabel]#Throws:#::
+  `Exception`
++
+[#getProcessDefinition(java.lang.String)]##
+*** ===== getProcessDefinition
++
+[source,methodSignature]
+----
+public ProcessDefinition getProcessDefinition​(String name)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `BonitaTestToolkit`#
++
+Retrieves the latest deployed version of the link:../model/ProcessDefinition.html[`ProcessDefinition`] with the given name.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getProcessDefinition` in interface `BonitaTestToolkit`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the process.
+[.returnLabel]#Returns:#::
+  A link:../model/ProcessDefinition.html[`ProcessDefinition`].
+[.seeLabel]#See Also:#::
+  link:../BonitaTestToolkit.html#getProcessDefinition(java.lang.String,java.lang.String)[`Retrieve a  for a process in a given version.`]
++
+[#getProcessDefinition(java.lang.String,java.lang.String)]##
+*** ===== getProcessDefinition
++
+[source,methodSignature]
+----
+public ProcessDefinition getProcessDefinition​(String name,
+                                              String version)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `BonitaTestToolkit`#
++
+Retrieves the link:../model/ProcessDefinition.html[`ProcessDefinition`] with the given name and version.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getProcessDefinition` in interface `BonitaTestToolkit`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the process.
+  +
+  `version` - The version of the process.
+[.returnLabel]#Returns:#::
+  A link:../model/ProcessDefinition.html[`ProcessDefinition`].
+[.seeLabel]#See Also:#::
+  link:../BonitaTestToolkit.html#getProcessDefinition(java.lang.String)[`Retrieve a  for a process without specifying the version.`]
++
+[#getUser(java.lang.String)]##
+*** ===== getUser
++
+[source,methodSignature]
+----
+public User getUser​(String userName)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `BonitaTestToolkit`#
++
+Retrieves a Bonita user using its user name.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getUser` in interface `BonitaTestToolkit`
+[.paramLabel]#Parameters:#::
+  `userName` - The user name of the user to retrieve.
+[.returnLabel]#Returns:#::
+  An object link:../model/User.html[`User`] corresponding to the Bonita user.
++
+[#findUsersInGroup(java.lang.String,int,int)]##
+*** ===== findUsersInGroup
++
+[source,methodSignature]
+----
+public List<User> findUsersInGroup​(String groupPath,
+                                   int pageIndex,
+                                   int count)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `BonitaTestToolkit`#
++
+Search for all Bonita users belonging to a specific group. Does not include sub-groups.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `findUsersInGroup` in interface `BonitaTestToolkit`
+[.paramLabel]#Parameters:#::
+  `groupPath` - The full group path of the users to retrieve.
+  +
+  `pageIndex` - The page of the users.
+  +
+  `count` - The maximum number of users per page.
+[.returnLabel]#Returns:#::
+  A list of link:../model/User.html[`User`] belonging to this group.
++
+[#findUsersWithRole(java.lang.String,int,int)]##
+*** ===== findUsersWithRole
++
+[source,methodSignature]
+----
+public List<User> findUsersWithRole​(String roleName,
+                                    int pageIndex,
+                                    int count)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `BonitaTestToolkit`#
++
+Search for all Bonita users with a specific role.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `findUsersWithRole` in interface `BonitaTestToolkit`
+[.paramLabel]#Parameters:#::
+  `roleName` - The role of the users to retrieve.
+  +
+  `pageIndex` - The page of the users.
+  +
+  `count` - The maximum number of users per page.
+[.returnLabel]#Returns:#::
+  A list of link:../model/User.html[`User`] with the given role in the target runtime organization
++
+[#findUsersWithMembership(java.lang.String,java.lang.String,int,int)]##
+*** ===== findUsersWithMembership
++
+[source,methodSignature]
+----
+public List<User> findUsersWithMembership​(String groupPath,
+                                          String roleName,
+                                          int pageIndex,
+                                          int count)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `BonitaTestToolkit`#
++
+Search for all Bonita users with a specific membership.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `findUsersWithMembership` in interface `BonitaTestToolkit`
+[.paramLabel]#Parameters:#::
+  `groupPath` - The full group path of the membership.
+  +
+  `roleName` - The role of the membership.
+  +
+  `pageIndex` - The page of the users.
+  +
+  `count` - The maximum number of users per page.
+[.returnLabel]#Returns:#::
+  A list of link:../model/User.html[`User`] with the given membership in the target runtime organization
++
+[#getBusinessObjectDAO(java.lang.String)]##
+*** ===== getBusinessObjectDAO
++
+[source,methodSignature]
+----
+public BusinessObjectDAO<BusinessData> getBusinessObjectDAO​(String businessObjectType)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `BonitaTestToolkit`#
++
+Creates a generic link:../model/BusinessObjectDAO.html[`BusinessObjectDAO`] according to a Business Object type. +
+The _businessObjectType_ should match an existing business object of the BDM installed on the target runtime. +
+Example:
+
+....
+ BusinessObjectDAO<BusinessData> myObjectDao = toolkit.getBusinessObjectDAO("com.company.model.MyObject")
+ 
+....
+
+This DAO returns link:../model/BusinessData.html[`BusinessData`] object, that interpret the business data as a read-only key/value store. It is possible to use a strongly typed DAO using BonitaTestToolkit#getBusinessObjectDAO(String, Class) factory instead.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getBusinessObjectDAO` in interface `BonitaTestToolkit`
+[.paramLabel]#Parameters:#::
+  `businessObjectType` - The fully qualified name of the business object to create as defined in the BDM.
+[.returnLabel]#Returns:#::
+  A link:../model/BusinessObjectDAO.html[`BusinessObjectDAO`] for this Business Object type.
+[.seeLabel]#See Also:#::
+  link:../BonitaTestToolkit.html#getBusinessObjectDAO(java.lang.String,java.lang.Class)[`BonitaTestToolkit.getBusinessObjectDAO(String, Class)`]
++
+[#getBusinessObjectDAO(java.lang.String,java.lang.Class)]##
+*** ===== getBusinessObjectDAO
++
+[source,methodSignature]
+----
+public <T> BusinessObjectDAO<T> getBusinessObjectDAO​(String businessObjectTypeName,
+                                                     Class<T> businessObjectType)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `BonitaTestToolkit`#
++
+Creates an link:../model/BusinessObjectDAO.html[`BusinessObjectDAO`] according to a Business Object type. +
+The _businessObjectTypeName_ should match an existing business object of the BDM installed on the target runtime. The _businessObjectType_ can be an interface or a POJO class representing the Business Object accessors. +
+_Example:_
+
+....
+ 
+ interface Request {
+ 
+     long getPersistenceId();
+ 
+     User getRequestor();
+ 
+     OffsetDateTime getCreationDate();
+ 
+     String getStatus();
+ }
+ 
+ interface User {
+ 
+     long getPersistenceId();
+ 
+     String getUsername();
+ }
+ 
+ 
+     BusinessObjectDAO<Request> myObjectDao = toolkit.getBusinessOjectDAO("com.company.model.Request", Request.class);
+ 
+ 
+ 
+....
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getBusinessObjectDAO` in interface `BonitaTestToolkit`
+[.paramLabel]#Type Parameters:#::
+  `T` - An interface or a POJO class representing a Business Object from the Business Data Model
+[.paramLabel]#Parameters:#::
+  `businessObjectTypeName` - The fully qualified name of the business object to create as defined in the Business Data Model.
+  +
+  `businessObjectType` - , an interface or a POJO class representing the Business Object
+[.returnLabel]#Returns:#::
+  A link:../model/BusinessObjectDAO.html[`BusinessObjectDAO`] for this Business Object type.
++
+[#send(com.bonitasoft.test.toolkit.model.SignalEvent)]##
+*** ===== send
++
+[source,methodSignature]
+----
+public void send​(SignalEvent signal)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `BonitaTestToolkit`#
++
+Sends a BPMN signal event
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `send` in interface `BonitaTestToolkit`
+[.paramLabel]#Parameters:#::
+  `signal` - the link:../model/SignalEvent.html[`SignalEvent`] to send
+[.seeLabel]#See Also:#::
+  link:../model/SignalEvent.html#create(java.lang.String)[`SignalEvent.create(String)`]
++
+[#send(com.bonitasoft.test.toolkit.model.MessageEvent)]##
+*** ===== send
++
+[source,methodSignature]
+----
+public void send​(MessageEvent message)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `BonitaTestToolkit`#
++
+Sends a BPMN message event
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `send` in interface `BonitaTestToolkit`
+[.paramLabel]#Parameters:#::
+  `message` - the link:../model/MessageEvent.html[`MessageEvent`] to send
+[.seeLabel]#See Also:#::
+  link:../model/MessageEvent.html#create(java.lang.String)[`MessageEvent.create(String)`]
++
+[#deleteBDMContent()]##
+*** ===== deleteBDMContent
++
+[source,methodSignature]
+----
+public void deleteBDMContent()
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `BonitaTestToolkit`#
++
+Delete the content of the BDM database of the targeted Bonita runtime. +
+WARNING: All existing business data will be lost. Never execute me on a production runtime.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `deleteBDMContent` in interface `BonitaTestToolkit`
++
+[#deleteProcessInstances()]##
+*** ===== deleteProcessInstances
++
+[source,methodSignature]
+----
+public void deleteProcessInstances()
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `BonitaTestToolkit`#
++
+Delete all existing process instances (including archived instances and their documents). +
+WARNING: All existing process instances will be lost. Never execute me on a production runtime.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `deleteProcessInstances` in interface `BonitaTestToolkit`
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/BonitaTestToolkitImpl.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

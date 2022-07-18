@@ -1,0 +1,344 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ProcessDefinitionProxy.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+=== Class ProcessDefinitionProxy
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.internal.proxy.ProcessDefinitionProxy
+
+* All Implemented Interfaces:::
+  `ProcessDefinition`, `Callable<ProcessDefinition>`
++
+
+'''''
++
+....
+public class ProcessDefinitionProxy
+extends Object
+implements ProcessDefinition
+....
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|=============================================================================================================================================================
+|Modifier and Type |Method |Description
+|`ProcessDefinition` |`call()` | 
+|`List<ProcessInstance>` |`getArchivedProcessInstances​(int pageIndex,                            int count)` a|
+Retrieves the list of archived link:../../model/ProcessInstance.html[`ProcessInstance`] for this link:../../model/ProcessDefinition.html[`ProcessDefinition`].
+
+|`String` |`getId()` | 
+|`Set<User>` |`getInitiators()` a|
+An _initiator_ of a process is a link:../../model/User.html[`User`] that can start an instance of this process.
+
+|`String` |`getName()` | 
+|`String` |`getParameterValue​(String name)` a|
+Retrieves a process definition parameter value
+
+|`List<ProcessInstance>` |`getProcessInstances​(int pageIndex,                    int count)` a|
+Retrieves the list of link:../../model/ProcessInstance.html[`ProcessInstance`] for this link:../../model/ProcessDefinition.html[`ProcessDefinition`].
+
+|`String` |`getVersion()` | 
+|`ProcessInstance` |`startProcessFor​(User user)` a|
+Starts an instance of this process for a given user, without contract.
+
+|`ProcessInstance` |`startProcessFor​(User user,                Contract contract)` a|
+Starts an instance of this process for a given user, with a contract.
+
+|`String` |`toString()` | 
+|`void` |`updateParameterValue​(String name,                     String value)` a|
+Update a process definition parameter value
+
+|=============================================================================================================================================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#getId()]##
+*** ===== getId
++
+[source,methodSignature]
+----
+public String getId()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getId` in interface `ProcessDefinition`
+[.returnLabel]#Returns:#::
+  The process definition ID.
++
+[#call()]##
+*** ===== call
++
+[source,methodSignature]
+----
+public ProcessDefinition call()
+                       throws Exception
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `call` in interface `Callable<ProcessDefinition>`
+[.throwsLabel]#Throws:#::
+  `Exception`
++
+[#getInitiators()]##
+*** ===== getInitiators
++
+[source,methodSignature]
+----
+public Set<User> getInitiators()
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `ProcessDefinition`#
++
+An _initiator_ of a process is a link:../../model/User.html[`User`] that can start an instance of this process.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getInitiators` in interface `ProcessDefinition`
+[.returnLabel]#Returns:#::
+  A https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html?is-external=true[`Set<User>`] containing the initiators for this process.
++
+[#getName()]##
+*** ===== getName
++
+[source,methodSignature]
+----
+public String getName()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getName` in interface `ProcessDefinition`
+[.returnLabel]#Returns:#::
+  The name of the process.
++
+[#getVersion()]##
+*** ===== getVersion
++
+[source,methodSignature]
+----
+public String getVersion()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getVersion` in interface `ProcessDefinition`
+[.returnLabel]#Returns:#::
+  The version of the process.
++
+[#startProcessFor(com.bonitasoft.test.toolkit.model.User)]##
+*** ===== startProcessFor
++
+[source,methodSignature]
+----
+public ProcessInstance startProcessFor​(User user)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `ProcessDefinition`#
++
+Starts an instance of this process for a given user, without contract.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `startProcessFor` in interface `ProcessDefinition`
+[.paramLabel]#Parameters:#::
+  `user` - The link:../../model/User.html[`User`] used to start the process.
+[.returnLabel]#Returns:#::
+  The link:../../model/ProcessInstance.html[`ProcessInstance`] of the started process.
+[.seeLabel]#See Also:#::
+  link:../../BonitaTestToolkit.html#getUser(java.lang.String)[`Retrieve a user`]
++
+[#startProcessFor(com.bonitasoft.test.toolkit.model.User,com.bonitasoft.test.toolkit.model.Contract)]##
+*** ===== startProcessFor
++
+[source,methodSignature]
+----
+public ProcessInstance startProcessFor​(User user,
+                                       Contract contract)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `ProcessDefinition`#
++
+Starts an instance of this process for a given user, with a contract.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `startProcessFor` in interface `ProcessDefinition`
+[.paramLabel]#Parameters:#::
+  `user` - The link:../../model/User.html[`User`] used to start the process.
+  +
+  `contract` - The required link:../../model/Contract.html[`Contract`] to start the process
+[.returnLabel]#Returns:#::
+  The link:../../model/ProcessInstance.html[`ProcessInstance`] of the started process.
+[.seeLabel]#See Also:#::
+  link:../../BonitaTestToolkit.html#getUser(java.lang.String)[`Retrieve a user`], link:../../contract/ContractBuilder.html#newContract()[`Build a contract`]
++
+[#getProcessInstances(int,int)]##
+*** ===== getProcessInstances
++
+[source,methodSignature]
+----
+public List<ProcessInstance> getProcessInstances​(int pageIndex,
+                                                 int count)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `ProcessDefinition`#
++
+Retrieves the list of link:../../model/ProcessInstance.html[`ProcessInstance`] for this link:../../model/ProcessDefinition.html[`ProcessDefinition`].
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getProcessInstances` in interface `ProcessDefinition`
+[.paramLabel]#Parameters:#::
+  `pageIndex` - the page index, starts at 0.
+  +
+  `count` - the maximum number of instances to return
+[.returnLabel]#Returns:#::
+  a list of link:../../model/ProcessInstance.html[`ProcessInstance`]
++
+[#getArchivedProcessInstances(int,int)]##
+*** ===== getArchivedProcessInstances
++
+[source,methodSignature]
+----
+public List<ProcessInstance> getArchivedProcessInstances​(int pageIndex,
+                                                         int count)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `ProcessDefinition`#
++
+Retrieves the list of archived link:../../model/ProcessInstance.html[`ProcessInstance`] for this link:../../model/ProcessDefinition.html[`ProcessDefinition`].
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getArchivedProcessInstances` in interface `ProcessDefinition`
+[.paramLabel]#Parameters:#::
+  `pageIndex` - the page index, starts at 0.
+  +
+  `count` - the maximum number of instances to return
+[.returnLabel]#Returns:#::
+  a list of link:../../model/ProcessInstance.html[`ProcessInstance`]
++
+[#getParameterValue(java.lang.String)]##
+*** ===== getParameterValue
++
+[source,methodSignature]
+----
+public String getParameterValue​(String name)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `ProcessDefinition`#
++
+Retrieves a process definition parameter value
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getParameterValue` in interface `ProcessDefinition`
+[.paramLabel]#Parameters:#::
+  `name` - the name of the parameter
+[.returnLabel]#Returns:#::
+  the parameter value as https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true[`String`]
++
+[#updateParameterValue(java.lang.String,java.lang.String)]##
+*** ===== updateParameterValue
++
+[source,methodSignature]
+----
+public void updateParameterValue​(String name,
+                                 String value)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `ProcessDefinition`#
++
+Update a process definition parameter value
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `updateParameterValue` in interface `ProcessDefinition`
+[.paramLabel]#Parameters:#::
+  `name` - the name of the parameter to update
+  +
+  `value` - the new parameter value as https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true[`String`]
++
+[#toString()]##
+*** ===== toString
++
+[source,methodSignature]
+----
+public String toString()
+----
++
+[.overrideSpecifyLabel]#Overrides:#::
+  `toString` in class `Object`
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ProcessDefinitionProxy.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

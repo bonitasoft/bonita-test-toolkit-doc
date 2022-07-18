@@ -1,0 +1,100 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../MessageEvent.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Interface +
+com.bonitasoft.test.toolkit.model.MessageEvent
+
+* .Packages that use link:../MessageEvent.html[MessageEvent][.tabEnd]# #
+[cols=",",options="header",]
+|===================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit[com.bonitasoft.test.toolkit] | 
+|link:#com.bonitasoft.test.toolkit.internal[com.bonitasoft.test.toolkit.internal] | 
+|link:#com.bonitasoft.test.toolkit.model[com.bonitasoft.test.toolkit.model] | 
+|===================================================================================
+* ** [#com.bonitasoft.test.toolkit]##
+
+==== Uses of link:../MessageEvent.html[MessageEvent] in link:../../package-summary.html[com.bonitasoft.test.toolkit]
+
+.Methods in link:../../package-summary.html[com.bonitasoft.test.toolkit] with parameters of type link:../MessageEvent.html[MessageEvent][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|============================================================================
+|Modifier and Type |Method |Description
+|`void` |[.typeNameLabel]#BonitaTestToolkit.#`send​(MessageEvent message)` a|
+Sends a BPMN message event
+
+|============================================================================
+** [#com.bonitasoft.test.toolkit.internal]##
+
+==== Uses of link:../MessageEvent.html[MessageEvent] in link:../../internal/package-summary.html[com.bonitasoft.test.toolkit.internal]
+
+.Methods in link:../../internal/package-summary.html[com.bonitasoft.test.toolkit.internal] with parameters of type link:../MessageEvent.html[MessageEvent][.tabEnd]# #
+[cols=",,",options="header",]
+|================================================================================
+|Modifier and Type |Method |Description
+|`void` |[.typeNameLabel]#BonitaTestToolkitImpl.#`send​(MessageEvent message)` | 
+|================================================================================
+** [#com.bonitasoft.test.toolkit.model]##
+
+==== Uses of link:../MessageEvent.html[MessageEvent] in link:../package-summary.html[com.bonitasoft.test.toolkit.model]
+
+.Classes in link:../package-summary.html[com.bonitasoft.test.toolkit.model] that implement link:../MessageEvent.html[MessageEvent][.tabEnd]# #
+[cols=",,",options="header",]
+|===================================================
+|Modifier and Type |Class |Description
+|`static class ` |`MessageEvent.MessageEventImpl` | 
+|===================================================
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.model] that return link:../MessageEvent.html[MessageEvent][.tabEnd]# #
+[cols=",,",options="header",]
+|==============================================================================
+|Modifier and Type |Method |Description
+|`MessageEvent` |[.typeNameLabel]#MessageEvent.MessageEventBuiler.#`build()` | 
+|==============================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../MessageEvent.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

@@ -1,0 +1,246 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ConnectorProxy.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+=== Class ConnectorProxy
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.internal.proxy.ConnectorProxy
+
+* All Implemented Interfaces:::
+  `Connector`, `Callable<Connector>`
++
+
+'''''
++
+....
+public class ConnectorProxy
+extends Object
+implements Connector
+....
+
+* ** [#constructor.summary]##
++
+==== Constructor Summary
++
+.Constructors[.tabEnd]# #
+[cols=",",options="header",]
+|================================================================================================================================
+|Constructor |Description
+|`ConnectorProxy​(String name,               String containerId,               org.bonitasoft.web.client.BonitaClient client)` | 
+|================================================================================================================================
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|=====================================================
+|Modifier and Type |Method |Description
+|`Connector` |`call()` | 
+|`ConnectorActivationEvent` |`getActivationEvent()` | 
+|`String` |`getConnectorId()` | 
+|`String` |`getContainerId()` | 
+|`long` |`getId()` | 
+|`String` |`getName()` | 
+|`ConnectorState` |`getState()` | 
+|`String` |`getVersion()` | 
+|=====================================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+
+* ** [#constructor.detail]##
++
+==== Constructor Detail
++
+[#<init>(java.lang.String,java.lang.String,org.bonitasoft.web.client.BonitaClient)]##
+*** ===== ConnectorProxy
++
+....
+public ConnectorProxy​(String name,
+                      String containerId,
+                      org.bonitasoft.web.client.BonitaClient client)
+....
++
+** [#method.detail]##
++
+==== Method Detail
++
+[#getId()]##
+*** ===== getId
++
+[source,methodSignature]
+----
+public long getId()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getId` in interface `Connector`
+[.returnLabel]#Returns:#::
+  the ID of the connector instance
++
+[#getName()]##
+*** ===== getName
++
+[source,methodSignature]
+----
+public String getName()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getName` in interface `Connector`
+[.returnLabel]#Returns:#::
+  the name of the connector
++
+[#getState()]##
+*** ===== getState
++
+[source,methodSignature]
+----
+public ConnectorState getState()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getState` in interface `Connector`
+[.returnLabel]#Returns:#::
+  the state of the connector
++
+[#getActivationEvent()]##
+*** ===== getActivationEvent
++
+[source,methodSignature]
+----
+public ConnectorActivationEvent getActivationEvent()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getActivationEvent` in interface `Connector`
+[.returnLabel]#Returns:#::
+  the activation event of the connector (ON_ENTER, ON_FINISH).
++
+[#getConnectorId()]##
+*** ===== getConnectorId
++
+[source,methodSignature]
+----
+public String getConnectorId()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getConnectorId` in interface `Connector`
+[.returnLabel]#Returns:#::
+  the connector definition ID
++
+[#getContainerId()]##
+*** ===== getContainerId
++
+[source,methodSignature]
+----
+public String getContainerId()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getContainerId` in interface `Connector`
+[.returnLabel]#Returns:#::
+  the container ID of the connector (i.e the ID of the task / the pool containing this connector)
++
+[#getVersion()]##
+*** ===== getVersion
++
+[source,methodSignature]
+----
+public String getVersion()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getVersion` in interface `Connector`
+[.returnLabel]#Returns:#::
+  the version of the connector definition
++
+[#call()]##
+*** ===== call
++
+[source,methodSignature]
+----
+public Connector call()
+               throws Exception
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `call` in interface `Callable<Connector>`
+[.throwsLabel]#Throws:#::
+  `Exception`
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ConnectorProxy.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

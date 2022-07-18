@@ -1,0 +1,114 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ClientExtension.CustomProcessInstanceApi.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.client]
+
+=== Interface ClientExtension.CustomProcessInstanceApi
+
+* All Superinterfaces:::
+  `org.bonitasoft.web.client.invoker.ApiClient.Api`
++
+Enclosing interface:::
+  link:ClientExtension.html[ClientExtension]
++
+
+'''''
++
+....
+public static interface ClientExtension.CustomProcessInstanceApi
+extends org.bonitasoft.web.client.invoker.ApiClient.Api
+....
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t3 .tableTab]#javascript:show(4);[Abstract Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|==================================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`org.bonitasoft.web.client.model.ProcessInstantiationResponse` |`instanciateProcess​(String id,                   String userId,                   Map<String,​Object> inputs)` | 
+|==================================================================================================================================================================================
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#instanciateProcess(java.lang.String,java.lang.String,java.util.Map)]##
+*** ===== instanciateProcess
++
+[source,methodSignature]
+----
+org.bonitasoft.web.client.model.ProcessInstantiationResponse instanciateProcess​(String id,
+                                                                                String userId,
+                                                                                Map<String,​Object> inputs)
+----
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ClientExtension.CustomProcessInstanceApi.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

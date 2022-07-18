@@ -1,0 +1,541 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/UserTaskProxy.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+=== Class UserTaskProxy
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.internal.proxy.UserTaskProxy
+
+* All Implemented Interfaces:::
+  `AbstractTask<UserTask>`, `UserTask`, `Callable<UserTask>`
++
+
+'''''
++
+....
+public class UserTaskProxy
+extends Object
+implements UserTask
+....
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|==============================================================================================================
+|Modifier and Type |Method |Description
+|`UserTaskProxy` |`assignTo​(User user)` | 
+|`UserTask` |`call()` | 
+|`UserTaskProxy` |`execute()` a|
+Execute this task.
+
+|`UserTaskProxy` |`execute​(Contract contract)` a|
+Execute this task with a contract
+
+|`UserTask` |`execute​(User assignee)` a|
+Assign and execute this task.
+
+|`UserTaskProxy` |`execute​(User assignee,        Contract contract)` a|
+Assign and execute this task with a contract
+
+|`User` |`getAssignee()` | 
+|`Set<User>` |`getCandidates()` | 
+|`Connector` |`getConnector​(String name)` | 
+|`String` |`getDescription()` | 
+|`String` |`getDisplayDescription()` | 
+|`String` |`getDisplayName()` | 
+|`Instant` |`getDueDate()` | 
+|`User` |`getExecutedBy()` | 
+|`String` |`getId()` | 
+|`BusinessData` |`getIteratorBusinessVariable​(String name)` a|
+Returns the business data used as iterator for a multi-instantiated link:../../model/UserTask.html[`UserTask`].
+
+|`<T> T` |`getIteratorBusinessVariable​(String name,                            Class<T> businessDataType)` a|
+Returns the business data used as iterator for a multi-instantiated link:../../model/UserTask.html[`UserTask`].
+
+|`String` |`getName()` | 
+|`ProcessInstance` |`getParentProcessInstance()` | 
+|`ProcessInstance` |`getRootProcessInstance()` a|
+In case of an event sub process,the `rootCaseId` will be the one from the caller process instance.
+
+|`TaskState` |`getState()` | 
+|`TaskType` |`getType()` | 
+|`Variable` |`getVariable​(String name)` | 
+|`boolean` |`isArchived()` | 
+|`String` |`toString()` | 
+|==============================================================================================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#call()]##
+*** ===== call
++
+[source,methodSignature]
+----
+public UserTask call()
+              throws Exception
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `call` in interface `Callable<UserTask>`
+[.throwsLabel]#Throws:#::
+  `Exception`
++
+[#getId()]##
+*** ===== getId
++
+[source,methodSignature]
+----
+public String getId()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getId` in interface `AbstractTask<UserTask>`
+[.returnLabel]#Returns:#::
+  the ID of this task
++
+[#getName()]##
+*** ===== getName
++
+[source,methodSignature]
+----
+public String getName()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getName` in interface `AbstractTask<UserTask>`
+[.returnLabel]#Returns:#::
+  the name of this task
++
+[#getDescription()]##
+*** ===== getDescription
++
+[source,methodSignature]
+----
+public String getDescription()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getDescription` in interface `AbstractTask<UserTask>`
+[.returnLabel]#Returns:#::
+  the description of this task
++
+[#getDisplayName()]##
+*** ===== getDisplayName
++
+[source,methodSignature]
+----
+public String getDisplayName()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getDisplayName` in interface `AbstractTask<UserTask>`
+[.returnLabel]#Returns:#::
+  the display name of this task
++
+[#getDisplayDescription()]##
+*** ===== getDisplayDescription
++
+[source,methodSignature]
+----
+public String getDisplayDescription()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getDisplayDescription` in interface `AbstractTask<UserTask>`
+[.returnLabel]#Returns:#::
+  the display description of this task
++
+[#getDueDate()]##
+*** ===== getDueDate
++
+[source,methodSignature]
+----
+public Instant getDueDate()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getDueDate` in interface `UserTask`
+[.returnLabel]#Returns:#::
+  the due date as an https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html?is-external=true[`Instant`]
++
+[#getExecutedBy()]##
+*** ===== getExecutedBy
++
+[source,methodSignature]
+----
+public User getExecutedBy()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getExecutedBy` in interface `UserTask`
+[.returnLabel]#Returns:#::
+  the link:../../model/User.html[`User`] who executed this task
++
+[#getState()]##
+*** ===== getState
++
+[source,methodSignature]
+----
+public TaskState getState()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getState` in interface `AbstractTask<UserTask>`
+[.returnLabel]#Returns:#::
+  the link:../../model/TaskState.html[`state`] of this task
++
+[#isArchived()]##
+*** ===== isArchived
++
+[source,methodSignature]
+----
+public boolean isArchived()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `isArchived` in interface `AbstractTask<UserTask>`
+[.returnLabel]#Returns:#::
+  true if this task is archived
++
+[#getCandidates()]##
+*** ===== getCandidates
++
+[source,methodSignature]
+----
+public Set<User> getCandidates()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getCandidates` in interface `UserTask`
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html?is-external=true[`Set`] of link:../../model/User.html[`User`] that can be assigned to this task (the candidates).
++
+[#getAssignee()]##
+*** ===== getAssignee
++
+[source,methodSignature]
+----
+public User getAssignee()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getAssignee` in interface `UserTask`
+[.returnLabel]#Returns:#::
+  the link:../../model/User.html[`User`] assigned to this task
++
+[#execute()]##
+*** ===== execute
++
+[source,methodSignature]
+----
+public UserTaskProxy execute()
+                      throws ExecuteTaskException
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `UserTask`#
++
+Execute this task.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `execute` in interface `UserTask`
+[.returnLabel]#Returns:#::
+  this link:../../model/UserTask.html[`UserTask`]
+[.throwsLabel]#Throws:#::
+  `ExecuteTaskException`
++
+[#execute(com.bonitasoft.test.toolkit.model.Contract)]##
+*** ===== execute
++
+[source,methodSignature]
+----
+public UserTaskProxy execute​(Contract contract)
+                      throws ExecuteTaskException
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `UserTask`#
++
+Execute this task with a contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `execute` in interface `UserTask`
+[.paramLabel]#Parameters:#::
+  `contract` - the link:../../model/Contract.html[`Contract`] the contract of this task
+[.returnLabel]#Returns:#::
+  this link:../../model/UserTask.html[`UserTask`]
+[.throwsLabel]#Throws:#::
+  `ExecuteTaskException`
++
+[#execute(com.bonitasoft.test.toolkit.model.User,com.bonitasoft.test.toolkit.model.Contract)]##
+*** ===== execute
++
+[source,methodSignature]
+----
+public UserTaskProxy execute​(User assignee,
+                             Contract contract)
+                      throws ExecuteTaskException
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `UserTask`#
++
+Assign and execute this task with a contract
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `execute` in interface `UserTask`
+[.paramLabel]#Parameters:#::
+  `assignee` - the link:../../model/User.html[`User`] that will be assigned to this task.
+  +
+  `contract` - the link:../../model/Contract.html[`Contract`] the contract of this task
+[.returnLabel]#Returns:#::
+  this link:../../model/UserTask.html[`UserTask`]
+[.throwsLabel]#Throws:#::
+  `ExecuteTaskException`
++
+[#execute(com.bonitasoft.test.toolkit.model.User)]##
+*** ===== execute
++
+[source,methodSignature]
+----
+public UserTask execute​(User assignee)
+                 throws ExecuteTaskException
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `UserTask`#
++
+Assign and execute this task.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `execute` in interface `UserTask`
+[.paramLabel]#Parameters:#::
+  `assignee` - the link:../../model/User.html[`User`] that will be assigned to this task.
+[.returnLabel]#Returns:#::
+  this link:../../model/UserTask.html[`UserTask`]
+[.throwsLabel]#Throws:#::
+  `ExecuteTaskException`
++
+[#assignTo(com.bonitasoft.test.toolkit.model.User)]##
+*** ===== assignTo
++
+[source,methodSignature]
+----
+public UserTaskProxy assignTo​(User user)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `assignTo` in interface `UserTask`
+[.paramLabel]#Parameters:#::
+  `user` - the link:../../model/User.html[`User`] that will be assigned to this task.
+[.returnLabel]#Returns:#::
+  this link:../../model/UserTask.html[`UserTask`]
++
+[#getVariable(java.lang.String)]##
+*** ===== getVariable
++
+[source,methodSignature]
+----
+public Variable getVariable​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getVariable` in interface `AbstractTask<UserTask>`
+[.paramLabel]#Parameters:#::
+  `name` - the name of the task variable to retrieve
+[.returnLabel]#Returns:#::
+  the corresponding link:../../model/Variable.html[`Variable`]
++
+[#getType()]##
+*** ===== getType
++
+[source,methodSignature]
+----
+public TaskType getType()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getType` in interface `AbstractTask<UserTask>`
+[.returnLabel]#Returns:#::
+  the link:../../model/TaskType.html[`type`] of this task
++
+[#getRootProcessInstance()]##
+*** ===== getRootProcessInstance
++
+[source,methodSignature]
+----
+public ProcessInstance getRootProcessInstance()
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `AbstractTask`#
++
+In case of an event sub process,the `rootCaseId` will be the one from the caller process instance.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getRootProcessInstance` in interface `AbstractTask<UserTask>`
+[.returnLabel]#Returns:#::
+  the link:../../model/ProcessInstance.html[`root process instance`]
++
+[#getParentProcessInstance()]##
+*** ===== getParentProcessInstance
++
+[source,methodSignature]
+----
+public ProcessInstance getParentProcessInstance()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getParentProcessInstance` in interface `AbstractTask<UserTask>`
+[.returnLabel]#Returns:#::
+  the link:../../model/ProcessInstance.html[`parent process instance`]
++
+[#toString()]##
+*** ===== toString
++
+[source,methodSignature]
+----
+public String toString()
+----
++
+[.overrideSpecifyLabel]#Overrides:#::
+  `toString` in class `Object`
++
+[#getConnector(java.lang.String)]##
+*** ===== getConnector
++
+[source,methodSignature]
+----
+public Connector getConnector​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getConnector` in interface `AbstractTask<UserTask>`
+[.paramLabel]#Parameters:#::
+  `name` - the name of the connector to retrieve on this task
+[.returnLabel]#Returns:#::
+  the corresponding link:../../model/Connector.html[`Connector`]
++
+[#getIteratorBusinessVariable(java.lang.String)]##
+*** ===== getIteratorBusinessVariable
++
+[source,methodSignature]
+----
+public BusinessData getIteratorBusinessVariable​(String name)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `UserTask`#
++
+Returns the business data used as iterator for a multi-instantiated link:../../model/UserTask.html[`UserTask`]. +
+*NOTE:* if the iterator is not a Business Object, the iterator variable must be retrieved with link:../../model/AbstractTask.html#getVariable(java.lang.String)[`AbstractTask.getVariable(String)`].
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getIteratorBusinessVariable` in interface `UserTask`
+[.paramLabel]#Parameters:#::
+  `name` - the name of the multi-instance iterator
+[.returnLabel]#Returns:#::
+  an object representing your businessData
++
+[#getIteratorBusinessVariable(java.lang.String,java.lang.Class)]##
+*** ===== getIteratorBusinessVariable
++
+[source,methodSignature]
+----
+public <T> T getIteratorBusinessVariable​(String name,
+                                         Class<T> businessDataType)
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `UserTask`#
++
+Returns the business data used as iterator for a multi-instantiated link:../../model/UserTask.html[`UserTask`]. +
+ +
+Use this method if you have access to a model representing your business data model. Thus, you'll be able to access directly to your businessData properties using the corresponding Java methods. +
+ +
+*NOTE:* if the iterator is not a Business Object, the iterator variable must be retrieved with link:../../model/AbstractTask.html#getVariable(java.lang.String)[`AbstractTask.getVariable(String)`].
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getIteratorBusinessVariable` in interface `UserTask`
+[.paramLabel]#Type Parameters:#::
+  `T` - the type of the businessData
+[.paramLabel]#Parameters:#::
+  `name` - the name of the multi-instance iterator
+  +
+  `businessDataType` - the type of your businessData
+[.returnLabel]#Returns:#::
+  an object representing your businessData, of type `businessDataType`
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/UserTaskProxy.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

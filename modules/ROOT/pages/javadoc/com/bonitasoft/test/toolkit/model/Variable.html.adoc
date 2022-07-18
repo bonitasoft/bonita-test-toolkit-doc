@@ -1,0 +1,152 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/Variable.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Interface Variable
+
+* All Known Implementing Classes:::
+  `ProcessVariableProxy`, `TaskVariableProxy`
++
+
+'''''
++
+....
+public interface Variable
+....
++
+A process or task variable In addition to opened process instances and tasks, variables can be retrieved from archived process instance or archived task (since Bonita Runtime 7.14.0)
++
+[.seeLabel]#See Also:#::
+  link:BusinessData.html[`BusinessData`]
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t3 .tableTab]#javascript:show(4);[Abstract Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|======================================
+|Modifier and Type |Method |Description
+|`String` |`getDescription()` | 
+|`String` |`getName()` | 
+|`String` |`getType()` | 
+|`String` |`getValue()` | 
+|======================================
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#getName()]##
+*** ===== getName
++
+[source,methodSignature]
+----
+String getName()
+----
++
+[.returnLabel]#Returns:#::
+  the name of the variable
++
+[#getType()]##
+*** ===== getType
++
+[source,methodSignature]
+----
+String getType()
+----
++
+[.returnLabel]#Returns:#::
+  the type of the variable
++
+[#getDescription()]##
+*** ===== getDescription
++
+[source,methodSignature]
+----
+String getDescription()
+----
++
+[.returnLabel]#Returns:#::
+  the description of the variable
++
+[#getValue()]##
+*** ===== getValue
++
+[source,methodSignature]
+----
+String getValue()
+----
++
+[.returnLabel]#Returns:#::
+  the value of the variable
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/Variable.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

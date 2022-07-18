@@ -1,0 +1,64 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* Package
+* Class
+* link:package-use.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+* .Class Summary[.tabEnd]# #
+[width="100%",cols="50%,50%",options="header",]
+|=====================================================
+|Class |Description
+|link:BonitaTestExtension.html[BonitaTestExtension] a|
+A JUnit 5 extension to ease the setup of Bonita tests.
+
+|=====================================================
+* .Annotation Types Summary[.tabEnd]# #
+[cols=",",options="header",]
+|=====================================
+|Annotation Type |Description
+|link:BonitaTests.html[BonitaTests] | 
+|=====================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* Package
+* Class
+* link:package-use.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

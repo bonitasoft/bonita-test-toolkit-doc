@@ -1,0 +1,98 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ClientExtension.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* link:#nested.class.summary[Nested] | 
+* Field | 
+* Constr | 
+* Method
+
+* Detail: 
+* Field | 
+* Constr | 
+* Method
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.client]
+
+=== Interface ClientExtension
+
+* 
+
+'''''
++
+....
+public interface ClientExtension
+....
+
+* ** [#nested.class.summary]##
++
+==== Nested Class Summary
++
+.Nested Classes[.tabEnd]# #
+[cols=",,",options="header",]
+|==================================================================
+|Modifier and Type |Interface |Description
+|`static interface ` |`ClientExtension.CustomProcessInstanceApi` | 
+|`static interface ` |`ClientExtension.DocumentDownloadApi` | 
+|`static interface ` |`ClientExtension.ExtendedBDMApi` | 
+|`static interface ` |`ClientExtension.ExtendedUserTaskApi` | 
+|`static interface ` |`ClientExtension.FormFileUploadApi` | 
+|==================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ClientExtension.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* link:#nested.class.summary[Nested] | 
+* Field | 
+* Constr | 
+* Method
+
+* Detail: 
+* Field | 
+* Constr | 
+* Method
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

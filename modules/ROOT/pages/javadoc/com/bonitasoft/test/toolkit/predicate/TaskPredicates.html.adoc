@@ -1,0 +1,180 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/TaskPredicates.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.predicate]
+
+=== Class TaskPredicates
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.predicate.TaskPredicates
+
+* Direct Known Subclasses:::
+  `UserTaskPredicates`
++
+
+'''''
++
+....
+public class TaskPredicates
+extends Object
+....
++
+Collection of link:../model/Task.html[`Task`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`].
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t1 .tableTab]#javascript:show(1);[Static Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|=========================================================
+|Modifier and Type |Method |Description
+|`static Predicate<AbstractTask<?>>` |`taskArchived()` a|
+Verify if a link:../model/Task.html[`Task`] is archived.
+
+|`static Predicate<AbstractTask<?>>` |`taskCompleted()` a|
+Verify if a link:../model/Task.html[`Task`] is completed.
+
+|`static Predicate<AbstractTask<?>>` |`taskFailed()` a|
+Verify if a link:../model/Task.html[`Task`] is failed.
+
+|`static Predicate<AbstractTask<?>>` |`taskReady()` a|
+Verify if a link:../model/Task.html[`Task`] is ready.
+
+|=========================================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#taskCompleted()]##
+*** ===== taskCompleted
++
+[source,methodSignature]
+----
+public static Predicate<AbstractTask<?>> taskCompleted()
+----
++
+Verify if a link:../model/Task.html[`Task`] is completed.
++
+[.returnLabel]#Returns:#::
+  a link:../model/Task.html[`Task`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
+[.seeLabel]#See Also:#::
+  link:../model/TaskState.html#COMPLETED[`TaskState.COMPLETED`]
++
+[#taskReady()]##
+*** ===== taskReady
++
+[source,methodSignature]
+----
+public static Predicate<AbstractTask<?>> taskReady()
+----
++
+Verify if a link:../model/Task.html[`Task`] is ready.
++
+[.returnLabel]#Returns:#::
+  a link:../model/Task.html[`Task`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
+[.seeLabel]#See Also:#::
+  link:../model/TaskState.html#READY[`TaskState.READY`]
++
+[#taskFailed()]##
+*** ===== taskFailed
++
+[source,methodSignature]
+----
+public static Predicate<AbstractTask<?>> taskFailed()
+----
++
+Verify if a link:../model/Task.html[`Task`] is failed.
++
+[.returnLabel]#Returns:#::
+  a link:../model/Task.html[`Task`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
+[.seeLabel]#See Also:#::
+  link:../model/TaskState.html#FAILED[`TaskState.FAILED`]
++
+[#taskArchived()]##
+*** ===== taskArchived
++
+[source,methodSignature]
+----
+public static Predicate<AbstractTask<?>> taskArchived()
+----
++
+Verify if a link:../model/Task.html[`Task`] is archived.
++
+[.returnLabel]#Returns:#::
+  a link:../model/Task.html[`Task`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`]
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/TaskPredicates.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

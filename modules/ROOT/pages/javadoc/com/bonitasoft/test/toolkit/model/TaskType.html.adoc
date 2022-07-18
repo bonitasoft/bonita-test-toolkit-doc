@@ -1,0 +1,262 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/TaskType.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* link:#enum.constant.summary[Enum Constants] | 
+* Field | 
+* link:#method.summary[Method]
+
+* Detail: 
+* link:#enum.constant.detail[Enum Constants] | 
+* Field | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Enum TaskType
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html?is-external=true[java.lang.Enum]<link:TaskType.html[TaskType]>
+** *** com.bonitasoft.test.toolkit.model.TaskType
+
+* All Implemented Interfaces:::
+  `Serializable`, `Comparable<TaskType>`
++
+
+'''''
++
+....
+public enum TaskType
+extends Enum<TaskType>
+....
++
+All the existing task types: - AUTOMATIC_TASK - HUMAN_TASK - USER_TASK - MANUAL_TASK - LOOP_ACTIVITY - MULTI_INSTANCE_ACTIVITY - CALL_ACTIVITY
+
+* ** [#enum.constant.summary]##
++
+==== Enum Constant Summary
++
+.Enum Constants[.tabEnd]# #
+[cols=",",options="header",]
+|============================
+|Enum Constant |Description
+|`AUTOMATIC_TASK` | 
+|`CALL_ACTIVITY` | 
+|`HUMAN_TASK` | 
+|`LOOP_ACTIVITY` | 
+|`MANUAL_TASK` | 
+|`MULTI_INSTANCE_ACTIVITY` | 
+|`USER_TASK` | 
+|============================
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t1 .tableTab]#javascript:show(1);[Static Methods][.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|===========================================================================================
+|Modifier and Type |Method |Description
+|`static TaskType` |`fromValue​(String value)` | 
+|`String` |`getValue()` | 
+|`String` |`toString()` | 
+|`static TaskType` |`valueOf​(String name)` a|
+Returns the enum constant of this type with the specified name.
+
+|`static TaskType[]` |`values()` a|
+Returns an array containing the constants of this enum type, in the order they are declared.
+
+|===========================================================================================
+*** [#methods.inherited.from.class.java.lang.Enum]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html?is-external=true[Enum]
++
+`clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, valueOf`
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`getClass, notify, notifyAll, wait, wait, wait`
+
+* ** [#enum.constant.detail]##
++
+==== Enum Constant Detail
++
+[#AUTOMATIC_TASK]##
+*** ===== AUTOMATIC_TASK
++
+....
+public static final TaskType AUTOMATIC_TASK
+....
++
+[#HUMAN_TASK]##
+*** ===== HUMAN_TASK
++
+....
+public static final TaskType HUMAN_TASK
+....
++
+[#USER_TASK]##
+*** ===== USER_TASK
++
+....
+public static final TaskType USER_TASK
+....
++
+[#MANUAL_TASK]##
+*** ===== MANUAL_TASK
++
+....
+public static final TaskType MANUAL_TASK
+....
++
+[#LOOP_ACTIVITY]##
+*** ===== LOOP_ACTIVITY
++
+....
+public static final TaskType LOOP_ACTIVITY
+....
++
+[#MULTI_INSTANCE_ACTIVITY]##
+*** ===== MULTI_INSTANCE_ACTIVITY
++
+....
+public static final TaskType MULTI_INSTANCE_ACTIVITY
+....
++
+[#CALL_ACTIVITY]##
+*** ===== CALL_ACTIVITY
++
+....
+public static final TaskType CALL_ACTIVITY
+....
++
+** [#method.detail]##
++
+==== Method Detail
++
+[#values()]##
+*** ===== values
++
+[source,methodSignature]
+----
+public static TaskType[] values()
+----
++
+Returns an array containing the constants of this enum type, in the order they are declared. This method may be used to iterate over the constants as follows:
+
+....
+for (TaskType c : TaskType.values())
+    System.out.println(c);
+....
++
+[.returnLabel]#Returns:#::
+  an array containing the constants of this enum type, in the order they are declared
++
+[#valueOf(java.lang.String)]##
+*** ===== valueOf
++
+[source,methodSignature]
+----
+public static TaskType valueOf​(String name)
+----
++
+Returns the enum constant of this type with the specified name. The string must match _exactly_ an identifier used to declare an enum constant in this type. (Extraneous whitespace characters are not permitted.)
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of the enum constant to be returned.
+[.returnLabel]#Returns:#::
+  the enum constant with the specified name
+[.throwsLabel]#Throws:#::
+  `IllegalArgumentException` - if this enum type has no constant with the specified name
+  +
+  `NullPointerException` - if the argument is null
++
+[#getValue()]##
+*** ===== getValue
++
+[source,methodSignature]
+----
+public String getValue()
+----
++
+[.returnLabel]#Returns:#::
+  the type of the task
++
+[#toString()]##
+*** ===== toString
++
+[source,methodSignature]
+----
+public String toString()
+----
++
+[.overrideSpecifyLabel]#Overrides:#::
+  `toString` in class `Enum<TaskType>`
++
+[#fromValue(java.lang.String)]##
+*** ===== fromValue
++
+[source,methodSignature]
+----
+public static TaskType fromValue​(String value)
+----
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/TaskType.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* link:#enum.constant.summary[Enum Constants] | 
+* Field | 
+* link:#method.summary[Method]
+
+* Detail: 
+* link:#enum.constant.detail[Enum Constants] | 
+* Field | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

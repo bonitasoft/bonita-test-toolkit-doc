@@ -1,0 +1,570 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/MessageEvent.MessageEventBuiler.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Class MessageEvent.MessageEventBuiler
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.model.MessageEvent.MessageEventBuiler
+
+* Enclosing interface:::
+  link:MessageEvent.html[MessageEvent]
++
+
+'''''
++
+....
+public static class MessageEvent.MessageEventBuiler
+extends Object
+....
++
+A pratical builder to create a link:MessageEvent.html[`MessageEvent`]
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|===================================================================================================================================
+|Modifier and Type |Method |Description
+|`MessageEvent.MessageEventBuiler` |`addBooleanContent​(String key,                  Boolean value)` a|
+Add a Boolean content to this message content
+
+|`MessageEvent.MessageEventBuiler` |`addBooleanCorrelation​(String key,                      Boolean value)` a|
+Add a Boolean correlation to this message correlation
+
+|`MessageEvent.MessageEventBuiler` |`addDateContent​(String key,               Date value)` a|
+Add a Date content to this message content
+
+|`MessageEvent.MessageEventBuiler` |`addDateCorrelation​(String key,                   Date value)` a|
+Add a Date correlation to this message correlation
+
+|`MessageEvent.MessageEventBuiler` |`addDoubleContent​(String key,                 Double value)` a|
+Add a Double content to this message content
+
+|`MessageEvent.MessageEventBuiler` |`addDoubleCorrelation​(String key,                     Double value)` a|
+Add a Double correlation to this message correlation
+
+|`MessageEvent.MessageEventBuiler` |`addFloatContent​(String key,                Float value)` a|
+Add a Float content to this message content
+
+|`MessageEvent.MessageEventBuiler` |`addFloatCorrelation​(String key,                    Float value)` a|
+Add a Float correlation to this message correlation
+
+|`MessageEvent.MessageEventBuiler` |`addIntegerContent​(String key,                  Integer value)` a|
+Add an Integer content to this message content
+
+|`MessageEvent.MessageEventBuiler` |`addIntegerCorrelation​(String key,                      Integer value)` a|
+Add an Integer correlation to this message correlation
+
+|`MessageEvent.MessageEventBuiler` |`addLocalDateContent​(String key,                    LocalDate value)` a|
+Add a LocalDate content to this message content
+
+|`MessageEvent.MessageEventBuiler` |`addLocalDateCorrelation​(String key,                        LocalDate value)` a|
+Add a LocalDate correlation to this message correlation
+
+|`MessageEvent.MessageEventBuiler` |`addLocalDateTimeContent​(String key,                        LocalDateTime value)` a|
+Add a LocalDateTime content to this message content
+
+|`MessageEvent.MessageEventBuiler` |`addLocalDateTimeCorrelation​(String key,                            LocalDateTime value)` a|
+Add a LocalDateTime correlation to this message correlation
+
+|`MessageEvent.MessageEventBuiler` |`addLongContent​(String key,               Long value)` a|
+Add a Long content to this message content
+
+|`MessageEvent.MessageEventBuiler` |`addLongCorrelation​(String key,                   Long value)` a|
+Add a Long correlation to this message correlation
+
+|`MessageEvent.MessageEventBuiler` |`addOffsetDateTimeContent​(String key,                         OffsetDateTime value)` a|
+Add an OffsetDateTime content to this message content
+
+|`MessageEvent.MessageEventBuiler` |`addOffsetDateTimeCorrelation​(String key,                             OffsetDateTime value)` a|
+Add a OffsetDateTime correlation to this message correlation
+
+|`MessageEvent.MessageEventBuiler` |`addStringContent​(String key,                 String value)` a|
+Add a String content to this message content
+
+|`MessageEvent.MessageEventBuiler` |`addStringCorrelation​(String key,                     String value)` a|
+Add a String correlation to this message correlation
+
+|`MessageEvent` |`build()` | 
+|`MessageEvent.MessageEventBuiler` |`targetFlowNode​(String targetFlowNodeName)` | 
+|`MessageEvent.MessageEventBuiler` |`targetProcess​(String targetProcessName)` | 
+|===================================================================================================================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#targetProcess(java.lang.String)]##
+*** ===== targetProcess
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler targetProcess​(String targetProcessName)
+----
++
+[.paramLabel]#Parameters:#::
+  `targetProcessName` - the name of the process targeted by the message
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#targetFlowNode(java.lang.String)]##
+*** ===== targetFlowNode
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler targetFlowNode​(String targetFlowNodeName)
+----
++
+[.paramLabel]#Parameters:#::
+  `targetFlowNodeName` - the name of the flow node targeted by the message
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addStringContent(java.lang.String,java.lang.String)]##
+*** ===== addStringContent
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addStringContent​(String key,
+                                                        String value)
+----
++
+Add a String content to this message content
++
+[.paramLabel]#Parameters:#::
+  `key` - a content item of the message content
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true[`String`] value of this content item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addBooleanContent(java.lang.String,java.lang.Boolean)]##
+*** ===== addBooleanContent
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addBooleanContent​(String key,
+                                                         Boolean value)
+----
++
+Add a Boolean content to this message content
++
+[.paramLabel]#Parameters:#::
+  `key` - a content item of the message content
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true[`Boolean`] value of this content item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addIntegerContent(java.lang.String,java.lang.Integer)]##
+*** ===== addIntegerContent
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addIntegerContent​(String key,
+                                                         Integer value)
+----
++
+Add an Integer content to this message content
++
+[.paramLabel]#Parameters:#::
+  `key` - a content item of the message content
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html?is-external=true[`Integer`] value of this content item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addLongContent(java.lang.String,java.lang.Long)]##
+*** ===== addLongContent
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addLongContent​(String key,
+                                                      Long value)
+----
++
+Add a Long content to this message content
++
+[.paramLabel]#Parameters:#::
+  `key` - a content item of the message content
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html?is-external=true[`Long`] value of this content item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addDoubleContent(java.lang.String,java.lang.Double)]##
+*** ===== addDoubleContent
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addDoubleContent​(String key,
+                                                        Double value)
+----
++
+Add a Double content to this message content
++
+[.paramLabel]#Parameters:#::
+  `key` - a content item of the message content
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true[`Double`] value of this content item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addFloatContent(java.lang.String,java.lang.Float)]##
+*** ===== addFloatContent
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addFloatContent​(String key,
+                                                       Float value)
+----
++
+Add a Float content to this message content
++
+[.paramLabel]#Parameters:#::
+  `key` - a content item of the message content
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html?is-external=true[`Float`] value of this content item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addDateContent(java.lang.String,java.util.Date)]##
+*** ===== addDateContent
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addDateContent​(String key,
+                                                      Date value)
+----
++
+Add a Date content to this message content
++
+[.paramLabel]#Parameters:#::
+  `key` - a content item of the message content
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html?is-external=true[`Date`] value of this content item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addLocalDateContent(java.lang.String,java.time.LocalDate)]##
+*** ===== addLocalDateContent
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addLocalDateContent​(String key,
+                                                           LocalDate value)
+----
++
+Add a LocalDate content to this message content
++
+[.paramLabel]#Parameters:#::
+  `key` - a content item of the message content
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html?is-external=true[`LocalDate`] value of this content item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addLocalDateTimeContent(java.lang.String,java.time.LocalDateTime)]##
+*** ===== addLocalDateTimeContent
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addLocalDateTimeContent​(String key,
+                                                               LocalDateTime value)
+----
++
+Add a LocalDateTime content to this message content
++
+[.paramLabel]#Parameters:#::
+  `key` - a content item of the message content
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html?is-external=true[`LocalDateTime`] value of this content item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addOffsetDateTimeContent(java.lang.String,java.time.OffsetDateTime)]##
+*** ===== addOffsetDateTimeContent
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addOffsetDateTimeContent​(String key,
+                                                                OffsetDateTime value)
+----
++
+Add an OffsetDateTime content to this message content
++
+[.paramLabel]#Parameters:#::
+  `key` - a content item of the message content
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html?is-external=true[`OffsetDateTime`] value of this content item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addStringCorrelation(java.lang.String,java.lang.String)]##
+*** ===== addStringCorrelation
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addStringCorrelation​(String key,
+                                                            String value)
+----
++
+Add a String correlation to this message correlation
++
+[.paramLabel]#Parameters:#::
+  `key` - a correlation item of the message correlation
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true[`String`] value of this correlation item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addBooleanCorrelation(java.lang.String,java.lang.Boolean)]##
+*** ===== addBooleanCorrelation
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addBooleanCorrelation​(String key,
+                                                             Boolean value)
+----
++
+Add a Boolean correlation to this message correlation
++
+[.paramLabel]#Parameters:#::
+  `key` - a correlation item of the message correlation
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true[`Boolean`] value of this correlation item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addIntegerCorrelation(java.lang.String,java.lang.Integer)]##
+*** ===== addIntegerCorrelation
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addIntegerCorrelation​(String key,
+                                                             Integer value)
+----
++
+Add an Integer correlation to this message correlation
++
+[.paramLabel]#Parameters:#::
+  `key` - a correlation item of the message correlation
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html?is-external=true[`Integer`] value of this correlation item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addLongCorrelation(java.lang.String,java.lang.Long)]##
+*** ===== addLongCorrelation
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addLongCorrelation​(String key,
+                                                          Long value)
+----
++
+Add a Long correlation to this message correlation
++
+[.paramLabel]#Parameters:#::
+  `key` - a correlation item of the message correlation
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html?is-external=true[`Long`] value of this correlation item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addDoubleCorrelation(java.lang.String,java.lang.Double)]##
+*** ===== addDoubleCorrelation
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addDoubleCorrelation​(String key,
+                                                            Double value)
+----
++
+Add a Double correlation to this message correlation
++
+[.paramLabel]#Parameters:#::
+  `key` - a correlation item of the message correlation
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true[`Double`] value of this correlation item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addFloatCorrelation(java.lang.String,java.lang.Float)]##
+*** ===== addFloatCorrelation
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addFloatCorrelation​(String key,
+                                                           Float value)
+----
++
+Add a Float correlation to this message correlation
++
+[.paramLabel]#Parameters:#::
+  `key` - a correlation item of the message correlation
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html?is-external=true[`Float`] value of this correlation item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addDateCorrelation(java.lang.String,java.util.Date)]##
+*** ===== addDateCorrelation
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addDateCorrelation​(String key,
+                                                          Date value)
+----
++
+Add a Date correlation to this message correlation
++
+[.paramLabel]#Parameters:#::
+  `key` - a correlation item of the message correlation
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html?is-external=true[`Date`] value of this correlation item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addLocalDateCorrelation(java.lang.String,java.time.LocalDate)]##
+*** ===== addLocalDateCorrelation
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addLocalDateCorrelation​(String key,
+                                                               LocalDate value)
+----
++
+Add a LocalDate correlation to this message correlation
++
+[.paramLabel]#Parameters:#::
+  `key` - a correlation item of the message correlation
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html?is-external=true[`LocalDate`] value of this correlation item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addLocalDateTimeCorrelation(java.lang.String,java.time.LocalDateTime)]##
+*** ===== addLocalDateTimeCorrelation
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addLocalDateTimeCorrelation​(String key,
+                                                                   LocalDateTime value)
+----
++
+Add a LocalDateTime correlation to this message correlation
++
+[.paramLabel]#Parameters:#::
+  `key` - a correlation item of the message correlation
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html?is-external=true[`LocalDateTime`] value of this correlation item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#addOffsetDateTimeCorrelation(java.lang.String,java.time.OffsetDateTime)]##
+*** ===== addOffsetDateTimeCorrelation
++
+[source,methodSignature]
+----
+public MessageEvent.MessageEventBuiler addOffsetDateTimeCorrelation​(String key,
+                                                                    OffsetDateTime value)
+----
++
+Add a OffsetDateTime correlation to this message correlation
++
+[.paramLabel]#Parameters:#::
+  `key` - a correlation item of the message correlation
+  +
+  `value` - the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html?is-external=true[`OffsetDateTime`] value of this correlation item
+[.returnLabel]#Returns:#::
+  this link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`]
++
+[#build()]##
+*** ===== build
++
+[source,methodSignature]
+----
+public MessageEvent build()
+----
++
+[.returnLabel]#Returns:#::
+  a link:MessageEvent.html[`MessageEvent`]
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/MessageEvent.MessageEventBuiler.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

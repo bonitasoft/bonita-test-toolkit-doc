@@ -1,0 +1,141 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ComplexInputBuilderImpl.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* link:#field.summary[Field] | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* Method
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.contract]
+
+=== Class ComplexInputBuilderImpl
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** link:InputBuilderImpl.html[com.bonitasoft.test.toolkit.internal.contract.InputBuilderImpl]<link:../../contract/ComplexInputBuilder.html[ComplexInputBuilder]>
+** *** com.bonitasoft.test.toolkit.internal.contract.ComplexInputBuilderImpl
+
+* All Implemented Interfaces:::
+  `ComplexInputBuilder`, `InputBuilder<ComplexInputBuilder>`
++
+
+'''''
++
+....
+public class ComplexInputBuilderImpl
+extends InputBuilderImpl<ComplexInputBuilder>
+implements ComplexInputBuilder
+....
+
+* ** [#field.summary]##
++
+==== Field Summary
+*** [#fields.inherited.from.class.com.bonitasoft.test.toolkit.internal.contract.InputBuilderImpl]##
++
+==== Fields inherited from class com.bonitasoft.test.toolkit.internal.contract.link:InputBuilderImpl.html[InputBuilderImpl]
++
+`contract`
++
+** [#constructor.summary]##
++
+==== Constructor Summary
++
+.Constructors[.tabEnd]# #
+[cols=",",options="header",]
+|==============================
+|Constructor |Description
+|`ComplexInputBuilderImpl()` | 
+|==============================
++
+** [#method.summary]##
++
+==== Method Summary
+*** [#methods.inherited.from.class.com.bonitasoft.test.toolkit.internal.contract.InputBuilderImpl]##
++
+==== Methods inherited from class com.bonitasoft.test.toolkit.internal.contract.link:InputBuilderImpl.html[InputBuilderImpl]
++
+`booleanInput, complexInput, dateInput, decimalInput, fileInput, integerInput, localDateInput, localDateTimeInput, longInput, multipleBooleanInput, multipleComplexInput, multipleDateInput, multipleDecimalInput, multipleFileInput, multipleIntegerInput, multipleLocalDateInput, multipleLocalDateTimeInput, multipleLongInput, multipleOffsetDateTimeInput, multipleTextInput, offsetDateTimeInput, textInput`
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+*** [#methods.inherited.from.class.com.bonitasoft.test.toolkit.contract.InputBuilder]##
++
+==== Methods inherited from interface com.bonitasoft.test.toolkit.contract.link:../../contract/InputBuilder.html[InputBuilder]
++
+`booleanInput, complexInput, dateInput, decimalInput, fileInput, integerInput, localDateInput, localDateTimeInput, longInput, multipleBooleanInput, multipleComplexInput, multipleDateInput, multipleDecimalInput, multipleFileInput, multipleIntegerInput, multipleLocalDateInput, multipleLocalDateTimeInput, multipleLongInput, multipleOffsetDateTimeInput, multipleTextInput, offsetDateTimeInput, textInput`
+
+* ** [#constructor.detail]##
++
+==== Constructor Detail
++
+[#<init>()]##
+*** ===== ComplexInputBuilderImpl
++
+....
+public ComplexInputBuilderImpl()
+....
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ComplexInputBuilderImpl.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* link:#field.summary[Field] | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* Method
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

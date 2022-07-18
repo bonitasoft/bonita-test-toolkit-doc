@@ -1,0 +1,87 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../ConnectorActivationEvent.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Class +
+com.bonitasoft.test.toolkit.model.ConnectorActivationEvent
+
+* .Packages that use link:../ConnectorActivationEvent.html[ConnectorActivationEvent][.tabEnd]# #
+[cols=",",options="header",]
+|===============================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit.internal.proxy[com.bonitasoft.test.toolkit.internal.proxy] | 
+|link:#com.bonitasoft.test.toolkit.model[com.bonitasoft.test.toolkit.model] | 
+|===============================================================================================
+* ** [#com.bonitasoft.test.toolkit.internal.proxy]##
+
+==== Uses of link:../ConnectorActivationEvent.html[ConnectorActivationEvent] in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that return link:../ConnectorActivationEvent.html[ConnectorActivationEvent][.tabEnd]# #
+[cols=",,",options="header",]
+|======================================================================================
+|Modifier and Type |Method |Description
+|`ConnectorActivationEvent` |[.typeNameLabel]#ConnectorProxy.#`getActivationEvent()` | 
+|======================================================================================
+** [#com.bonitasoft.test.toolkit.model]##
+
+==== Uses of link:../ConnectorActivationEvent.html[ConnectorActivationEvent] in link:../package-summary.html[com.bonitasoft.test.toolkit.model]
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.model] that return link:../ConnectorActivationEvent.html[ConnectorActivationEvent][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|===========================================================================================================
+|Modifier and Type |Method |Description
+|`static ConnectorActivationEvent` |[.typeNameLabel]#ConnectorActivationEvent.#`fromValue​(String value)` | 
+|`ConnectorActivationEvent` |[.typeNameLabel]#Connector.#`getActivationEvent()` | 
+|`static ConnectorActivationEvent` |[.typeNameLabel]#ConnectorActivationEvent.#`valueOf​(String name)` a|
+Returns the enum constant of this type with the specified name.
+
+|`static ConnectorActivationEvent[]` |[.typeNameLabel]#ConnectorActivationEvent.#`values()` a|
+Returns an array containing the constants of this enum type, in the order they are declared.
+
+|===========================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../ConnectorActivationEvent.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

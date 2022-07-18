@@ -1,0 +1,82 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../BonitaTestToolkitFactory.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Interface +
+com.bonitasoft.test.toolkit.BonitaTestToolkitFactory
+
+* .Packages that use link:../BonitaTestToolkitFactory.html[BonitaTestToolkitFactory][.tabEnd]# #
+[cols=",",options="header",]
+|===================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit[com.bonitasoft.test.toolkit] | 
+|link:#com.bonitasoft.test.toolkit.internal[com.bonitasoft.test.toolkit.internal] | 
+|===================================================================================
+* ** [#com.bonitasoft.test.toolkit]##
+
+==== Uses of link:../BonitaTestToolkitFactory.html[BonitaTestToolkitFactory] in link:../package-summary.html[com.bonitasoft.test.toolkit]
+
+.Fields in link:../package-summary.html[com.bonitasoft.test.toolkit] declared as link:../BonitaTestToolkitFactory.html[BonitaTestToolkitFactory][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|===========================================================================================
+|Modifier and Type |Field |Description
+|`static BonitaTestToolkitFactory` |[.typeNameLabel]#BonitaTestToolkitFactory.#`INSTANCE` a|
+The default factory instance
+
+|===========================================================================================
+** [#com.bonitasoft.test.toolkit.internal]##
+
+==== Uses of link:../BonitaTestToolkitFactory.html[BonitaTestToolkitFactory] in link:../internal/package-summary.html[com.bonitasoft.test.toolkit.internal]
+
+.Classes in link:../internal/package-summary.html[com.bonitasoft.test.toolkit.internal] that implement link:../BonitaTestToolkitFactory.html[BonitaTestToolkitFactory][.tabEnd]# #
+[cols=",,",options="header",]
+|===========================================
+|Modifier and Type |Class |Description
+|`class ` |`BonitaTestToolkitFactoryImpl` | 
+|===========================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../BonitaTestToolkitFactory.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

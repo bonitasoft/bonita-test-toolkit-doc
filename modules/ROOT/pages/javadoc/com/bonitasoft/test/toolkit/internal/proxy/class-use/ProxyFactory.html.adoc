@@ -1,0 +1,69 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../ProxyFactory.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../../index-all.html[Index]
+* link:../../../../../../../help-doc.html[Help]
+
+* link:../../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Class +
+com.bonitasoft.test.toolkit.internal.proxy.ProxyFactory
+
+* .Packages that use link:../ProxyFactory.html[ProxyFactory][.tabEnd]# #
+[cols=",",options="header",]
+|===============================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit.internal.proxy[com.bonitasoft.test.toolkit.internal.proxy] | 
+|===============================================================================================
+* ** [#com.bonitasoft.test.toolkit.internal.proxy]##
+
+==== Uses of link:../ProxyFactory.html[ProxyFactory] in link:../package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+.Constructors in link:../package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] with parameters of type link:../ProxyFactory.html[ProxyFactory][.tabEnd]# #
+[cols=",",options="header",]
+|========================================================================================================================
+|Constructor |Description
+|`TaskVariableResolver​(ProxyFactory proxyFactory,                     org.bonitasoft.web.client.BonitaClient client)` | 
+|========================================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../ProxyFactory.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../../index-all.html[Index]
+* link:../../../../../../../help-doc.html[Help]
+
+* link:../../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

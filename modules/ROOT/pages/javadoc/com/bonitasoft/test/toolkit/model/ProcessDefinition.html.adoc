@@ -1,0 +1,301 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ProcessDefinition.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Interface ProcessDefinition
+
+* All Superinterfaces:::
+  `Callable<ProcessDefinition>`
++
+All Known Implementing Classes:::
+  `ProcessDefinitionProxy`
++
+
+'''''
++
+....
+public interface ProcessDefinition
+extends Callable<ProcessDefinition>
+....
++
+Represent a Bonita process definition. It is the entry point to start new process instances. A link:ProcessDefinition.html[`ProcessDefinition`] can be retrieved using the link:../BonitaTestToolkit.html#getProcessDefinition(java.lang.String)[`BonitaTestToolkit.getProcessDefinition(String)`]:
+
+....
+ @Test
+ void test_my_process(BonitaTestToolkit toolkit) {
+     ProcessDefinition myProcess = toolkit.getProcessDefinition("myProcess");
+     ...
+ }
+ 
+....
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t3 .tableTab]#javascript:show(4);[Abstract Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|=====================================================================================================================================
+|Modifier and Type |Method |Description
+|`List<ProcessInstance>` |`getArchivedProcessInstances​(int pageIndex,                            int count)` a|
+Retrieves the list of archived link:ProcessInstance.html[`ProcessInstance`] for this link:ProcessDefinition.html[`ProcessDefinition`].
+
+|`String` |`getId()` | 
+|`Set<User>` |`getInitiators()` a|
+An _initiator_ of a process is a link:User.html[`User`] that can start an instance of this process.
+
+|`String` |`getName()` | 
+|`String` |`getParameterValue​(String name)` a|
+Retrieves a process definition parameter value
+
+|`List<ProcessInstance>` |`getProcessInstances​(int pageIndex,                    int count)` a|
+Retrieves the list of link:ProcessInstance.html[`ProcessInstance`] for this link:ProcessDefinition.html[`ProcessDefinition`].
+
+|`String` |`getVersion()` | 
+|`ProcessInstance` |`startProcessFor​(User user)` a|
+Starts an instance of this process for a given user, without contract.
+
+|`ProcessInstance` |`startProcessFor​(User user,                Contract contract)` a|
+Starts an instance of this process for a given user, with a contract.
+
+|`void` |`updateParameterValue​(String name,                     String value)` a|
+Update a process definition parameter value
+
+|=====================================================================================================================================
+*** [#methods.inherited.from.class.java.util.concurrent.Callable]##
++
+==== Methods inherited from interface java.util.concurrent.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html?is-external=true[Callable]
++
+`call`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#getId()]##
+*** ===== getId
++
+[source,methodSignature]
+----
+String getId()
+----
++
+[.returnLabel]#Returns:#::
+  The process definition ID.
++
+[#getName()]##
+*** ===== getName
++
+[source,methodSignature]
+----
+String getName()
+----
++
+[.returnLabel]#Returns:#::
+  The name of the process.
++
+[#getVersion()]##
+*** ===== getVersion
++
+[source,methodSignature]
+----
+String getVersion()
+----
++
+[.returnLabel]#Returns:#::
+  The version of the process.
++
+[#startProcessFor(com.bonitasoft.test.toolkit.model.User)]##
+*** ===== startProcessFor
++
+[source,methodSignature]
+----
+ProcessInstance startProcessFor​(User user)
+----
++
+Starts an instance of this process for a given user, without contract.
++
+[.paramLabel]#Parameters:#::
+  `user` - The link:User.html[`User`] used to start the process.
+[.returnLabel]#Returns:#::
+  The link:ProcessInstance.html[`ProcessInstance`] of the started process.
+[.throwsLabel]#Throws:#::
+  `StartProcessException` - If the process didn't start properly.
+[.seeLabel]#See Also:#::
+  link:../BonitaTestToolkit.html#getUser(java.lang.String)[`Retrieve a user`]
++
+[#startProcessFor(com.bonitasoft.test.toolkit.model.User,com.bonitasoft.test.toolkit.model.Contract)]##
+*** ===== startProcessFor
++
+[source,methodSignature]
+----
+ProcessInstance startProcessFor​(User user,
+                                Contract contract)
+----
++
+Starts an instance of this process for a given user, with a contract.
++
+[.paramLabel]#Parameters:#::
+  `user` - The link:User.html[`User`] used to start the process.
+  +
+  `contract` - The required link:Contract.html[`Contract`] to start the process
+[.returnLabel]#Returns:#::
+  The link:ProcessInstance.html[`ProcessInstance`] of the started process.
+[.throwsLabel]#Throws:#::
+  `StartProcessException` - If the process didn't start properly.
+[.seeLabel]#See Also:#::
+  link:../BonitaTestToolkit.html#getUser(java.lang.String)[`Retrieve a user`], link:../contract/ContractBuilder.html#newContract()[`Build a contract`]
++
+[#getInitiators()]##
+*** ===== getInitiators
++
+[source,methodSignature]
+----
+Set<User> getInitiators()
+----
++
+An _initiator_ of a process is a link:User.html[`User`] that can start an instance of this process.
++
+[.returnLabel]#Returns:#::
+  A https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Set.html?is-external=true[`Set<User>`] containing the initiators for this process.
++
+[#getProcessInstances(int,int)]##
+*** ===== getProcessInstances
++
+[source,methodSignature]
+----
+List<ProcessInstance> getProcessInstances​(int pageIndex,
+                                          int count)
+----
++
+Retrieves the list of link:ProcessInstance.html[`ProcessInstance`] for this link:ProcessDefinition.html[`ProcessDefinition`].
++
+[.paramLabel]#Parameters:#::
+  `pageIndex` - the page index, starts at 0.
+  +
+  `count` - the maximum number of instances to return
+[.returnLabel]#Returns:#::
+  a list of link:ProcessInstance.html[`ProcessInstance`]
++
+[#getArchivedProcessInstances(int,int)]##
+*** ===== getArchivedProcessInstances
++
+[source,methodSignature]
+----
+List<ProcessInstance> getArchivedProcessInstances​(int pageIndex,
+                                                  int count)
+----
++
+Retrieves the list of archived link:ProcessInstance.html[`ProcessInstance`] for this link:ProcessDefinition.html[`ProcessDefinition`].
++
+[.paramLabel]#Parameters:#::
+  `pageIndex` - the page index, starts at 0.
+  +
+  `count` - the maximum number of instances to return
+[.returnLabel]#Returns:#::
+  a list of link:ProcessInstance.html[`ProcessInstance`]
++
+[#getParameterValue(java.lang.String)]##
+*** ===== getParameterValue
++
+[source,methodSignature]
+----
+String getParameterValue​(String name)
+----
++
+Retrieves a process definition parameter value
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of the parameter
+[.returnLabel]#Returns:#::
+  the parameter value as https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true[`String`]
+[.throwsLabel]#Throws:#::
+  `IllegalArgumentException` - If no parameter with the given name is defined for this process definition
++
+[#updateParameterValue(java.lang.String,java.lang.String)]##
+*** ===== updateParameterValue
++
+[source,methodSignature]
+----
+void updateParameterValue​(String name,
+                          String value)
+----
++
+Update a process definition parameter value
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of the parameter to update
+  +
+  `value` - the new parameter value as https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true[`String`]
+[.throwsLabel]#Throws:#::
+  `IllegalArgumentException` - If no parameter with the given name is defined for this process definition
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ProcessDefinition.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

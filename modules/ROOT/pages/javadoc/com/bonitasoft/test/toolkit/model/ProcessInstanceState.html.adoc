@@ -1,0 +1,278 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ProcessInstanceState.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* link:#enum.constant.summary[Enum Constants] | 
+* Field | 
+* link:#method.summary[Method]
+
+* Detail: 
+* link:#enum.constant.detail[Enum Constants] | 
+* Field | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Enum ProcessInstanceState
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html?is-external=true[java.lang.Enum]<link:ProcessInstanceState.html[ProcessInstanceState]>
+** *** com.bonitasoft.test.toolkit.model.ProcessInstanceState
+
+* All Implemented Interfaces:::
+  `Serializable`, `Comparable<ProcessInstanceState>`
++
+
+'''''
++
+....
+public enum ProcessInstanceState
+extends Enum<ProcessInstanceState>
+....
++
+Representation of the state of a given process instance: - initializing - started - suspended - cancelled - aborting - aborted - completing - completed - error
+
+* ** [#enum.constant.summary]##
++
+==== Enum Constant Summary
++
+.Enum Constants[.tabEnd]# #
+[cols=",",options="header",]
+|==========================
+|Enum Constant |Description
+|`ABORTED` | 
+|`ABORTING` | 
+|`CANCELLED` | 
+|`COMPLETED` | 
+|`COMPLETING` | 
+|`ERROR` | 
+|`INITIALIZING` | 
+|`STARTED` | 
+|`SUSPENDED` | 
+|==========================
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t1 .tableTab]#javascript:show(1);[Static Methods][.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|===========================================================================================
+|Modifier and Type |Method |Description
+|`static ProcessInstanceState` |`fromValue​(String value)` | 
+|`String` |`getValue()` | 
+|`String` |`toString()` | 
+|`static ProcessInstanceState` |`valueOf​(String name)` a|
+Returns the enum constant of this type with the specified name.
+
+|`static ProcessInstanceState[]` |`values()` a|
+Returns an array containing the constants of this enum type, in the order they are declared.
+
+|===========================================================================================
+*** [#methods.inherited.from.class.java.lang.Enum]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html?is-external=true[Enum]
++
+`clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, valueOf`
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`getClass, notify, notifyAll, wait, wait, wait`
+
+* ** [#enum.constant.detail]##
++
+==== Enum Constant Detail
++
+[#INITIALIZING]##
+*** ===== INITIALIZING
++
+....
+public static final ProcessInstanceState INITIALIZING
+....
++
+[#STARTED]##
+*** ===== STARTED
++
+....
+public static final ProcessInstanceState STARTED
+....
++
+[#SUSPENDED]##
+*** ===== SUSPENDED
++
+....
+public static final ProcessInstanceState SUSPENDED
+....
++
+[#CANCELLED]##
+*** ===== CANCELLED
++
+....
+public static final ProcessInstanceState CANCELLED
+....
++
+[#ABORTING]##
+*** ===== ABORTING
++
+....
+public static final ProcessInstanceState ABORTING
+....
++
+[#ABORTED]##
+*** ===== ABORTED
++
+....
+public static final ProcessInstanceState ABORTED
+....
++
+[#COMPLETING]##
+*** ===== COMPLETING
++
+....
+public static final ProcessInstanceState COMPLETING
+....
++
+[#COMPLETED]##
+*** ===== COMPLETED
++
+....
+public static final ProcessInstanceState COMPLETED
+....
++
+[#ERROR]##
+*** ===== ERROR
++
+....
+public static final ProcessInstanceState ERROR
+....
++
+** [#method.detail]##
++
+==== Method Detail
++
+[#values()]##
+*** ===== values
++
+[source,methodSignature]
+----
+public static ProcessInstanceState[] values()
+----
++
+Returns an array containing the constants of this enum type, in the order they are declared. This method may be used to iterate over the constants as follows:
+
+....
+for (ProcessInstanceState c : ProcessInstanceState.values())
+    System.out.println(c);
+....
++
+[.returnLabel]#Returns:#::
+  an array containing the constants of this enum type, in the order they are declared
++
+[#valueOf(java.lang.String)]##
+*** ===== valueOf
++
+[source,methodSignature]
+----
+public static ProcessInstanceState valueOf​(String name)
+----
++
+Returns the enum constant of this type with the specified name. The string must match _exactly_ an identifier used to declare an enum constant in this type. (Extraneous whitespace characters are not permitted.)
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of the enum constant to be returned.
+[.returnLabel]#Returns:#::
+  the enum constant with the specified name
+[.throwsLabel]#Throws:#::
+  `IllegalArgumentException` - if this enum type has no constant with the specified name
+  +
+  `NullPointerException` - if the argument is null
++
+[#getValue()]##
+*** ===== getValue
++
+[source,methodSignature]
+----
+public String getValue()
+----
++
+[.returnLabel]#Returns:#::
+  the state of the process instance
++
+[#toString()]##
+*** ===== toString
++
+[source,methodSignature]
+----
+public String toString()
+----
++
+[.overrideSpecifyLabel]#Overrides:#::
+  `toString` in class `Enum<ProcessInstanceState>`
++
+[#fromValue(java.lang.String)]##
+*** ===== fromValue
++
+[source,methodSignature]
+----
+public static ProcessInstanceState fromValue​(String value)
+----
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ProcessInstanceState.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* link:#enum.constant.summary[Enum Constants] | 
+* Field | 
+* link:#method.summary[Method]
+
+* Detail: 
+* link:#enum.constant.detail[Enum Constants] | 
+* Field | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

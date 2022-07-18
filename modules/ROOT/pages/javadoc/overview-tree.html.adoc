@@ -1,0 +1,180 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:index.html[Overview]
+* Package
+* Class
+* Use
+* Tree
+* link:deprecated-list.html[Deprecated]
+* link:index-all.html[Index]
+* link:help-doc.html[Help]
+
+* link:allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageHierarchyLabel]#Package Hierarchies:#
+
+* link:com/bonitasoft/test/toolkit/package-tree.html[com.bonitasoft.test.toolkit],
+* link:com/bonitasoft/test/toolkit/contract/package-tree.html[com.bonitasoft.test.toolkit.contract],
+* link:com/bonitasoft/test/toolkit/exception/package-tree.html[com.bonitasoft.test.toolkit.exception],
+* link:com/bonitasoft/test/toolkit/internal/package-tree.html[com.bonitasoft.test.toolkit.internal],
+* link:com/bonitasoft/test/toolkit/internal/client/package-tree.html[com.bonitasoft.test.toolkit.internal.client],
+* link:com/bonitasoft/test/toolkit/internal/contract/package-tree.html[com.bonitasoft.test.toolkit.internal.contract],
+* link:com/bonitasoft/test/toolkit/internal/contract/converter/package-tree.html[com.bonitasoft.test.toolkit.internal.contract.converter],
+* link:com/bonitasoft/test/toolkit/internal/message/package-tree.html[com.bonitasoft.test.toolkit.internal.message],
+* link:com/bonitasoft/test/toolkit/internal/operation/package-tree.html[com.bonitasoft.test.toolkit.internal.operation],
+* link:com/bonitasoft/test/toolkit/internal/proxy/package-tree.html[com.bonitasoft.test.toolkit.internal.proxy],
+* link:com/bonitasoft/test/toolkit/internal/proxy/context/package-tree.html[com.bonitasoft.test.toolkit.internal.proxy.context],
+* link:com/bonitasoft/test/toolkit/junit/extension/package-tree.html[com.bonitasoft.test.toolkit.junit.extension],
+* link:com/bonitasoft/test/toolkit/model/package-tree.html[com.bonitasoft.test.toolkit.model],
+* link:com/bonitasoft/test/toolkit/predicate/package-tree.html[com.bonitasoft.test.toolkit.predicate]
+
+=== Class Hierarchy
+
+* java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[[.typeNameLink]#Object#]
+** com.bonitasoft.test.toolkit.junit.extension.link:com/bonitasoft/test/toolkit/junit/extension/BonitaTestExtension.html[[.typeNameLink]#BonitaTestExtension#] (implements org.junit.jupiter.api.extension.AfterAllCallback, org.junit.jupiter.api.extension.BeforeAllCallback, org.junit.jupiter.api.extension.ParameterResolver)
+** com.bonitasoft.test.toolkit.internal.link:com/bonitasoft/test/toolkit/internal/BonitaTestToolkitFactoryImpl.html[[.typeNameLink]#BonitaTestToolkitFactoryImpl#] (implements com.bonitasoft.test.toolkit.link:com/bonitasoft/test/toolkit/BonitaTestToolkitFactory.html[BonitaTestToolkitFactory])
+** com.bonitasoft.test.toolkit.internal.link:com/bonitasoft/test/toolkit/internal/BonitaTestToolkitImpl.html[[.typeNameLink]#BonitaTestToolkitImpl#] (implements com.bonitasoft.test.toolkit.link:com/bonitasoft/test/toolkit/BonitaTestToolkit.html[BonitaTestToolkit])
+** com.bonitasoft.test.toolkit.internal.link:com/bonitasoft/test/toolkit/internal/BonitaVersion.html[[.typeNameLink]#BonitaVersion#]
+** com.bonitasoft.test.toolkit.internal.contract.converter.link:com/bonitasoft/test/toolkit/internal/contract/converter/BooleanInputTypeConverter.html[[.typeNameLink]#BooleanInputTypeConverter#] (implements com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/InputTypeConverter.html[InputTypeConverter]<T>)
+** com.bonitasoft.test.toolkit.internal.proxy.link:com/bonitasoft/test/toolkit/internal/proxy/BusinessDataProxy.html[[.typeNameLink]#BusinessDataProxy#] (implements com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/BusinessData.html[BusinessData])
+** com.bonitasoft.test.toolkit.internal.proxy.context.link:com/bonitasoft/test/toolkit/internal/proxy/context/BusinessDataRef.html[[.typeNameLink]#BusinessDataRef#]
+** com.bonitasoft.test.toolkit.internal.proxy.link:com/bonitasoft/test/toolkit/internal/proxy/BusinessObjectDAOProxy.html[[.typeNameLink]#BusinessObjectDAOProxy#]<T> (implements com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/BusinessObjectDAO.html[BusinessObjectDAO]<T>)
+** com.bonitasoft.test.toolkit.predicate.link:com/bonitasoft/test/toolkit/predicate/ConnectorPredicates.html[[.typeNameLink]#ConnectorPredicates#]
+** com.bonitasoft.test.toolkit.internal.proxy.link:com/bonitasoft/test/toolkit/internal/proxy/ConnectorProxy.html[[.typeNameLink]#ConnectorProxy#] (implements com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/Connector.html[Connector])
+** com.bonitasoft.test.toolkit.internal.proxy.context.link:com/bonitasoft/test/toolkit/internal/proxy/context/ContextHelper.html[[.typeNameLink]#ContextHelper#]
+** com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/ContractImpl.html[[.typeNameLink]#ContractImpl#] (implements com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/Contract.html[Contract], com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/ContractToMap.html[ContractToMap])
+** com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/ContractMapResolver.html[[.typeNameLink]#ContractMapResolver#]
+** com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/ContractResourceLoader.html[[.typeNameLink]#ContractResourceLoader#]
+** com.bonitasoft.test.toolkit.internal.contract.converter.link:com/bonitasoft/test/toolkit/internal/contract/converter/DateInputTypeConverter.html[[.typeNameLink]#DateInputTypeConverter#] (implements com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/InputTypeConverter.html[InputTypeConverter]<T>)
+** com.bonitasoft.test.toolkit.internal.operation.link:com/bonitasoft/test/toolkit/internal/operation/DeleteProcessInstancesOperation.html[[.typeNameLink]#DeleteProcessInstancesOperation#]
+** com.bonitasoft.test.toolkit.internal.proxy.link:com/bonitasoft/test/toolkit/internal/proxy/DocumentProxy.html[[.typeNameLink]#DocumentProxy#] (implements com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/Document.html[Document])
+*** com.bonitasoft.test.toolkit.internal.proxy.link:com/bonitasoft/test/toolkit/internal/proxy/ArchivedDocumentProxy.html[[.typeNameLink]#ArchivedDocumentProxy#]
+** com.bonitasoft.test.toolkit.internal.contract.converter.link:com/bonitasoft/test/toolkit/internal/contract/converter/DoubleInputTypeConverter.html[[.typeNameLink]#DoubleInputTypeConverter#] (implements com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/InputTypeConverter.html[InputTypeConverter]<T>)
+** com.bonitasoft.test.toolkit.internal.contract.converter.link:com/bonitasoft/test/toolkit/internal/contract/converter/FileInputTypeConverter.html[[.typeNameLink]#FileInputTypeConverter#] (implements com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/InputTypeConverter.html[InputTypeConverter]<T>)
+** com.bonitasoft.test.toolkit.internal.proxy.link:com/bonitasoft/test/toolkit/internal/proxy/GenericBusinessObjectDAOProxy.html[[.typeNameLink]#GenericBusinessObjectDAOProxy#] (implements com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/BusinessObjectDAO.html[BusinessObjectDAO]<T>)
+** com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/InputBuilderImpl.html[[.typeNameLink]#InputBuilderImpl#]<T> (implements com.bonitasoft.test.toolkit.contract.link:com/bonitasoft/test/toolkit/contract/InputBuilder.html[InputBuilder]<T>)
+*** com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/ComplexInputBuilderImpl.html[[.typeNameLink]#ComplexInputBuilderImpl#] (implements com.bonitasoft.test.toolkit.contract.link:com/bonitasoft/test/toolkit/contract/ComplexInputBuilder.html[ComplexInputBuilder])
+*** com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/ContractBuilderImpl.html[[.typeNameLink]#ContractBuilderImpl#] (implements com.bonitasoft.test.toolkit.contract.link:com/bonitasoft/test/toolkit/contract/ContractBuilder.html[ContractBuilder])
+** com.bonitasoft.test.toolkit.internal.contract.converter.link:com/bonitasoft/test/toolkit/internal/contract/converter/IntegerInputTypeConverter.html[[.typeNameLink]#IntegerInputTypeConverter#] (implements com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/InputTypeConverter.html[InputTypeConverter]<T>)
+** com.bonitasoft.test.toolkit.internal.proxy.link:com/bonitasoft/test/toolkit/internal/proxy/InternalConnectorInstanceImpl.html[[.typeNameLink]#InternalConnectorInstanceImpl#]
+** com.bonitasoft.test.toolkit.internal.proxy.link:com/bonitasoft/test/toolkit/internal/proxy/InternalDocumentImpl.html[[.typeNameLink]#InternalDocumentImpl#]
+** com.bonitasoft.test.toolkit.internal.contract.converter.link:com/bonitasoft/test/toolkit/internal/contract/converter/LocalDateInputTypeConverter.html[[.typeNameLink]#LocalDateInputTypeConverter#] (implements com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/InputTypeConverter.html[InputTypeConverter]<T>)
+** com.bonitasoft.test.toolkit.internal.contract.converter.link:com/bonitasoft/test/toolkit/internal/contract/converter/LocalDateTimeInputTypeConverter.html[[.typeNameLink]#LocalDateTimeInputTypeConverter#] (implements com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/InputTypeConverter.html[InputTypeConverter]<T>)
+** com.bonitasoft.test.toolkit.internal.contract.converter.link:com/bonitasoft/test/toolkit/internal/contract/converter/LongInputTypeConverter.html[[.typeNameLink]#LongInputTypeConverter#] (implements com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/InputTypeConverter.html[InputTypeConverter]<T>)
+** com.bonitasoft.test.toolkit.internal.message.link:com/bonitasoft/test/toolkit/internal/message/MessageContentConverter.html[[.typeNameLink]#MessageContentConverter#] (implements java.util.function.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Function.html?is-external=true[Function]<T,​R>)
+** com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/MessageEvent.MessageEventBuiler.html[[.typeNameLink]#MessageEvent.MessageEventBuiler#]
+** com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/MessageEvent.MessageEventImpl.html[[.typeNameLink]#MessageEvent.MessageEventImpl#] (implements com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/MessageEvent.html[MessageEvent])
+** com.bonitasoft.test.toolkit.internal.proxy.context.link:com/bonitasoft/test/toolkit/internal/proxy/context/MultipleBusinessDataRef.html[[.typeNameLink]#MultipleBusinessDataRef#]
+** com.bonitasoft.test.toolkit.internal.contract.converter.link:com/bonitasoft/test/toolkit/internal/contract/converter/OffsetDateTimeInputTypeConverter.html[[.typeNameLink]#OffsetDateTimeInputTypeConverter#] (implements com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/InputTypeConverter.html[InputTypeConverter]<T>)
+** com.bonitasoft.test.toolkit.predicate.link:com/bonitasoft/test/toolkit/predicate/ProcessDefinitionPredicates.html[[.typeNameLink]#ProcessDefinitionPredicates#]
+** com.bonitasoft.test.toolkit.internal.proxy.link:com/bonitasoft/test/toolkit/internal/proxy/ProcessDefinitionProxy.html[[.typeNameLink]#ProcessDefinitionProxy#] (implements com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/ProcessDefinition.html[ProcessDefinition])
+** com.bonitasoft.test.toolkit.predicate.link:com/bonitasoft/test/toolkit/predicate/ProcessInstancePredicates.html[[.typeNameLink]#ProcessInstancePredicates#]
+** com.bonitasoft.test.toolkit.internal.proxy.link:com/bonitasoft/test/toolkit/internal/proxy/ProcessInstanceProxy.html[[.typeNameLink]#ProcessInstanceProxy#] (implements com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/ProcessInstance.html[ProcessInstance])
+** com.bonitasoft.test.toolkit.internal.proxy.link:com/bonitasoft/test/toolkit/internal/proxy/ProcessVariableProxy.html[[.typeNameLink]#ProcessVariableProxy#] (implements com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/Variable.html[Variable])
+** com.bonitasoft.test.toolkit.internal.proxy.link:com/bonitasoft/test/toolkit/internal/proxy/ProxyFactory.html[[.typeNameLink]#ProxyFactory#]
+** com.bonitasoft.test.toolkit.internal.proxy.link:com/bonitasoft/test/toolkit/internal/proxy/QueryParameterImpl.html[[.typeNameLink]#QueryParameterImpl#]<T> (implements com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/QueryParameter.html[QueryParameter]<T>)
+** com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/ResourceContractImpl.html[[.typeNameLink]#ResourceContractImpl#] (implements com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/Contract.html[Contract], com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/ContractToMap.html[ContractToMap])
+** com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/SignalEvent.SignalEventImpl.html[[.typeNameLink]#SignalEvent.SignalEventImpl#] (implements com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/SignalEvent.html[SignalEvent])
+** com.bonitasoft.test.toolkit.internal.contract.converter.link:com/bonitasoft/test/toolkit/internal/contract/converter/StringInputTypeConverter.html[[.typeNameLink]#StringInputTypeConverter#] (implements com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/InputTypeConverter.html[InputTypeConverter]<T>)
+** com.bonitasoft.test.toolkit.predicate.link:com/bonitasoft/test/toolkit/predicate/TaskPredicates.html[[.typeNameLink]#TaskPredicates#]
+*** com.bonitasoft.test.toolkit.predicate.link:com/bonitasoft/test/toolkit/predicate/UserTaskPredicates.html[[.typeNameLink]#UserTaskPredicates#]
+** com.bonitasoft.test.toolkit.internal.proxy.link:com/bonitasoft/test/toolkit/internal/proxy/TaskProxy.html[[.typeNameLink]#TaskProxy#] (implements com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/Task.html[Task])
+** com.bonitasoft.test.toolkit.internal.proxy.link:com/bonitasoft/test/toolkit/internal/proxy/TaskVariableProxy.html[[.typeNameLink]#TaskVariableProxy#] (implements com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/Variable.html[Variable])
+** com.bonitasoft.test.toolkit.internal.proxy.link:com/bonitasoft/test/toolkit/internal/proxy/TaskVariableResolver.html[[.typeNameLink]#TaskVariableResolver#]
+** java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Throwable.html?is-external=true[[.typeNameLink]#Throwable#] (implements java.io.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Serializable.html?is-external=true[Serializable])
+*** java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Exception.html?is-external=true[[.typeNameLink]#Exception#]
+**** java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/RuntimeException.html?is-external=true[[.typeNameLink]#RuntimeException#]
+***** com.bonitasoft.test.toolkit.exception.link:com/bonitasoft/test/toolkit/exception/BusinessDataQueryException.html[[.typeNameLink]#BusinessDataQueryException#]
+***** com.bonitasoft.test.toolkit.exception.link:com/bonitasoft/test/toolkit/exception/ExecuteTaskException.html[[.typeNameLink]#ExecuteTaskException#]
+***** com.bonitasoft.test.toolkit.exception.link:com/bonitasoft/test/toolkit/exception/StartProcessException.html[[.typeNameLink]#StartProcessException#]
+** com.bonitasoft.test.toolkit.internal.proxy.link:com/bonitasoft/test/toolkit/internal/proxy/TimerEventTriggerProxy.html[[.typeNameLink]#TimerEventTriggerProxy#] (implements com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/TimerEventTrigger.html[TimerEventTrigger])
+** com.bonitasoft.test.toolkit.internal.proxy.link:com/bonitasoft/test/toolkit/internal/proxy/UserProxy.html[[.typeNameLink]#UserProxy#] (implements com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/User.html[User])
+** com.bonitasoft.test.toolkit.internal.proxy.link:com/bonitasoft/test/toolkit/internal/proxy/UserTaskProxy.html[[.typeNameLink]#UserTaskProxy#] (implements com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/UserTask.html[UserTask])
+
+=== Interface Hierarchy
+
+* org.bonitasoft.web.client.invoker.ApiClient.Api
+** com.bonitasoft.test.toolkit.internal.client.link:com/bonitasoft/test/toolkit/internal/client/ClientExtension.CustomProcessInstanceApi.html[[.typeNameLink]#ClientExtension.CustomProcessInstanceApi#]
+** com.bonitasoft.test.toolkit.internal.client.link:com/bonitasoft/test/toolkit/internal/client/ClientExtension.DocumentDownloadApi.html[[.typeNameLink]#ClientExtension.DocumentDownloadApi#]
+** com.bonitasoft.test.toolkit.internal.client.link:com/bonitasoft/test/toolkit/internal/client/ClientExtension.ExtendedBDMApi.html[[.typeNameLink]#ClientExtension.ExtendedBDMApi#]
+** com.bonitasoft.test.toolkit.internal.client.link:com/bonitasoft/test/toolkit/internal/client/ClientExtension.FormFileUploadApi.html[[.typeNameLink]#ClientExtension.FormFileUploadApi#]
+** org.bonitasoft.web.client.api.UserTaskApi
+*** com.bonitasoft.test.toolkit.internal.client.link:com/bonitasoft/test/toolkit/internal/client/ClientExtension.ExtendedUserTaskApi.html[[.typeNameLink]#ClientExtension.ExtendedUserTaskApi#]
+* java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/AutoCloseable.html?is-external=true[[.typeNameLink]#AutoCloseable#]
+** com.bonitasoft.test.toolkit.link:com/bonitasoft/test/toolkit/BonitaTestToolkit.html[[.typeNameLink]#BonitaTestToolkit#]
+* com.bonitasoft.test.toolkit.link:com/bonitasoft/test/toolkit/BonitaTestToolkitFactory.html[[.typeNameLink]#BonitaTestToolkitFactory#]
+* com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/BusinessData.html[[.typeNameLink]#BusinessData#]
+* com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/BusinessObjectDAO.html[[.typeNameLink]#BusinessObjectDAO#]<T>
+* java.util.concurrent.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html?is-external=true[[.typeNameLink]#Callable#]<V>
+** com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/AbstractTask.html[[.typeNameLink]#AbstractTask#]<SELF>
+*** com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/Task.html[[.typeNameLink]#Task#]
+*** com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/UserTask.html[[.typeNameLink]#UserTask#]
+** com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/Connector.html[[.typeNameLink]#Connector#]
+** com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/ProcessDefinition.html[[.typeNameLink]#ProcessDefinition#]
+** com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/ProcessInstance.html[[.typeNameLink]#ProcessInstance#]
+** com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/User.html[[.typeNameLink]#User#]
+* com.bonitasoft.test.toolkit.internal.client.link:com/bonitasoft/test/toolkit/internal/client/ClientExtension.html[[.typeNameLink]#ClientExtension#]
+* com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/ContactData.html[[.typeNameLink]#ContactData#]
+* com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/Contract.html[[.typeNameLink]#Contract#]
+* com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/ContractToMap.html[[.typeNameLink]#ContractToMap#]
+* com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/Document.html[[.typeNameLink]#Document#]
+* com.bonitasoft.test.toolkit.contract.link:com/bonitasoft/test/toolkit/contract/InputBuilder.html[[.typeNameLink]#InputBuilder#]<T>
+** com.bonitasoft.test.toolkit.contract.link:com/bonitasoft/test/toolkit/contract/ComplexInputBuilder.html[[.typeNameLink]#ComplexInputBuilder#]
+** com.bonitasoft.test.toolkit.contract.link:com/bonitasoft/test/toolkit/contract/ContractBuilder.html[[.typeNameLink]#ContractBuilder#]
+* com.bonitasoft.test.toolkit.internal.contract.link:com/bonitasoft/test/toolkit/internal/contract/InputTypeConverter.html[[.typeNameLink]#InputTypeConverter#]<T>
+* com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/MessageEvent.html[[.typeNameLink]#MessageEvent#]
+* com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/QueryParameter.html[[.typeNameLink]#QueryParameter#]<T>
+* com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/SignalEvent.html[[.typeNameLink]#SignalEvent#]
+* com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/TimerEventTrigger.html[[.typeNameLink]#TimerEventTrigger#]
+* com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/Variable.html[[.typeNameLink]#Variable#]
+
+=== Annotation Type Hierarchy
+
+* com.bonitasoft.test.toolkit.junit.extension.link:com/bonitasoft/test/toolkit/junit/extension/BonitaTests.html[[.typeNameLink]#BonitaTests#] (implements java.lang.annotation.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/annotation/Annotation.html?is-external=true[Annotation])
+
+=== Enum Hierarchy
+
+* java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[[.typeNameLink]#Object#]
+** java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html?is-external=true[[.typeNameLink]#Enum#]<E> (implements java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Comparable.html?is-external=true[Comparable]<T>, java.io.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/io/Serializable.html?is-external=true[Serializable])
+*** com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/ConnectorActivationEvent.html[[.typeNameLink]#ConnectorActivationEvent#]
+*** com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/ConnectorState.html[[.typeNameLink]#ConnectorState#]
+*** com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/ProcessInstanceState.html[[.typeNameLink]#ProcessInstanceState#]
+*** com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/TaskState.html[[.typeNameLink]#TaskState#]
+*** com.bonitasoft.test.toolkit.model.link:com/bonitasoft/test/toolkit/model/TaskType.html[[.typeNameLink]#TaskType#]
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:index.html[Overview]
+* Package
+* Class
+* Use
+* Tree
+* link:deprecated-list.html[Deprecated]
+* link:index-all.html[Index]
+* link:help-doc.html[Help]
+
+* link:allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

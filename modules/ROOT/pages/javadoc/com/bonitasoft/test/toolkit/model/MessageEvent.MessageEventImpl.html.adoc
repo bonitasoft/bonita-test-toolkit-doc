@@ -1,0 +1,203 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/MessageEvent.MessageEventImpl.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* link:#nested.class.summary[Nested] | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Class MessageEvent.MessageEventImpl
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.model.MessageEvent.MessageEventImpl
+
+* All Implemented Interfaces:::
+  `MessageEvent`
++
+Enclosing interface:::
+  link:MessageEvent.html[MessageEvent]
++
+
+'''''
++
+....
+public static class MessageEvent.MessageEventImpl
+extends Object
+implements MessageEvent
+....
+
+* ** [#nested.class.summary]##
++
+==== Nested Class Summary
+*** [#nested.classes.inherited.from.class.com.bonitasoft.test.toolkit.model.MessageEvent]##
++
+==== Nested classes/interfaces inherited from interface com.bonitasoft.test.toolkit.model.link:MessageEvent.html[MessageEvent]
++
+`MessageEvent.MessageEventBuiler, MessageEvent.MessageEventImpl`
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|========================================================================================
+|Modifier and Type |Method |Description
+|`Map<String,​Object>` |`getContent()` a|
+The message content allows to synchronize instances between two processes (sharing data).
+
+|`Map<String,​Object>` |`getCorrelations()` a|
+Correlation is used to select specific instances of two processes.
+
+|`String` |`getName()` | 
+|`String` |`getTargetFlowNode()` | 
+|`String` |`getTargetProcess()` | 
+|========================================================================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#getName()]##
+*** ===== getName
++
+[source,methodSignature]
+----
+public String getName()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getName` in interface `MessageEvent`
+[.returnLabel]#Returns:#::
+  the name of the message
++
+[#getTargetProcess()]##
+*** ===== getTargetProcess
++
+[source,methodSignature]
+----
+public String getTargetProcess()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getTargetProcess` in interface `MessageEvent`
+[.returnLabel]#Returns:#::
+  the target process name
++
+[#getTargetFlowNode()]##
+*** ===== getTargetFlowNode
++
+[source,methodSignature]
+----
+public String getTargetFlowNode()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getTargetFlowNode` in interface `MessageEvent`
+[.returnLabel]#Returns:#::
+  the target flow node name
++
+[#getContent()]##
+*** ===== getContent
++
+[source,methodSignature]
+----
+public Map<String,​Object> getContent()
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `MessageEvent`#
++
+The message content allows to synchronize instances between two processes (sharing data).
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getContent` in interface `MessageEvent`
+[.returnLabel]#Returns:#::
+  the content of the message as a https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true[`Map`]
++
+[#getCorrelations()]##
+*** ===== getCorrelations
++
+[source,methodSignature]
+----
+public Map<String,​Object> getCorrelations()
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `MessageEvent`#
++
+Correlation is used to select specific instances of two processes.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getCorrelations` in interface `MessageEvent`
+[.returnLabel]#Returns:#::
+  the correlation of the message as a https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true[`Map`]
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/MessageEvent.MessageEventImpl.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* link:#nested.class.summary[Nested] | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

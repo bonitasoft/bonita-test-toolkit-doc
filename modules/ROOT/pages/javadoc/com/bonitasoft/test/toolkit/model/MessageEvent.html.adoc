@@ -1,0 +1,197 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/MessageEvent.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* link:#nested.class.summary[Nested] | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Interface MessageEvent
+
+* All Known Implementing Classes:::
+  `MessageEvent.MessageEventImpl`
++
+
+'''''
++
+....
+public interface MessageEvent
+....
++
+A message event used to trigger any catch message event
+
+* ** [#nested.class.summary]##
++
+==== Nested Class Summary
++
+.Nested Classes[.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|====================================================================
+|Modifier and Type |Interface |Description
+|`static class ` |`MessageEvent.MessageEventBuiler` a|
+A pratical builder to create a link:MessageEvent.html[`MessageEvent`]
+
+|`static class ` |`MessageEvent.MessageEventImpl` | 
+|====================================================================
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t1 .tableTab]#javascript:show(1);[Static Methods][.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t3 .tableTab]#javascript:show(4);[Abstract Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|========================================================================================
+|Modifier and Type |Method |Description
+|`static MessageEvent.MessageEventBuiler` |`create​(String messageName)` | 
+|`Map<String,​Object>` |`getContent()` a|
+The message content allows to synchronize instances between two processes (sharing data).
+
+|`Map<String,​Object>` |`getCorrelations()` a|
+Correlation is used to select specific instances of two processes.
+
+|`String` |`getName()` | 
+|`String` |`getTargetFlowNode()` | 
+|`String` |`getTargetProcess()` | 
+|========================================================================================
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#getName()]##
+*** ===== getName
++
+[source,methodSignature]
+----
+String getName()
+----
++
+[.returnLabel]#Returns:#::
+  the name of the message
++
+[#getTargetProcess()]##
+*** ===== getTargetProcess
++
+[source,methodSignature]
+----
+String getTargetProcess()
+----
++
+[.returnLabel]#Returns:#::
+  the target process name
++
+[#getTargetFlowNode()]##
+*** ===== getTargetFlowNode
++
+[source,methodSignature]
+----
+String getTargetFlowNode()
+----
++
+[.returnLabel]#Returns:#::
+  the target flow node name
++
+[#getContent()]##
+*** ===== getContent
++
+[source,methodSignature]
+----
+Map<String,​Object> getContent()
+----
++
+The message content allows to synchronize instances between two processes (sharing data).
++
+[.returnLabel]#Returns:#::
+  the content of the message as a https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true[`Map`]
++
+[#getCorrelations()]##
+*** ===== getCorrelations
++
+[source,methodSignature]
+----
+Map<String,​Object> getCorrelations()
+----
++
+Correlation is used to select specific instances of two processes.
++
+[.returnLabel]#Returns:#::
+  the correlation of the message as a https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html?is-external=true[`Map`]
++
+[#create(java.lang.String)]##
+*** ===== create
++
+[source,methodSignature]
+----
+static MessageEvent.MessageEventBuiler create​(String messageName)
+----
++
+[.paramLabel]#Parameters:#::
+  `messageName` - the name of the message to create
+[.returnLabel]#Returns:#::
+  a link:MessageEvent.MessageEventBuiler.html[`MessageEvent.MessageEventBuiler`] to build the message
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/MessageEvent.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* link:#nested.class.summary[Nested] | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

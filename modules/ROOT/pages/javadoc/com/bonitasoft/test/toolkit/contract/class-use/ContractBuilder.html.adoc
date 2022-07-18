@@ -1,0 +1,82 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../ContractBuilder.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Interface +
+com.bonitasoft.test.toolkit.contract.ContractBuilder
+
+* .Packages that use link:../ContractBuilder.html[ContractBuilder][.tabEnd]# #
+[cols=",",options="header",]
+|=====================================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit.contract[com.bonitasoft.test.toolkit.contract] | 
+|link:#com.bonitasoft.test.toolkit.internal.contract[com.bonitasoft.test.toolkit.internal.contract] | 
+|=====================================================================================================
+* ** [#com.bonitasoft.test.toolkit.contract]##
+
+==== Uses of link:../ContractBuilder.html[ContractBuilder] in link:../package-summary.html[com.bonitasoft.test.toolkit.contract]
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.contract] that return link:../ContractBuilder.html[ContractBuilder][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|==============================================================================
+|Modifier and Type |Method |Description
+|`static ContractBuilder` |[.typeNameLabel]#ContractBuilder.#`newContract()` a|
+Create a new link:../ContractBuilder.html[`ContractBuilder`]
+
+|==============================================================================
+** [#com.bonitasoft.test.toolkit.internal.contract]##
+
+==== Uses of link:../ContractBuilder.html[ContractBuilder] in link:../../internal/contract/package-summary.html[com.bonitasoft.test.toolkit.internal.contract]
+
+.Classes in link:../../internal/contract/package-summary.html[com.bonitasoft.test.toolkit.internal.contract] that implement link:../ContractBuilder.html[ContractBuilder][.tabEnd]# #
+[cols=",,",options="header",]
+|=====================================
+|Modifier and Type |Class |Description
+|`class ` |`ContractBuilderImpl` | 
+|=====================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../ContractBuilder.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

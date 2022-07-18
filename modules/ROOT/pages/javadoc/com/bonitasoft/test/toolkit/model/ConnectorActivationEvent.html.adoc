@@ -1,0 +1,222 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ConnectorActivationEvent.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* link:#enum.constant.summary[Enum Constants] | 
+* Field | 
+* link:#method.summary[Method]
+
+* Detail: 
+* link:#enum.constant.detail[Enum Constants] | 
+* Field | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Enum ConnectorActivationEvent
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html?is-external=true[java.lang.Enum]<link:ConnectorActivationEvent.html[ConnectorActivationEvent]>
+** *** com.bonitasoft.test.toolkit.model.ConnectorActivationEvent
+
+* All Implemented Interfaces:::
+  `Serializable`, `Comparable<ConnectorActivationEvent>`
++
+
+'''''
++
+....
+public enum ConnectorActivationEvent
+extends Enum<ConnectorActivationEvent>
+....
++
+Representation of the activation event of a given connector: - ON_ENTER - ON_FINISH
+
+* ** [#enum.constant.summary]##
++
+==== Enum Constant Summary
++
+.Enum Constants[.tabEnd]# #
+[cols=",",options="header",]
+|==========================
+|Enum Constant |Description
+|`ON_ENTER` | 
+|`ON_FINISH` | 
+|==========================
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t1 .tableTab]#javascript:show(1);[Static Methods][.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|===========================================================================================
+|Modifier and Type |Method |Description
+|`static ConnectorActivationEvent` |`fromValue​(String value)` | 
+|`String` |`getValue()` | 
+|`String` |`toString()` | 
+|`static ConnectorActivationEvent` |`valueOf​(String name)` a|
+Returns the enum constant of this type with the specified name.
+
+|`static ConnectorActivationEvent[]` |`values()` a|
+Returns an array containing the constants of this enum type, in the order they are declared.
+
+|===========================================================================================
+*** [#methods.inherited.from.class.java.lang.Enum]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Enum.html?is-external=true[Enum]
++
+`clone, compareTo, equals, finalize, getDeclaringClass, hashCode, name, ordinal, valueOf`
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`getClass, notify, notifyAll, wait, wait, wait`
+
+* ** [#enum.constant.detail]##
++
+==== Enum Constant Detail
++
+[#ON_ENTER]##
+*** ===== ON_ENTER
++
+....
+public static final ConnectorActivationEvent ON_ENTER
+....
++
+[#ON_FINISH]##
+*** ===== ON_FINISH
++
+....
+public static final ConnectorActivationEvent ON_FINISH
+....
++
+** [#method.detail]##
++
+==== Method Detail
++
+[#values()]##
+*** ===== values
++
+[source,methodSignature]
+----
+public static ConnectorActivationEvent[] values()
+----
++
+Returns an array containing the constants of this enum type, in the order they are declared. This method may be used to iterate over the constants as follows:
+
+....
+for (ConnectorActivationEvent c : ConnectorActivationEvent.values())
+    System.out.println(c);
+....
++
+[.returnLabel]#Returns:#::
+  an array containing the constants of this enum type, in the order they are declared
++
+[#valueOf(java.lang.String)]##
+*** ===== valueOf
++
+[source,methodSignature]
+----
+public static ConnectorActivationEvent valueOf​(String name)
+----
++
+Returns the enum constant of this type with the specified name. The string must match _exactly_ an identifier used to declare an enum constant in this type. (Extraneous whitespace characters are not permitted.)
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of the enum constant to be returned.
+[.returnLabel]#Returns:#::
+  the enum constant with the specified name
+[.throwsLabel]#Throws:#::
+  `IllegalArgumentException` - if this enum type has no constant with the specified name
+  +
+  `NullPointerException` - if the argument is null
++
+[#getValue()]##
+*** ===== getValue
++
+[source,methodSignature]
+----
+public String getValue()
+----
++
+[.returnLabel]#Returns:#::
+  the activation event of the connector
++
+[#toString()]##
+*** ===== toString
++
+[source,methodSignature]
+----
+public String toString()
+----
++
+[.overrideSpecifyLabel]#Overrides:#::
+  `toString` in class `Enum<ConnectorActivationEvent>`
++
+[#fromValue(java.lang.String)]##
+*** ===== fromValue
++
+[source,methodSignature]
+----
+public static ConnectorActivationEvent fromValue​(String value)
+----
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ConnectorActivationEvent.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* link:#enum.constant.summary[Enum Constants] | 
+* Field | 
+* link:#method.summary[Method]
+
+* Detail: 
+* link:#enum.constant.detail[Enum Constants] | 
+* Field | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

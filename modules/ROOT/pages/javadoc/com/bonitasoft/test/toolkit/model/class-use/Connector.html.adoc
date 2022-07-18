@@ -1,0 +1,112 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../Connector.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Interface +
+com.bonitasoft.test.toolkit.model.Connector
+
+* .Packages that use link:../Connector.html[Connector][.tabEnd]# #
+[cols=",",options="header",]
+|===============================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit.internal.proxy[com.bonitasoft.test.toolkit.internal.proxy] | 
+|link:#com.bonitasoft.test.toolkit.model[com.bonitasoft.test.toolkit.model] | 
+|link:#com.bonitasoft.test.toolkit.predicate[com.bonitasoft.test.toolkit.predicate] | 
+|===============================================================================================
+* ** [#com.bonitasoft.test.toolkit.internal.proxy]##
+
+==== Uses of link:../Connector.html[Connector] in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+.Classes in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that implement link:../Connector.html[Connector][.tabEnd]# #
+[cols=",,",options="header",]
+|=====================================
+|Modifier and Type |Class |Description
+|`class ` |`ConnectorProxy` | 
+|=====================================
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that return link:../Connector.html[Connector][.tabEnd]# #
+[cols=",,",options="header",]
+|==============================================================================================================================
+|Modifier and Type |Method |Description
+|`Connector` |[.typeNameLabel]#ConnectorProxy.#`call()` | 
+|`Connector` |[.typeNameLabel]#ProxyFactory.#`createConnector​(String name,                AbstractTask<?> task)` | 
+|`Connector` |[.typeNameLabel]#ProxyFactory.#`createConnector​(String name,                ProcessInstance processInstance)` | 
+|`Connector` |[.typeNameLabel]#ProcessInstanceProxy.#`getConnector​(String name)` | 
+|`Connector` |[.typeNameLabel]#TaskProxy.#`getConnector​(String name)` | 
+|`Connector` |[.typeNameLabel]#UserTaskProxy.#`getConnector​(String name)` | 
+|==============================================================================================================================
+** [#com.bonitasoft.test.toolkit.model]##
+
+==== Uses of link:../Connector.html[Connector] in link:../package-summary.html[com.bonitasoft.test.toolkit.model]
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.model] that return link:../Connector.html[Connector][.tabEnd]# #
+[cols=",,",options="header",]
+|==============================================================================
+|Modifier and Type |Method |Description
+|`Connector` |[.typeNameLabel]#AbstractTask.#`getConnector​(String name)` | 
+|`Connector` |[.typeNameLabel]#ProcessInstance.#`getConnector​(String name)` | 
+|==============================================================================
+** [#com.bonitasoft.test.toolkit.predicate]##
+
+==== Uses of link:../Connector.html[Connector] in link:../../predicate/package-summary.html[com.bonitasoft.test.toolkit.predicate]
+
+.Methods in link:../../predicate/package-summary.html[com.bonitasoft.test.toolkit.predicate] that return types with arguments of type link:../Connector.html[Connector][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|===================================================================================================
+|Modifier and Type |Method |Description
+|`static Predicate<Connector>` |[.typeNameLabel]#ConnectorPredicates.#`connectorHasFailed()` a|
+Verify if a link:../Connector.html[`Connector`] is in the FAILED state.
+
+|`static Predicate<Connector>` |[.typeNameLabel]#ConnectorPredicates.#`connectorIsDone()` a|
+Verify if a link:../Connector.html[`Connector`] is in the DONE state.
+
+|`static Predicate<Connector>` |[.typeNameLabel]#ConnectorPredicates.#`connectorIsToBeExecuted()` a|
+Verify if a link:../Connector.html[`Connector`] is in the TO_BE_EXECUTED state.
+
+|===================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../Connector.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

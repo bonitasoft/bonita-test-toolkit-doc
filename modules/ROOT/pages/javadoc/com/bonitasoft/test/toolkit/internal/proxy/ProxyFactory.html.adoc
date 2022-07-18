@@ -1,0 +1,324 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ProxyFactory.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+=== Class ProxyFactory
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.internal.proxy.ProxyFactory
+
+* 
+
+'''''
++
+....
+public class ProxyFactory
+extends Object
+....
+
+* ** [#constructor.summary]##
++
+==== Constructor Summary
++
+.Constructors[.tabEnd]# #
+[cols=",",options="header",]
+|=================================================================
+|Constructor |Description
+|`ProxyFactory​(org.bonitasoft.web.client.BonitaClient client)` | 
+|=================================================================
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|====================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`Task` |`createActivity​(String id)` | 
+|`Variable` |`createActivityVariable​(String taskId,                       String name)` | 
+|`BusinessData` |`createBusinessData​(String persitenceId,                   String type)` | 
+|`BusinessData` |`createBusinessData​(String parentType,                   String persitenceId,                   String reference)` | 
+|`BusinessData` |`createBusinessData​(Map<String,​Object> objectAsMap)` | 
+|`Connector` |`createConnector​(String name,                AbstractTask<?> task)` | 
+|`Connector` |`createConnector​(String name,                ProcessInstance processInstance)` | 
+|`Document` |`createDocument​(String name,               ProcessInstance processInstance)` | 
+|`BusinessObjectDAO<BusinessData>` |`createGenericBusinessObjectDAO​(String type)` | 
+|`List<BusinessData>` |`createMulitpleBusinessData​(String parentType,                           String persitenceId,                           String reference)` | 
+|`List<Document>` |`createMultipleDocument​(String name,                       ProcessInstance processInstance)` | 
+|`ProcessDefinition` |`createProcessDefinition​(String processDefinitionId)` | 
+|`ProcessDefinition` |`createProcessDefinition​(String processName,                        String processVersion)` | 
+|`ProcessInstance` |`createProcessInstance​(String caseId)` | 
+|`Variable` |`createProcessVariable​(String processInstanceId,                      String name)` | 
+|`TimerEventTrigger` |`createTimerEventTrigger​(String id,                        String processInstanceId,                        String eventInstanceId)` | 
+|`<T> BusinessObjectDAO<T>` |`createTypedBusinessObjectDAO​(String type,                             Class<T> businessObjectType)` | 
+|`User` |`createUser​(String userId)` | 
+|`User` |`createUserByUsername​(String userName)` | 
+|`UserTask` |`createUserTask​(String taskId,               String name)` | 
+|====================================================================================================================================================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+
+* ** [#constructor.detail]##
++
+==== Constructor Detail
++
+[#<init>(org.bonitasoft.web.client.BonitaClient)]##
+*** ===== ProxyFactory
++
+....
+public ProxyFactory​(org.bonitasoft.web.client.BonitaClient client)
+....
++
+** [#method.detail]##
++
+==== Method Detail
++
+[#createProcessDefinition(java.lang.String)]##
+*** ===== createProcessDefinition
++
+[source,methodSignature]
+----
+public ProcessDefinition createProcessDefinition​(String processDefinitionId)
+----
++
+[#createProcessDefinition(java.lang.String,java.lang.String)]##
+*** ===== createProcessDefinition
++
+[source,methodSignature]
+----
+public ProcessDefinition createProcessDefinition​(String processName,
+                                                 String processVersion)
+----
++
+[#createGenericBusinessObjectDAO(java.lang.String)]##
+*** ===== createGenericBusinessObjectDAO
++
+[source,methodSignature]
+----
+public BusinessObjectDAO<BusinessData> createGenericBusinessObjectDAO​(String type)
+----
++
+[#createTypedBusinessObjectDAO(java.lang.String,java.lang.Class)]##
+*** ===== createTypedBusinessObjectDAO
++
+[source,methodSignature]
+----
+public <T> BusinessObjectDAO<T> createTypedBusinessObjectDAO​(String type,
+                                                             Class<T> businessObjectType)
+----
++
+[#createUser(java.lang.String)]##
+*** ===== createUser
++
+[source,methodSignature]
+----
+public User createUser​(String userId)
+----
++
+[#createUserByUsername(java.lang.String)]##
+*** ===== createUserByUsername
++
+[source,methodSignature]
+----
+public User createUserByUsername​(String userName)
+----
++
+[#createUserTask(java.lang.String,java.lang.String)]##
+*** ===== createUserTask
++
+[source,methodSignature]
+----
+public UserTask createUserTask​(String taskId,
+                               String name)
+----
++
+[#createProcessInstance(java.lang.String)]##
+*** ===== createProcessInstance
++
+[source,methodSignature]
+----
+public ProcessInstance createProcessInstance​(String caseId)
+----
++
+[#createBusinessData(java.lang.String,java.lang.String)]##
+*** ===== createBusinessData
++
+[source,methodSignature]
+----
+public BusinessData createBusinessData​(String persitenceId,
+                                       String type)
+----
++
+[#createBusinessData(java.lang.String,java.lang.String,java.lang.String)]##
+*** ===== createBusinessData
++
+[source,methodSignature]
+----
+public BusinessData createBusinessData​(String parentType,
+                                       String persitenceId,
+                                       String reference)
+----
++
+[#createMulitpleBusinessData(java.lang.String,java.lang.String,java.lang.String)]##
+*** ===== createMulitpleBusinessData
++
+[source,methodSignature]
+----
+public List<BusinessData> createMulitpleBusinessData​(String parentType,
+                                                     String persitenceId,
+                                                     String reference)
+----
++
+[#createBusinessData(java.util.Map)]##
+*** ===== createBusinessData
++
+[source,methodSignature]
+----
+public BusinessData createBusinessData​(Map<String,​Object> objectAsMap)
+----
++
+[#createDocument(java.lang.String,com.bonitasoft.test.toolkit.model.ProcessInstance)]##
+*** ===== createDocument
++
+[source,methodSignature]
+----
+public Document createDocument​(String name,
+                               ProcessInstance processInstance)
+----
++
+[#createMultipleDocument(java.lang.String,com.bonitasoft.test.toolkit.model.ProcessInstance)]##
+*** ===== createMultipleDocument
++
+[source,methodSignature]
+----
+public List<Document> createMultipleDocument​(String name,
+                                             ProcessInstance processInstance)
+----
++
+[#createProcessVariable(java.lang.String,java.lang.String)]##
+*** ===== createProcessVariable
++
+[source,methodSignature]
+----
+public Variable createProcessVariable​(String processInstanceId,
+                                      String name)
+----
++
+[#createActivityVariable(java.lang.String,java.lang.String)]##
+*** ===== createActivityVariable
++
+[source,methodSignature]
+----
+public Variable createActivityVariable​(String taskId,
+                                       String name)
+----
++
+[#createActivity(java.lang.String)]##
+*** ===== createActivity
++
+[source,methodSignature]
+----
+public Task createActivity​(String id)
+----
++
+[#createTimerEventTrigger(java.lang.String,java.lang.String,java.lang.String)]##
+*** ===== createTimerEventTrigger
++
+[source,methodSignature]
+----
+public TimerEventTrigger createTimerEventTrigger​(String id,
+                                                 String processInstanceId,
+                                                 String eventInstanceId)
+----
++
+[#createConnector(java.lang.String,com.bonitasoft.test.toolkit.model.ProcessInstance)]##
+*** ===== createConnector
++
+[source,methodSignature]
+----
+public Connector createConnector​(String name,
+                                 ProcessInstance processInstance)
+----
++
+[#createConnector(java.lang.String,com.bonitasoft.test.toolkit.model.AbstractTask)]##
+*** ===== createConnector
++
+[source,methodSignature]
+----
+public Connector createConnector​(String name,
+                                 AbstractTask<?> task)
+----
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ProxyFactory.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

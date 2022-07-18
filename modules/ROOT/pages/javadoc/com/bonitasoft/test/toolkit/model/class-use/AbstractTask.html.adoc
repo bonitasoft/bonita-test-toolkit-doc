@@ -1,0 +1,113 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../AbstractTask.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Interface +
+com.bonitasoft.test.toolkit.model.AbstractTask
+
+* .Packages that use link:../AbstractTask.html[AbstractTask][.tabEnd]# #
+[cols=",",options="header",]
+|===============================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit.internal.proxy[com.bonitasoft.test.toolkit.internal.proxy] | 
+|link:#com.bonitasoft.test.toolkit.model[com.bonitasoft.test.toolkit.model] | 
+|link:#com.bonitasoft.test.toolkit.predicate[com.bonitasoft.test.toolkit.predicate] | 
+|===============================================================================================
+* ** [#com.bonitasoft.test.toolkit.internal.proxy]##
+
+==== Uses of link:../AbstractTask.html[AbstractTask] in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+.Classes in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that implement link:../AbstractTask.html[AbstractTask][.tabEnd]# #
+[cols=",,",options="header",]
+|=====================================
+|Modifier and Type |Class |Description
+|`class ` |`TaskProxy` | 
+|`class ` |`UserTaskProxy` | 
+|=====================================
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] with parameters of type link:../AbstractTask.html[AbstractTask][.tabEnd]# #
+[cols=",,",options="header",]
+|===================================================================================================================
+|Modifier and Type |Method |Description
+|`Connector` |[.typeNameLabel]#ProxyFactory.#`createConnector​(String name,                AbstractTask<?> task)` | 
+|===================================================================================================================
+** [#com.bonitasoft.test.toolkit.model]##
+
+==== Uses of link:../AbstractTask.html[AbstractTask] in link:../package-summary.html[com.bonitasoft.test.toolkit.model]
+
+.Subinterfaces of link:../AbstractTask.html[AbstractTask] in link:../package-summary.html[com.bonitasoft.test.toolkit.model][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|=========================================
+|Modifier and Type |Interface |Description
+|`interface ` |`Task` | 
+|`interface ` |`UserTask` a|
+A user task of a process.
+
+|=========================================
+** [#com.bonitasoft.test.toolkit.predicate]##
+
+==== Uses of link:../AbstractTask.html[AbstractTask] in link:../../predicate/package-summary.html[com.bonitasoft.test.toolkit.predicate]
+
+.Methods in link:../../predicate/package-summary.html[com.bonitasoft.test.toolkit.predicate] that return types with arguments of type link:../AbstractTask.html[AbstractTask][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|==========================================================================================
+|Modifier and Type |Method |Description
+|`static Predicate<AbstractTask<?>>` |[.typeNameLabel]#TaskPredicates.#`taskArchived()` a|
+Verify if a link:../Task.html[`Task`] is archived.
+
+|`static Predicate<AbstractTask<?>>` |[.typeNameLabel]#TaskPredicates.#`taskCompleted()` a|
+Verify if a link:../Task.html[`Task`] is completed.
+
+|`static Predicate<AbstractTask<?>>` |[.typeNameLabel]#TaskPredicates.#`taskFailed()` a|
+Verify if a link:../Task.html[`Task`] is failed.
+
+|`static Predicate<AbstractTask<?>>` |[.typeNameLabel]#TaskPredicates.#`taskReady()` a|
+Verify if a link:../Task.html[`Task`] is ready.
+
+|==========================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../AbstractTask.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

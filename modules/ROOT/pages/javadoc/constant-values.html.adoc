@@ -1,0 +1,65 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:index.html[Overview]
+* Package
+* Class
+* Use
+* link:overview-tree.html[Tree]
+* link:deprecated-list.html[Deprecated]
+* link:index-all.html[Index]
+* link:help-doc.html[Help]
+
+* link:allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Contents
+
+* link:#com.bonitasoft[com.bonitasoft.*]
+
+[#com.bonitasoft]##
+
+=== com.bonitasoft.*
+
+* .com.bonitasoft.test.toolkit.internal.link:com/bonitasoft/test/toolkit/internal/BonitaVersion.html[BonitaVersion][.tabEnd]# #
+[cols=",,",options="header",]
+|=================================================================================================================================================================
+|Modifier and Type |Constant Field |Value
+|[#com.bonitasoft.test.toolkit.internal.BonitaVersion.ARCHIVED_VARIABLES_MIN_VERSION]## `public static final String` |`ARCHIVED_VARIABLES_MIN_VERSION` |`"7.14.0"`
+|[#com.bonitasoft.test.toolkit.internal.BonitaVersion.SIGNAL_API_MIN_VERSION]## `public static final String` |`SIGNAL_API_MIN_VERSION` |`"7.14.0"`
+|=================================================================================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:index.html[Overview]
+* Package
+* Class
+* Use
+* link:overview-tree.html[Tree]
+* link:deprecated-list.html[Deprecated]
+* link:index-all.html[Index]
+* link:help-doc.html[Help]
+
+* link:allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

@@ -1,0 +1,66 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* Use
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+* .Packages that use link:package-summary.html[com.bonitasoft.test.toolkit.predicate][.tabEnd]# #
+[cols=",",options="header",]
+|=====================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit.predicate[com.bonitasoft.test.toolkit.predicate] | 
+|=====================================================================================
+* [#com.bonitasoft.test.toolkit.predicate]##
++
+.Classes in link:package-summary.html[com.bonitasoft.test.toolkit.predicate] used by link:package-summary.html[com.bonitasoft.test.toolkit.predicate][.tabEnd]# #
+[width="100%",cols="50%,50%",options="header",]
+|==========================================================================================================================================================================
+|Class |Description
+|link:class-use/TaskPredicates.html#com.bonitasoft.test.toolkit.predicate[TaskPredicates] a|
+Collection of link:../model/Task.html[`Task`] https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/function/Predicate.html?is-external=true[`Predicate`].
+
+|==========================================================================================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* Use
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

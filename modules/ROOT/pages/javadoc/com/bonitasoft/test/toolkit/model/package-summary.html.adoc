@@ -1,0 +1,133 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* Package
+* Class
+* link:package-use.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+* .Interface Summary[.tabEnd]# #
+[width="100%",cols="50%,50%",options="header",]
+|=====================================================================================================================================================================================
+|Interface |Description
+|link:AbstractTask.html[AbstractTask]<SELF> a|
+Abstract representation of a Task, used to retrieve meta information or properties on a task.
+
+|link:BusinessData.html[BusinessData] a|
+A Business data stored in the Business Data Model database. +
+Generic methods are available to retrieve the fields of the business data by name.
+
+|link:BusinessObjectDAO.html[BusinessObjectDAO]<T> a|
+A DAO matching a Business Object defined in the Business Data Model.
+
+|link:Connector.html[Connector] a|
+Representation of a Connector, used to retrieve meta information or execution information.
+
+|link:ContactData.html[ContactData] | 
+|link:Contract.html[Contract] a|
+A contract, used to instantiate a process or execute a user task.
+
+|link:Document.html[Document] a|
+A Bonita document is defined as a process data on the process definition, and can be set and updated during the execution of the process.
+
+|link:MessageEvent.html[MessageEvent] a|
+A message event used to trigger any catch message event
+
+|link:ProcessDefinition.html[ProcessDefinition] a|
+Represent a Bonita process definition.
+
+|link:ProcessInstance.html[ProcessInstance] a|
+Representation of an instance of a process (i.e a case).
+
+|link:QueryParameter.html[QueryParameter]<T> a|
+A QueryParameter is a typed key/value couple used in a Business Object query.
+
+|link:SignalEvent.html[SignalEvent] a|
+A signal event used to trigger any catch signal event
+
+|link:Task.html[Task] | 
+|link:TimerEventTrigger.html[TimerEventTrigger] a|
+Representation of a timer.
+
+|link:User.html[User] a|
+A User of the organization.
+
+|link:UserTask.html[UserTask] a|
+A user task of a process.
+
+|link:Variable.html[Variable] a|
+A process or task variable In addition to opened process instances and tasks, variables can be retrieved from archived process instance or archived task (since Bonita Runtime 7.14.0)
+
+|=====================================================================================================================================================================================
+* .Class Summary[.tabEnd]# #
+[width="100%",cols="50%,50%",options="header",]
+|=============================================================================
+|Class |Description
+|link:MessageEvent.MessageEventBuiler.html[MessageEvent.MessageEventBuiler] a|
+A pratical builder to create a link:MessageEvent.html[`MessageEvent`]
+
+|link:MessageEvent.MessageEventImpl.html[MessageEvent.MessageEventImpl] | 
+|link:SignalEvent.SignalEventImpl.html[SignalEvent.SignalEventImpl] | 
+|=============================================================================
+* .Enum Summary[.tabEnd]# #
+[width="100%",cols="50%,50%",options="header",]
+|===============================================================================================================================================================================================================================================================
+|Enum |Description
+|link:ConnectorActivationEvent.html[ConnectorActivationEvent] a|
+Representation of the activation event of a given connector: - ON_ENTER - ON_FINISH
+
+|link:ConnectorState.html[ConnectorState] a|
+Representation of the state of a given connector: - DONE - FAILED - TO_BE_EXECUTED - EXECUTING - TO_RE_EXECUTE - SKIPPED
+
+|link:ProcessInstanceState.html[ProcessInstanceState] a|
+Representation of the state of a given process instance: - initializing - started - suspended - cancelled - aborting - aborted - completing - completed - error
+
+|link:TaskState.html[TaskState] a|
+Representation of the state of a given task instance: - ready - failed - completed - initializing - executing - completing - waiting - skipped - cancelled - aborted - cancelling subtasks - aborting activity with boundary - completing activity with boundary
+
+|link:TaskType.html[TaskType] a|
+All the existing task types: - AUTOMATIC_TASK - HUMAN_TASK - USER_TASK - MANUAL_TASK - LOOP_ACTIVITY - MULTI_INSTANCE_ACTIVITY - CALL_ACTIVITY
+
+|===============================================================================================================================================================================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* Package
+* Class
+* link:package-use.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

@@ -1,0 +1,451 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/QueryParameter.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Interface QueryParameter<T>
+
+* All Known Implementing Classes:::
+  `QueryParameterImpl`
++
+
+'''''
++
+....
+public interface QueryParameter<T>
+....
++
+A QueryParameter is a typed key/value couple used in a Business Object query. +
+_Example_
+
+....
+ 
+ 
+     var employees = employeeDAO.query("findByLastName", List.of(QueryParameter.stringParameter("lastName", "Doe")), 0,
+             99);
+ 
+ 
+ 
+....
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t1 .tableTab]#javascript:show(1);[Static Methods][.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t3 .tableTab]#javascript:show(4);[Abstract Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|================================================================================================================================
+|Modifier and Type |Method |Description
+|`static QueryParameter<Boolean>` |`booleanParameter​(String name,                 boolean value)` a|
+Create a query parameter with a `Boolean` value type.
+
+|`static QueryParameter<Date>` |`dateParameter​(String name,              Date value)` a|
+Create a query parameter with a `Date` value type.
+
+|`static QueryParameter<Double>` |`doubleParameter​(String name,                double value)` a|
+Create a query parameter with a `Double` value type.
+
+|`static QueryParameter<List<Double>>` |`doublesParameter​(String name,                 List<Double> value)` a|
+Create a query parameter with a `List<Double>` value type.
+
+|`static QueryParameter<Float>` |`floatParameter​(String name,               float value)` a|
+Create a query parameter with a `Float` value type.
+
+|`static QueryParameter<List<Float>>` |`floatsParameter​(String name,                List<Float> value)` a|
+Create a query parameter with a `List<Float>` value type.
+
+|`String` |`getName()` | 
+|`T` |`getValue()` | 
+|`static QueryParameter<Integer>` |`integerParameter​(String name,                 int value)` a|
+Create a query parameter with an Integer value type.
+
+|`static QueryParameter<List<Integer>>` |`integersParameter​(String name,                  List<Integer> value)` a|
+Create a query parameter with a `List<Integer>` value type.
+
+|`static QueryParameter<LocalDate>` |`localDateParameter​(String name,                   LocalDate value)` a|
+Create a query parameter with a `LocalDate` value type.
+
+|`static QueryParameter<LocalDateTime>` |`localDateTimeParameter​(String name,                       LocalDateTime value)` a|
+Create a query parameter with a `LocalDateTime` value type.
+
+|`static QueryParameter<Long>` |`longParameter​(String name,              long value)` a|
+Create a query parameter with a `Long` value type.
+
+|`static QueryParameter<List<Long>>` |`longsParameter​(String name,               List<Long> value)` a|
+Create a query parameter with a `List<Long>` value type.
+
+|`static QueryParameter<OffsetDateTime>` |`offsetDateTimeParameter​(String name,                        OffsetDateTime value)` a|
+Create a query parameter with a `OffsetDateTime` value type.
+
+|`static QueryParameter<String>` |`stringParameter​(String name,                String value)` a|
+Create a query parameter with a `String` value type.
+
+|`static QueryParameter<List<String>>` |`stringsParameter​(String name,                 List<String> value)` a|
+Create a query parameter with a `List<String>` value type.
+
+|================================================================================================================================
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#stringParameter(java.lang.String,java.lang.String)]##
+*** ===== stringParameter
++
+[source,methodSignature]
+----
+static QueryParameter<String> stringParameter​(String name,
+                                              String value)
+----
++
+Create a query parameter with a `String` value type.
++
+[.paramLabel]#Parameters:#::
+  `name` - the name the parameter defined by the query
+  +
+  `value` - the string value of the parameter.
+[.returnLabel]#Returns:#::
+  a String query parameter
++
+[#booleanParameter(java.lang.String,boolean)]##
+*** ===== booleanParameter
++
+[source,methodSignature]
+----
+static QueryParameter<Boolean> booleanParameter​(String name,
+                                                boolean value)
+----
++
+Create a query parameter with a `Boolean` value type.
++
+[.paramLabel]#Parameters:#::
+  `name` - the name the parameter defined by the query
+  +
+  `value` - the boolean value of the parameter.
+[.returnLabel]#Returns:#::
+  a Boolean query parameter
++
+[#integerParameter(java.lang.String,int)]##
+*** ===== integerParameter
++
+[source,methodSignature]
+----
+static QueryParameter<Integer> integerParameter​(String name,
+                                                int value)
+----
++
+Create a query parameter with an Integer value type.
++
+[.paramLabel]#Parameters:#::
+  `name` - the name the parameter defined by the query
+  +
+  `value` - the integer value of the parameter.
+[.returnLabel]#Returns:#::
+  an Integer query parameter
++
+[#longParameter(java.lang.String,long)]##
+*** ===== longParameter
++
+[source,methodSignature]
+----
+static QueryParameter<Long> longParameter​(String name,
+                                          long value)
+----
++
+Create a query parameter with a `Long` value type.
++
+[.paramLabel]#Parameters:#::
+  `name` - the name the parameter defined by the query
+  +
+  `value` - the long value of the parameter.
+[.returnLabel]#Returns:#::
+  a Long query parameter
++
+[#doubleParameter(java.lang.String,double)]##
+*** ===== doubleParameter
++
+[source,methodSignature]
+----
+static QueryParameter<Double> doubleParameter​(String name,
+                                              double value)
+----
++
+Create a query parameter with a `Double` value type.
++
+[.paramLabel]#Parameters:#::
+  `name` - the name the parameter defined by the query
+  +
+  `value` - the double value of the parameter.
+[.returnLabel]#Returns:#::
+  a Double query parameter
++
+[#floatParameter(java.lang.String,float)]##
+*** ===== floatParameter
++
+[source,methodSignature]
+----
+static QueryParameter<Float> floatParameter​(String name,
+                                            float value)
+----
++
+Create a query parameter with a `Float` value type.
++
+[.paramLabel]#Parameters:#::
+  `name` - the name the parameter defined by the query
+  +
+  `value` - the float value of the parameter.
+[.returnLabel]#Returns:#::
+  a Float query parameter
++
+[#dateParameter(java.lang.String,java.util.Date)]##
+*** ===== dateParameter
++
+[source,methodSignature]
+----
+static QueryParameter<Date> dateParameter​(String name,
+                                          Date value)
+----
++
+Create a query parameter with a `Date` value type.
++
+[.paramLabel]#Parameters:#::
+  `name` - the name the parameter defined by the query
+  +
+  `value` - the date value of the parameter.
+[.returnLabel]#Returns:#::
+  a Date query parameter
++
+[#localDateParameter(java.lang.String,java.time.LocalDate)]##
+*** ===== localDateParameter
++
+[source,methodSignature]
+----
+static QueryParameter<LocalDate> localDateParameter​(String name,
+                                                    LocalDate value)
+----
++
+Create a query parameter with a `LocalDate` value type.
++
+[.paramLabel]#Parameters:#::
+  `name` - the name the parameter defined by the query
+  +
+  `value` - the LocalDate value of the parameter.
+[.returnLabel]#Returns:#::
+  a LocalDate query parameter
++
+[#localDateTimeParameter(java.lang.String,java.time.LocalDateTime)]##
+*** ===== localDateTimeParameter
++
+[source,methodSignature]
+----
+static QueryParameter<LocalDateTime> localDateTimeParameter​(String name,
+                                                            LocalDateTime value)
+----
++
+Create a query parameter with a `LocalDateTime` value type.
++
+[.paramLabel]#Parameters:#::
+  `name` - the name the parameter defined by the query
+  +
+  `value` - the LocalDateTime value of the parameter.
+[.returnLabel]#Returns:#::
+  a LocalDateTime query parameter
++
+[#offsetDateTimeParameter(java.lang.String,java.time.OffsetDateTime)]##
+*** ===== offsetDateTimeParameter
++
+[source,methodSignature]
+----
+static QueryParameter<OffsetDateTime> offsetDateTimeParameter​(String name,
+                                                              OffsetDateTime value)
+----
++
+Create a query parameter with a `OffsetDateTime` value type.
++
+[.paramLabel]#Parameters:#::
+  `name` - the name the parameter defined by the query
+  +
+  `value` - the OffsetDateTime value of the parameter.
+[.returnLabel]#Returns:#::
+  a OffsetDateTime query parameter
++
+[#stringsParameter(java.lang.String,java.util.List)]##
+*** ===== stringsParameter
++
+[source,methodSignature]
+----
+static QueryParameter<List<String>> stringsParameter​(String name,
+                                                     List<String> value)
+----
++
+Create a query parameter with a `List<String>` value type.
++
+[.paramLabel]#Parameters:#::
+  `name` - the name the parameter defined by the query
+  +
+  `value` - the list of string values of the parameter.
+[.returnLabel]#Returns:#::
+  a `List<String>` query parameter
++
+[#integersParameter(java.lang.String,java.util.List)]##
+*** ===== integersParameter
++
+[source,methodSignature]
+----
+static QueryParameter<List<Integer>> integersParameter​(String name,
+                                                       List<Integer> value)
+----
++
+Create a query parameter with a `List<Integer>` value type.
++
+[.paramLabel]#Parameters:#::
+  `name` - the name the parameter defined by the query
+  +
+  `value` - the list of integers values of the parameter.
+[.returnLabel]#Returns:#::
+  a `List<Integer>` query parameter
++
+[#doublesParameter(java.lang.String,java.util.List)]##
+*** ===== doublesParameter
++
+[source,methodSignature]
+----
+static QueryParameter<List<Double>> doublesParameter​(String name,
+                                                     List<Double> value)
+----
++
+Create a query parameter with a `List<Double>` value type.
++
+[.paramLabel]#Parameters:#::
+  `name` - the name the parameter defined by the query
+  +
+  `value` - the list of doubles values of the parameter.
+[.returnLabel]#Returns:#::
+  a `List<Double>` query parameter
++
+[#longsParameter(java.lang.String,java.util.List)]##
+*** ===== longsParameter
++
+[source,methodSignature]
+----
+static QueryParameter<List<Long>> longsParameter​(String name,
+                                                 List<Long> value)
+----
++
+Create a query parameter with a `List<Long>` value type.
++
+[.paramLabel]#Parameters:#::
+  `name` - the name the parameter defined by the query
+  +
+  `value` - the list of longs values of the parameter.
+[.returnLabel]#Returns:#::
+  a `List<Long>` query parameter
++
+[#floatsParameter(java.lang.String,java.util.List)]##
+*** ===== floatsParameter
++
+[source,methodSignature]
+----
+static QueryParameter<List<Float>> floatsParameter​(String name,
+                                                   List<Float> value)
+----
++
+Create a query parameter with a `List<Float>` value type.
++
+[.paramLabel]#Parameters:#::
+  `name` - the name the parameter defined by the query
+  +
+  `value` - the list of floats values of the parameter.
+[.returnLabel]#Returns:#::
+  a `List<Float>` query parameter
++
+[#getName()]##
+*** ===== getName
++
+[source,methodSignature]
+----
+String getName()
+----
++
+[.returnLabel]#Returns:#::
+  the parameter name
++
+[#getValue()]##
+*** ===== getValue
++
+[source,methodSignature]
+----
+T getValue()
+----
++
+[.returnLabel]#Returns:#::
+  the parameter value
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/QueryParameter.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

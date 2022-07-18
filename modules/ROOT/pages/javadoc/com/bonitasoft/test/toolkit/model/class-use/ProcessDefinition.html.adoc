@@ -1,0 +1,162 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../ProcessDefinition.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Interface +
+com.bonitasoft.test.toolkit.model.ProcessDefinition
+
+* .Packages that use link:../ProcessDefinition.html[ProcessDefinition][.tabEnd]# #
+[cols=",",options="header",]
+|===============================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit[com.bonitasoft.test.toolkit] | 
+|link:#com.bonitasoft.test.toolkit.internal[com.bonitasoft.test.toolkit.internal] | 
+|link:#com.bonitasoft.test.toolkit.internal.proxy[com.bonitasoft.test.toolkit.internal.proxy] | 
+|link:#com.bonitasoft.test.toolkit.model[com.bonitasoft.test.toolkit.model] | 
+|link:#com.bonitasoft.test.toolkit.predicate[com.bonitasoft.test.toolkit.predicate] | 
+|===============================================================================================
+* ** [#com.bonitasoft.test.toolkit]##
+
+==== Uses of link:../ProcessDefinition.html[ProcessDefinition] in link:../../package-summary.html[com.bonitasoft.test.toolkit]
+
+.Methods in link:../../package-summary.html[com.bonitasoft.test.toolkit] that return link:../ProcessDefinition.html[ProcessDefinition][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|====================================================================================================================================
+|Modifier and Type |Method |Description
+|`ProcessDefinition` |[.typeNameLabel]#BonitaTestToolkit.#`getProcessDefinition​(String name)` a|
+Retrieves the latest deployed version of the link:../ProcessDefinition.html[`ProcessDefinition`] with the given name.
+
+|`ProcessDefinition` |[.typeNameLabel]#BonitaTestToolkit.#`getProcessDefinition​(String name,                     String version)` a|
+Retrieves the link:../ProcessDefinition.html[`ProcessDefinition`] with the given name and version.
+
+|====================================================================================================================================
+** [#com.bonitasoft.test.toolkit.internal]##
+
+==== Uses of link:../ProcessDefinition.html[ProcessDefinition] in link:../../internal/package-summary.html[com.bonitasoft.test.toolkit.internal]
+
+.Methods in link:../../internal/package-summary.html[com.bonitasoft.test.toolkit.internal] that return link:../ProcessDefinition.html[ProcessDefinition][.tabEnd]# #
+[cols=",,",options="header",]
+|========================================================================================================================================
+|Modifier and Type |Method |Description
+|`ProcessDefinition` |[.typeNameLabel]#BonitaTestToolkitImpl.#`getProcessDefinition​(String name)` | 
+|`ProcessDefinition` |[.typeNameLabel]#BonitaTestToolkitImpl.#`getProcessDefinition​(String name,                     String version)` | 
+|========================================================================================================================================
+** [#com.bonitasoft.test.toolkit.internal.proxy]##
+
+==== Uses of link:../ProcessDefinition.html[ProcessDefinition] in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+.Classes in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that implement link:../ProcessDefinition.html[ProcessDefinition][.tabEnd]# #
+[cols=",,",options="header",]
+|=====================================
+|Modifier and Type |Class |Description
+|`class ` |`ProcessDefinitionProxy` | 
+|=====================================
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that return link:../ProcessDefinition.html[ProcessDefinition][.tabEnd]# #
+[cols=",,",options="header",]
+|===================================================================================================================================================
+|Modifier and Type |Method |Description
+|`ProcessDefinition` |[.typeNameLabel]#ProcessDefinitionProxy.#`call()` | 
+|`ProcessDefinition` |[.typeNameLabel]#ProxyFactory.#`createProcessDefinition​(String processDefinitionId)` | 
+|`ProcessDefinition` |[.typeNameLabel]#ProxyFactory.#`createProcessDefinition​(String processName,                        String processVersion)` | 
+|===================================================================================================================================================
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] with parameters of type link:../ProcessDefinition.html[ProcessDefinition][.tabEnd]# #
+[cols=",,",options="header",]
+|========================================================================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`List<ProcessInstance>` |[.typeNameLabel]#ProcessInstanceProxy.#`getArchivedSubprocessInstances​(ProcessDefinition definition,                               int pageIndex,                               int count)` | 
+|`ProcessInstance` |[.typeNameLabel]#ProcessInstanceProxy.#`getFirstStartedSubprocessInstance​(ProcessDefinition definition)` | 
+|`List<ProcessInstance>` |[.typeNameLabel]#ProcessInstanceProxy.#`getSubprocessInstances​(ProcessDefinition definition,                       int pageIndex,                       int count)` | 
+|========================================================================================================================================================================================================================
+** [#com.bonitasoft.test.toolkit.model]##
+
+==== Uses of link:../ProcessDefinition.html[ProcessDefinition] in link:../package-summary.html[com.bonitasoft.test.toolkit.model]
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.model] with parameters of type link:../ProcessDefinition.html[ProcessDefinition][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|==================================================================================================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`List<ProcessInstance>` |[.typeNameLabel]#ProcessInstance.#`getArchivedSubprocessInstances​(ProcessDefinition processDefinition,                               int pageIndex,                               int count)` a|
+Returns archived process instances that have been instantiated by this instance and matches the given link:../ProcessDefinition.html[`ProcessDefinition`].
+
+|`ProcessInstance` |[.typeNameLabel]#ProcessInstance.#`getFirstStartedSubprocessInstance​(ProcessDefinition processDefinition)` a|
+Returns the first process instance that has been instantiated by this instance and matches the given link:../ProcessDefinition.html[`ProcessDefinition`] and is in link:../ProcessInstanceState.html#STARTED[`ProcessInstanceState.STARTED`] state.
+
+|`List<ProcessInstance>` |[.typeNameLabel]#ProcessInstance.#`getSubprocessInstances​(ProcessDefinition processDefinition,                       int pageIndex,                       int count)` a|
+Returns process instances that have been instantiated by this instance and matches the given link:../ProcessDefinition.html[`ProcessDefinition`].
+
+|==================================================================================================================================================================================================================================================
+** [#com.bonitasoft.test.toolkit.predicate]##
+
+==== Uses of link:../ProcessDefinition.html[ProcessDefinition] in link:../../predicate/package-summary.html[com.bonitasoft.test.toolkit.predicate]
+
+.Methods in link:../../predicate/package-summary.html[com.bonitasoft.test.toolkit.predicate] that return types with arguments of type link:../ProcessDefinition.html[ProcessDefinition][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|============================================================================================================================================================
+|Modifier and Type |Method |Description
+|`static Predicate<ProcessDefinition>` |[.typeNameLabel]#ProcessDefinitionPredicates.#`canBeStartedBy​(User user)` a|
+Verify if a link:../ProcessDefinition.html[`ProcessDefinition`] can be started by the given user.
+
+|`static Predicate<ProcessDefinition>` |[.typeNameLabel]#ProcessDefinitionPredicates.#`hasArchivedProcessInstances​(int numberOfArchivedProcessInstances)` a|
+Verify the number of archived process instance of a link:../ProcessDefinition.html[`ProcessDefinition`].
+
+|`static Predicate<ProcessDefinition>` |[.typeNameLabel]#ProcessDefinitionPredicates.#`hasProcessInstances​(int numberOfProcessInstances)` a|
+Verify the number of active process instance of a link:../ProcessDefinition.html[`ProcessDefinition`].
+
+|============================================================================================================================================================
+
+.Methods in link:../../predicate/package-summary.html[com.bonitasoft.test.toolkit.predicate] with parameters of type link:../ProcessDefinition.html[ProcessDefinition][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|==============================================================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`static Predicate<ProcessInstance>` |[.typeNameLabel]#ProcessInstancePredicates.#`hasSubprocessInstances​(ProcessDefinition processDefinition)` a|
+Verify if a link:../ProcessInstance.html[`ProcessInstance`] has instantiated one or more subprocess link:../ProcessInstance.html[`instances`] of the given link:../ProcessDefinition.html[`ProcessDefinition`].
+
+|==============================================================================================================================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../ProcessDefinition.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

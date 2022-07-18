@@ -1,0 +1,283 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/DocumentProxy.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* link:#field.summary[Field] | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* link:#field.detail[Field] | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+=== Class DocumentProxy
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.internal.proxy.DocumentProxy
+
+* All Implemented Interfaces:::
+  `Document`
++
+Direct Known Subclasses:::
+  `ArchivedDocumentProxy`
++
+
+'''''
++
+....
+public class DocumentProxy
+extends Object
+implements Document
+....
+
+* ** [#field.summary]##
++
+==== Field Summary
++
+.Fields[.tabEnd]# #
+[cols=",,",options="header",]
+|===============================================================
+|Modifier and Type |Field |Description
+|`protected org.bonitasoft.web.client.BonitaClient` |`client` | 
+|`protected String` |`documentId` | 
+|===============================================================
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|=============================================================================================
+|Modifier and Type |Method |Description
+|`protected InternalDocumentImpl` |`get()` | 
+|`byte[]` |`getContent()` | 
+|`String` |`getFileName()` | 
+|`String` |`getId()` | 
+|`String` |`getName()` | 
+|`User` |`getSubmittedBy()` | 
+|`String` |`getUrl()` | 
+|`String` |`getVersion()` | 
+|`boolean` |`isArchived()` | 
+|`boolean` |`isInternal()` a|
+A Bonita document is considered as _internal_ if its content is stored on the Bonita database.
+
+|=============================================================================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+
+* ** [#field.detail]##
++
+==== Field Detail
++
+[#documentId]##
+*** ===== documentId
++
+....
+protected String documentId
+....
++
+[#client]##
+*** ===== client
++
+....
+protected org.bonitasoft.web.client.BonitaClient client
+....
++
+** [#method.detail]##
++
+==== Method Detail
++
+[#getId()]##
+*** ===== getId
++
+[source,methodSignature]
+----
+public String getId()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getId` in interface `Document`
+[.returnLabel]#Returns:#::
+  The ID of the document.
++
+[#getName()]##
+*** ===== getName
++
+[source,methodSignature]
+----
+public String getName()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getName` in interface `Document`
+[.returnLabel]#Returns:#::
+  The name of the document, defined in the process definition.
++
+[#getFileName()]##
+*** ===== getFileName
++
+[source,methodSignature]
+----
+public String getFileName()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getFileName` in interface `Document`
+[.returnLabel]#Returns:#::
+  The filename of the value of the document, a file uploaded during the execution of the process.
++
+[#getSubmittedBy()]##
+*** ===== getSubmittedBy
++
+[source,methodSignature]
+----
+public User getSubmittedBy()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getSubmittedBy` in interface `Document`
+[.returnLabel]#Returns:#::
+  The link:../../model/User.html[`User`] that submitted the value of this document.
++
+[#getVersion()]##
+*** ===== getVersion
++
+[source,methodSignature]
+----
+public String getVersion()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getVersion` in interface `Document`
+[.returnLabel]#Returns:#::
+  The version of this document: each time a document is updated, its version is incremented.
++
+[#isInternal()]##
+*** ===== isInternal
++
+[source,methodSignature]
+----
+public boolean isInternal()
+----
++
+[.descfrmTypeLabel]#Description copied from interface: `Document`#
++
+A Bonita document is considered as _internal_ if its content is stored on the Bonita database. A document referenced by an URL is not internal.
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `isInternal` in interface `Document`
+[.returnLabel]#Returns:#::
+  true if the document is internal.
++
+[#getUrl()]##
+*** ===== getUrl
++
+[source,methodSignature]
+----
+public String getUrl()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getUrl` in interface `Document`
+[.returnLabel]#Returns:#::
+  The URL to retrieve the content of the document, or `null` if link:../../model/Document.html#isInternal()[`Document.isInternal()`] returns `true`.
++
+[#isArchived()]##
+*** ===== isArchived
++
+[source,methodSignature]
+----
+public boolean isArchived()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `isArchived` in interface `Document`
+[.returnLabel]#Returns:#::
+  `true` if the document is archived.
++
+[#getContent()]##
+*** ===== getContent
++
+[source,methodSignature]
+----
+public byte[] getContent()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getContent` in interface `Document`
+[.returnLabel]#Returns:#::
+  The content of this document, or `null` if link:../../model/Document.html#isInternal()[`Document.isInternal()`] returns `false`;
++
+[#get()]##
+*** ===== get
++
+[source,methodSignature]
+----
+protected InternalDocumentImpl get()
+----
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/DocumentProxy.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* link:#field.summary[Field] | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* link:#field.detail[Field] | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

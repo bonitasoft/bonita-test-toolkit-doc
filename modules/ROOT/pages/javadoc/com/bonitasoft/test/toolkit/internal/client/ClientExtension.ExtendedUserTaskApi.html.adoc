@@ -1,0 +1,129 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ClientExtension.ExtendedUserTaskApi.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* link:#nested.class.summary[Nested] | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.client]
+
+=== Interface ClientExtension.ExtendedUserTaskApi
+
+* All Superinterfaces:::
+  `org.bonitasoft.web.client.invoker.ApiClient.Api`, `org.bonitasoft.web.client.api.UserTaskApi`
++
+Enclosing interface:::
+  link:ClientExtension.html[ClientExtension]
++
+
+'''''
++
+....
+public static interface ClientExtension.ExtendedUserTaskApi
+extends org.bonitasoft.web.client.api.UserTaskApi
+....
+
+* ** [#nested.class.summary]##
++
+==== Nested Class Summary
+*** [#nested.classes.inherited.from.class.org.bonitasoft.web.client.api.UserTaskApi]##
++
+==== Nested classes/interfaces inherited from interface org.bonitasoft.web.client.api.UserTaskApi
++
+`org.bonitasoft.web.client.api.UserTaskApi.ExecuteUserTaskQueryParams, org.bonitasoft.web.client.api.UserTaskApi.SearchUserTasksQueryParams`
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t3 .tableTab]#javascript:show(4);[Abstract Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|==============================================================================================================================================
+|Modifier and Type |Method |Description
+|`void` |`executeUserTask​(String id,                Map<String,​Object> body,                String userId,                Boolean assign)` | 
+|==============================================================================================================================================
+*** [#methods.inherited.from.class.org.bonitasoft.web.client.api.UserTaskApi]##
++
+==== Methods inherited from interface org.bonitasoft.web.client.api.UserTaskApi
++
+`executeUserTask, executeUserTask, executeUserTaskWithHttpInfo, executeUserTaskWithHttpInfo, getContextByUserTaskId, getContextByUserTaskIdWithHttpInfo, getContractByUserTaskId, getContractByUserTaskIdWithHttpInfo, getUserTaskById, getUserTaskByIdWithHttpInfo, searchUserTasks, searchUserTasks, searchUserTasksWithHttpInfo, searchUserTasksWithHttpInfo, updateUserTaskById, updateUserTaskByIdWithHttpInfo`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#executeUserTask(java.lang.String,java.util.Map,java.lang.String,java.lang.Boolean)]##
+*** ===== executeUserTask
++
+[source,methodSignature]
+----
+void executeUserTask​(String id,
+                     Map<String,​Object> body,
+                     String userId,
+                     Boolean assign)
+----
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ClientExtension.ExtendedUserTaskApi.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* link:#nested.class.summary[Nested] | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

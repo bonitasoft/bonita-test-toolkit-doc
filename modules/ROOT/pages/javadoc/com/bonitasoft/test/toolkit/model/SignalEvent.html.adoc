@@ -1,0 +1,138 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/SignalEvent.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* link:#nested.class.summary[Nested] | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Interface SignalEvent
+
+* All Known Implementing Classes:::
+  `SignalEvent.SignalEventImpl`
++
+
+'''''
++
+....
+public interface SignalEvent
+....
++
+A signal event used to trigger any catch signal event
+
+* ** [#nested.class.summary]##
++
+==== Nested Class Summary
++
+.Nested Classes[.tabEnd]# #
+[cols=",,",options="header",]
+|=================================================
+|Modifier and Type |Interface |Description
+|`static class ` |`SignalEvent.SignalEventImpl` | 
+|=================================================
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t1 .tableTab]#javascript:show(1);[Static Methods][.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t3 .tableTab]#javascript:show(4);[Abstract Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|=====================================================
+|Modifier and Type |Method |Description
+|`static SignalEvent` |`create​(String signalName)` | 
+|`String` |`getName()` | 
+|=====================================================
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#getName()]##
+*** ===== getName
++
+[source,methodSignature]
+----
+String getName()
+----
++
+[.returnLabel]#Returns:#::
+  the name of the signal
++
+[#create(java.lang.String)]##
+*** ===== create
++
+[source,methodSignature]
+----
+static SignalEvent create​(String signalName)
+----
++
+[.paramLabel]#Parameters:#::
+  `signalName` - the name of the signal
+[.returnLabel]#Returns:#::
+  a link:SignalEvent.html[`SignalEvent`]
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/SignalEvent.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* link:#nested.class.summary[Nested] | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

@@ -1,0 +1,189 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/InternalDocumentImpl.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+=== Class InternalDocumentImpl
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.internal.proxy.InternalDocumentImpl
+
+* 
+
+'''''
++
+....
+public class InternalDocumentImpl
+extends Object
+....
++
+The purpose of this class is to have a single type for archived and non archived documents, to avoid code duplication...
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|======================================
+|Modifier and Type |Method |Description
+|`String` |`getFileName()` | 
+|`String` |`getId()` | 
+|`int` |`getIndex()` | 
+|`String` |`getName()` | 
+|`String` |`getStorageId()` | 
+|`String` |`getSubmittedBy()` | 
+|`String` |`getUrl()` | 
+|`String` |`getVersion()` | 
+|`boolean` |`isInternal()` | 
+|======================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#getId()]##
+*** ===== getId
++
+[source,methodSignature]
+----
+public String getId()
+----
++
+[#getName()]##
+*** ===== getName
++
+[source,methodSignature]
+----
+public String getName()
+----
++
+[#getFileName()]##
+*** ===== getFileName
++
+[source,methodSignature]
+----
+public String getFileName()
+----
++
+[#getSubmittedBy()]##
+*** ===== getSubmittedBy
++
+[source,methodSignature]
+----
+public String getSubmittedBy()
+----
++
+[#getVersion()]##
+*** ===== getVersion
++
+[source,methodSignature]
+----
+public String getVersion()
+----
++
+[#getStorageId()]##
+*** ===== getStorageId
++
+[source,methodSignature]
+----
+public String getStorageId()
+----
++
+[#getUrl()]##
+*** ===== getUrl
++
+[source,methodSignature]
+----
+public String getUrl()
+----
++
+[#isInternal()]##
+*** ===== isInternal
++
+[source,methodSignature]
+----
+public boolean isInternal()
+----
++
+[#getIndex()]##
+*** ===== getIndex
++
+[source,methodSignature]
+----
+public int getIndex()
+----
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/InternalDocumentImpl.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

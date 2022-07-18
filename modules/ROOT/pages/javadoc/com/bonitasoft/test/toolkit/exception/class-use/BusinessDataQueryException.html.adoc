@@ -1,0 +1,112 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../BusinessDataQueryException.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Class +
+com.bonitasoft.test.toolkit.exception.BusinessDataQueryException
+
+* .Packages that use link:../BusinessDataQueryException.html[BusinessDataQueryException][.tabEnd]# #
+[cols=",",options="header",]
+|===============================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit.internal.proxy[com.bonitasoft.test.toolkit.internal.proxy] | 
+|link:#com.bonitasoft.test.toolkit.model[com.bonitasoft.test.toolkit.model] | 
+|===============================================================================================
+* ** [#com.bonitasoft.test.toolkit.internal.proxy]##
+
+==== Uses of link:../BusinessDataQueryException.html[BusinessDataQueryException] in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that throw link:../BusinessDataQueryException.html[BusinessDataQueryException][.tabEnd]# #
+[cols=",,",options="header",]
+|===========================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`List<T>` |[.typeNameLabel]#BusinessObjectDAOProxy.#`query​(String name,      int pageIndex,      int count)` | 
+|`List<T>` |[.typeNameLabel]#BusinessObjectDAOProxy.#`query​(String name,      List<QueryParameter<?>> parameters,      int pageIndex,      int count)` | 
+|`List<BusinessData>` |[.typeNameLabel]#GenericBusinessObjectDAOProxy.#`query​(String name,      int pageIndex,      int count)` | 
+|`List<BusinessData>` |[.typeNameLabel]#GenericBusinessObjectDAOProxy.#`query​(String name,      List<QueryParameter<?>> parameters,      int pageIndex,      int count)` | 
+|`T` |[.typeNameLabel]#BusinessObjectDAOProxy.#`querySingle​(String name)` | 
+|`<R> R` |[.typeNameLabel]#BusinessObjectDAOProxy.#`querySingle​(String name,            Class<R> resultType)` | 
+|`T` |[.typeNameLabel]#BusinessObjectDAOProxy.#`querySingle​(String name,            List<QueryParameter<?>> parameters)` | 
+|`<R> R` |[.typeNameLabel]#BusinessObjectDAOProxy.#`querySingle​(String name,            List<QueryParameter<?>> parameters,            Class<R> resulType)` | 
+|`BusinessData` |[.typeNameLabel]#GenericBusinessObjectDAOProxy.#`querySingle​(String name)` | 
+|`<R> R` |[.typeNameLabel]#GenericBusinessObjectDAOProxy.#`querySingle​(String name,            Class<R> resultType)` | 
+|`BusinessData` |[.typeNameLabel]#GenericBusinessObjectDAOProxy.#`querySingle​(String name,            List<QueryParameter<?>> parameters)` | 
+|`<R> R` |[.typeNameLabel]#GenericBusinessObjectDAOProxy.#`querySingle​(String name,            List<QueryParameter<?>> parameters,            Class<R> resultType)` | 
+|===========================================================================================================================================================================
+** [#com.bonitasoft.test.toolkit.model]##
+
+==== Uses of link:../BusinessDataQueryException.html[BusinessDataQueryException] in link:../../model/package-summary.html[com.bonitasoft.test.toolkit.model]
+
+.Methods in link:../../model/package-summary.html[com.bonitasoft.test.toolkit.model] that throw link:../BusinessDataQueryException.html[BusinessDataQueryException][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|====================================================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`List<T>` |[.typeNameLabel]#BusinessObjectDAO.#`query​(String name,      int pageIndex,      int count)` a|
+Execute a specific query defined in the Business Data Model for this Business Object using classic pagination parameters: +
+If the database contains 100 instances of this entity that match the query and its parameters, calling this method with _pageIndex = 2_ and _count = 10_ will return the instances [21, 22, ..., 30].
+
+|`List<T>` |[.typeNameLabel]#BusinessObjectDAO.#`query​(String name,      List<QueryParameter<?>> parameters,      int pageIndex,      int count)` a|
+Execute a specific query defined in the Business Data Model for this Business Object using classic pagination parameters: +
+If the database contains 100 instances of this entity that match the query and its parameters, calling this method with _pageIndex = 2_ and _count = 10_ will return the instances [21, 22, ..., 30].
+
+|`T` |[.typeNameLabel]#BusinessObjectDAO.#`querySingle​(String name)` a|
+Execute a specific query defined in the Business Data Model for this Business Object that returns a single entity.
+
+|`<R> R` |[.typeNameLabel]#BusinessObjectDAO.#`querySingle​(String name,            Class<R> resultType)` a|
+Execute a specific query defined in the Business Data Model for this Business Object that returns a different type +
+than this Business Object (e.g.: a count or sum query)
+
+|`T` |[.typeNameLabel]#BusinessObjectDAO.#`querySingle​(String name,            List<QueryParameter<?>> parameters)` a|
+Execute a specific query defined in the Business Data Model for this Business Object that returns a single entity.
+
+|`<R> R` |[.typeNameLabel]#BusinessObjectDAO.#`querySingle​(String name,            List<QueryParameter<?>> parameters,            Class<R> resultType)` a|
+Execute a specific query defined in the Business Data Model for this Business Object that returns a different type +
+than this Business Object (e.g.: a count or sum query)
+
+|====================================================================================================================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../BusinessDataQueryException.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

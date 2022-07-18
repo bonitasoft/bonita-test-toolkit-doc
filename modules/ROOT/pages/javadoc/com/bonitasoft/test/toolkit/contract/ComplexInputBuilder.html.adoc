@@ -1,0 +1,124 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ComplexInputBuilder.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.contract]
+
+=== Interface ComplexInputBuilder
+
+* All Superinterfaces:::
+  `InputBuilder<ComplexInputBuilder>`
++
+All Known Implementing Classes:::
+  `ComplexInputBuilderImpl`
++
+
+'''''
++
+....
+public interface ComplexInputBuilder
+extends InputBuilder<ComplexInputBuilder>
+....
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.Static Methods[.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|================================================================
+|Modifier and Type |Method |Description
+|`static ComplexInputBuilder` |`complexInput()` a|
+Create a new link:ComplexInputBuilder.html[`ComplexInputBuilder`]
+
+|================================================================
+*** [#methods.inherited.from.class.com.bonitasoft.test.toolkit.contract.InputBuilder]##
++
+==== Methods inherited from interface com.bonitasoft.test.toolkit.contract.link:InputBuilder.html[InputBuilder]
++
+`booleanInput, complexInput, dateInput, decimalInput, fileInput, integerInput, localDateInput, localDateTimeInput, longInput, multipleBooleanInput, multipleComplexInput, multipleDateInput, multipleDecimalInput, multipleFileInput, multipleIntegerInput, multipleLocalDateInput, multipleLocalDateTimeInput, multipleLongInput, multipleOffsetDateTimeInput, multipleTextInput, offsetDateTimeInput, textInput`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#complexInput()]##
+*** ===== complexInput
++
+[source,methodSignature]
+----
+static ComplexInputBuilder complexInput()
+----
++
+Create a new link:ComplexInputBuilder.html[`ComplexInputBuilder`]
++
+[.returnLabel]#Returns:#::
+  a new link:ComplexInputBuilder.html[`ComplexInputBuilder`]
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ComplexInputBuilder.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

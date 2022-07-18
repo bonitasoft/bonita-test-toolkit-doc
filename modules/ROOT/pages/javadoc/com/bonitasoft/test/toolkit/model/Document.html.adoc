@@ -1,0 +1,213 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/Document.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Interface Document
+
+* All Known Implementing Classes:::
+  `ArchivedDocumentProxy`, `DocumentProxy`
++
+
+'''''
++
+....
+public interface Document
+....
++
+A Bonita document is defined as a process data on the process definition, and can be set and updated during the execution of the process.
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t3 .tableTab]#javascript:show(4);[Abstract Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|=============================================================================================
+|Modifier and Type |Method |Description
+|`byte[]` |`getContent()` | 
+|`String` |`getFileName()` | 
+|`String` |`getId()` | 
+|`String` |`getName()` | 
+|`User` |`getSubmittedBy()` | 
+|`String` |`getUrl()` | 
+|`String` |`getVersion()` | 
+|`boolean` |`isArchived()` | 
+|`boolean` |`isInternal()` a|
+A Bonita document is considered as _internal_ if its content is stored on the Bonita database.
+
+|=============================================================================================
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#getId()]##
+*** ===== getId
++
+[source,methodSignature]
+----
+String getId()
+----
++
+[.returnLabel]#Returns:#::
+  The ID of the document.
++
+[#getName()]##
+*** ===== getName
++
+[source,methodSignature]
+----
+String getName()
+----
++
+[.returnLabel]#Returns:#::
+  The name of the document, defined in the process definition.
++
+[#getFileName()]##
+*** ===== getFileName
++
+[source,methodSignature]
+----
+String getFileName()
+----
++
+[.returnLabel]#Returns:#::
+  The filename of the value of the document, a file uploaded during the execution of the process.
++
+[#getSubmittedBy()]##
+*** ===== getSubmittedBy
++
+[source,methodSignature]
+----
+User getSubmittedBy()
+----
++
+[.returnLabel]#Returns:#::
+  The link:User.html[`User`] that submitted the value of this document.
++
+[#getVersion()]##
+*** ===== getVersion
++
+[source,methodSignature]
+----
+String getVersion()
+----
++
+[.returnLabel]#Returns:#::
+  The version of this document: each time a document is updated, its version is incremented.
++
+[#getContent()]##
+*** ===== getContent
++
+[source,methodSignature]
+----
+byte[] getContent()
+----
++
+[.returnLabel]#Returns:#::
+  The content of this document, or `null` if link:#isInternal()[`isInternal()`] returns `false`;
++
+[#isInternal()]##
+*** ===== isInternal
++
+[source,methodSignature]
+----
+boolean isInternal()
+----
++
+A Bonita document is considered as _internal_ if its content is stored on the Bonita database. A document referenced by an URL is not internal.
++
+[.returnLabel]#Returns:#::
+  true if the document is internal.
++
+[#getUrl()]##
+*** ===== getUrl
++
+[source,methodSignature]
+----
+String getUrl()
+----
++
+[.returnLabel]#Returns:#::
+  The URL to retrieve the content of the document, or `null` if link:#isInternal()[`isInternal()`] returns `true`.
++
+[#isArchived()]##
+*** ===== isArchived
++
+[source,methodSignature]
+----
+boolean isArchived()
+----
++
+[.returnLabel]#Returns:#::
+  `true` if the document is archived.
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/Document.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

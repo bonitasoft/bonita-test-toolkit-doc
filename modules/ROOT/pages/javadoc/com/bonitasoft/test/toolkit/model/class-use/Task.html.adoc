@@ -1,0 +1,105 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../Task.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Interface +
+com.bonitasoft.test.toolkit.model.Task
+
+* .Packages that use link:../Task.html[Task][.tabEnd]# #
+[cols=",",options="header",]
+|===============================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit.internal.proxy[com.bonitasoft.test.toolkit.internal.proxy] | 
+|link:#com.bonitasoft.test.toolkit.model[com.bonitasoft.test.toolkit.model] | 
+|===============================================================================================
+* ** [#com.bonitasoft.test.toolkit.internal.proxy]##
+
+==== Uses of link:../Task.html[Task] in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+.Classes in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that implement link:../Task.html[Task][.tabEnd]# #
+[cols=",,",options="header",]
+|=====================================
+|Modifier and Type |Class |Description
+|`class ` |`TaskProxy` | 
+|=====================================
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that return link:../Task.html[Task][.tabEnd]# #
+[cols=",,",options="header",]
+|==============================================================================
+|Modifier and Type |Method |Description
+|`Task` |[.typeNameLabel]#TaskProxy.#`call()` | 
+|`Task` |[.typeNameLabel]#ProxyFactory.#`createActivity​(String id)` | 
+|`Task` |[.typeNameLabel]#ProcessInstanceProxy.#`getFirstTask​(String name)` | 
+|==============================================================================
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that return types with arguments of type link:../Task.html[Task][.tabEnd]# #
+[cols=",,",options="header",]
+|===================================================================================
+|Modifier and Type |Method |Description
+|`List<Task>` |[.typeNameLabel]#ProcessInstanceProxy.#`searchTasks()` | 
+|`List<Task>` |[.typeNameLabel]#ProcessInstanceProxy.#`searchTasks​(String name)` | 
+|===================================================================================
+** [#com.bonitasoft.test.toolkit.model]##
+
+==== Uses of link:../Task.html[Task] in link:../package-summary.html[com.bonitasoft.test.toolkit.model]
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.model] that return link:../Task.html[Task][.tabEnd]# #
+[cols=",,",options="header",]
+|=========================================================================
+|Modifier and Type |Method |Description
+|`Task` |[.typeNameLabel]#ProcessInstance.#`getFirstTask​(String name)` | 
+|=========================================================================
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.model] that return types with arguments of type link:../Task.html[Task][.tabEnd]# #
+[cols=",,",options="header",]
+|==============================================================================
+|Modifier and Type |Method |Description
+|`List<Task>` |[.typeNameLabel]#ProcessInstance.#`searchTasks()` | 
+|`List<Task>` |[.typeNameLabel]#ProcessInstance.#`searchTasks​(String name)` | 
+|==============================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../Task.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

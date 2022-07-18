@@ -1,0 +1,146 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/OffsetDateTimeInputTypeConverter.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../../index-all.html[Index]
+* link:../../../../../../../help-doc.html[Help]
+
+* link:../../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.contract.converter]
+
+=== Class OffsetDateTimeInputTypeConverter
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.internal.contract.converter.OffsetDateTimeInputTypeConverter
+
+* All Implemented Interfaces:::
+  `InputTypeConverter<OffsetDateTime>`
++
+
+'''''
++
+....
+public class OffsetDateTimeInputTypeConverter
+extends Object
+implements InputTypeConverter<OffsetDateTime>
+....
+
+* ** [#constructor.summary]##
++
+==== Constructor Summary
++
+.Constructors[.tabEnd]# #
+[cols=",",options="header",]
+|=======================================
+|Constructor |Description
+|`OffsetDateTimeInputTypeConverter()` | 
+|=======================================
++
+** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|=============================================
+|Modifier and Type |Method |Description
+|`OffsetDateTime` |`convert​(Object value)` | 
+|=============================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+
+* ** [#constructor.detail]##
++
+==== Constructor Detail
++
+[#<init>()]##
+*** ===== OffsetDateTimeInputTypeConverter
++
+....
+public OffsetDateTimeInputTypeConverter()
+....
++
+** [#method.detail]##
++
+==== Method Detail
++
+[#convert(java.lang.Object)]##
+*** ===== convert
++
+[source,methodSignature]
+----
+public OffsetDateTime convert​(Object value)
+                       throws IllegalArgumentException
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `convert` in interface `InputTypeConverter<OffsetDateTime>`
+[.throwsLabel]#Throws:#::
+  `IllegalArgumentException`
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/OffsetDateTimeInputTypeConverter.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../../index-all.html[Index]
+* link:../../../../../../../help-doc.html[Help]
+
+* link:../../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* link:#constructor.summary[Constr] | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* link:#constructor.detail[Constr] | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

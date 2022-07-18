@@ -1,0 +1,64 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* Use
+* Tree
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageHierarchyLabel]#Package Hierarchies:#
+
+* link:../../../../../../overview-tree.html[All Packages]
+
+=== Interface Hierarchy
+
+* org.bonitasoft.web.client.invoker.ApiClient.Api
+** com.bonitasoft.test.toolkit.internal.client.link:ClientExtension.CustomProcessInstanceApi.html[[.typeNameLink]#ClientExtension.CustomProcessInstanceApi#]
+** com.bonitasoft.test.toolkit.internal.client.link:ClientExtension.DocumentDownloadApi.html[[.typeNameLink]#ClientExtension.DocumentDownloadApi#]
+** com.bonitasoft.test.toolkit.internal.client.link:ClientExtension.ExtendedBDMApi.html[[.typeNameLink]#ClientExtension.ExtendedBDMApi#]
+** com.bonitasoft.test.toolkit.internal.client.link:ClientExtension.FormFileUploadApi.html[[.typeNameLink]#ClientExtension.FormFileUploadApi#]
+** org.bonitasoft.web.client.api.UserTaskApi
+*** com.bonitasoft.test.toolkit.internal.client.link:ClientExtension.ExtendedUserTaskApi.html[[.typeNameLink]#ClientExtension.ExtendedUserTaskApi#]
+* com.bonitasoft.test.toolkit.internal.client.link:ClientExtension.html[[.typeNameLink]#ClientExtension#]
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* Use
+* Tree
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

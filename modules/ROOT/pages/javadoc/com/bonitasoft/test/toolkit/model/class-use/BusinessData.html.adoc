@@ -1,0 +1,144 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../BusinessData.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Interface +
+com.bonitasoft.test.toolkit.model.BusinessData
+
+* .Packages that use link:../BusinessData.html[BusinessData][.tabEnd]# #
+[cols=",",options="header",]
+|===============================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit[com.bonitasoft.test.toolkit] | 
+|link:#com.bonitasoft.test.toolkit.internal[com.bonitasoft.test.toolkit.internal] | 
+|link:#com.bonitasoft.test.toolkit.internal.proxy[com.bonitasoft.test.toolkit.internal.proxy] | 
+|link:#com.bonitasoft.test.toolkit.model[com.bonitasoft.test.toolkit.model] | 
+|===============================================================================================
+* ** [#com.bonitasoft.test.toolkit]##
+
+==== Uses of link:../BusinessData.html[BusinessData] in link:../../package-summary.html[com.bonitasoft.test.toolkit]
+
+.Methods in link:../../package-summary.html[com.bonitasoft.test.toolkit] that return types with arguments of type link:../BusinessData.html[BusinessData][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|============================================================================================================================
+|Modifier and Type |Method |Description
+|`BusinessObjectDAO<BusinessData>` |[.typeNameLabel]#BonitaTestToolkit.#`getBusinessObjectDAO​(String businessObjectType)` a|
+Creates a generic link:../BusinessObjectDAO.html[`BusinessObjectDAO`] according to a Business Object type.
+
+|============================================================================================================================
+** [#com.bonitasoft.test.toolkit.internal]##
+
+==== Uses of link:../BusinessData.html[BusinessData] in link:../../internal/package-summary.html[com.bonitasoft.test.toolkit.internal]
+
+.Methods in link:../../internal/package-summary.html[com.bonitasoft.test.toolkit.internal] that return types with arguments of type link:../BusinessData.html[BusinessData][.tabEnd]# #
+[cols=",,",options="header",]
+|================================================================================================================================
+|Modifier and Type |Method |Description
+|`BusinessObjectDAO<BusinessData>` |[.typeNameLabel]#BonitaTestToolkitImpl.#`getBusinessObjectDAO​(String businessObjectType)` | 
+|================================================================================================================================
+** [#com.bonitasoft.test.toolkit.internal.proxy]##
+
+==== Uses of link:../BusinessData.html[BusinessData] in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+.Classes in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that implement link:../BusinessData.html[BusinessData][.tabEnd]# #
+[cols=",,",options="header",]
+|=====================================
+|Modifier and Type |Class |Description
+|`class ` |`BusinessDataProxy` | 
+|=====================================
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that return link:../BusinessData.html[BusinessData][.tabEnd]# #
+[cols=",,",options="header",]
+|=====================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`BusinessData` |[.typeNameLabel]#ProxyFactory.#`createBusinessData​(String persitenceId,                   String type)` | 
+|`BusinessData` |[.typeNameLabel]#ProxyFactory.#`createBusinessData​(String parentType,                   String persitenceId,                   String reference)` | 
+|`BusinessData` |[.typeNameLabel]#ProxyFactory.#`createBusinessData​(Map<String,​Object> objectAsMap)` | 
+|`BusinessData` |[.typeNameLabel]#GenericBusinessObjectDAOProxy.#`findByPersistenceId​(String persistenceId)` | 
+|`BusinessData` |[.typeNameLabel]#ProcessInstanceProxy.#`getBusinessData​(String name)` | 
+|`BusinessData` |[.typeNameLabel]#UserTaskProxy.#`getIteratorBusinessVariable​(String name)` | 
+|`BusinessData` |[.typeNameLabel]#BusinessDataProxy.#`getReference​(String name)` | 
+|`BusinessData` |[.typeNameLabel]#GenericBusinessObjectDAOProxy.#`querySingle​(String name)` | 
+|`BusinessData` |[.typeNameLabel]#GenericBusinessObjectDAOProxy.#`querySingle​(String name,            List<QueryParameter<?>> parameters)` | 
+|=====================================================================================================================================================================
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that return types with arguments of type link:../BusinessData.html[BusinessData][.tabEnd]# #
+[cols=",,",options="header",]
+|===================================================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`BusinessObjectDAO<BusinessData>` |[.typeNameLabel]#ProxyFactory.#`createGenericBusinessObjectDAO​(String type)` | 
+|`List<BusinessData>` |[.typeNameLabel]#ProxyFactory.#`createMulitpleBusinessData​(String parentType,                           String persitenceId,                           String reference)` | 
+|`List<BusinessData>` |[.typeNameLabel]#GenericBusinessObjectDAOProxy.#`find​(int pageIndex,     int count)` | 
+|`List<BusinessData>` |[.typeNameLabel]#ProcessInstanceProxy.#`getMultipleBusinessData​(String name)` | 
+|`List<BusinessData>` |[.typeNameLabel]#BusinessDataProxy.#`getMultipleReference​(String name)` | 
+|`List<BusinessData>` |[.typeNameLabel]#GenericBusinessObjectDAOProxy.#`query​(String name,      int pageIndex,      int count)` | 
+|`List<BusinessData>` |[.typeNameLabel]#GenericBusinessObjectDAOProxy.#`query​(String name,      List<QueryParameter<?>> parameters,      int pageIndex,      int count)` | 
+|===================================================================================================================================================================================================
+** [#com.bonitasoft.test.toolkit.model]##
+
+==== Uses of link:../BusinessData.html[BusinessData] in link:../package-summary.html[com.bonitasoft.test.toolkit.model]
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.model] that return link:../BusinessData.html[BusinessData][.tabEnd]# #
+[width="100%",cols="34%,33%,33%",options="header",]
+|=====================================================================================================
+|Modifier and Type |Method |Description
+|`BusinessData` |[.typeNameLabel]#ProcessInstance.#`getBusinessData​(String businessData)` | 
+|`BusinessData` |[.typeNameLabel]#UserTask.#`getIteratorBusinessVariable​(String name)` a|
+Returns the business data used as iterator for a multi-instantiated link:../UserTask.html[`UserTask`].
+
+|`BusinessData` |[.typeNameLabel]#BusinessData.#`getReference​(String name)` | 
+|=====================================================================================================
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.model] that return types with arguments of type link:../BusinessData.html[BusinessData][.tabEnd]# #
+[cols=",,",options="header",]
+|==================================================================================================
+|Modifier and Type |Method |Description
+|`List<BusinessData>` |[.typeNameLabel]#ProcessInstance.#`getMultipleBusinessData​(String name)` | 
+|`List<BusinessData>` |[.typeNameLabel]#BusinessData.#`getMultipleReference​(String name)` | 
+|==================================================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../BusinessData.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

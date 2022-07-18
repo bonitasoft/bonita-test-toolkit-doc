@@ -1,0 +1,578 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ProcessInstance.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Interface ProcessInstance
+
+* All Superinterfaces:::
+  `Callable<ProcessInstance>`
++
+All Known Implementing Classes:::
+  `ProcessInstanceProxy`
++
+
+'''''
++
+....
+public interface ProcessInstance
+extends Callable<ProcessInstance>
+....
++
+Representation of an instance of a process (i.e a case). It gives access to some meta information about the case, but also to execution information and data.
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t3 .tableTab]#javascript:show(4);[Abstract Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|============================================================================================================================================================================================================================================
+|Modifier and Type |Method |Description
+|`String` |`getArchivedId()` | 
+|`List<ProcessInstance>` |`getArchivedSubprocessInstances​(int pageIndex,                               int count)` a|
+Returns archived process instances that have been instantiated by this instance.
+
+|`List<ProcessInstance>` |`getArchivedSubprocessInstances​(ProcessDefinition processDefinition,                               int pageIndex,                               int count)` a|
+Returns archived process instances that have been instantiated by this instance and matches the given link:ProcessDefinition.html[`ProcessDefinition`].
+
+|`BusinessData` |`getBusinessData​(String businessData)` | 
+|`<T> T` |`getBusinessData​(String name,                Class<T> businessDataType)` a|
+Use this method if you have access to a model representing your business data model.
+
+|`Connector` |`getConnector​(String name)` | 
+|`Document` |`getDocument​(String name)` | 
+|`UserTask` |`getFirstPendingUserTask​(String name)` | 
+|`ProcessInstance` |`getFirstStartedSubprocessInstance​(ProcessDefinition processDefinition)` a|
+Returns the first process instance that has been instantiated by this instance and matches the given link:ProcessDefinition.html[`ProcessDefinition`] and is in link:ProcessInstanceState.html#STARTED[`ProcessInstanceState.STARTED`] state.
+
+|`Task` |`getFirstTask​(String name)` | 
+|`String` |`getId()` | 
+|`List<BusinessData>` |`getMultipleBusinessData​(String name)` | 
+|`<T> List<T>` |`getMultipleBusinessData​(String name,                        Class<T> businessDataType)` a|
+Use this method if you have access to a model representing your business data model.
+
+|`List<Document>` |`getMultipleDocument​(String name)` | 
+|`int` |`getNumberOfActiveFlowNodes()` | 
+|`int` |`getNumberOfFailedFlowNodes()` | 
+|`String` |`getSearchKey​(String name)` | 
+|`User` |`getStartedBy()` | 
+|`User` |`getStartedBySubstitute()` | 
+|`ProcessInstanceState` |`getState()` | 
+|`List<ProcessInstance>` |`getSubprocessInstances​(int pageIndex,                       int count)` a|
+Returns process instances that have been instantiated by this instance.
+
+|`List<ProcessInstance>` |`getSubprocessInstances​(ProcessDefinition processDefinition,                       int pageIndex,                       int count)` a|
+Returns process instances that have been instantiated by this instance and matches the given link:ProcessDefinition.html[`ProcessDefinition`].
+
+|`TimerEventTrigger` |`getTimerEventTrigger​(String timerEventName)` | 
+|`Variable` |`getVariable​(String name)` | 
+|`boolean` |`isArchived()` | 
+|`List<UserTask>` |`searchPendingUserTasks()` | 
+|`List<UserTask>` |`searchPendingUserTasks​(String name)` | 
+|`List<Task>` |`searchTasks()` | 
+|`List<Task>` |`searchTasks​(String name)` | 
+|`List<UserTask>` |`searchUserTasks()` | 
+|`List<UserTask>` |`searchUserTasks​(String name)` | 
+|============================================================================================================================================================================================================================================
+*** [#methods.inherited.from.class.java.util.concurrent.Callable]##
++
+==== Methods inherited from interface java.util.concurrent.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/concurrent/Callable.html?is-external=true[Callable]
++
+`call`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#getId()]##
+*** ===== getId
++
+[source,methodSignature]
+----
+String getId()
+----
++
+[.returnLabel]#Returns:#::
+  the process instance ID.
++
+[#getBusinessData(java.lang.String)]##
+*** ===== getBusinessData
++
+[source,methodSignature]
+----
+BusinessData getBusinessData​(String businessData)
+----
++
+[.paramLabel]#Parameters:#::
+  `businessData` - the name of the businessData
+[.returnLabel]#Returns:#::
+  a link:BusinessData.html[`BusinessData`]
++
+[#getBusinessData(java.lang.String,java.lang.Class)]##
+*** ===== getBusinessData
++
+[source,methodSignature]
+----
+<T> T getBusinessData​(String name,
+                      Class<T> businessDataType)
+----
++
+Use this method if you have access to a model representing your business data model. Thus, you'll be able to access directly to your businessData properties using the corresponding Java methods.
++
+[.paramLabel]#Type Parameters:#::
+  `T` - the type of the businessData
+[.paramLabel]#Parameters:#::
+  `name` - the name of the business data
+  +
+  `businessDataType` - the type of your businessData
+[.returnLabel]#Returns:#::
+  an object representing your businessData, of type `businessDataType`
++
+[#getMultipleBusinessData(java.lang.String)]##
+*** ===== getMultipleBusinessData
++
+[source,methodSignature]
+----
+List<BusinessData> getMultipleBusinessData​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of the multiple business data
+[.returnLabel]#Returns:#::
+  a https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List`] of link:BusinessData.html[`BusinessData`] representing the multiple businessData
++
+[#getMultipleBusinessData(java.lang.String,java.lang.Class)]##
+*** ===== getMultipleBusinessData
++
+[source,methodSignature]
+----
+<T> List<T> getMultipleBusinessData​(String name,
+                                    Class<T> businessDataType)
+----
++
+Use this method if you have access to a model representing your business data model. Thus, you'll be able to access directly to your businessData properties using the corresponding Java methods.
++
+[.paramLabel]#Type Parameters:#::
+  `T` - the type of the businessData
+[.paramLabel]#Parameters:#::
+  `name` - the name of the multiple business data
+  +
+  `businessDataType` - the type of your businessData
+[.returnLabel]#Returns:#::
+  a https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List`] representing your multiple businessData, of type `businessDataType`
++
+[#getDocument(java.lang.String)]##
+*** ===== getDocument
++
+[source,methodSignature]
+----
+Document getDocument​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of the document
+[.returnLabel]#Returns:#::
+  a link:Document.html[`Document`]
++
+[#getMultipleDocument(java.lang.String)]##
+*** ===== getMultipleDocument
++
+[source,methodSignature]
+----
+List<Document> getMultipleDocument​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of the multiple document
+[.returnLabel]#Returns:#::
+  a @https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List`] of link:Document.html[`Document`]
++
+[#getArchivedId()]##
+*** ===== getArchivedId
++
+[source,methodSignature]
+----
+String getArchivedId()
+----
++
+[.returnLabel]#Returns:#::
+  the archivedId of the process instance, or null if the process instance is not archived.
++
+[#getFirstPendingUserTask(java.lang.String)]##
+*** ===== getFirstPendingUserTask
++
+[source,methodSignature]
+----
+UserTask getFirstPendingUserTask​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of a pending user task
+[.returnLabel]#Returns:#::
+  the first pending link:UserTask.html[`UserTask`] with this name found.
++
+[#searchPendingUserTasks()]##
+*** ===== searchPendingUserTasks
++
+[source,methodSignature]
+----
+List<UserTask> searchPendingUserTasks()
+----
++
+[.returnLabel]#Returns:#::
+  all the pending user tasks as a https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List`] of link:UserTask.html[`UserTask`]
++
+[#searchUserTasks()]##
+*** ===== searchUserTasks
++
+[source,methodSignature]
+----
+List<UserTask> searchUserTasks()
+----
++
+[.returnLabel]#Returns:#::
+  all the user tasks as a https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List`] of link:UserTask.html[`UserTask`]
++
+[#searchPendingUserTasks(java.lang.String)]##
+*** ===== searchPendingUserTasks
++
+[source,methodSignature]
+----
+List<UserTask> searchPendingUserTasks​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of the pending user tasks to find
+[.returnLabel]#Returns:#::
+  all the pending user tasks with this name as a https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List`] of link:UserTask.html[`UserTask`]
++
+[#searchUserTasks(java.lang.String)]##
+*** ===== searchUserTasks
++
+[source,methodSignature]
+----
+List<UserTask> searchUserTasks​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of the user tasks to find
+[.returnLabel]#Returns:#::
+  all the user tasks with this name as a https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List`] of link:UserTask.html[`UserTask`]
++
+[#getFirstTask(java.lang.String)]##
+*** ===== getFirstTask
++
+[source,methodSignature]
+----
+Task getFirstTask​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of a task
+[.returnLabel]#Returns:#::
+  the first link:Task.html[`Task`] with this name
++
+[#searchTasks(java.lang.String)]##
+*** ===== searchTasks
++
+[source,methodSignature]
+----
+List<Task> searchTasks​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of the tasks to find
+[.returnLabel]#Returns:#::
+  all the tasks with this name as a @https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List`] of link:Task.html[`Task`]
++
+[#searchTasks()]##
+*** ===== searchTasks
++
+[source,methodSignature]
+----
+List<Task> searchTasks()
+----
++
+[.returnLabel]#Returns:#::
+  all the tasks as a @https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/List.html?is-external=true[`List`] of link:Task.html[`Task`]
++
+[#getNumberOfFailedFlowNodes()]##
+*** ===== getNumberOfFailedFlowNodes
++
+[source,methodSignature]
+----
+int getNumberOfFailedFlowNodes()
+----
++
+[.returnLabel]#Returns:#::
+  the number of failed flow nodes
++
+[#getNumberOfActiveFlowNodes()]##
+*** ===== getNumberOfActiveFlowNodes
++
+[source,methodSignature]
+----
+int getNumberOfActiveFlowNodes()
+----
++
+[.returnLabel]#Returns:#::
+  the number of active flow nodes
++
+[#getStartedBy()]##
+*** ===== getStartedBy
++
+[source,methodSignature]
+----
+User getStartedBy()
+----
++
+[.returnLabel]#Returns:#::
+  the link:User.html[`User`] that started this process instance
++
+[#getStartedBySubstitute()]##
+*** ===== getStartedBySubstitute
++
+[source,methodSignature]
+----
+User getStartedBySubstitute()
+----
++
+[.returnLabel]#Returns:#::
+  the link:User.html[`User`] of the substitute user (as Process manager or Administrator) who started the process.
++
+[#getState()]##
+*** ===== getState
++
+[source,methodSignature]
+----
+ProcessInstanceState getState()
+----
++
+[.returnLabel]#Returns:#::
+  the link:ProcessInstanceState.html[`ProcessInstanceState`] of this process instance
++
+[#isArchived()]##
+*** ===== isArchived
++
+[source,methodSignature]
+----
+boolean isArchived()
+----
++
+[.returnLabel]#Returns:#::
+  true if this process instance is archived.
++
+[#getSearchKey(java.lang.String)]##
+*** ===== getSearchKey
++
+[source,methodSignature]
+----
+String getSearchKey​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of the search key
+[.returnLabel]#Returns:#::
+  the value contained by the search key
++
+[#getVariable(java.lang.String)]##
+*** ===== getVariable
++
+[source,methodSignature]
+----
+Variable getVariable​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of the variable
+[.returnLabel]#Returns:#::
+  the corresponding link:Variable.html[`Variable`]
++
+[#getTimerEventTrigger(java.lang.String)]##
+*** ===== getTimerEventTrigger
++
+[source,methodSignature]
+----
+TimerEventTrigger getTimerEventTrigger​(String timerEventName)
+----
++
+[.paramLabel]#Parameters:#::
+  `timerEventName` - the name of the timer
+[.returnLabel]#Returns:#::
+  a link:TimerEventTrigger.html[`TimerEventTrigger`]
++
+[#getConnector(java.lang.String)]##
+*** ===== getConnector
++
+[source,methodSignature]
+----
+Connector getConnector​(String name)
+----
++
+[.paramLabel]#Parameters:#::
+  `name` - the name of the connector
+[.returnLabel]#Returns:#::
+  a link:Connector.html[`Connector`]
++
+[#getSubprocessInstances(int,int)]##
+*** ===== getSubprocessInstances
++
+[source,methodSignature]
+----
+List<ProcessInstance> getSubprocessInstances​(int pageIndex,
+                                             int count)
+----
++
+Returns process instances that have been instantiated by this instance. It includes call activities and event subprocesses.
++
+[.paramLabel]#Parameters:#::
+  `pageIndex` - the page index, starts at 0.
+  +
+  `count` - the maximum number of instances to return
+[.returnLabel]#Returns:#::
+  A list of link:ProcessInstance.html[`process instances`] instantiated by this instance
++
+[#getArchivedSubprocessInstances(int,int)]##
+*** ===== getArchivedSubprocessInstances
++
+[source,methodSignature]
+----
+List<ProcessInstance> getArchivedSubprocessInstances​(int pageIndex,
+                                                     int count)
+----
++
+Returns archived process instances that have been instantiated by this instance. It includes call activities and event subprocesses.
++
+[.paramLabel]#Parameters:#::
+  `pageIndex` - the page index, starts at 0.
+  +
+  `count` - the maximum number of instances to return
+[.returnLabel]#Returns:#::
+  A list of archived link:ProcessInstance.html[`process instances`] instantiated by this instance
++
+[#getSubprocessInstances(com.bonitasoft.test.toolkit.model.ProcessDefinition,int,int)]##
+*** ===== getSubprocessInstances
++
+[source,methodSignature]
+----
+List<ProcessInstance> getSubprocessInstances​(ProcessDefinition processDefinition,
+                                             int pageIndex,
+                                             int count)
+----
++
+Returns process instances that have been instantiated by this instance and matches the given link:ProcessDefinition.html[`ProcessDefinition`].
++
+[.paramLabel]#Parameters:#::
+  `processDefinition` - the process definition
+  +
+  `pageIndex` - the page index, starts at 0.
+  +
+  `count` - the maximum number of instances to return
+[.returnLabel]#Returns:#::
+  A list of link:ProcessInstance.html[`process instances`] instantiated by this instance with the given process definition
++
+[#getArchivedSubprocessInstances(com.bonitasoft.test.toolkit.model.ProcessDefinition,int,int)]##
+*** ===== getArchivedSubprocessInstances
++
+[source,methodSignature]
+----
+List<ProcessInstance> getArchivedSubprocessInstances​(ProcessDefinition processDefinition,
+                                                     int pageIndex,
+                                                     int count)
+----
++
+Returns archived process instances that have been instantiated by this instance and matches the given link:ProcessDefinition.html[`ProcessDefinition`].
++
+[.paramLabel]#Parameters:#::
+  `processDefinition` - the process definition
+  +
+  `pageIndex` - the page index, starts at 0.
+  +
+  `count` - the maximum number of instances to return
+[.returnLabel]#Returns:#::
+  A list of archived link:ProcessInstance.html[`process instances`] instantiated by this instance with the given process definition
++
+[#getFirstStartedSubprocessInstance(com.bonitasoft.test.toolkit.model.ProcessDefinition)]##
+*** ===== getFirstStartedSubprocessInstance
++
+[source,methodSignature]
+----
+ProcessInstance getFirstStartedSubprocessInstance​(ProcessDefinition processDefinition)
+----
++
+Returns the first process instance that has been instantiated by this instance and matches the given link:ProcessDefinition.html[`ProcessDefinition`] and is in link:ProcessInstanceState.html#STARTED[`ProcessInstanceState.STARTED`] state.
++
+[.paramLabel]#Parameters:#::
+  `processDefinition` - the process definition
+[.returnLabel]#Returns:#::
+  A link:ProcessInstance.html[`process instance`] instantiated by this instance with the given process definition
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/ProcessInstance.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

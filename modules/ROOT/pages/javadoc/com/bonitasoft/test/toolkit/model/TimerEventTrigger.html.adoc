@@ -1,0 +1,150 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/TimerEventTrigger.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.model]
+
+=== Interface TimerEventTrigger
+
+* All Known Implementing Classes:::
+  `TimerEventTriggerProxy`
++
+
+'''''
++
+....
+public interface TimerEventTrigger
+....
++
+Representation of a timer. It gives access to some meta information, the execution date, and offers the possibility to execute the timer directly
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t3 .tableTab]#javascript:show(4);[Abstract Methods][.tabEnd]# ##
+[width="100%",cols="34%,33%,33%",options="header",]
+|=====================================================================
+|Modifier and Type |Method |Description
+|`void` |`execute()` a|
+Execute this timer directly (without waiting for it's execution date).
+
+|`Instant` |`getExecutionDate()` | 
+|`String` |`getId()` | 
+|`String` |`getName()` | 
+|=====================================================================
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#getId()]##
+*** ===== getId
++
+[source,methodSignature]
+----
+String getId()
+----
++
+[.returnLabel]#Returns:#::
+  the ID of the timer
++
+[#getName()]##
+*** ===== getName
++
+[source,methodSignature]
+----
+String getName()
+----
++
+[.returnLabel]#Returns:#::
+  the name of the timer
++
+[#getExecutionDate()]##
+*** ===== getExecutionDate
++
+[source,methodSignature]
+----
+Instant getExecutionDate()
+----
++
+[.returnLabel]#Returns:#::
+  the execution date as an https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/Instant.html?is-external=true[`Instant`]
++
+[#execute()]##
+*** ===== execute
++
+[source,methodSignature]
+----
+void execute()
+----
++
+Execute this timer directly (without waiting for it's execution date). WARNING: the timer will be really executed when the engine will re-evaluate it, it might take a few seconds.
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/TimerEventTrigger.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../index-all.html[Index]
+* link:../../../../../help-doc.html[Help]
+
+* link:../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

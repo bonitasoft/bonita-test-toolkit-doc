@@ -1,0 +1,94 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../Variable.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.top]##
+
+ 
+
+=== Uses of Interface +
+com.bonitasoft.test.toolkit.model.Variable
+
+* .Packages that use link:../Variable.html[Variable][.tabEnd]# #
+[cols=",",options="header",]
+|===============================================================================================
+|Package |Description
+|link:#com.bonitasoft.test.toolkit.internal.proxy[com.bonitasoft.test.toolkit.internal.proxy] | 
+|link:#com.bonitasoft.test.toolkit.model[com.bonitasoft.test.toolkit.model] | 
+|===============================================================================================
+* ** [#com.bonitasoft.test.toolkit.internal.proxy]##
+
+==== Uses of link:../Variable.html[Variable] in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+.Classes in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that implement link:../Variable.html[Variable][.tabEnd]# #
+[cols=",,",options="header",]
+|=====================================
+|Modifier and Type |Class |Description
+|`class ` |`ProcessVariableProxy` | 
+|`class ` |`TaskVariableProxy` | 
+|=====================================
+
+.Methods in link:../../internal/proxy/package-summary.html[com.bonitasoft.test.toolkit.internal.proxy] that return link:../Variable.html[Variable][.tabEnd]# #
+[cols=",,",options="header",]
+|==================================================================================================================================
+|Modifier and Type |Method |Description
+|`Variable` |[.typeNameLabel]#ProxyFactory.#`createActivityVariable​(String taskId,                       String name)` | 
+|`Variable` |[.typeNameLabel]#ProxyFactory.#`createProcessVariable​(String processInstanceId,                      String name)` | 
+|`Variable` |[.typeNameLabel]#ProcessInstanceProxy.#`getVariable​(String name)` | 
+|`Variable` |[.typeNameLabel]#TaskProxy.#`getVariable​(String name)` | 
+|`Variable` |[.typeNameLabel]#TaskVariableResolver.#`getVariable​(String taskId,            String name)` | 
+|`Variable` |[.typeNameLabel]#UserTaskProxy.#`getVariable​(String name)` | 
+|==================================================================================================================================
+** [#com.bonitasoft.test.toolkit.model]##
+
+==== Uses of link:../Variable.html[Variable] in link:../package-summary.html[com.bonitasoft.test.toolkit.model]
+
+.Methods in link:../package-summary.html[com.bonitasoft.test.toolkit.model] that return link:../Variable.html[Variable][.tabEnd]# #
+[cols=",,",options="header",]
+|============================================================================
+|Modifier and Type |Method |Description
+|`Variable` |[.typeNameLabel]#AbstractTask.#`getVariable​(String name)` | 
+|`Variable` |[.typeNameLabel]#ProcessInstance.#`getVariable​(String name)` | 
+|============================================================================
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:../package-summary.html[Package]
+* link:../Variable.html[Class]
+* Use
+* link:../package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#

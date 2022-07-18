@@ -1,0 +1,475 @@
+JavaScript is disabled on your browser.
+
+[#navbar.top]##
+
+link:#skip.navbar.top[Skip navigation links]
+
+[#navbar.top.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/BusinessDataProxy.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+* SEARCH:
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.top]##
+
+ 
+
+[.packageLabelInType]#Package# link:package-summary.html[com.bonitasoft.test.toolkit.internal.proxy]
+
+=== Class BusinessDataProxy
+
+* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[java.lang.Object]
+* ** com.bonitasoft.test.toolkit.internal.proxy.BusinessDataProxy
+
+* All Implemented Interfaces:::
+  `BusinessData`
++
+
+'''''
++
+....
+public class BusinessDataProxy
+extends Object
+implements BusinessData
+....
+
+* ** [#method.summary]##
++
+==== Method Summary
++
+.[#t0 .activeTableTab]#All Methods[.tabEnd]# ##[#t2 .tableTab]#javascript:show(2);[Instance Methods][.tabEnd]# ##[#t4 .tableTab]#javascript:show(8);[Concrete Methods][.tabEnd]# ##
+[cols=",,",options="header",]
+|=========================================================================
+|Modifier and Type |Method |Description
+|`Boolean` |`getBooleanField​(String name)` | 
+|`Date` |`getDateField​(String name)` | 
+|`Double` |`getDoubleField​(String name)` | 
+|`Float` |`getFloatField​(String name)` | 
+|`Integer` |`getIntegerField​(String name)` | 
+|`LocalDate` |`getLocalDateField​(String name)` | 
+|`LocalDateTime` |`getLocalDateTimeField​(String name)` | 
+|`Long` |`getLongField​(String name)` | 
+|`List<Date>` |`getMulitpleDateField​(String name)` | 
+|`List<LocalDate>` |`getMulitpleLocalDateField​(String name)` | 
+|`List<Boolean>` |`getMultipleBooleanField​(String name)` | 
+|`List<Double>` |`getMultipleDoubleField​(String name)` | 
+|`List<Float>` |`getMultipleFloatField​(String name)` | 
+|`List<Integer>` |`getMultipleIntegerField​(String name)` | 
+|`List<LocalDateTime>` |`getMultipleLocalDateTimeField​(String name)` | 
+|`List<Long>` |`getMultipleLongField​(String name)` | 
+|`List<OffsetDateTime>` |`getMultipleOffsetDateTimeField​(String name)` | 
+|`List<BusinessData>` |`getMultipleReference​(String name)` | 
+|`List<String>` |`getMultipleStringField​(String name)` | 
+|`OffsetDateTime` |`getOffsetDateTimeField​(String name)` | 
+|`String` |`getPersistenceId()` | 
+|`BusinessData` |`getReference​(String name)` | 
+|`String` |`getStringField​(String name)` | 
+|=========================================================================
+*** [#methods.inherited.from.class.java.lang.Object]##
++
+==== Methods inherited from class java.lang.https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html?is-external=true[Object]
++
+`clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait`
+
+* ** [#method.detail]##
++
+==== Method Detail
++
+[#getStringField(java.lang.String)]##
+*** ===== getStringField
++
+[source,methodSignature]
+----
+public String getStringField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getStringField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the String field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true[`String`] value of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getMultipleStringField(java.lang.String)]##
+*** ===== getMultipleStringField
++
+[source,methodSignature]
+----
+public List<String> getMultipleStringField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getMultipleStringField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple String field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/String.html?is-external=true[`String`] values of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getIntegerField(java.lang.String)]##
+*** ===== getIntegerField
++
+[source,methodSignature]
+----
+public Integer getIntegerField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getIntegerField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the Integer field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html?is-external=true[`Integer`] value of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getMultipleIntegerField(java.lang.String)]##
+*** ===== getMultipleIntegerField
++
+[source,methodSignature]
+----
+public List<Integer> getMultipleIntegerField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getMultipleIntegerField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple Integer field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Integer.html?is-external=true[`Integer`] values of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getLongField(java.lang.String)]##
+*** ===== getLongField
++
+[source,methodSignature]
+----
+public Long getLongField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getLongField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the Long field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html?is-external=true[`Long`] value of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getMultipleLongField(java.lang.String)]##
+*** ===== getMultipleLongField
++
+[source,methodSignature]
+----
+public List<Long> getMultipleLongField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getMultipleLongField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple Long field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Long.html?is-external=true[`Long`] values of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getDoubleField(java.lang.String)]##
+*** ===== getDoubleField
++
+[source,methodSignature]
+----
+public Double getDoubleField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getDoubleField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the Double field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true[`Double`] value of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getMultipleDoubleField(java.lang.String)]##
+*** ===== getMultipleDoubleField
++
+[source,methodSignature]
+----
+public List<Double> getMultipleDoubleField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getMultipleDoubleField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple Double field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Double.html?is-external=true[`Double`] values of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getBooleanField(java.lang.String)]##
+*** ===== getBooleanField
++
+[source,methodSignature]
+----
+public Boolean getBooleanField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getBooleanField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the Boolean field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true[`Boolean`] value of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getMultipleBooleanField(java.lang.String)]##
+*** ===== getMultipleBooleanField
++
+[source,methodSignature]
+----
+public List<Boolean> getMultipleBooleanField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getMultipleBooleanField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple Boolean field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Boolean.html?is-external=true[`Boolean`] values of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getFloatField(java.lang.String)]##
+*** ===== getFloatField
++
+[source,methodSignature]
+----
+public Float getFloatField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getFloatField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the Float field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html?is-external=true[`Float`] value of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getMultipleFloatField(java.lang.String)]##
+*** ===== getMultipleFloatField
++
+[source,methodSignature]
+----
+public List<Float> getMultipleFloatField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getMultipleFloatField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple Float field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Float.html?is-external=true[`Float`] values of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getLocalDateField(java.lang.String)]##
+*** ===== getLocalDateField
++
+[source,methodSignature]
+----
+public LocalDate getLocalDateField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getLocalDateField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the LocalDate field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html?is-external=true[`LocalDate`] value of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getMulitpleLocalDateField(java.lang.String)]##
+*** ===== getMulitpleLocalDateField
++
+[source,methodSignature]
+----
+public List<LocalDate> getMulitpleLocalDateField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getMulitpleLocalDateField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple LocalDate field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDate.html?is-external=true[`LocalDate`] values of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getLocalDateTimeField(java.lang.String)]##
+*** ===== getLocalDateTimeField
++
+[source,methodSignature]
+----
+public LocalDateTime getLocalDateTimeField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getLocalDateTimeField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the LocalDateTime field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html?is-external=true[`LocalDateTime`] value of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getMultipleLocalDateTimeField(java.lang.String)]##
+*** ===== getMultipleLocalDateTimeField
++
+[source,methodSignature]
+----
+public List<LocalDateTime> getMultipleLocalDateTimeField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getMultipleLocalDateTimeField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple LocalDateTime field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/LocalDateTime.html?is-external=true[`LocalDateTime`] values of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getOffsetDateTimeField(java.lang.String)]##
+*** ===== getOffsetDateTimeField
++
+[source,methodSignature]
+----
+public OffsetDateTime getOffsetDateTimeField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getOffsetDateTimeField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the OffsetDateTime field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html?is-external=true[`OffsetDateTime`] value of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getMultipleOffsetDateTimeField(java.lang.String)]##
+*** ===== getMultipleOffsetDateTimeField
++
+[source,methodSignature]
+----
+public List<OffsetDateTime> getMultipleOffsetDateTimeField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getMultipleOffsetDateTimeField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple OffsetDateTime field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/OffsetDateTime.html?is-external=true[`OffsetDateTime`] values of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getDateField(java.lang.String)]##
+*** ===== getDateField
++
+[source,methodSignature]
+----
+public Date getDateField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getDateField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the Date field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html?is-external=true[`Date`] value of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getMulitpleDateField(java.lang.String)]##
+*** ===== getMulitpleDateField
++
+[source,methodSignature]
+----
+public List<Date> getMulitpleDateField​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getMulitpleDateField` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple Date field.
+[.returnLabel]#Returns:#::
+  the https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Date.html?is-external=true[`Date`] values of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getPersistenceId()]##
+*** ===== getPersistenceId
++
+[source,methodSignature]
+----
+public String getPersistenceId()
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getPersistenceId` in interface `BusinessData`
+[.returnLabel]#Returns:#::
+  the persistenceId of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getReference(java.lang.String)]##
+*** ===== getReference
++
+[source,methodSignature]
+----
+public BusinessData getReference​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getReference` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the complex field.
+[.returnLabel]#Returns:#::
+  the link:../../model/BusinessData.html[`BusinessData`] value of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
++
+[#getMultipleReference(java.lang.String)]##
+*** ===== getMultipleReference
++
+[source,methodSignature]
+----
+public List<BusinessData> getMultipleReference​(String name)
+----
++
+[.overrideSpecifyLabel]#Specified by:#::
+  `getMultipleReference` in interface `BusinessData`
+[.paramLabel]#Parameters:#::
+  `name` - The name of the multiple complex field.
+[.returnLabel]#Returns:#::
+  the link:../../model/BusinessData.html[`BusinessData`] values of the field <name value> of this link:../../model/BusinessData.html[`BusinessData`].
+
+[#navbar.bottom]##
+
+link:#skip.navbar.bottom[Skip navigation links]
+
+[#navbar.bottom.firstrow]##
+
+* link:../../../../../../index.html[Overview]
+* link:package-summary.html[Package]
+* Class
+* link:class-use/BusinessDataProxy.html[Use]
+* link:package-tree.html[Tree]
+* link:../../../../../../deprecated-list.html[Deprecated]
+* link:../../../../../../index-all.html[Index]
+* link:../../../../../../help-doc.html[Help]
+
+* link:../../../../../../allclasses.html[All Classes]
+
+JavaScript is disabled on your browser.
+
+* Summary: 
+* Nested | 
+* Field | 
+* Constr | 
+* link:#method.summary[Method]
+
+* Detail: 
+* Field | 
+* Constr | 
+* link:#method.detail[Method]
+
+[#skip.navbar.bottom]##
+
+[.small]#Copyright © 2022. All rights reserved.#
