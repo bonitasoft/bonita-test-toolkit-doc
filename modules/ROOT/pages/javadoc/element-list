@@ -1,0 +1,14 @@
+com.bonitasoft.test.toolkit
+com.bonitasoft.test.toolkit.contract
+com.bonitasoft.test.toolkit.exception
+com.bonitasoft.test.toolkit.internal
+com.bonitasoft.test.toolkit.internal.client
+com.bonitasoft.test.toolkit.internal.contract
+com.bonitasoft.test.toolkit.internal.contract.converter
+com.bonitasoft.test.toolkit.internal.message
+com.bonitasoft.test.toolkit.internal.operation
+com.bonitasoft.test.toolkit.internal.proxy
+com.bonitasoft.test.toolkit.internal.proxy.context
+com.bonitasoft.test.toolkit.junit.extension
+com.bonitasoft.test.toolkit.model
+com.bonitasoft.test.toolkit.predicate
