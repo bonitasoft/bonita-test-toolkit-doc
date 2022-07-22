@@ -1,16 +1,22 @@
 = Installation
 :table-caption!:
-:description: Install the Bonita test toolkit in your development environment
+:description: Install the Bonita Test Toolkit in your development environment
 
 [NOTE]
 ====
 Integrations tests are built upon the Bonita Test Toolkit, based on the open source https://github.com/bonitasoft/bonita-java-client[Bonita Java Client]. +
-The Bonita Test Toolkit is only available for Enterprise, Performance, Efficiency, and Teamwork. editions. 
+The Bonita Test Toolkit is only available for Enterprise, Performance, Efficiency, and Teamwork. editions.
 ====
+
+== Bonita Artifact Repository installation
+
+The Bonita Test Toolkit dependency is available on xref:bonita:software-extensibility:bonita-repository-access.adoc#bonita-artifact-repository[Bonita Artifact Repository]. Look to the xref:bonita:software-extensibility:bonita-repository-access.adoc#maven[Maven section] on how to configure your Maven settings to access to Bonita Artifact Repository.
+
+Once you set up the access, you can start using the `bonita-test-toolkit` dependency from a Maven project. Have a look at the xref:quick-start.adoc[quick start guide] for a first hands-on.
 
 == Local repository installation
 
-The Bonita test toolkit dependency can be downloaded from the https://customer.bonitasoft.com/download/request[Bonitasoft Customer Portal].  +
+The Bonita Test Toolkit dependency can also be downloaded from the https://customer.bonitasoft.com/download/request[Bonitasoft Customer Portal].  +
 
 * Choose the Bonita-Subscription-2022.1-uX product and click on `Access Download Page`.
 * Scroll down to the Maven repository archive and download it.
@@ -31,5 +37,3 @@ For BCD, the `bonita-test-toolkit` dependency is already added to the bcd-depend
 |`com.bonitasoft:bonita-test-toolkit:1.0.0.beta-01`  +
 `com.bonitasoft:bonita-test-toolkit:1.0.0`
 |===
-
-
