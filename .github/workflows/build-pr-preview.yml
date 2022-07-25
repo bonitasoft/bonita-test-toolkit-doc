@@ -31,7 +31,9 @@ jobs:
       COMPONENT_NAME: test-toolkit
       # Except if you want to test in progress work that your content depends on, keep it set to master
       DOC_SITE_BRANCH: master
-      BONITA_BRANCH: '2022.2'
+      # BONITA_BRANCH: '2022.2'
+      # Target the final branch when cross PR work is done !
+      BONITA_BRANCH: 'feat/jfrog_access'
       PR_NUMBER: ${{ github.event.pull_request.number }}
     steps:
       - name: Get documentation site source code
