@@ -12,12 +12,12 @@ The `bonita-test-toolkit` can be installed in three different ways. Choose the o
 
 Once installed, you can start using the `bonita-test-toolkit` dependency from any Maven project. Have a look at the xref:quick-start.adoc[quick start guide] for a first hands-on.
 
-== Bonita Artifact Repository installation
-
-The Bonita Test Toolkit is available on xref:bonita:software-extensibility:bonita-repository-access.adoc#bonita-artifact-repository[Bonita Artifact Repository] as a standard Maven dependency.
+== Installation from the Bonita Artifact Repository
+                                        xref:version@component:module:target-page-filename.adoc
+The Bonita Test Toolkit is available on xref:@bonita:software-extensibility:bonita-repository-access.adoc#bonita-artifact-repository[Bonita Artifact Repository] as a standard Maven dependency.
 Read the xref:bonita:software-extensibility:bonita-repository-access.adoc#maven[Maven section] to see how to configure your Maven settings in order to access to Bonita Artifact Repository.
 
-== Local repository installation
+== Installation from the Customer Portal
 
 The Bonita Test Toolkit dependency can also be downloaded from the https://customer.bonitasoft.com/download/request[Bonitasoft Customer Portal].
 
@@ -25,7 +25,7 @@ The Bonita Test Toolkit dependency can also be downloaded from the https://custo
 * Scroll down to the Maven repository archive and download it.
 * Extract its content in your home folder in: `$USER_HOME/.m2/repository`. This is the default location of a https://maven.apache.org/settings.html#simple-values[Maven local repository]. If you are already familiar with Maven and use another local repository location, extract the content there.
 
-== Bonita Continuous Delivery installation
+== Installation from Bonita Continuous Delivery
 
 For BCD, the `bonita-test-toolkit` dependency is already added to the bcd-dependencies images available on https://quay.io.
 
