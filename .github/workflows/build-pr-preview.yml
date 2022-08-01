@@ -3,7 +3,7 @@ name: Build PR preview
 on:
   pull_request:
     # To manage 'surge-preview' action teardown, add default event types + closed event type
-    types: [opened, synchronize, reopened, closed]
+    types: [ opened, synchronize, reopened, closed ]
     paths:
       - 'modules/**'
       - 'antora.yml'
@@ -23,7 +23,7 @@ jobs:
           echo "is_SURGE_TOKEN_set: ${{ env.SURGE_TOKEN != '' }}"
           echo "::set-output name=is_SURGE_TOKEN_set::${{ env.SURGE_TOKEN != '' }}"
   build_preview:
-    needs: [check_secrets]
+    needs: [ check_secrets ]
     # Only build preview for member of the repository
     if: needs.check_secrets.outputs.is_SURGE_TOKEN_set == 'true'
     runs-on: ubuntu-20.04
@@ -31,7 +31,7 @@ jobs:
       COMPONENT_NAME: test-toolkit
       # Except if you want to test in progress work that your content depends on, keep it set to master
       DOC_SITE_BRANCH: master
-      BONITA_BRANCH: 'feat/jfrog_access' #'2022.1'
+      BONITA_BRANCH: '2022.2'
       CLOUD_BRANCH: 'master'
       BCD_BRANCH: '3.6'
       PR_NUMBER: ${{ github.event.pull_request.number }}
@@ -57,5 +57,5 @@ jobs:
           failOnError: true
           teardown: 'true'
           build: |
-            ./build-preview.bash --use-multi-repositories --component-with-branches bonita:"${{env.BONITA_BRANCH}},2022.1" --component-with-branches cloud:"${{ env.CLOUD_BRANCH }}" --component-with-branches bcd:"${{ env.BCD_BRANCH }}" --component-with-branches "${{ env.COMPONENT_NAME }}":"${{ env.BRANCH_NAME }}" --pr "${{ env.PR_NUMBER }}" --site-url "${{ env.PREVIEW_URL }}"
+            ./build-preview.bash --use-multi-repositories --component-with-branches bonita:"${{env.BONITA_BRANCH}}" --component-with-branches cloud:"${{ env.CLOUD_BRANCH }}" --component-with-branches bcd:"${{ env.BCD_BRANCH }}" --component-with-branches "${{ env.COMPONENT_NAME }}":"${{ env.BRANCH_NAME }}" --pr "${{ env.PR_NUMBER }}" --site-url "${{ env.PREVIEW_URL }}"
             ls -lh build/site
