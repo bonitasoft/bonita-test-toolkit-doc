@@ -13,7 +13,7 @@ The `bonita-test-toolkit` can be installed in three different ways. Choose the o
 Once installed, you can start using the `bonita-test-toolkit` dependency from any Maven project. Have a look at the xref:quick-start.adoc[quick start guide] for a first hands-on.
 
 == Installation from the Bonita Artifact Repository
-                                        xref:version@component:module:target-page-filename.adoc
+
 The Bonita Test Toolkit is available on xref:@bonita:software-extensibility:bonita-repository-access.adoc#bonita-artifact-repository[Bonita Artifact Repository] as a standard Maven dependency.
 Read the xref:bonita:software-extensibility:bonita-repository-access.adoc#maven[Maven section] to see how to configure your Maven settings in order to access to Bonita Artifact Repository.
 
