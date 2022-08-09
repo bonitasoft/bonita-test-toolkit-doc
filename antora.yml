@@ -6,11 +6,12 @@ start_page: ROOT:process-testing-overview.adoc
 asciidoc:
   attributes:
     toolkitVersion: '1.0.0'
+    bonitaDocVersion: '2022.2'
     # page attributes
     page-editable: true
     page-out-of-support: false
     page-pagination: true # display links to previous/next pages at the bottom of the page
-    page-hide-search-bar: false    
+    page-hide-search-bar: false
 
 nav:
   - modules/ROOT/nav.adoc
