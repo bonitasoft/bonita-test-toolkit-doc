@@ -1,6 +1,17 @@
 = Changelog
 :description: Bonita Test Toolkit changelog release note
 
+== 1.0.1
+
+=== Bug fixes
+
+* Fix an issue where not all task states where known which could lead to execptions like:
+```
+java.lang.IllegalArgumentException: Unexpected value 'executing'
+```
+* Fix an issue where it was not possible to set a contract value to `null`
+* Fix an issue where a NPE was thrown when accessing a business data aggregated `null` reference
+
 == 1.0.0
 
 === New features
