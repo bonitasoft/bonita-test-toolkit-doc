@@ -3,7 +3,7 @@
 
 == 1.0.1
 
-=== Bug fixes
+=== Bugfixes
 
 * Fix an issue where not all task states where known which could lead to execptions like:
 ```
