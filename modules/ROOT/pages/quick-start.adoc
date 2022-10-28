@@ -67,9 +67,9 @@ Create a new Maven project with the following pom.xml:
         <bonita-test-toolkit.version>{toolkitVersion}</bonita-test-toolkit.version>
     
         <!-- Test -->
-        <junit.version>5.8.2</junit.version>
-        <assertj-core.version>3.21.0</assertj-core.version>
-        <awaitility.version>4.1.1</awaitility.version>
+        <junit.version>5.9.1</junit.version>
+        <assertj-core.version>3.23.1</assertj-core.version>
+        <awaitility.version>4.2.0</awaitility.version>
     </properties>
     
     <dependencyManagement>
