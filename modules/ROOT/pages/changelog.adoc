@@ -1,6 +1,15 @@
 = Changelog
 :description: Bonita Test Toolkit changelog release note
 
+== 1.0.2
+
+=== Bugfixes
+
+* Fix an issue where some task states like `completing_activity_with_boundary` was not interpreted properly and could lead to execptions like:
+```
+java.lang.IllegalArgumentException: Unexpected value 'completing_activity_with_boundary'
+```
+
 == 1.0.1
 
 === Bugfixes
