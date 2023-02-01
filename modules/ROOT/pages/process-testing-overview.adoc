@@ -8,7 +8,7 @@ Developer skills are required to follow this documentation and, generally, to wr
 [NOTE]
 ====
 Integrations tests are built upon the Bonita Test Toolkit, based on the open-source https://github.com/bonitasoft/bonita-java-client[Bonita Java Client]. +
-The Bonita Test Toolkit is only available for Enterprise, Performance, Efficiency, and Teamwork editions. 
+The Bonita Test Toolkit is only available for Subscription editions. 
 ====
 
 == Motivations
