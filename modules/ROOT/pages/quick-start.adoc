@@ -36,8 +36,9 @@ The following process is used:
 image::quick-start-process.png[Quick start process example]
 
 The process contains a business data `dinosaur` of type `com.company.model.Dinosaur`. + 
-On the task `createDinosaur`, a contract is defined to instantiate this business data. +
-If the field `hungry` is set to `true`, then the path to the task `goToHunt` is selected, else it is the path to the task `goToSleep`.
+On the task `CreateDinosaur`, a contract is defined to instantiate this business data. +
+If the field `hungry` is set to `true`, then the path to the task `goToHunt` is selected, else it is the path to the task `goToSleep`. +
+The process name will be `create-dinosaur` (Click on the diagram, then on the General view below it, you can change the name of the diagram in the Pool section)
 
 [#quick-start-test]
 == Create a Bonita test project
