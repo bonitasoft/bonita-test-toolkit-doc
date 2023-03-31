@@ -1,6 +1,10 @@
 = Changelog
 :description: Bonita Test Toolkit changelog release note
 
+== 1.0.3
+
+* Fix an issue where json contract resources was not parsed recursively.
+
 == 1.0.2
 
 === Bugfixes
