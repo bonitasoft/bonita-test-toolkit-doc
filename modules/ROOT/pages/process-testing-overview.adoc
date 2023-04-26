@@ -43,7 +43,7 @@ Multi-tenancy is not supported.
 |Runtime
 
 |1.0.x
-|2021.1+++*+++ (Java 11 only), 2021.2+++*+++, 2022.1, 2022.2
+|2021.1+++*+++ (Java 11 only), 2021.2+++*+++, 2022.1, 2022.2, 2031.1
 
 |===
 +++*+++ There are known limitations with those runtime versions: 
