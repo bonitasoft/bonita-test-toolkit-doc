@@ -15,7 +15,7 @@ jobs:
       COMPONENT_BRANCH_NAME: ${{ github.head_ref }}
       # Required to pass xref validation
       BCD_BRANCHES: '3.6,4.0'
-      BONITA_BRANCH: '2023.1'
+      BONITA_BRANCHES: '2022.2,2023.1'
       CLOUD_BRANCH: 'master'
       BONITA_BRANCH_FOR_CLOUD: '2022.1'
       BONITA_BRANCH_2021_1: '2021.1'
