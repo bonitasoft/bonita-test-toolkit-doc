@@ -15,7 +15,7 @@ jobs:
       COMPONENT_BRANCH_NAME: ${{ github.head_ref }}
       # Required to pass xref validation
       BCD_BRANCHES: '3.6,4.0'
-      BONITA_BRANCH: '2023.1'
+      BONITA_BRANCHES: '2022.2,2023.1'
       CLOUD_BRANCH: 'master'
       BONITA_BRANCH_FOR_CLOUD: '2022.1'
       BONITA_BRANCH_2021_1: '2021.1'
@@ -30,5 +30,5 @@ jobs:
             --start-page "${{ env.COMPONENT_VERSION }}"@"${{ env.COMPONENT_NAME }}"::process-testing-overview.adoc
             --component-with-branches "${{ env.COMPONENT_NAME }}":"${{ env.COMPONENT_BRANCH_NAME }}"
             --component-with-branches bcd:"${{ env.BCD_BRANCHES }}" 
-            --component-with-branches bonita:"${{ env.BONITA_BRANCH }},${{ env.BONITA_BRANCH_FOR_CLOUD }},${{ env.BONITA_BRANCH_2021_1 }}"
+            --component-with-branches bonita:"${{ env.BONITA_BRANCHES }},${{ env.BONITA_BRANCH_FOR_CLOUD }},${{ env.BONITA_BRANCH_2021_1 }}"
             --component-with-branches cloud:"${{ env.CLOUD_BRANCH }}"

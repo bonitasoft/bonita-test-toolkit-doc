@@ -35,9 +35,10 @@ The following process is used:
 
 image::quick-start-process.png[Quick start process example]
 
-The process contains a business data `dinosaur` of type `com.company.model.Dinosaur`. + 
+The process Pool is called `create-dinosaur`. It contains a business variable `dinosaur` of type `com.company.bonitasoft.model.Dinosaur`. + 
 On the task `createDinosaur`, a contract is defined to instantiate this business data. +
-If the field `hungry` is set to `true`, then the path to the task `goToHunt` is selected, else it is the path to the task `goToSleep`.
+If the field `hungry` is set to `true`, then the path to the task `goToHunt` is selected, else it is the path to the task `goToSleep`. +
+To do this, for the `Yes` path, create a `isHungry()` expression, which returns `dinosaur.hungry`. The `No` path is the default flow.
 
 [#quick-start-test]
 == Create a Bonita test project
