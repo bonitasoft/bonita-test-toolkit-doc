@@ -12,3 +12,4 @@
 * xref:document.adoc[Documents]
 * xref:connector.adoc[Connectors]
 * xref:events.adoc[Trigger events]
+* xref:tests-report.adoc[Tests report]

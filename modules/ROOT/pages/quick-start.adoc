@@ -254,13 +254,14 @@ It is possible to fine tune some HTTP specific options using the following argum
 * `-Dbonita.client.disable.certificate.check=true|false` Default is `false`. Disable SSL certificate check when connecting to remote runtime using HTTPS.
 * `-Dbonita.client.http.connection.timeout=30` Default is `30`. Timeout in seconds used for the HTTP connection timeout.
 
+[#quick-start-report]
 === Generated report
 Once the tests are run, a report is generated.
 It shows a set of metrics for each test, and the diagram of each process. If the test launch several process instances, a diagram of each instance is displayed. +
-The diagrams are decorated with:
 
-* Badges on the tasks, showing the number of Executed, Ready/Waiting or Failed tasks
-* The execution path of the process
+For details on the reports, see the xref:ROOT:tests-report.adoc[Tests Report] page.
+
+With the test above, you should get a report similar to this one:
 
 image::quick-start-report.png[Quick start report]
 
