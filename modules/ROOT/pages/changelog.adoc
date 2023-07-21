@@ -1,6 +1,12 @@
 = Changelog 
 :description: Bonita Test Toolkit changelog release note
 
+
+== 1.1
+
+* Added a new feature: a test report is now generated after the tests are run, to visualize the process execution.
+See the xref:ROOT:tests-report.adoc[Tests Report] page.
+
 == 1.0.3
 
 * Fix an issue where json contract resources was not parsed recursively.
