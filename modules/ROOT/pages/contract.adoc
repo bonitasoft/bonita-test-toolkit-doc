@@ -79,7 +79,7 @@ ContractBuilder.newContract()
 <1> The first level of contract input, the parent complex contract input which contains all the other contract inputs.
 <2> The second level of contract input, a child complex contract input which contains other contract inputs.
 
-If a contract contains several levels of complex contract inputs with a lot of fields, using the Java builder to create the contract can become tedious. When a contract only contains static values, you may extract the contract in an external JSon file and retrieve them xref:_retrieve_contracts_from_files[from the classpath] to keep the test class concise.
+If a contract contains several levels of complex contract inputs with a lot of fields, using the Java builder to create the contract can become tedious. When a contract only contains static values, you may extract the contract in an external JSon file and retrieve them <<retrieve_contracts_from_files, from the classpath>> to keep the test class concise.
 
 [#retrieve_contracts_from_files]
 == Retrieve contracts from files in the classpath
