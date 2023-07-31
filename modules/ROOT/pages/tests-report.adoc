@@ -22,7 +22,7 @@ Additionally, a set of metrics are provided for each test: execution time, durat
 A report (html file) is generated once all the tests of a test file is run.
 This report can be found in the `target/bonita-test-reports` directory of your tests.
 
-You can de-activate the report generation by calling the `toolkit.deactivateTestReports()` method.
+You can de-activate the report generation by adding the argument `disableReport = true` in the java annotation `@BonitaTests` of your junit test class.
 This won't generate a report for the whole test file (even if it is called in a single test).
 
 === Multiple process instances and sub-process
