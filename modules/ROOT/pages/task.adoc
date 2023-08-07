@@ -6,7 +6,7 @@ Learn to execute tasks and to validate their states in integration tests using t
 [NOTE]
 ====
 Integrations tests are built upon the Bonita Test Toolkit, based on the open-source https://github.com/bonitasoft/bonita-java-client[Bonita Java Client]. +
-The Bonita Test Toolkit is only available for Enterprise, Performance, Efficiency, and Teamwork. editions. 
+The Bonita Test Toolkit is only available for Enterprise, Performance, Efficiency, and Teamwork. editions.
 ====
 
 == Retrieve tasks
@@ -14,14 +14,14 @@ The Bonita Test Toolkit is only available for Enterprise, Performance, Efficienc
 Any task (user task, service task...) defined on a process can be retrieved through the xref:process.adoc#_tasks[process instance]. +
 Keep in mind that only tasks that *have been executed or are ready* can be retrieved, incoming tasks are not accessible.
 
-A task is returned as an object `Task` or `UserTask` (which extends `Task`). + 
+A task is returned as an object `Task` or `UserTask` (which extends `Task`). +
 It offers the possiblity to retrieve some meta information about the task, its state, and gives access to eventual xref:variable.adoc[variables] and xref:connector.adoc[connectors].
 
 Besides that, a user task provides information about candidates, assignee, due date, and can be assigned and executed.
 
 == Assign and execute user tasks
 
-User tasks can be executed using the corresponding process instances to advance processes: 
+User tasks can be executed using the corresponding process instances to advance processes:
 
 [source, Java]
 ----
@@ -64,7 +64,7 @@ class ProcessIT {
 <4> Assign the task to a user.
 <5> Execute the task with or without a contract. The task must have been already assigned.
 <6> Assign and execute the task with or without a contract. If the task is already assigned to another user, it will be reassigned to the new user before to be executed.
-<7> Wait until the task is completed before continuing. Mor details about task predicates in the dedicated section xref:_task_predicates[bellow].
+<7> Wait until the task is completed before continuing. Mor details about task predicates in the dedicated section <<task_predicates, below>>.
 
 == Multi-instantiated UserTask iterator
 
@@ -102,6 +102,7 @@ void validateUserTaskIterator(BonitaTestToolkit toolkit){
 }
 ----
 
+[#task_predicates]
 == Task and UserTask predicates
 
 In order to make asynchronous assertions on processes (using for example http://www.awaitility.org/[Awaitility]), some convenient predicates come with the Bonita test toolkit. It allows ensuring in a scenario that the system is in the expected state before continuing. +
