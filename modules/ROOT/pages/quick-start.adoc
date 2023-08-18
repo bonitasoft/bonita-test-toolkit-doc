@@ -9,7 +9,7 @@ No matter where is running your platform and what kind of process is installed o
 [NOTE]
 ====
 Integrations tests are built upon the Bonita Test Toolkit, based on the open-source https://github.com/bonitasoft/bonita-java-client[Bonita Java Client]. +
-The Bonita Test Toolkit is only available for Enterprise, Performance, Efficiency, and Teamwork editions. 
+The Bonita Test Toolkit is only available for Enterprise, Performance, Efficiency, and Teamwork editions.
 ====
 
 [#project-example]
@@ -19,7 +19,7 @@ We will briefly describe in this section the process used in the test xref:quick
 
 In this process, we are going to create a dinosaur with a name, a color, and decide if he's hungry or not. Depending on his hunger state, he will go hunting or sleeping.
 
-The following Business Data Model is used: 
+The following Business Data Model is used:
 
 [caption=""]
 .Dinosaur
@@ -31,11 +31,11 @@ The following Business Data Model is used:
 |hungry | Boolean | false    | true
 |===
 
-The following process is used: 
+The following process is used:
 
 image::quick-start-process.png[Quick start process example]
 
-The process Pool is called `create-dinosaur`. It contains a business variable `dinosaur` of type `com.company.bonitasoft.model.Dinosaur`. + 
+The process Pool is called `create-dinosaur`. It contains a business variable `dinosaur` of type `com.company.bonitasoft.model.Dinosaur`. +
 On the task `createDinosaur`, a contract is defined to instantiate this business data. +
 If the field `hungry` is set to `true`, then the path to the task `goToHunt` is selected, else it is the path to the task `goToSleep`. +
 To do this, for the `Yes` path, create a `isHungry()` expression, which returns `dinosaur.hungry`. The `No` path is the default flow.
@@ -43,7 +43,7 @@ To do this, for the `Yes` path, create a `isHungry()` expression, which returns 
 [#quick-start-test]
 == Create a Bonita test project
 
-Create a new Maven project with the following pom.xml: 
+Create a new Maven project with the following pom.xml:
 
 [source, xml, subs="attributes+"]
 ----
@@ -54,7 +54,7 @@ Create a new Maven project with the following pom.xml:
     <version>1.0.0-SNAPSHOT</version>
     <name>Bonita process test</name>
     <description>Maven project to test Bonita processes</description>
-  
+
     <properties>
         <!-- maven -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -63,16 +63,16 @@ Create a new Maven project with the following pom.xml:
         <maven.compiler.target>11</maven.compiler.target>
         <maven-failsafe-plugin.version>2.22.2</maven-failsafe-plugin.version>
         <maven-dependency-plugin.version>3.2.0</maven-dependency-plugin.version>
-    
+
         <!-- Bonita -->
         <bonita-test-toolkit.version>{toolkitVersion}</bonita-test-toolkit.version>
-    
+
         <!-- Test -->
         <junit.version>5.9.1</junit.version>
         <assertj-core.version>3.23.1</assertj-core.version>
         <awaitility.version>4.2.0</awaitility.version>
     </properties>
-    
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -84,7 +84,7 @@ Create a new Maven project with the following pom.xml:
             </dependency>
         </dependencies>
     </dependencyManagement>
-    
+
     <dependencies>
         <dependency> <1>
             <groupId>com.bonitasoft</groupId>
@@ -110,7 +110,7 @@ Create a new Maven project with the following pom.xml:
             <scope>test</scope>
         </dependency>
     </dependencies>
-    
+
     <build>
         <pluginManagement>
             <plugins>
@@ -121,7 +121,7 @@ Create a new Maven project with the following pom.xml:
                 </plugin>
             </plugins>
         </pluginManagement>
-        
+
         <plugins>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -143,7 +143,7 @@ Create a new Maven project with the following pom.xml:
 <2> https://assertj.github.io/doc/#overview-what-is-assertj[Fluent assertion library]
 <3> https://github.com/awaitility/awaitility[Asynchronous systems test library]
 
-In `src/test/java/com/company/test`, create a class `ProcessIT.java` with the following content: 
+In `src/test/java/com/company/test`, create a class `ProcessIT.java` with the following content:
 
 [source, java]
 ----
@@ -239,21 +239,33 @@ Using Maven command line
 
 [source, bash]
 ----
-# Parameters 'bonita.url', 'bonita.tech.user' and 'bonita.tech.password' are optionals. 
-# Use them if your runtime runs on an other URL than localhost:8080/bonita, 
-# or with technical user credentials different from install / install. 
+# Parameters 'bonita.url', 'bonita.tech.user' and 'bonita.tech.password' are optionals.
+# Use them if your runtime runs on an other URL than localhost:8080/bonita,
+# or with technical user credentials different from install / install.
 
 mvn verify [-Dbonita.url=<TARGET_RUNTIME_URL> -Dbonita.tech.user=<TECHNICAL_USER_USERNAME> -Dbonita.tech.password=<TECHNICAL_USER_PASSWORD>]
 ----
 
 ==== Advanced usage
 
-The test toolkit communicates with the target Bonita Runtime using HTTP. 
+The test toolkit communicates with the target Bonita Runtime using HTTP.
 It is possible to fine tune some HTTP specific options using the following arguments:
 
 * `-Dbonita.client.disable.certificate.check=true|false` Default is `false`. Disable SSL certificate check when connecting to remote runtime using HTTPS.
 * `-Dbonita.client.http.connection.timeout=30` Default is `30`. Timeout in seconds used for the HTTP connection timeout.
 
+[#quick-start-report]
+=== Generated report
+Once the tests are run, a report is generated.
+It shows a set of metrics for each test, and the diagram of each process. If the test launch several process instances, a diagram of each instance is displayed. +
+
+For details on the reports, see the xref:ROOT:tests-report.adoc[Tests Report] page.
+
+With the test above, you should get a report similar to this one:
+
+image::quick-start-report.png[Quick start report]
+
+
 === To Go further
 
-Now that you have successfully implemented your first Integration test, you can adapt this example to test your own process! 
+Now that you have successfully implemented your first Integration test, you can adapt this example to test your own process!
