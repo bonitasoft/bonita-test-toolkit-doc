@@ -12,6 +12,6 @@ asciidoc:
     page-out-of-support: false
     page-pagination: true # display links to previous/next pages at the bottom of the page
     page-hide-search-bar: false
-    page-next-release: true # TODO: When releasing GA version, set this field to false
+    page-next-release: true
 nav:
   - modules/ROOT/nav.adoc
