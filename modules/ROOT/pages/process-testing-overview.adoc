@@ -42,8 +42,10 @@ Multi-tenancy is not supported.
 |Bonita Test Toolkit 
 |Runtime
 
-|1.0.x
-|2021.1+++*+++ (Java 11 only), 2021.2+++*+++, 2022.1, 2022.2, 2023.1
+|1.x
+|2021.1+++*+++ (Java 11 only), 2021.2+++*+++, 2022.1, 2022.2, 2023.1, 2023.2
+|2.x
+|2021.2+++*+++, 2022.1, 2022.2, 2023.1, 2023.2
 
 |===
 +++*+++ There are known limitations with those runtime versions: 

@@ -59,17 +59,16 @@ Create a new Maven project with the following pom.xml:
         <!-- maven -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-        <maven-failsafe-plugin.version>2.22.2</maven-failsafe-plugin.version>
-        <maven-dependency-plugin.version>3.2.0</maven-dependency-plugin.version>
+        <maven.compiler.release>11</maven.compiler.release>
+        <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin>
+        <maven-failsafe-plugin.version>3.1.2</maven-failsafe-plugin.version>
 
         <!-- Bonita -->
         <bonita-test-toolkit.version>{toolkitVersion}</bonita-test-toolkit.version>
 
         <!-- Test -->
-        <junit.version>5.9.1</junit.version>
-        <assertj-core.version>3.23.1</assertj-core.version>
+        <junit.version>5.10.0</junit.version>
+        <assertj-core.version>3.24.2</assertj-core.version>
         <awaitility.version>4.2.0</awaitility.version>
     </properties>
 
@@ -114,6 +113,11 @@ Create a new Maven project with the following pom.xml:
     <build>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven-compiler-plugin.version}</version>
+                </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-failsafe-plugin</artifactId>
