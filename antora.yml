@@ -5,13 +5,13 @@ prerelease: -alpha
 start_page: ROOT:process-testing-overview.adoc
 asciidoc:
   attributes:
-    toolkitVersion: '2.0.0'
+    toolkitVersion: '2.0.0-alpha-01'
     bonitaDocVersion: '2023.1'
     # page attributes
     page-editable: true
     page-out-of-support: false
     page-pagination: true # display links to previous/next pages at the bottom of the page
     page-hide-search-bar: false
-
+    page-next-release: true # TODO: When releasing GA version, set this field to false
 nav:
   - modules/ROOT/nav.adoc

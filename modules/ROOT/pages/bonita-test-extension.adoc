@@ -48,7 +48,7 @@ Once the extension registered, you can inject a `BonitaTestToolkit` instance as 
 
 [source, Java]
 ----
-@BonitaTests
+@BonitaTests(disableReport = false) <1>
 class ProcessIT {
 
     @BeforeAll
@@ -69,10 +69,11 @@ class ProcessIT {
 
 }
 ----
+<1> `false` is the default value, if you want to disable the generated HTML reports, set it to `true`.
 
 == Configure a logger
 
-The Bonita test toolkit rely on SLF4J logger API. You may plug the SLF4J implementation of your choice in your project.
+The Bonita test toolkit rely on SLF4J 2.x logger API. You may plug the SLF4J implementation of your choice in your project.
 
 === Logback example
 
@@ -84,7 +85,7 @@ The Bonita test toolkit rely on SLF4J logger API. You may plug the SLF4J impleme
     <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
-        <version>1.2.10</version>
+        <version>1.4.11</version>
         <scope>test</scope>
     </dependency>
 </dependencies>
@@ -99,7 +100,7 @@ The Bonita test toolkit rely on SLF4J logger API. You may plug the SLF4J impleme
     <!-- encoders are assigned the type
          ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
     <encoder>
-      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %highlight([%level]) %logger{36} - %msg%n</pattern>
     </encoder>
   </appender>
 
@@ -108,10 +109,11 @@ The Bonita test toolkit rely on SLF4J logger API. You may plug the SLF4J impleme
   </root>
   
   <logger name="org.bonitasoft.web.client" level="warn" />
-  <logger name="com.bonitasoft.test.toolkit" level="info" />
+  <logger name="com.bonitasoft.test.toolkit" level="info" /> <!--1-->
 
   <!-- Replace with the package containing your tests-->
   <logger name="com.company.project.test" level="info" />
   
 </configuration>
 ----
+<1> You may use the `DEBUG` level to enhance the console output with contract content when instantiating a process or executing a task.
