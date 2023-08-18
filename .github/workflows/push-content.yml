@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - '1.0'
+      - '2.0'
     paths:
       - 'modules/**'
       - 'antora.yml'
