@@ -1,9 +1,13 @@
 = Changelog
 :description: Bonita Test Toolkit changelog release note
 
+== 1.0.5
+
+* Fix an issue where subprocess instances root instance was not properly filtered in `getArchivedProcessInstances` methods.
+
 == 1.0.4
 
-* Fix an issue where subprocess instances where not properly filtered by `rootCaseId`
+* Fix an issue where subprocess instances where not properly filtered by `rootCaseId`.
 
 == 1.0.3
 
