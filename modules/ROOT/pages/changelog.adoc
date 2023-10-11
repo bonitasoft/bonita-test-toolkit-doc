@@ -1,7 +1,6 @@
 = Changelog
 :description: Bonita Test Toolkit changelog release note
 
-
 == 2.0.0
 
 === Breaking changes
@@ -14,10 +13,23 @@ This version removes the support of Bonita 2021.1
 See the xref:ROOT:tests-report.adoc[Tests Report] page.
 * Add `DEBUG` level output for contract at process instantiation and task execution
 
+=== Deprecated API
+
+Paginated methods to retrieve subprocess instances and subprocess archived instances have been deprecated. 
+Non paginated equivalent method should be use instead.
+
 === Dependencies updates
 
-* `bonita-java-client` updated to `1.0.0`
+* `bonita-java-client` updated to `1.0.1`
 * `slf4j-api` updated to `2.0.7` 
+
+== 1.0.5
+
+* Fix an issue where subprocess instances root instance was not properly filtered in `getArchivedProcessInstances` methods.
+
+== 1.0.4
+
+* Fix an issue where subprocess instances where not properly filtered by `rootCaseId`.
 
 == 1.0.3
 
