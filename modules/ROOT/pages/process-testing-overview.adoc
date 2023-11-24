@@ -8,7 +8,7 @@ Developer skills are required to follow this documentation and, generally, to wr
 [NOTE]
 ====
 Integrations tests are built upon the Bonita Test Toolkit, based on the open-source https://github.com/bonitasoft/bonita-java-client[Bonita Java Client]. +
-The Bonita Test Toolkit is only available for Enterprise, Performance, Efficiency, and Teamwork editions. 
+The Bonita Test Toolkit is only available for Subscription editions. 
 ====
 
 == Motivations
@@ -43,7 +43,7 @@ Multi-tenancy is not supported.
 |Runtime
 
 |1.0.x
-|2021.1+++*+++ (Java 11 only), 2021.2+++*+++, 2022.1, 2022.2
+|2021.1+++*+++ (Java 11 only), 2021.2+++*+++, 2022.1, 2022.2, 2023.1
 
 |===
 +++*+++ There are known limitations with those runtime versions: 
