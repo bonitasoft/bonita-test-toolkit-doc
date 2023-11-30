@@ -9,6 +9,7 @@ This version removes the support of Bonita 2021.1
 
 === New features
 
+* Add support for Bonita 2023.2
 * Processes paths coverage reports are now generated at the end of a test session. Those HTML reports let you visualize the processes execution paths covered by your tests.
 See the xref:ROOT:tests-report.adoc[Tests Report] page.
 * Add `DEBUG` level output for contract at process instantiation and task execution
