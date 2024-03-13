@@ -60,7 +60,7 @@ Create a new Maven project with the following pom.xml:
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.release>11</maven.compiler.release>
-        <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin>
+        <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
         <maven-failsafe-plugin.version>3.1.2</maven-failsafe-plugin.version>
 
         <!-- Bonita -->
