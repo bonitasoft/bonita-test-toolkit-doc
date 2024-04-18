@@ -7,19 +7,11 @@ on:
       - 'antora.yml'
       - '.github/workflows/build-pr-preview.yml'
 jobs:
-  build_preview:
+  validate_xref:
     runs-on: ubuntu-22.04
-    env:
-      COMPONENT_NAME: test-toolkit
-      COMPONENT_BRANCH_NAME: ${{ github.head_ref }}
     steps:
-      - name: Build PR preview
+      - name: Validate xref
         uses: bonitasoft/bonita-documentation-site/.github/actions/build-pr-site/@master
         with:
-          # '>' Replace newlines with spaces (folded)
-          # '-' No newline at end (strip)
-          build-preview-command: >-
-            ./build-preview.bash
-            --component "${{ env.COMPONENT_NAME }}"
-            --branch "${{ env.COMPONENT_BRANCH_NAME }}"
+          component-name: test-toolkit
           fail-on-warning: true
