@@ -33,7 +33,7 @@ The Bonita Test Toolkit should only target **non-production** runtime.
 
 === Supported runtime version
 
-Only the **subscription runtime** versions are supported.
+Only the **subscription runtime** with a license compliant with the Test Toolkit are supported.
 
 Multi-tenancy is not supported.
 
@@ -45,7 +45,10 @@ Multi-tenancy is not supported.
 |1.x
 |2021.1+++*+++ (Java 11 only), 2021.2+++*+++, 2022.1, 2022.2, 2023.1
 |2.x
-|2021.2+++*+++, 2022.1, 2022.2, 2023.1, 2023.2, 2024.1
+|2021.2+++*+++, 2022.1, 2022.2, 2023.1, 2023.2, 2024.1, 2024.2
+|3.x
+|2021.2+++*+++, 2022.1, 2022.2, 2023.1, 2023.2, 2024.1, 2024.2
+
 
 |===
 +++*+++ There are known limitations with those runtime versions: 
