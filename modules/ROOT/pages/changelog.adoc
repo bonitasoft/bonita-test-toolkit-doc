@@ -1,6 +1,24 @@
 = Changelog
 :description: Bonita Test Toolkit changelog release note
 
+== 3.0.0
+
+=== Breaking changes
+
+* Test Toolkit feature activation check added. It is now required to have a license supporting the Test Toolkit feature on the target runtime.
+
+=== New features
+
+* Add a new method `List<ProcessInstance> getSubprocessInstances(SubprocessInstancesCriteria criteria)` on `ProcessInstance`. This new method aims at replacing the deprecated `List<ProcessInstance> getSubprocessInstances()`.
+
+=== Bugfixes
+
+* Fix an issue with contract file input resources and special characters encoding.
+
+=== Dependencies updates
+
+* `slf4j-api` updated to `2.0.13` 
+
 == 2.0.0
 
 === Breaking changes
