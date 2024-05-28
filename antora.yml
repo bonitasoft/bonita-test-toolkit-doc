@@ -1,7 +1,7 @@
 name: test-toolkit
 title: Test Toolkit
 version: '3.0'
-prerelease: -beta
+#prerelease: -beta
 start_page: ROOT:process-testing-overview.adoc
 asciidoc:
   attributes:
