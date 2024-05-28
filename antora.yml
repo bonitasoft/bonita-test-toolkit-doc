@@ -13,5 +13,6 @@ asciidoc:
     page-pagination: true # display links to previous/next pages at the bottom of the page
     page-hide-search-bar: false
     page-next-release: false
+    page-hide-components: 'bcd'
 nav:
   - modules/ROOT/nav.adoc
