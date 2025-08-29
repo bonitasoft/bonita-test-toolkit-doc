@@ -1,12 +1,12 @@
 name: test-toolkit
 title: Test Toolkit
-version: '3.0'
+version: '3.1'
 #prerelease: -beta
 start_page: ROOT:process-testing-overview.adoc
 asciidoc:
   attributes:
-    toolkitVersion: '3.0.1'
-    bonitaDocVersion: '2024.3'
+    toolkitVersion: '3.1.0'
+    bonitaDocVersion: '2025.1'
     # page attributes
     page-editable: true
     page-out-of-support: false
