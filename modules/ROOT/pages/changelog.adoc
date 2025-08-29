@@ -1,6 +1,10 @@
 = Changelog
 :description: Bonita Test Toolkit changelog release note
 
+== 3.0.1
+
+Several dependencies updates.
+
 == 3.0.0
 
 === Breaking changes
