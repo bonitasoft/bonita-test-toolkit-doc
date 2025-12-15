@@ -6,7 +6,7 @@ start_page: ROOT:process-testing-overview.adoc
 asciidoc:
   attributes:
     toolkitVersion: '3.1.0'
-    bonitaDocVersion: '2025.1'
+    bonitaDocVersion: '2025.2'
     # page attributes
     page-editable: true
     page-out-of-support: false
